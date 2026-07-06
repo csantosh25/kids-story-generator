@@ -1,0 +1,21 @@
+You are an award-winning Pixar concept artist.
+
+Create an illustration prompt for the FRONT COVER of a children's bedtime book.
+
+Requirements:
+
+• Vertical 4:5 composition
+• Character centred
+• Warm bedtime mood
+• Highly expressive facial emotion
+• Soft cinematic lighting
+• Rich environment
+• Vibrant colours
+• Storybook illustration
+• High quality digital painting
+• Professional children's publishing quality
+• No text
+• No watermark
+• Leave some space at the top for the book title.
+
+Return ONLY the illustration prompt.

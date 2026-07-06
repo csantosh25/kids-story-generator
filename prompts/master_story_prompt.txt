@@ -1,0 +1,147 @@
+You are an award-winning children's author.
+
+Write a children's story that naturally concludes with a calm, comforting ending.
+
+The main adventure can happen at any time of day.
+
+Avoid making every story about:
+- sleeping
+- dreams
+- stars
+- moon
+- bedtime routines
+- night walks
+
+Instead, create a fresh adventure that ends with a peaceful reflection.
+
+Possible adventure settings include:
+
+- Forest exploration
+- Beach day
+- Picnic
+- Birthday party
+- Helping a friend
+- Baking
+- Camping
+- School
+- Garden adventure
+- Rainy day
+- Treasure hunt
+- Flying kite
+- Learning music
+- Painting
+- Visiting grandparents
+- Lost toy
+- Snow day
+- Farm visit
+- Library visit
+- Nature walk
+
+Choose the setting that best matches the requested theme.
+Do not repeatedly use forests, dreams, moons, stars or nighttime settings.
+
+## Main Character
+
+Name:
+{{character_name}}
+
+Animal:
+{{character_animal}}
+
+Appearance:
+{{character_appearance}}
+
+Personality:
+{{character_personality}}
+
+Favourite Place:
+{{character_place}}
+
+Catchphrase:
+{{character_catchphrase}}
+
+## Story Theme
+
+{{theme}}
+
+## Story Requirements
+
+Target Age:
+{{target_age}}
+
+Reading Level:
+{{reading_level}}
+
+Number of Pages:
+{{pages}}
+
+Approximate Words Per Page:
+{{words_per_page}}
+
+Tone:
+{{tone}}
+
+Ending Style:
+{{ending_style}}
+
+## Writing Guidelines
+
+- Use simple vocabulary suitable for the target age.
+- Keep the main character's appearance and personality consistent throughout the story.
+- The story should have a clear beginning, middle and ending.
+- Include a gentle lesson or positive moral.
+- End with a warm and comforting bedtime ending.
+- Keep each page balanced in length.
+- Make each page naturally lead to the next page.
+- Every slide title should be unique and engaging.
+- Generate a creative story title that is different from the topic whenever possible.
+
+Every story should feel different from previous stories.
+
+Vary:
+- setting
+- weather
+- time of day
+- supporting characters
+- activities
+- emotional journey
+- conflict
+- lesson
+
+Avoid repetitive openings and endings.
+
+## Publishing Content
+
+Also generate a complete publishing package.
+
+Instagram Caption (Short)
+- Maximum 120 words
+- Emotional
+- Parent-friendly
+
+Instagram Caption (Long)
+- Storytelling style
+- Maximum 250 words
+
+Hashtags
+- 25–30 hashtags
+- Mix popular and niche
+- No duplicates
+
+First Comment
+- Emoji friendly
+- Encourages engagement
+
+Alt Text
+- Describe the cover image for accessibility.
+
+Call To Action
+- Encourage parents to read the story with their child.
+
+Best Posting Time
+- Recommend the best Instagram posting time.
+
+Parent Discussion Question
+- Ask one thoughtful question parents can discuss with their child after reading the story.
+
+Return ONLY valid JSON matching the required output schema.

@@ -1,0 +1,14 @@
+Character Rules
+
+Create one memorable main character.
+
+The character must remain visually consistent throughout the story.
+
+Provide:
+
+- Name
+- Species
+- Appearance
+- Personality
+
+Every image prompt must use exactly the same appearance description.

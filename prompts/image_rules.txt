@@ -1,0 +1,44 @@
+Image Rules
+
+Generate one cover image prompt only.
+
+Do NOT generate image prompts for slides.
+
+Instead, for every slide generate:
+
+- visual_theme
+- icon
+
+Examples
+
+night → moon
+
+forest → tree
+
+ocean → fish
+
+space → rocket
+
+farm → chicken
+
+rain → umbrella
+
+magic → sparkle
+
+Style:
+
+Pixar-quality 3D
+
+Soft lighting
+
+Pastel colours
+
+Children's book illustration
+
+Vertical composition
+
+Instagram friendly
+
+Do NOT include text inside the artwork.
+
+Reserve the lower third of the cover image for title placement.

@@ -1,0 +1,116 @@
+{
+    "story_info": {
+        "title": "Luna's Lullaby Sky",
+        "subtitle": "A Gentle Journey Through the Night",
+        "theme": "Nighttime wonder and peaceful sleep",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "The night sky is full of peaceful wonders that help us rest and dream."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Luna",
+            "species": "Cloud Creature",
+            "appearance": "A small, round, fluffy cloud creature with soft, pale blue fur, gentle sparkling eyes, and tiny, light-pink rosy cheeks. She has a delicate, wispy tail that trails behind her like a little cloud.",
+            "personality": "Curious, gentle, kind, a little shy, loves learning new things and observing the world."
+        }
+    },
+    "cover": {
+        "prompt": "A small, round, fluffy cloud creature named Luna with soft, pale blue fur, gentle sparkling eyes, and tiny, light-pink rosy cheeks. She has a delicate, wispy tail that trails behind her like a little cloud. Luna is floating peacefully among soft, glowing stars and a crescent moon in a deep, pastel blue night sky. Pixar-quality 3D, soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly. Reserve lower third for title placement. No text.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Hello, Little Luna!",
+            "text": "High above the sleepy world lived Luna, a soft, fluffy cloud creature. She loved to float gently, watching everything below. As the sun began to set, painting the sky with oranges and pinks, Luna wondered, 'What happens when the day turns into night?'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sunset",
+            "icon": "sun",
+            "speaker_notes": "Introduce Luna and her curiosity about the end of the day."
+        },
+        {
+            "page": 2,
+            "title": "The First Twinkles",
+            "text": "Soon, tiny sparkling lights began to appear. 'Those are the stars!' whispered a wise old owl flying past. 'They peek out to say goodnight to the sun and hello to the moon.' Luna watched, feeling a gentle calm spread through the air as more stars dotted the darkening sky.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "stars",
+            "icon": "star",
+            "speaker_notes": "Describe the emergence of stars and introduce a helpful character."
+        },
+        {
+            "page": 3,
+            "title": "Moon's Gentle Glow",
+            "text": "Then, a big, round, friendly moon rose slowly. It cast a soft, silvery glow over the quiet world. The owl explained, 'The moon watches over everyone as they sleep, making sure their dreams are sweet and peaceful.' Luna felt cozy just looking at its kind light.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "moon",
+            "icon": "moon",
+            "speaker_notes": "Focus on the moon's comforting presence and role."
+        },
+        {
+            "page": 4,
+            "title": "The Sleeping World",
+            "text": "Down below, Luna saw sleepy bunnies snuggled in burrows, little birds tucked into nests, and flowers closing their petals. Everything was getting ready for a long, peaceful rest. The night brought a special quiet, perfect for dreaming and gentle slumber.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Show the world settling down for sleep through examples of animals and nature."
+        },
+        {
+            "page": 5,
+            "title": "Learning to Rest",
+            "text": "Luna realized that night wasn't just dark; it was full of gentle light and soft sounds. The stars twinkled like secrets, and the moon hummed a silent lullaby. It was the world's way of saying, 'Time to slow down and rest your busy mind.'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "night",
+            "icon": "sparkle",
+            "speaker_notes": "Luna's realization about the peaceful purpose of night."
+        },
+        {
+            "page": 6,
+            "title": "Sweet Dreams, Luna",
+            "text": "Feeling peaceful and sleepy herself, Luna snuggled into a fluffy cloud. The stars shimmered, and the moon glowed softly. She closed her gentle eyes, ready for her own sweet dreams. Now it’s your turn, little one, to drift off to sleep, just like Luna.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "dreams",
+            "icon": "Zzz",
+            "speaker_notes": "A calming conclusion encouraging the child listener to go to sleep."
+        }
+    ],
+    "instagram": {
+        "caption": "✨ Drift off to dreamland with Luna, the fluffiest cloud creature! 🌙 Join her gentle journey as she discovers the peaceful wonders of the night sky and learns why bedtime is so special. A soothing story perfect for little ones aged 3-6. Sweet dreams guaranteed!",
+        "hashtags": [
+            "#LunasLullabySky",
+            "#BedtimeStory",
+            "#KidsStories",
+            "#ChildrensBooks",
+            "#PictureBook",
+            "#SweetDreams",
+            "#NightSky",
+            "#ReadAloud",
+            "#GentleStory",
+            "#Preschool"
+        ]
+    },
+    "email": {
+        "subject": "✨ Sweet Dreams Await with \"Luna's Lullaby Sky\"! 🌙",
+        "preview": "Discover a calming bedtime story perfect for peaceful nights and sweet dreams for your little one!"
+    },
+    "youtube": {
+        "title": "Luna's Lullaby Sky | A Gentle Bedtime Story for Kids 🌙✨",
+        "description": "Join Luna, the softest cloud creature, on a magical journey through the night sky. This calming bedtime story is perfect for children aged 3-6, teaching them about the moon, stars, and the beauty of peaceful sleep. Snuggle up and get ready for sweet dreams!",
+        "keywords": [
+            "bedtime story",
+            "kids story",
+            "read aloud",
+            "childrens books",
+            "lullaby",
+            "night sky story",
+            "sleep story for kids",
+            "preschool story",
+            "gentle story",
+            "moon and stars story",
+            "sweet dreams"
+        ]
+    }
+}

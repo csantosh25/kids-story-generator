@@ -1,0 +1,114 @@
+{
+    "story_info": {
+        "title": "Barnaby's Sleepy Sky",
+        "subtitle": "A Cozy Bedtime Adventure Under the Stars",
+        "theme": "Nighttime comfort and wonder",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "The night sky is a gentle, comforting blanket that watches over everyone as they sleep."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby",
+            "species": "Bear Cub",
+            "appearance": "Barnaby is a small, round bear cub with fluffy, soft brown fur, big curious chocolate-brown eyes, and a tiny, knitted sky-blue scarf around his neck.",
+            "personality": "Gentle, curious, a little bit sleepy, and always looking for comfort and understanding."
+        }
+    },
+    "cover": {
+        "prompt": "A warm, inviting children's book cover featuring Barnaby, a small, round bear cub with fluffy, soft brown fur, big curious chocolate-brown eyes, and a tiny, knitted sky-blue scarf around his neck. Barnaby is peeking out of a cozy bedroom window, looking up at a soft, pastel full moon and a few twinkling stars in a dark blue, gradient sky. The scene is calm and comforting. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Barnaby's Bedtime Yawns",
+            "text": "Barnaby the bear cub felt a big yawn stretch through him. It was bedtime! He snuggled into his favorite pajamas, feeling cozy and warm. \"Time to say goodnight to the day,\" he mumbled softly, padding towards his window, ready for his usual sleepy peek outside.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "bedroom",
+            "icon": "lamp",
+            "speaker_notes": "Introduce Barnaby and the calming bedtime routine. Emphasize warmth and coziness."
+        },
+        {
+            "page": 2,
+            "title": "Hello, Moon!",
+            "text": "Through his window, Barnaby saw the big, friendly moon shining brightly. It hung like a soft, glowing ball in the dark blue sky. \"Hello, Moon!\" he whispered. \"Are you getting ready for bed too?\" The moon seemed to wink back with its gentle light.",
+            "background_color": "#D1E2F5",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Focus on the moon as a friendly, comforting presence. Keep the tone gentle and curious."
+        },
+        {
+            "page": 3,
+            "title": "The Moon's Soft Glow",
+            "text": "Mama Bear once told Barnaby that the moon is like a giant nightlight for the whole world. It helps little creatures find their way and keeps watch over everyone. Its soft glow makes shadows dance gently on the bedroom wall, never scary, just playful.",
+            "background_color": "#C3DFF3",
+            "visual_theme": "moon",
+            "icon": "star",
+            "speaker_notes": "Reinforce the moon's role as a comforting guardian. Connect it to parental reassurance."
+        },
+        {
+            "page": 4,
+            "title": "Twinkling Star Friends",
+            "text": "Then, Barnaby saw tiny sparkling dots all around the moon. \"Those are the stars!\" he remembered. They looked like sleepy eyes twinkling hello from far, far away. Each star was a little friend, ready to shine brightly as Barnaby drifted off to dreamland.",
+            "background_color": "#B5D9F1",
+            "visual_theme": "stars",
+            "icon": "twinkle",
+            "speaker_notes": "Introduce stars as friendly, sleepy entities. Promote a feeling of universal connection."
+        },
+        {
+            "page": 5,
+            "title": "Sleeping Under One Sky",
+            "text": "He imagined all his forest friends – the little bunnies, the sleepy owls, and the quiet deer – were also tucked into their beds, watching the same moon and stars. Everyone was safe and cozy under the big, gentle blanket of the night sky, drifting off to sleep.",
+            "background_color": "#A7D3EF",
+            "visual_theme": "forest",
+            "icon": "owl",
+            "speaker_notes": "Broaden the comfort to include other creatures. Emphasize shared experience and safety."
+        },
+        {
+            "page": 6,
+            "title": "Sweet Dreams, Barnaby!",
+            "text": "Barnaby climbed into his own soft bed, pulling his blanket up high. The moon and stars twinkled a final goodnight. He closed his eyes, feeling calm and loved, knowing the sleepy sky would watch over his dreams until the morning sun peeked through. Sweet dreams, Barnaby!",
+            "background_color": "#9AD0ED",
+            "visual_theme": "bed",
+            "icon": "cloud",
+            "speaker_notes": "Bring the story to a comforting close, encouraging sleep and peaceful dreams. Reiterate safety and love."
+        }
+    ],
+    "instagram": {
+        "caption": "🌙✨ Snuggle up with Barnaby the bear cub as he discovers the gentle wonders of the night sky in 'Barnaby's Sleepy Sky'! Perfect for little ones aged 3-6, this sweet story will wrap your child in a warm blanket of calm before bedtime. Let the moon and stars lull them into a peaceful sleep. Available now!",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#ChildrensBooks",
+            "#PictureBook",
+            "#SleepyTime",
+            "#GoodnightStory",
+            "#BearCubAdventures",
+            "#KidsLit",
+            "#Parenting"
+        ]
+    },
+    "email": {
+        "subject": "🌙 New Bedtime Story Alert: Join Barnaby Under the Sleepy Sky!",
+        "preview": "Discover 'Barnaby's Sleepy Sky' – a new calming tale perfect for your little one's bedtime routine. Read on for sweet dreams!"
+    },
+    "youtube": {
+        "title": "Barnaby's Sleepy Sky | A Gentle Bedtime Story for Kids (Ages 3-6)",
+        "description": "Join Barnaby, the curious bear cub, on a serene journey as he learns about the comforting moon and twinkling stars before drifting off to sleep. This beautifully illustrated, gentle bedtime story is perfect for children aged 3-6, designed to create a calm atmosphere and encourage peaceful dreams. Read along and make 'Barnaby's Sleepy Sky' part of your nightly routine!",
+        "keywords": [
+            "bedtime story",
+            "childrens story",
+            "sleep story",
+            "kids bedtime",
+            "preschool story",
+            "bear story",
+            "moon and stars",
+            "calm story",
+            "goodnight story",
+            "toddler story"
+        ]
+    }
+}

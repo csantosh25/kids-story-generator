@@ -1,0 +1,114 @@
+{
+    "story_info": {
+        "title": "Barnaby's Gentle Night",
+        "subtitle": "A Cozy Trip to Dreamland",
+        "theme": "Peaceful journey to sleep through nature's quiet beauty",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "The world is full of peaceful wonders that help us sleep soundly."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby",
+            "species": "Bear Cub",
+            "appearance": "A small, fluffy bear cub with soft brown fur, big curious eyes, a tiny black nose, and rounded ears. He wears a striped nightcap.",
+            "personality": "Gentle, curious, calm, and sweet-natured, with a love for the quiet wonders of the night."
+        }
+    },
+    "cover": {
+        "prompt": "Barnaby the bear cub, a small, fluffy bear cub with soft brown fur, big curious eyes, a tiny black nose, and rounded ears. He wears a striped nightcap. Barnaby is looking out a cozy bedroom window at a soft, glowing full moon and a few twinkling stars in a pastel blue night sky. The room is dimly lit, showing a comfy bed. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly. Reserve the lower third of the image for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Hello, Moon!",
+            "text": "Little Barnaby the bear cub snuggled into his bed, but his eyes were still wide. He peeked out his window, watching the big, round moon glow softly in the dark sky. It looked like a friendly night light just for him.",
+            "background_color": "#E0EFFF",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Barnaby yawns softly while looking at the moon."
+        },
+        {
+            "page": 2,
+            "title": "Forest Friends",
+            "text": "Barnaby imagined his friends in the quiet forest. He pictured the little squirrels tucked safely in their nests, and the wise old owl perched on a sturdy tree branch, gently hooting sleepy goodnights to everyone.",
+            "background_color": "#DFFFE0",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Barnaby smiles, thinking about his friends sleeping."
+        },
+        {
+            "page": 3,
+            "title": "Twinkling Wonders",
+            "text": "Then, Barnaby looked up at the sky again. He saw tiny, sparkling stars scattered like magical dust across the deep blue canvas. Each one seemed to twinkle just for him, whispering secrets of peaceful dreams.",
+            "background_color": "#EEECFF",
+            "visual_theme": "magic",
+            "icon": "sparkle",
+            "speaker_notes": "Barnaby's eyes widen slightly in wonder at the stars."
+        },
+        {
+            "page": 4,
+            "title": "Soft Raindrops",
+            "text": "He remembered a time when soft rain fell, tapping gently on his windowpane. The sound was so calming, like a lullaby for the earth. It made everything feel fresh and clean, perfect for peaceful sleep.",
+            "background_color": "#F0E0FF",
+            "visual_theme": "rain",
+            "icon": "umbrella",
+            "speaker_notes": "Barnaby closes his eyes briefly, remembering the rain."
+        },
+        {
+            "page": 5,
+            "title": "Dreamy Waters",
+            "text": "Barnaby thought of sleepy fish drifting gracefully in a calm, clear pond. They swam so slowly, gently gliding through the cool water. It made him feel as peaceful and relaxed as the little fish.",
+            "background_color": "#D9F4FF",
+            "visual_theme": "ocean",
+            "icon": "fish",
+            "speaker_notes": "Barnaby gives a small, sleepy sigh."
+        },
+        {
+            "page": 6,
+            "title": "Sweet Dreams, Barnaby",
+            "text": "Feeling warm and cozy under his soft blanket, Barnaby let out a gentle yawn. The moon still shone, the stars still twinkled, and the world was quiet. With a happy sigh, he closed his big, curious eyes, ready for sweet dreams.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Barnaby's eyes flutter and close, a peaceful expression on his face."
+        }
+    ],
+    "instagram": {
+        "caption": "🌙✨ Tuck your little ones into bed with 'Barnaby's Gentle Night'! Join Barnaby the bear cub on a calming journey through the moonlit sky, quiet forests, and shimmering stars. A perfect, gentle story to soothe busy minds and invite sweet dreams. Link in bio to read aloud tonight! #BarnabysGentleNight #BedtimeStoriesForKids #ChildrensBook #KidsStory #ReadAloud #SweetDreams #StoryTime #GoodnightMoon #ChildrensAuthor #AIContentCreator",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#ChildrensBook",
+            "#ReadAloud",
+            "#SweetDreams",
+            "#StoryTime",
+            "#GoodnightKids",
+            "#Parenting"
+        ]
+    },
+    "email": {
+        "subject": "🌙 A New Bedtime Favorite: 'Barnaby's Gentle Night' is Here!",
+        "preview": "Discover Barnaby the bear cub's peaceful journey to sleep. The perfect soothing story for your little one's bedtime."
+    },
+    "youtube": {
+        "title": "Barnaby's Gentle Night | A Calming Bedtime Story for Kids (3-6 Years Old)",
+        "description": "Join Barnaby the adorable bear cub on a tranquil adventure through the night, exploring the quiet beauty of the moon, stars, and sleeping forest. This gentle and engaging bedtime story is perfect for children aged 3-6, designed to relax and prepare them for a peaceful night's sleep. Read along and drift off to dreamland with Barnaby!",
+        "keywords": [
+            "bedtime story",
+            "childrens story",
+            "sleep story for kids",
+            "read aloud",
+            "kids books",
+            "preschool story",
+            "toddler bedtime",
+            "calming story",
+            "bear cub story",
+            "goodnight story",
+            "night time routine"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "background": "#EAF4FF",
+  "primary": "#3F51B5",
+  "secondary": "#7986CB",
+  "accent": "#FFD54F",
+  "icon": "🌙",
+  "decorations": [
+    "⭐",
+    "☁️"
+  ]
+}

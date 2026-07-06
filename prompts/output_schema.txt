@@ -1,0 +1,87 @@
+Return ONLY valid JSON.
+
+Do not include markdown.
+
+Do not include explanations.
+
+The JSON must exactly follow this structure:
+
+{
+  
+  "story_info": {
+    "title": "Story Title",
+    "subtitle": "Short Subtitle",
+    "theme": "Theme",
+    "target_age": "3-6",
+    "reading_time": "2 minutes",
+    "moral": "Story Moral"
+  },
+
+  "character_sheet": {
+    "main_character": {
+      "name": "",
+      "species": "",
+      "appearance": "",
+      "personality": ""
+    }
+  },
+
+  "cover": {
+    "prompt": "",
+    "negative_prompt": "text, watermark, blurry, logo",
+    "style": "Pixar 3D",
+    "title_position": "bottom"
+  },
+
+  "slides": [
+  {
+    "page": 1,
+    "title": "",
+    "text": "",
+    "background_color": "#FDE9D9",
+    "visual_theme": "night",
+    "icon": "moon",
+    "speaker_notes": ""
+  }
+  ],
+
+  "instagram": {
+    "caption": "",
+    "hashtags": [
+      "#KidsStories",
+      "#BedtimeStory"
+    ]
+  },
+
+  "email": {
+    "subject": "",
+    "preview": ""
+  },
+
+  "youtube": {
+    "title": "",
+    "description": "",
+    "keywords": [
+      "bedtime story"
+    ]
+  }
+
+  "publishing": {
+  "instagram_caption_short": "",
+  "instagram_caption_long": "",
+  "hashtags": [],
+  "first_comment": "",
+  "alt_text": "",
+  "call_to_action": "",
+  "best_posting_time": "",
+  "parent_question": ""
+  } 
+}
+
+Important Rules
+
+- Generate exactly 6 slides.
+- Slide numbers must be 1 to 6.
+- Every slide must include all fields.
+- Return only JSON.
+- Do not omit any field.

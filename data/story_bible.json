@@ -1,0 +1,25 @@
+{
+  "world": {
+    "name": "Dream Forest",
+    "description": "A peaceful forest where every animal learns an important life lesson."
+  },
+
+  "characters": [
+    {
+      "name": "Barnaby",
+      "animal": "Bunny",
+      "personality": "Curious and kind"
+    },
+    {
+      "name": "Luna",
+      "animal": "Owl",
+      "personality": "Wise and calm"
+    }
+  ],
+
+  "locations": [
+    "Moonlit Meadow",
+    "Whispering Woods",
+    "Rainbow Creek"
+  ]
+}

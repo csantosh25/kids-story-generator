@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Barnaby",
+    "animal": "Bunny",
+    "age": "5",
+    "personality": "Curious, kind, gentle",
+    "appearance": "Fluffy white bunny with blue pajamas",
+    "favorite_place": "Cozy burrow",
+    "catchphrase": "Let's hop together!"
+  },
+  {
+    "name": "Luna",
+    "animal": "Owl",
+    "age": "7",
+    "personality": "Wise and calm",
+    "appearance": "Small lavender owl",
+    "favorite_place": "Old oak tree",
+    "catchphrase": "Every star tells a story."
+  },
+  {
+    "name": "Oliver",
+    "animal": "Fox",
+    "age": "6",
+    "personality": "Funny and adventurous",
+    "appearance": "Orange fox with green scarf",
+    "favorite_place": "Forest path",
+    "catchphrase": "Adventure is waiting!"
+  }
+]

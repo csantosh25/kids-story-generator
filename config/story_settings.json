@@ -1,0 +1,19 @@
+{
+  "target_age": "4-8",
+
+  "pages": 6,
+
+  "words_per_page": 45,
+
+  "reading_level": "Kindergarten",
+
+  "tone": "Warm, magical and calming",
+
+  "ending_style": "Happy",
+
+  "moral_required": true,
+
+  "include_dialogue": true,
+
+  "max_characters": 3
+}
