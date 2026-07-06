@@ -6,7 +6,7 @@ class PDFService:
 
     def generate(self, story, assets):
 
-        output_file = assets.get_output_folder() / "story_book.pdf"
+        output_file = assets.output_folder / "story_book.pdf"
 
         pdf = canvas.Canvas(str(output_file))
 
