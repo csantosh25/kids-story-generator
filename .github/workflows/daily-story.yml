@@ -3,16 +3,15 @@ name: Daily Story Generator
 on:
   workflow_dispatch:
 
-schedule:
-  - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   generate-story:
-
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
