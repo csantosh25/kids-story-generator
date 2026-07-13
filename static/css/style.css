@@ -1,0 +1,25 @@
+body{
+
+    background:#f3f5f8;
+
+}
+
+.card{
+
+    border:none;
+    border-radius:18px;
+
+}
+
+.card-header{
+
+    font-weight:bold;
+
+}
+
+.btn-success{
+
+    padding:12px 30px;
+    font-size:18px;
+
+}

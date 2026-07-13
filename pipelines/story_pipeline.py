@@ -1,3 +1,4 @@
+from services.theme_service import ThemeService
 from agents.story_agent import StoryAgent
 from agents.image_agent import ImageAgent
 
@@ -16,7 +17,9 @@ from utils.logger import log
 
 class StoryPipeline:
 
-    def __init__(self):
+    def __init__(self, progress_callback=None):
+
+        self.progress_callback = progress_callback
 
         self.story_agent = StoryAgent()
         self.image_agent = ImageAgent()
@@ -27,13 +30,39 @@ class StoryPipeline:
         self.report_service = ReportService()
         self.pdf_service = PDFService()
 
-    def run(self, topic):
+    def update_progress(self, progress, step):
 
-        log("Generating story...")
+        if self.progress_callback:
+            self.progress_callback(progress, step)
+
+    def run(self, topic=None):
 
         from utils.text_utils import slugify
 
-        story = self.story_agent.generate_story(topic)
+        # --------------------------------------------------
+        # Generate Story
+        # --------------------------------------------------
+
+        self.update_progress(10, "📖 Preparing Story Context...")
+
+        log("Loading story context...")
+
+        theme_service = ThemeService()
+
+        story_context = theme_service.get_story_context()
+
+        # If a manual topic was selected from the UI,
+        # override today's random topic.
+        if topic:
+            story_context["topic"] = topic
+
+        self.update_progress(15, "✍️ Generating Story...")
+
+        log("Generating story...")
+
+        story = self.story_agent.generate_story(
+            story_context
+        )
 
         assets = AssetManager(
             slugify(story.story_info.title)
@@ -42,6 +71,12 @@ class StoryPipeline:
         assets.save_story_json(story)
 
         log("Story generated.")
+
+        # --------------------------------------------------
+        # Generate Cover Image
+        # --------------------------------------------------
+
+        self.update_progress(30, "🎨 Generating Cover Image...")
 
         log("Generating cover image with OpenAI...")
 
@@ -52,6 +87,12 @@ class StoryPipeline:
 
         log("Cover image generated.")
 
+        # --------------------------------------------------
+        # Design Instagram Cover
+        # --------------------------------------------------
+
+        self.update_progress(45, "🖼️ Designing Cover...")
+
         log("Designing Instagram cover...")
 
         self.cover_designer.render(
@@ -60,6 +101,12 @@ class StoryPipeline:
         )
 
         log("Cover designed.")
+
+        # --------------------------------------------------
+        # Render Carousel
+        # --------------------------------------------------
+
+        self.update_progress(60, "📱 Rendering Carousel...")
 
         log("Rendering carousel slides...")
 
@@ -70,6 +117,12 @@ class StoryPipeline:
 
         log("Carousel rendering completed.")
 
+        # --------------------------------------------------
+        # Publishing Guide
+        # --------------------------------------------------
+
+        self.update_progress(70, "📝 Creating Publishing Guide...")
+
         log("Generating publishing guide...")
 
         self.publishing_service.generate(
@@ -78,6 +131,12 @@ class StoryPipeline:
         )
 
         log("Publishing guide generated.")
+
+        # --------------------------------------------------
+        # Report
+        # --------------------------------------------------
+
+        self.update_progress(80, "📊 Generating Report...")
 
         log("Generating report...")
 
@@ -88,6 +147,12 @@ class StoryPipeline:
 
         log("Report generated.")
 
+        # --------------------------------------------------
+        # PDF
+        # --------------------------------------------------
+
+        self.update_progress(90, "📚 Creating Story Book PDF...")
+
         log("Generating Story Book PDF...")
 
         self.pdf_service.generate(
@@ -96,6 +161,12 @@ class StoryPipeline:
         )
 
         log("Story Book PDF generated.")
+
+        # --------------------------------------------------
+        # Email
+        # --------------------------------------------------
+
+        self.update_progress(95, "📧 Sending Email...")
 
         log("Sending email...")
 
@@ -106,7 +177,14 @@ class StoryPipeline:
 
         log("Email sent.")
 
+        # --------------------------------------------------
+        # Complete
+        # --------------------------------------------------
+
+        self.update_progress(100, "✅ Completed!")
+
         log("Pipeline completed successfully.")
+
         return PipelineResult(
             story=story,
             output_folder=assets.output_folder,

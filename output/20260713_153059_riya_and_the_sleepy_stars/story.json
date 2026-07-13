@@ -1,0 +1,136 @@
+{
+    "story_info": {
+        "title": "Riya and the Sleepy Stars",
+        "subtitle": "A gentle night-time adventure",
+        "theme": "Nature, Night, Sleep",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Everything needs rest, and bedtime is for sleep."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Riya",
+            "species": "Little girl",
+            "appearance": "Riya is a sweet little Indian girl with two braided pigtails tied with yellow ribbons. She has big, curious brown eyes and a friendly smile. She wears a comfortable blue nightdress with small white stars.",
+            "personality": "Curious, kind, loves nature, eager to learn, gentle."
+        }
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Riya, a sweet little Indian girl with two braided pigtails tied with yellow ribbons, big, curious brown eyes, and a friendly smile, wearing a comfortable blue nightdress with small white stars, looking up at a soft, glowing full moon and twinkling stars in a pastel blue night sky. She is sitting near a window with a cozy blanket. Soft lighting, children's book illustration, vertical composition, Instagram friendly. Reserve the lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Calm Night",
+            "text": "Riya was in her soft bed. 'Good night, Amma,' she said. She looked out her window. The big moon was smiling down. Many little stars twinkled, twinkle, twinkle. It was a calm, dark night.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Introduce Riya and the night sky."
+        },
+        {
+            "page": 2,
+            "title": "The Watchful Moon",
+            "text": "Riya thought, 'Does the moon sleep too?' Amma came to give a goodnight hug. 'No, dear Riya,' Amma said softly. 'The moon stays awake. It watches over us while we sleep. It helps light up the dark night.'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "bedroom",
+            "icon": "bed",
+            "speaker_notes": "Amma explains about the moon."
+        },
+        {
+            "page": 3,
+            "title": "Sleepy Friends",
+            "text": "Amma pointed outside. 'See the little birds in the tree? They are sleeping now. Their wings are resting. The colourful flowers in our garden are also sleeping. They close their petals tight until morning light.'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "garden",
+            "icon": "flower",
+            "speaker_notes": "Show things that sleep at night."
+        },
+        {
+            "page": 4,
+            "title": "Night-Time Helpers",
+            "text": "'But some friends wake up at night,' Amma whispered. 'Like the little owl who says 'Hoo hoo!' And the stars, they shine so bright. They sparkle and dance for us. They are night-time helpers.'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest_night",
+            "icon": "owl",
+            "speaker_notes": "Introduce nocturnal creatures and shining stars."
+        },
+        {
+            "page": 5,
+            "title": "Time to Rest",
+            "text": "Riya gave a big yawn. 'I need to sleep like the birds and flowers,' she said. 'Yes, sweet Riya,' Amma smiled. 'Your body needs rest. Your mind needs rest. Sleep helps you grow big and strong and happy.'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "bedtime",
+            "icon": "child_sleeping",
+            "speaker_notes": "Riya connects with the idea of sleeping."
+        },
+        {
+            "page": 6,
+            "title": "Sweet Dreams",
+            "text": "Riya closed her eyes. She thought of the sleepy birds and the bright moon. The stars kept twinkling, watching over her. 'Good night, Riya,' Amma said. Riya drifted off to dreamland, safe and sound. Sweet dreams, little one.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "dreamland",
+            "icon": "star",
+            "speaker_notes": "Gentle conclusion, encouraging sleep."
+        }
+    ],
+    "instagram": {
+        "caption": "🌙✨ Join little Riya on a gentle night-time journey as she learns about the sleepy world and the watchful moon! Perfect for calming bedtime stories. Sweet dreams, tiny tots! #RiyaAndTheSleepyStars",
+        "hashtags": [
+            "#BedtimeStoriesForKids",
+            "#IndianKidsBooks",
+            "#ChildrensStories",
+            "#GoodNightStory",
+            "#KidsLearning",
+            "#SweetDreams",
+            "#StoryTime",
+            "#ParentingIndia",
+            "#ReadAloud",
+            "#MoonAndStars"
+        ]
+    },
+    "email": {
+        "subject": "New Bedtime Story! ✨ Riya and the Sleepy Stars",
+        "preview": "Help your child drift to sleep with Riya's gentle night-time adventure."
+    },
+    "youtube": {
+        "title": "Bedtime Story for Kids: Riya and the Sleepy Stars | Gentle Sleep Story | Read Aloud",
+        "description": "Join Riya on a calming adventure as she learns about the moon, stars, and why we all need sleep. This gentle bedtime story is perfect for children aged 3-6 to help them relax and drift off to sweet dreams. Narrated by a warm primary school teacher. Sweet dreams, little ones!",
+        "keywords": [
+            "bedtime story",
+            "kids story",
+            "sleep story",
+            "read aloud",
+            "children's book",
+            "indian stories for kids",
+            "moon and stars story",
+            "preschool story",
+            "good night story",
+            "riya story"
+        ]
+    },
+    "publishing": {
+        "instagram_caption_short": "Riya learns about sleepy things and the moon! 🌙✨ Perfect for bedtime.",
+        "instagram_caption_long": "Cuddle up with your little one for a magical bedtime adventure! ✨🌙 'Riya and the Sleepy Stars' takes children on a gentle journey with Riya as she discovers who sleeps and who wakes at night. It's a sweet, calming tale designed to help ease children into a peaceful slumber. With beautiful illustrations and a warm message about the importance of rest, this story is a perfect addition to your night-time routine. Read aloud tonight and enjoy sweet dreams! #RiyaAndTheSleepyStars",
+        "hashtags": [
+            "#BedtimeStoriesForKids",
+            "#IndianKidsBooks",
+            "#ChildrensStories",
+            "#GoodNightStory",
+            "#KidsLearning",
+            "#SweetDreams",
+            "#StoryTime",
+            "#ParentingIndia",
+            "#ReadAloud",
+            "#MoonAndStars"
+        ],
+        "first_comment": "What helps your little one feel sleepy at night? Share your bedtime tips below! 👇",
+        "alt_text": "A Pixar 3D illustration of a little Indian girl in pajamas looking at the moon and stars from her window, with soft lighting and pastel colors. The title 'Riya and the Sleepy Stars' is at the bottom.",
+        "call_to_action": "Tag a parent who needs a new bedtime story!",
+        "best_posting_time": "9 PM IST",
+        "parent_question": "What is your child's favorite thing to see in the night sky?"
+    }
+}

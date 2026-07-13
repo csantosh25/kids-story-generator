@@ -5,13 +5,22 @@ print("=" * 70)
 print("📚 Kids Story Generator")
 print("=" * 70)
 
-theme = ThemeService().get_theme()
+# Get today's scheduled story context
+theme_service = ThemeService()
+story_context = theme_service.get_story_context()
 
-print(f"\nToday's Theme: {theme}\n")
+print(f"\n📅 Day           : {story_context['day']}")
+print(f"🎯 Category      : {story_context['category']}")
+print(f"📖 Theme         : {story_context['topic']}")
+print(f"🧠 Learning Goal : {story_context['learning_goal']}")
+print(f"🎨 Story Style   : {story_context['story_style']}")
+print(f"🐻 Character     : {story_context['character']['name']}")
+print()
 
 pipeline = StoryPipeline()
 
-result = pipeline.run(theme)
+# The pipeline now uses the story context internally
+result = pipeline.run()
 
 print("\n")
 print("=" * 70)

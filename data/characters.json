@@ -1,29 +1,141 @@
-[
-  {
-    "name": "Barnaby",
-    "animal": "Bunny",
-    "age": "5",
-    "personality": "Curious, kind, gentle",
-    "appearance": "Fluffy white bunny with blue pajamas",
-    "favorite_place": "Cozy burrow",
-    "catchphrase": "Let's hop together!"
+{
+  "Monday": {
+    "character": {
+      "name": "Bella Bear",
+      "species": "Bear",
+      "age": 5,
+      "gender": "Female",
+      "personality": [
+        "Kind",
+        "Helpful",
+        "Gentle",
+        "Patient"
+      ],
+      "favorite_food": "Honey Pancakes",
+      "favorite_activity": "Helping friends",
+      "home": "Sunny Forest",
+      "best_friend": "Oliver Fox",
+      "catchphrase": "Kind hearts make happy days!"
+    }
   },
-  {
-    "name": "Luna",
-    "animal": "Owl",
-    "age": "7",
-    "personality": "Wise and calm",
-    "appearance": "Small lavender owl",
-    "favorite_place": "Old oak tree",
-    "catchphrase": "Every star tells a story."
+
+  "Tuesday": {
+    "character": {
+      "name": "Oliver Fox",
+      "species": "Fox",
+      "age": 6,
+      "gender": "Male",
+      "personality": [
+        "Funny",
+        "Creative",
+        "Friendly",
+        "Brave"
+      ],
+      "favorite_food": "Berry Pie",
+      "favorite_activity": "Building tree forts",
+      "home": "Maple Woods",
+      "best_friend": "Bella Bear",
+      "catchphrase": "Let's solve it together!"
+    }
   },
-  {
-    "name": "Oliver",
-    "animal": "Fox",
-    "age": "6",
-    "personality": "Funny and adventurous",
-    "appearance": "Orange fox with green scarf",
-    "favorite_place": "Forest path",
-    "catchphrase": "Adventure is waiting!"
+
+  "Wednesday": {
+    "character": {
+      "name": "Luna Owl",
+      "species": "Owl",
+      "age": 7,
+      "gender": "Female",
+      "personality": [
+        "Wise",
+        "Curious",
+        "Calm",
+        "Encouraging"
+      ],
+      "favorite_food": "Blueberries",
+      "favorite_activity": "Reading books",
+      "home": "Old Oak Library",
+      "best_friend": "Barnaby Bunny",
+      "catchphrase": "Every question opens a new adventure!"
+    }
+  },
+
+  "Thursday": {
+    "character": {
+      "name": "Toby Turtle",
+      "species": "Sea Turtle",
+      "age": 6,
+      "gender": "Male",
+      "personality": [
+        "Patient",
+        "Thoughtful",
+        "Nature Lover",
+        "Calm"
+      ],
+      "favorite_food": "Sea Lettuce",
+      "favorite_activity": "Exploring rivers",
+      "home": "Crystal Lake",
+      "best_friend": "Penny Penguin",
+      "catchphrase": "Slow and steady discovers wonders!"
+    }
+  },
+
+  "Friday": {
+    "character": {
+      "name": "Max Monkey",
+      "species": "Monkey",
+      "age": 5,
+      "gender": "Male",
+      "personality": [
+        "Adventurous",
+        "Playful",
+        "Energetic",
+        "Curious"
+      ],
+      "favorite_food": "Bananas",
+      "favorite_activity": "Treasure hunts",
+      "home": "Adventure Jungle",
+      "best_friend": "Oliver Fox",
+      "catchphrase": "Adventure is waiting!"
+    }
+  },
+
+  "Saturday": {
+    "character": {
+      "name": "Penny Penguin",
+      "species": "Penguin",
+      "age": 5,
+      "gender": "Female",
+      "personality": [
+        "Healthy",
+        "Sporty",
+        "Cheerful",
+        "Helpful"
+      ],
+      "favorite_food": "Fresh Fish",
+      "favorite_activity": "Ice skating",
+      "home": "Snowy Shores",
+      "best_friend": "Toby Turtle",
+      "catchphrase": "Healthy habits make every day fun!"
+    }
+  },
+
+  "Sunday": {
+    "character": {
+      "name": "Barnaby Bunny",
+      "species": "Rabbit",
+      "age": 4,
+      "gender": "Male",
+      "personality": [
+        "Gentle",
+        "Sleepy",
+        "Kind",
+        "Imaginative"
+      ],
+      "favorite_food": "Carrots",
+      "favorite_activity": "Listening to bedtime stories",
+      "home": "Moonlight Meadow",
+      "best_friend": "Luna Owl",
+      "catchphrase": "Sweet dreams begin with a smile!"
+    }
   }
-]
+}

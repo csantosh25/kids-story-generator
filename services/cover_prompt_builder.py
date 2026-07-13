@@ -7,20 +7,40 @@ class CoverPromptBuilder:
         first_slide = story.slides[0]
 
         prompt = f"""
-Create a premium children's bedtime storybook cover.
+Create a premium children's storybook cover for the Wonderwood Valley universe.
 
+--------------------------------------------------
 STYLE
+--------------------------------------------------
+
 Pixar-quality 3D illustration.
 
-COMPOSITION
-Vertical portrait (4:5).
+Disney-quality cinematic lighting.
 
-CHARACTER
+Highly detailed.
+
+Professional children's book illustration.
+
+Warm, colourful, magical and family-friendly.
+
+--------------------------------------------------
+BOOK
+--------------------------------------------------
+
+Title:
+{story.story_info.title}
+
+Subtitle:
+{story.story_info.subtitle}
+
+--------------------------------------------------
+MAIN CHARACTER
+--------------------------------------------------
 
 Name:
 {character.name}
 
-Animal:
+Species:
 {character.species}
 
 Appearance:
@@ -29,42 +49,115 @@ Appearance:
 Personality:
 {character.personality}
 
-BOOK TITLE
+This character is a recurring character in the Wonderwood Valley story universe.
 
-{story.story_info.title}
+The appearance must remain consistent with previous illustrations.
 
-SUBTITLE
+Do not redesign the character.
 
-{story.story_info.subtitle}
-
+--------------------------------------------------
 SCENE
+--------------------------------------------------
+
+Illustrate this moment:
 
 {first_slide.text}
 
+Show only ONE clear scene.
+
+Avoid multiple actions.
+
+--------------------------------------------------
+BACKGROUND
+--------------------------------------------------
+
+Rich colourful environment.
+
+Depth.
+
+Flowers.
+
+Trees.
+
+Soft clouds.
+
+Storybook atmosphere.
+
+--------------------------------------------------
 MOOD
+--------------------------------------------------
 
 Warm
-Magical
+
+Happy
+
 Comforting
-Bedtime
 
+Magical
+
+Hopeful
+
+--------------------------------------------------
 LIGHTING
+--------------------------------------------------
 
-Soft golden evening light.
+Golden Hour.
 
-REQUIREMENTS
+Soft cinematic lighting.
 
-• Character centered
-• Large expressive eyes
-• Cute proportions
-• Rich colorful environment
-• Vibrant colors
-• High detail
-• Storybook illustration
-• Leave empty space at the top for title overlay
-• No text
-• No watermark
-• No logo
+Volumetric light rays.
+
+Gentle shadows.
+
+--------------------------------------------------
+COMPOSITION
+--------------------------------------------------
+
+Vertical portrait.
+
+4:5 aspect ratio.
+
+Character centred.
+
+Eye contact with viewer.
+
+Large expressive eyes.
+
+Cute proportions.
+
+Leave generous empty space at the top for title overlay.
+
+--------------------------------------------------
+QUALITY
+--------------------------------------------------
+
+Ultra detailed.
+
+Professional illustration.
+
+High colour harmony.
+
+Pixar-quality rendering.
+
+No text.
+
+No watermark.
+
+No logo.
+
+No border.
+
+No collage.
+
+No extra characters unless described in the story.
+
+No scary expressions.
+
+No horror.
+
+No violence.
+
+Suitable for ages 3-8.
 """
 
         return prompt.strip()

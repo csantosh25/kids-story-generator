@@ -3,7 +3,6 @@ Story Requirements
 - Target age: 3–6 years
 - Reading time: approximately 2 minutes
 - Exactly 6 story slides
-- Calm bedtime atmosphere
 - Gentle pacing
 - Positive ending
 - Educational but entertaining
@@ -12,7 +11,9 @@ Story Requirements
 - No inappropriate content
 - Each slide should contain 35–50 words
 - Every slide should naturally continue from the previous one
-- The ending should encourage sleep
+- Stories may take place during any time of day.
+- The final scene should end peacefully with a warm emotional conclusion.
+- The ending should help children feel safe, happy and calm before bedtime if parents choose to read it then.
 
 ## Language Rules
 - Use very simple English suitable for children aged 4–7.

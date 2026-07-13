@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="card shadow">
+
+            <div class="card-header bg-primary text-white">
+
+                <h3>
+                    🚀 Generating Your Story
+                </h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <h5 id="step">
+
+                    Starting...
+
+                </h5>
+
+                <div class="progress mt-4" style="height:30px;">
+
+                    <div
+                        id="progressBar"
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        style="width:0%;">
+
+                        0%
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <div id="statusText">
+
+                        Please wait while AI creates your story...
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const jobId = "{{ job_id }}";
+
+async function updateProgress(){
+
+    const response = await fetch(`/status/${jobId}`);
+
+    const data = await response.json();
+
+    if(data.status==="completed"){
+
+        window.location.href=`/result/${jobId}`;
+
+        return;
+
+    }
+
+    if(data.status==="failed"){
+
+        document.getElementById("statusText").innerHTML=
+            "❌ "+data.error;
+
+        return;
+
+    }
+
+    document.getElementById("step").innerHTML=data.step;
+
+    document.getElementById("progressBar").style.width=
+        data.progress+"%";
+
+    document.getElementById("progressBar").innerHTML=
+        data.progress+"%";
+
+}
+
+setInterval(updateProgress,1000);
+
+</script>
+
+{% endblock %}

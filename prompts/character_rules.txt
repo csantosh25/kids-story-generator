@@ -1,14 +1,21 @@
 Character Rules
 
-Create one memorable main character.
+The main character is provided by the system.
 
-The character must remain visually consistent throughout the story.
+Do NOT create a new main character.
 
-Provide:
+Do NOT change the character's name.
 
-- Name
-- Species
-- Appearance
-- Personality
+Do NOT change the character's species.
 
-Every image prompt must use exactly the same appearance description.
+Do NOT change the appearance.
+
+Do NOT change the personality.
+
+The supplied character MUST remain the protagonist throughout the entire story.
+
+Supporting characters may be introduced only if they help the story.
+
+Every illustration prompt must use exactly the same appearance description.
+
+The reader should recognize the character across multiple stories as part of the Wonderwood Valley universe.

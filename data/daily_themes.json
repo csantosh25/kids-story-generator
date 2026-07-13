@@ -1,22 +1,127 @@
-[
-  "Learning to Share",
-  "Being Brave",
-  "Helping Others",
-  "Patience",
-  "Friendship",
-  "Honesty",
-  "Kindness",
-  "Curiosity",
-  "Gratitude",
-  "Teamwork",
-  "Creativity",
-  "Respect",
-  "Perseverance",
-  "Responsibility",
-  "Forgiveness",
-  "Confidence",
-  "Empathy",
-  "Healthy Habits",
-  "Listening",
-  "Problem Solving"
-]
+{
+  "Monday": {
+    "category": "Kindness",
+    "color": "#FFB74D",
+    "emoji": "❤️",
+    "story_style": "Heartwarming",
+    "learning_goal": "Teach empathy and kindness",
+    "topics": [
+      "Helping a Friend",
+      "Sharing Toys",
+      "Saying Thank You",
+      "Helping Grandma",
+      "Being Honest",
+      "Cleaning Together",
+      "Helping Animals",
+      "Welcoming Someone New"
+    ]
+  },
+
+  "Tuesday": {
+    "category": "Friendship",
+    "color": "#64B5F6",
+    "emoji": "🤝",
+    "story_style": "Fun Adventure",
+    "learning_goal": "Build strong friendships",
+    "topics": [
+      "Making Friends",
+      "Forgiveness",
+      "Listening",
+      "Trust",
+      "Teamwork",
+      "Playing Together",
+      "Including Everyone",
+      "Working Together"
+    ]
+  },
+
+  "Wednesday": {
+    "category": "Learning",
+    "color": "#9575CD",
+    "emoji": "📚",
+    "story_style": "Discovery",
+    "learning_goal": "Encourage curiosity",
+    "topics": [
+      "Numbers",
+      "Letters",
+      "Shapes",
+      "Colors",
+      "Space",
+      "Dinosaurs",
+      "Weather",
+      "Science Experiments"
+    ]
+  },
+
+  "Thursday": {
+    "category": "Nature",
+    "color": "#66BB6A",
+    "emoji": "🌳",
+    "story_style": "Outdoor Adventure",
+    "learning_goal": "Love and protect nature",
+    "topics": [
+      "Forest Animals",
+      "The Ocean",
+      "Rain",
+      "Trees",
+      "Flowers",
+      "Butterflies",
+      "Birds",
+      "Recycling"
+    ]
+  },
+
+  "Friday": {
+    "category": "Adventure",
+    "color": "#EF5350",
+    "emoji": "🚀",
+    "story_style": "Exciting Quest",
+    "learning_goal": "Encourage confidence",
+    "topics": [
+      "Treasure Hunt",
+      "Pirates",
+      "Space Adventure",
+      "Castle Mystery",
+      "Magic Forest",
+      "Camping",
+      "Mountain Adventure",
+      "Hidden Cave"
+    ]
+  },
+
+  "Saturday": {
+    "category": "Healthy Habits",
+    "color": "#26A69A",
+    "emoji": "🍎",
+    "story_style": "Daily Life",
+    "learning_goal": "Healthy body and mind",
+    "topics": [
+      "Brushing Teeth",
+      "Eating Vegetables",
+      "Exercise",
+      "Washing Hands",
+      "Drinking Water",
+      "Morning Routine",
+      "Good Manners",
+      "Helping at Home"
+    ]
+  },
+
+  "Sunday": {
+    "category": "Bedtime",
+    "color": "#5C6BC0",
+    "emoji": "🌙",
+    "story_style": "Calming",
+    "learning_goal": "Relax before sleep",
+    "topics": [
+      "Sweet Dreams",
+      "Stars",
+      "Moon",
+      "Good Night Friends",
+      "Dream Adventures",
+      "Night Forest",
+      "Gentle Wind",
+      "Counting Stars"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+    "story_info": {
+        "title": "Barnaby's Colourful Flowers",
+        "subtitle": "Helping a friend collect pretty blooms",
+        "theme": "Friendship and Colours",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "It's good to help friends and be kind."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby",
+            "species": "Bear cub",
+            "appearance": "A small, fluffy bear cub with soft brown fur, big curious eyes, a tiny button nose, and a sweet smile. He wears a little green leaf on his head like a hat.",
+            "personality": "Kind, curious, gentle, always eager to learn and help his friends."
+        }
+    },
+    "cover": {
+        "prompt": "A small, fluffy bear cub named Barnaby with soft brown fur, big curious eyes, a tiny button nose, and a sweet smile. He wears a little green leaf on his head like a hat. He is smiling and holding a small bunch of colourful flowers (red, yellow, blue). He is standing in a bright, friendly Wonderwood Valley forest with soft pastel colours. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo, scary, sad",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Morning",
+            "text": "Good morning! The sun shines bright in Wonderwood Valley. Barnaby the bear cub wakes up. He stretches his little paws and gives a big yawn. Today will be a happy day, he thinks.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "morning",
+            "icon": "sun",
+            "speaker_notes": "Introduce Barnaby, our friendly bear cub, and the lovely Wonderwood Valley."
+        },
+        {
+            "page": 2,
+            "title": "Squeaky Needs Help",
+            "text": "Barnaby goes outside. He sees his friend, Squeaky the squirrel. Squeaky looks a little sad. 'Hello, Squeaky,' says Barnaby. 'Why do you look sad?' Squeaky wants to paint beautiful pictures, but needs colourful flowers.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "squirrel",
+            "speaker_notes": "Introduce Squeaky the squirrel and explain why Squeaky is feeling sad."
+        },
+        {
+            "page": 3,
+            "title": "Finding Red Flowers",
+            "text": "'I need red flowers for my painting,' Squeaky explains. 'Will you help me find them, Barnaby?' Barnaby smiles. 'Of course, Squeaky! Let's find some bright red flowers.' They look near a big green bush.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "garden",
+            "icon": "flower",
+            "speaker_notes": "Barnaby agrees to help Squeaky, starting their search for red flowers."
+        },
+        {
+            "page": 4,
+            "title": "Next, Yellow Flowers",
+            "text": "'Look, Squeaky! Here are some red flowers,' Barnaby points with his paw. Squeaky claps his tiny paws. 'Thank you, Barnaby! Now, I need sunny yellow flowers too.' Barnaby nods. They look under a big tree.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "butterfly",
+            "speaker_notes": "They find the red flowers and move on to find yellow flowers together."
+        },
+        {
+            "page": 5,
+            "title": "And Blue Flowers Too!",
+            "text": "Soon, they find many yellow flowers. 'These are so pretty!' Squeaky says happily. 'And last, I need sky-blue flowers!' Barnaby giggles. 'Blue flowers, Squeaky? Let's search near the little pond!'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "pond",
+            "icon": "lilypad",
+            "speaker_notes": "They find the yellow flowers and now look for the final colour: blue."
+        },
+        {
+            "page": 6,
+            "title": "A Happy, Kind Day",
+            "text": "Near the pond, they find lovely blue flowers. 'Yay! We found them all!' Squeaky cheers. Barnaby feels happy to help his friend. They will make beautiful art together. Barnaby feels warm and sleepy. What a kind day!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sunset",
+            "icon": "moon",
+            "speaker_notes": "They find all the flowers. Barnaby feels happy and satisfied after helping his friend, ending the story peacefully."
+        }
+    ],
+    "instagram": {
+        "caption": "Barnaby the bear cub learns about helping friends and finding colours in Wonderwood Valley! Join him and Squeaky the squirrel on a sweet adventure. Perfect for little hearts. ❤️",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#WonderwoodValley",
+            "#BarnabyTheBear",
+            "#ChildrensBooks",
+            "#ColourfulAdventure",
+            "#FriendshipGoals",
+            "#LearnAndPlay",
+            "#PreschoolFun",
+            "#StoryTime"
+        ]
+    },
+    "email": {
+        "subject": "A Colourful Adventure with Barnaby! 🐻🎨",
+        "preview": "Join Barnaby the bear cub as he helps his friend Squeaky find beautiful flowers for a painting. A sweet story about friendship and colours!"
+    },
+    "youtube": {
+        "title": "Barnaby's Colourful Flowers - A Wonderwood Valley Story for Kids!",
+        "description": "Come along with Barnaby the bear cub and his friend Squeaky the squirrel in Wonderwood Valley! They go on a fun adventure to find red, yellow, and blue flowers. This gentle story teaches about helping friends and discovering colours. Perfect for a calm bedtime read!",
+        "keywords": [
+            "bedtime story",
+            "kids story",
+            "children's book",
+            "wonderwood valley",
+            "barnaby the bear",
+            "squirrel",
+            "colours",
+            "helping friends",
+            "preschool story",
+            "gentle story",
+            "calm story",
+            "india kids",
+            "english stories for kids"
+        ]
+    },
+    "publishing": {
+        "instagram_caption_short": "Barnaby helps Squeaky find colourful flowers in Wonderwood Valley! A sweet story about friendship. 🐻🎨",
+        "instagram_caption_long": "Join Barnaby the bear cub and his friend Squeaky the squirrel on a delightful adventure in Wonderwood Valley! Squeaky needs colourful flowers for a special painting, and kind Barnaby is there to help. Together, they search for bright red, sunny yellow, and sky-blue flowers, learning about colours and the joy of helping friends. This heartwarming tale is perfect for little ones aged 3-6, teaching kindness and teamwork with a gentle, positive ending. Read it tonight for a calm and happy bedtime! #KidsStories #BedtimeStory #WonderwoodValley #BarnabyTheBear #ChildrensBooks #ColourfulAdventure #FriendshipGoals #LearnAndPlay #PreschoolFun #StoryTime #KidsBookstagram #GentleStories #GoodNightKids #HappyReading",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#WonderwoodValley",
+            "#BarnabyTheBear",
+            "#ChildrensBooks",
+            "#ColourfulAdventure",
+            "#FriendshipGoals",
+            "#LearnAndPlay",
+            "#PreschoolFun",
+            "#StoryTime"
+        ],
+        "first_comment": "What's your favourite flower colour? Tell us in the comments! ⬇️",
+        "alt_text": "Illustration of Barnaby the bear cub holding a bunch of red, yellow, and blue flowers, smiling in a soft, pastel Wonderwood Valley forest.",
+        "call_to_action": "Read 'Barnaby's Colourful Flowers' tonight and discover the joy of helping friends!",
+        "best_posting_time": "7 PM IST",
+        "parent_question": "How do you encourage your child to help their friends or family?"
+    }
+}

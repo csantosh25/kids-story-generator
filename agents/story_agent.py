@@ -3,7 +3,6 @@ from google import genai
 from config.settings import GEMINI_API_KEY
 from models.story_models import StoryPackage
 from prompts.master_prompt_builder import PromptBuilder
-from services.character_service import CharacterService
 from services.story_settings import StorySettings
 from services.story_validator import StoryValidator
 from utils.json_parser import JsonParser
@@ -19,19 +18,45 @@ class StoryAgent:
 
         self.master_prompt = PromptBuilder().build()
 
-        self.character_service = CharacterService()
 
-    def generate_story(self, topic):
-
-        # Pick a character for this story
-        character = self.character_service.random_character()
+    def generate_story(self, story_context):
 
         prompt = self.master_prompt
 
+        # ---------------------------------------
+        # Story Context
+        # ---------------------------------------
+
+        prompt = prompt.replace(
+            "{{day}}",
+            story_context["day"],
+        )
+
+        prompt = prompt.replace(
+            "{{category}}",
+            story_context["category"],
+        )
+
+        prompt = prompt.replace(
+            "{{learning_goal}}",
+            story_context["learning_goal"],
+        )
+
+        prompt = prompt.replace(
+            "{{story_style}}",
+            story_context["story_style"],
+        )
+
         prompt = prompt.replace(
             "{{theme}}",
-            topic,
+            story_context["topic"],
         )
+
+        # ---------------------------------------
+        # Character
+        # ---------------------------------------
+
+        character = story_context["character"]
 
         prompt = prompt.replace(
             "{{character_name}}",
@@ -40,28 +65,32 @@ class StoryAgent:
 
         prompt = prompt.replace(
             "{{character_animal}}",
-            character["animal"],
+            character.get("species", character.get("animal", "Animal")),
         )
 
         prompt = prompt.replace(
             "{{character_appearance}}",
-            character["appearance"],
+            character.get("appearance", ""),
         )
 
         prompt = prompt.replace(
             "{{character_personality}}",
-            character["personality"],
+            ", ".join(character["personality"]),
         )
 
         prompt = prompt.replace(
             "{{character_place}}",
-            character["favorite_place"],
+            character.get("home", character.get("favorite_place", "Wonderwood Valley")),
         )
 
         prompt = prompt.replace(
             "{{character_catchphrase}}",
             character["catchphrase"],
         )
+
+        # ---------------------------------------
+        # Story Settings
+        # ---------------------------------------
 
         prompt = prompt.replace(
             "{{target_age}}",
@@ -92,6 +121,10 @@ class StoryAgent:
             "{{ending_style}}",
             self.settings["ending_style"],
         )
+
+        # ---------------------------------------
+        # Generate Story
+        # ---------------------------------------
 
         for attempt in range(1, 4):
 
