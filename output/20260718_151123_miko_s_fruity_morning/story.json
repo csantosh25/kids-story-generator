@@ -1,0 +1,147 @@
+{
+    "story_info": {
+        "title": "Miko's Fruity Morning",
+        "subtitle": "A Story about Sharing",
+        "theme": "Sharing and Friendship",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Sharing makes everyone happy and helps friends feel loved."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Miko",
+            "species": "Monkey",
+            "appearance": "A small, playful monkey with soft brown fur, big curious eyes, and a long, curly tail. He often wears a little red bandana around his neck.",
+            "personality": "Kind, curious, helpful, and always ready for an adventure. He loves learning new things."
+        }
+    },
+    "cover": {
+        "prompt": "A small, playful monkey named Miko with soft brown fur, big curious eyes, and a long, curly tail, wearing a little red bandana around his neck, happily holding a yellow banana. He is sitting on a tree branch in a sunny, green Wonderwood Valley. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly, Reserve the lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Morning in Wonderwood",
+            "text": "The sun peeked into Miko's cozy tree home. Miko opened his big, curious eyes. \"Good morning!\" he chirped softly. His tummy made a little rumble. Miko felt hungry. He wanted a tasty breakfast.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "morning",
+            "icon": "sun",
+            "speaker_notes": "Introduce Miko waking up, ready for a new day in Wonderwood Valley."
+        },
+        {
+            "page": 2,
+            "title": "Looking for Breakfast",
+            "text": "Miko swung from branch to branch. He looked for fruit in the trees. Some trees had big green leaves. Some had small red berries. Miko looked carefully for his favourite food. He loved sweet, yellow fruit.",
+            "background_color": "#D9FDE9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Describe Miko's search for food, highlighting different types of trees and his preference."
+        },
+        {
+            "page": 3,
+            "title": "A Banana Tree!",
+            "text": "Then Miko saw it! A tall tree with big, green leaves. Many yellow bananas hung from its branches. \"Yummy!\" Miko smiled a big smile. He quickly climbed up the tree. He picked a perfect, ripe banana.",
+            "background_color": "#FEFAD9",
+            "visual_theme": "fruit tree",
+            "icon": "banana",
+            "speaker_notes": "Show Miko finding his desired fruit, expressing his happiness."
+        },
+        {
+            "page": 4,
+            "title": "A Sad Squirrel",
+            "text": "Miko sat on a branch to eat. He peeled his banana. Then he saw a little squirrel. The squirrel looked sad. It sat alone on another branch. Its tummy also rumbled softly. Miko felt a little sad too.",
+            "background_color": "#F0E4D9",
+            "visual_theme": "forest friends",
+            "icon": "squirrel",
+            "speaker_notes": "Introduce a new character and a small problem, showing Miko's empathy."
+        },
+        {
+            "page": 5,
+            "title": "Sharing is Caring",
+            "text": "Miko had a kind heart. He knew sharing makes friends happy. So, Miko broke his banana in half. He held out one piece to the squirrel. \"Here you go, little friend,\" Miko said with a gentle smile.",
+            "background_color": "#D9E9FD",
+            "visual_theme": "sharing",
+            "icon": "heart",
+            "speaker_notes": "Miko demonstrates kindness by sharing his food."
+        },
+        {
+            "page": 6,
+            "title": "Happy Friends",
+            "text": "The squirrel looked up and smiled. \"Thank you, Miko!\" it chattered happily. They ate their bananas together. Miko felt warm and happy inside. Sharing made his breakfast taste even better. Friends felt safe and loved.",
+            "background_color": "#FDD9E9",
+            "visual_theme": "friendship",
+            "icon": "leaf",
+            "speaker_notes": "Conclude with a heartwarming scene of friendship and the positive feeling of sharing."
+        }
+    ],
+    "instagram": {
+        "caption": "Miko the Monkey learns the joy of sharing in this sweet Wonderwood Valley story! 🍌❤️ Join Miko on a sunny morning adventure. He finds a yummy banana, but then he sees a sad little squirrel. What will Miko do? Discover how sharing makes hearts happy and friendships grow. Perfect for little ones aged 3-6!",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#ChildrensBooks",
+            "#WonderwoodValley",
+            "#MikoTheMonkey",
+            "#SharingIsCaring",
+            "#FriendshipGoals",
+            "#EarlyLearning",
+            "#IndianParents",
+            "#KidsBookstagram",
+            "#StoryTime",
+            "#PositiveVibes",
+            "#PreschoolFun",
+            "#BananaLove"
+        ]
+    },
+    "email": {
+        "subject": "A Sweet Story About Sharing for Your Little One! 🍌",
+        "preview": "Join Miko the Monkey as he discovers the joy of sharing in Wonderwood Valley! Read 'Miko's Fruity Morning' now."
+    },
+    "youtube": {
+        "title": "Miko's Fruity Morning | A Sweet Story About Sharing & Friendship for Kids (3-6)",
+        "description": "Welcome to Wonderwood Valley! In 'Miko's Fruity Morning,' our curious monkey Miko finds a delicious banana. But when he sees a sad squirrel, Miko learns that sharing makes everyone feel happy and loved. This gentle story teaches kindness and friendship in a simple, engaging way for children aged 3-6 years. Perfect for bedtime or any story time!",
+        "keywords": [
+            "Miko's Fruity Morning",
+            "children's story",
+            "kids story",
+            "sharing story",
+            "friendship story",
+            "bedtime story",
+            "preschool story",
+            "monkey story",
+            "Wonderwood Valley",
+            "moral story for kids",
+            "stories for 3-6 year olds",
+            "simple English story",
+            "kindness for kids"
+        ]
+    },
+    "publishing": {
+        "instagram_caption_short": "Miko the Monkey learns the joy of sharing in this sweet Wonderwood Valley story! 🍌❤️",
+        "instagram_caption_long": "Join Miko the Monkey on a sunny morning adventure in Wonderwood Valley! Miko finds a yummy banana, but then he sees a sad little squirrel. What will Miko do? Discover how sharing makes hearts happy and friendships grow. Perfect for little ones aged 3-6! 🐵🐿️✨",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory",
+            "#ChildrensBooks",
+            "#WonderwoodValley",
+            "#MikoTheMonkey",
+            "#SharingIsCaring",
+            "#FriendshipGoals",
+            "#EarlyLearning",
+            "#IndianParents",
+            "#KidsBookstagram",
+            "#StoryTime",
+            "#PositiveVibes",
+            "#PreschoolFun",
+            "#BananaLove"
+        ],
+        "first_comment": "What's your child's favorite fruit to share with friends? Let us know below! 👇",
+        "alt_text": "Miko the Monkey with a squirrel, sharing a banana on a tree branch in a sunny forest.",
+        "call_to_action": "Read 'Miko's Fruity Morning' tonight! Link in bio to sweet dreams. 🌙",
+        "best_posting_time": "7 PM IST",
+        "parent_question": "What's your child's favorite way to show kindness to friends?"
+    }
+}

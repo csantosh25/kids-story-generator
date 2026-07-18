@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "date": "2026-07-18",
+    "title": "Miko's Fruity Morning",
+    "character": "Penny Penguin",
+    "theme": "Brushing Teeth",
+    "lesson": "Healthy body and mind",
+    "setting": "Sharing and Friendship",
+    "story_archetype": ""
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Pip's Colourful Help",
+    "character": "Penny Penguin",
+    "theme": "Brushing Teeth",
+    "lesson": "Healthy body and mind",
+    "setting": "Friendship and Sharing",
+    "story_archetype": ""
+  }
+]

@@ -5,6 +5,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 class CoverDesigner:
 
+    WIDTH = 1080
+    HEIGHT = 1350
+
     def render(self, story, assets):
 
         input_image = assets.get_cover_path()
@@ -13,13 +16,24 @@ class CoverDesigner:
         title = story.story_info.title
 
         img = Image.open(input_image)
-        img = img.resize((1080, 1350))
+        img = img.resize((self.WIDTH, self.HEIGHT))
 
-        overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        overlay = Image.new(
+            "RGBA",
+            img.size,
+            (0, 0, 0, 0),
+        )
+
         draw = ImageDraw.Draw(overlay)
 
+        # Bottom overlay
+        overlay_height = 220
+
         draw.rectangle(
-            [(0, 1450), (1080, 1350)],
+            [
+                (0, self.HEIGHT - overlay_height),
+                (self.WIDTH, self.HEIGHT),
+            ],
             fill=(0, 0, 0, 120),
         )
 
@@ -32,11 +46,14 @@ class CoverDesigner:
 
         font = ImageFont.truetype(
             str(font_path),
-            90,
+            70,
         )
 
         draw.text(
-            (70, 1350),
+            (
+                60,
+                self.HEIGHT - 170,
+            ),
             title,
             font=font,
             fill="white",

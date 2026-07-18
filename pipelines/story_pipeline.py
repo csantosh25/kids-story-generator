@@ -13,6 +13,7 @@ from services.narration_service import NarrationService
 
 from pipelines.pipeline_result import PipelineResult
 from services.story_history_service import StoryHistoryService
+from services.content_library_service import ContentLibraryService
 
 from utils.logger import log
 
@@ -33,6 +34,7 @@ class StoryPipeline:
         self.pdf_service = PDFService()
         self.story_history = StoryHistoryService()
         self.narration_service = NarrationService()
+        self.content_library = ContentLibraryService()
 
     def update_progress(self, progress, step):
 
@@ -186,6 +188,18 @@ class StoryPipeline:
         )
 
         log("Email sent.")
+
+        # --------------------------------------------------
+        # Content Librar
+        # --------------------------------------------------
+
+        log("Updating Content Library...")
+
+        self.content_library.add_story(
+            story=story,
+            assets=assets,
+            character_name=story.character_sheet.main_character.name,
+        )
 
         # --------------------------------------------------
         # Complete

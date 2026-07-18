@@ -1,0 +1,30 @@
+[
+    {
+        "content_id": "KS-000001",
+        "created_date": "2026-07-18",
+        "status": "completed",
+        "title": "Pip's Colourful Help",
+        "theme": "Friendship and Sharing",
+        "character": {
+            "name": "Pip",
+            "species": "Squirrel"
+        },
+        "folder": "output/20260718_152106_pip_s_colourful_help",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    }
+]

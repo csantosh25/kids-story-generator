@@ -1,0 +1,148 @@
+{
+    "story_info": {
+        "title": "Pip's Colourful Help",
+        "subtitle": "A Story About Helping Friends",
+        "theme": "Friendship and Sharing",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping friends makes everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Pip",
+            "species": "Squirrel",
+            "appearance": "Pip is a small, brown squirrel with soft, fluffy fur. He has a big, bushy tail and bright, shiny black eyes. His ears are little and perky, and he has tiny paws.",
+            "personality": "Pip is very kind and always happy to help. He is curious and loves to learn new things. He is a good friend to everyone."
+        }
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration of Pip, a small, brown squirrel with soft, fluffy fur, a bushy tail, bright, shiny black eyes, little perky ears, and tiny paws, sitting happily with Lily, a friendly red ladybug, next to a beautiful pile of colourful autumn leaves. The background is a soft, pastel Wonderwood Valley forest at sunset with warm, gentle lighting. Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sad Friend",
+            "text": "Pip the squirrel played near a big tree. The sun was going down. He saw his friend Lily the ladybug. Lily looked a little sad. Pip stopped playing and went to her. 'Hello, Lily,' he said softly. 'Are you okay today?'",
+            "background_color": "#FDE9D9",
+            "visual_theme": "evening",
+            "icon": "sun",
+            "speaker_notes": "Introduce Pip and Lily. Set the scene as evening."
+        },
+        {
+            "page": 2,
+            "title": "A Lost Leaf",
+            "text": "Lily had a tear in her eye. 'Oh, Pip,' she said. 'I found a very special, big red leaf. But the wind blew it away! Now I cannot find it anywhere.' Pip looked around carefully. He felt sad for Lily.",
+            "background_color": "#FDF2E6",
+            "visual_theme": "sadness",
+            "icon": "tear",
+            "speaker_notes": "Explain why Lily is sad. Emphasize the lost item."
+        },
+        {
+            "page": 3,
+            "title": "Helping Hands",
+            "text": "Pip had a good idea. 'Don't worry, Lily,' he said with a smile. 'We can look for it together! Two friends are better than one.' Lily wiped her little tear. 'Really, Pip?' she asked. 'That would be so nice.'",
+            "background_color": "#FEF8F0",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Pip offers to help. Highlight the value of friendship."
+        },
+        {
+            "page": 4,
+            "title": "Many Pretty Leaves",
+            "text": "Pip and Lily looked under bushes. They looked by the big rocks. They did not find the red leaf. But they found many other pretty leaves. Some were bright yellow. Some were shiny orange. Some were soft green.",
+            "background_color": "#F9EEDD",
+            "visual_theme": "forest",
+            "icon": "leaf",
+            "speaker_notes": "Describe their search and the new discovery of different colored leaves."
+        },
+        {
+            "page": 5,
+            "title": "A Colourful Pile",
+            "text": "Lily giggled. 'Look, Pip!' she said happily. 'We found so many! They are all different colours.' Pip smiled too. 'Yes,' he said. 'We can make a new big pile of colourful leaves.' They put them all together.",
+            "background_color": "#F8E6CD",
+            "visual_theme": "colours",
+            "icon": "rainbow",
+            "speaker_notes": "They enjoy their new discovery. Talk about making a pile together."
+        },
+        {
+            "page": 6,
+            "title": "Happy and Cozy",
+            "text": "The sun had set. The sky was dark blue. Pip and Lily sat by their pretty leaf pile. They felt happy and cozy inside. 'Thank you, Pip,' said Lily. Pip felt warm and sleepy. It was a good night for friends.",
+            "background_color": "#F7DEBE",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "A calm, happy ending emphasizing warmth, friendship, and readiness for sleep."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Pip the small squirrel on a sweet evening adventure! He finds his friend Lily the ladybug feeling sad. Pip has a bright idea: they can look for Lily's lost leaf together! Even if they don't find exactly what they're looking for, they discover something even more wonderful: the joy of helping a friend and sharing beautiful new finds. This cozy story teaches little ones about kindness, friendship, and how good it feels to make others smile. Perfect for a gentle read-aloud before bedtime! ❤️📖",
+        "hashtags": [
+            "#WonderwoodValley",
+            "#KidsStories",
+            "#BedtimeStory",
+            "#FriendshipGoals",
+            "#SharingIsCaring",
+            "#ChildrensBooks",
+            "#ReadAloud",
+            "#SweetDreams",
+            "#ToddlerTales",
+            "#PreschoolReading",
+            "#IndiaKids",
+            "#GoodNightStory"
+        ]
+    },
+    "email": {
+        "subject": "A Sweet Story About Friends Helping Friends! 🐿️🐞",
+        "preview": "Join Pip the squirrel and Lily the ladybug in a heartwarming tale of friendship and sharing in Wonderwood Valley."
+    },
+    "youtube": {
+        "title": "Pip's Colourful Leaf Adventure | A Wonderwood Valley Bedtime Story for Kids",
+        "description": "Welcome to Wonderwood Valley! In this sweet story, Pip the small squirrel learns how wonderful it feels to help a friend. When his friend Lily the ladybug loses something special, Pip offers a helping paw. Together, they discover the joy of sharing and making new colourful memories. This gentle story is perfect for children aged 3-6 years, teaching about kindness, friendship, and finding happiness in helping others. Settle in for a warm and comforting read-aloud that will leave your little ones feeling happy and calm.",
+        "keywords": [
+            "bedtime story",
+            "kids story",
+            "Wonderwood Valley",
+            "Pip the squirrel",
+            "Lily the ladybug",
+            "friendship story",
+            "helping friends",
+            "sharing story",
+            "children's book",
+            "read aloud",
+            "preschool story",
+            "toddler story",
+            "good night story",
+            "easy English story",
+            "stories for kids India",
+            "positive story",
+            "calm story",
+            "educational story"
+        ]
+    },
+    "publishing": {
+        "instagram_caption_short": "Pip the squirrel learns how good it feels to help a friend! 🐿️🐞 A heartwarming tale about friendship and sharing. #WonderwoodValley",
+        "instagram_caption_long": "Join Pip the small squirrel on a sweet evening adventure! He finds his friend Lily the ladybug feeling sad. Pip has a bright idea: they can look for Lily's lost leaf together! Even if they don't find exactly what they're looking for, they discover something even more wonderful: the joy of helping a friend and sharing beautiful new finds. This cozy story teaches little ones about kindness, friendship, and how good it feels to make others smile. Perfect for a gentle read-aloud before bedtime! ❤️📖",
+        "hashtags": [
+            "#WonderwoodValley",
+            "#KidsStories",
+            "#BedtimeStory",
+            "#FriendshipGoals",
+            "#SharingIsCaring",
+            "#ChildrensBooks",
+            "#ReadAloud",
+            "#SweetDreams",
+            "#ToddlerTales",
+            "#PreschoolReading",
+            "#IndiaKids",
+            "#GoodNightStory"
+        ],
+        "first_comment": "What do your little ones love to share with their friends? Tell us in the comments! 👇",
+        "alt_text": "Cover image of Pip the squirrel and Lily the ladybug smiling next to a pile of colourful leaves at sunset in Wonderwood Valley.",
+        "call_to_action": "Tap the link in bio to read more Wonderwood Valley adventures!",
+        "best_posting_time": "Weekdays 7 AM - 9 AM IST, Weekdays 7 PM - 9 PM IST",
+        "parent_question": "What is your child's favorite thing to share with their friends?"
+    }
+}
