@@ -9,8 +9,10 @@ from services.publishing_service import PublishingService
 from services.email_service import EmailService
 from services.report_service import ReportService
 from services.pdf_service import PDFService
+from services.narration_service import NarrationService
 
 from pipelines.pipeline_result import PipelineResult
+from services.story_history_service import StoryHistoryService
 
 from utils.logger import log
 
@@ -29,6 +31,8 @@ class StoryPipeline:
         self.email_service = EmailService()
         self.report_service = ReportService()
         self.pdf_service = PDFService()
+        self.story_history = StoryHistoryService()
+        self.narration_service = NarrationService()
 
     def update_progress(self, progress, step):
 
@@ -62,6 +66,11 @@ class StoryPipeline:
 
         story = self.story_agent.generate_story(
             story_context
+        )
+
+        self.story_history.add_story(
+            story,
+            story_context,
         )
 
         assets = AssetManager(
@@ -161,6 +170,7 @@ class StoryPipeline:
         )
 
         log("Story Book PDF generated.")
+
 
         # --------------------------------------------------
         # Email

@@ -15,23 +15,90 @@ Story Requirements
 - The final scene should end peacefully with a warm emotional conclusion.
 - The ending should help children feel safe, happy and calm before bedtime if parents choose to read it then.
 
-## Language Rules
-- Use very simple English suitable for children aged 4–7.
-- Write as if a parent is reading the story aloud.
-- Use short sentences (8–12 words on average).
-- Prefer everyday words used in Indian schools.
-- Avoid difficult, poetic, or uncommon words.
-- Avoid idioms and complex expressions.
-- Avoid long descriptive paragraphs.
-- Use a warm, friendly, and cheerful tone.
-- Repeat important words naturally to help young children understand.
-- Use simple conversations between characters where appropriate.
-- Every page should be easy enough for a child to understand after hearing it once.
+==================================================
+LANGUAGE LEVEL (VERY IMPORTANT)
+==================================================
 
-Examples of preferred words:
-big, small, happy, sad, fast, slow, little, friend, help, play, smile, home, school, tree, flower, bird, water, family, thank you, please, sorry.
+Write for children aged 3–6 years.
 
-Avoid words like:
-marvelled, gazed, magnificent, enchanted, astonished, graceful, delightful, bewildered, shimmering, wandered, nestled, whispered softly, extraordinary, splendid, remarkable.
+Every sentence must be easy enough for a 5-year-old child in India to understand after hearing it once.
+
+Use only everyday words.
+
+Maximum sentence length:
+8 words whenever possible.
+Never more than 12 words.
+
+Use short paragraphs.
+
+Use active voice.
+
+Avoid poetic language.
+
+Avoid descriptive writing that slows the story.
+
+Avoid difficult vocabulary.
+
+Never use words like:
+
+wondered
+marvelled
+gazed
+extraordinary
+magnificent
+splendid
+delighted
+astonished
+graceful
+enchanted
+bewildered
+remarkable
+sparkling
+shimmering
+glowing softly
+nestled
+wandered
+peacefully drifted
+
+Instead use words like:
+
+big
+small
+happy
+sad
+run
+jump
+look
+play
+help
+share
+friend
+home
+tree
+bird
+flower
+smile
+thank you
+please
+
+Dialogue should sound like real children talking.
+
+Example:
+
+"Come and play!"
+
+instead of
+
+"Would you care to accompany me?"
+
+Every slide should feel like a parent is reading aloud.
+
+Before returning the JSON:
+
+Read every sentence again.
+
+If any sentence sounds difficult for a 5-year-old child, rewrite it using easier words.
+
+Do not return the story until every page passes this check.
 
 Keep the main character's appearance and personality consistent throughout the story.

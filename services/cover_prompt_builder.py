@@ -7,157 +7,98 @@ class CoverPromptBuilder:
         first_slide = story.slides[0]
 
         prompt = f"""
-Create a premium children's storybook cover for the Wonderwood Valley universe.
+        Create an award-winning children's storybook cover.
 
---------------------------------------------------
-STYLE
---------------------------------------------------
+        STYLE
+        Pixar-quality 3D illustration.
+        Premium children's book artwork.
+        Professional Disney-inspired lighting.
+        Rich textures.
+        Ultra detailed.
 
-Pixar-quality 3D illustration.
+        FORMAT
 
-Disney-quality cinematic lighting.
+        Instagram portrait (4:5).
 
-Highly detailed.
+        MAIN CHARACTER
 
-Professional children's book illustration.
+        Name:
+        {character.name}
 
-Warm, colourful, magical and family-friendly.
+        Animal:
+        {character.species}
 
---------------------------------------------------
-BOOK
---------------------------------------------------
+        Appearance:
+        {character.appearance}
 
-Title:
-{story.story_info.title}
+        Personality:
+        {character.personality}
 
-Subtitle:
-{story.story_info.subtitle}
+        BOOK TITLE
 
---------------------------------------------------
-MAIN CHARACTER
---------------------------------------------------
+        {story.story_info.title}
 
-Name:
-{character.name}
+        SUBTITLE
 
-Species:
-{character.species}
+        {story.story_info.subtitle}
 
-Appearance:
-{character.appearance}
+        SCENE
 
-Personality:
-{character.personality}
+        {first_slide.text}
 
-This character is a recurring character in the Wonderwood Valley story universe.
+        VISUAL GOAL
 
-The appearance must remain consistent with previous illustrations.
+        Create an image that immediately catches attention while scrolling Instagram.
 
-Do not redesign the character.
+        The character should show a strong happy emotion with large expressive eyes and a joyful smile.
 
---------------------------------------------------
-SCENE
---------------------------------------------------
+        The character must occupy about 60–70% of the image.
 
-Illustrate this moment:
+        BACKGROUND
 
-{first_slide.text}
+        Simple.
+        Bright.
+        Colourful.
+        Clean.
+        Not crowded.
 
-Show only ONE clear scene.
+        Use only a few supporting objects.
 
-Avoid multiple actions.
+        LIGHTING
 
---------------------------------------------------
-BACKGROUND
---------------------------------------------------
+        Warm morning sunlight or soft golden afternoon light depending on the story.
 
-Rich colourful environment.
+        COLOURS
 
-Depth.
+        Bright
+        Cheerful
+        High contrast
+        Kid friendly
 
-Flowers.
+        COMPOSITION
 
-Trees.
+        Character in the foreground.
 
-Soft clouds.
+        Background softly blurred.
 
-Storybook atmosphere.
+        Leave clear empty space at the top for the title.
 
---------------------------------------------------
-MOOD
---------------------------------------------------
+        QUALITY
 
-Warm
+        Ultra detailed
+        Pixar quality
+        Storybook illustration
+        Professional children's publishing quality
 
-Happy
+        NEGATIVE PROMPT
 
-Comforting
-
-Magical
-
-Hopeful
-
---------------------------------------------------
-LIGHTING
---------------------------------------------------
-
-Golden Hour.
-
-Soft cinematic lighting.
-
-Volumetric light rays.
-
-Gentle shadows.
-
---------------------------------------------------
-COMPOSITION
---------------------------------------------------
-
-Vertical portrait.
-
-4:5 aspect ratio.
-
-Character centred.
-
-Eye contact with viewer.
-
-Large expressive eyes.
-
-Cute proportions.
-
-Leave generous empty space at the top for title overlay.
-
---------------------------------------------------
-QUALITY
---------------------------------------------------
-
-Ultra detailed.
-
-Professional illustration.
-
-High colour harmony.
-
-Pixar-quality rendering.
-
-No text.
-
-No watermark.
-
-No logo.
-
-No border.
-
-No collage.
-
-No extra characters unless described in the story.
-
-No scary expressions.
-
-No horror.
-
-No violence.
-
-Suitable for ages 3-8.
-"""
+        No text
+        No watermark
+        No logo
+        No extra characters unless required
+        No blurry face
+        No cropped face
+        No dark image
+        """
 
         return prompt.strip()

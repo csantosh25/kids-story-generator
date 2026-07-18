@@ -13,13 +13,13 @@ class CoverDesigner:
         title = story.story_info.title
 
         img = Image.open(input_image)
-        img = img.resize((1080, 1920))
+        img = img.resize((1080, 1350))
 
         overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
 
         draw.rectangle(
-            [(0, 1450), (1080, 1920)],
+            [(0, 1450), (1080, 1350)],
             fill=(0, 0, 0, 120),
         )
 
@@ -36,7 +36,7 @@ class CoverDesigner:
         )
 
         draw.text(
-            (70, 1550),
+            (70, 1350),
             title,
             font=font,
             fill="white",
