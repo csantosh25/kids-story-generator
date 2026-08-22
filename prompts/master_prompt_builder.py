@@ -7,6 +7,7 @@ class PromptBuilder:
 
         files = [
             "system_prompt.txt",
+            "master_story_prompt.txt",
             "writing_rules.txt",
             "character_rules.txt",
             "image_rules.txt",

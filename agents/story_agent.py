@@ -139,6 +139,28 @@ class StoryAgent:
 
             story = StoryPackage(**data)
 
+            # ---------------------------------------
+            # Enforce Canonical Character Identity
+            # ---------------------------------------
+
+            canonical_character = story_context["character"]
+
+            story.character_sheet.main_character.name = canonical_character["name"]
+
+            story.character_sheet.main_character.species = canonical_character.get(
+                "species",
+                canonical_character.get("animal", "Animal"),
+            )
+
+            story.character_sheet.main_character.appearance = canonical_character.get(
+                "appearance",
+                "",
+            )
+
+            story.character_sheet.main_character.personality = ", ".join(
+                canonical_character["personality"]
+            )
+
             valid, errors = StoryValidator.validate(story)
 
             if valid:

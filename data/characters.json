@@ -3,6 +3,7 @@
     "character": {
       "name": "Bella Bear",
       "species": "Bear",
+      "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
       "age": 5,
       "gender": "Female",
       "personality": [
@@ -23,6 +24,7 @@
     "character": {
       "name": "Oliver Fox",
       "species": "Fox",
+      "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
       "age": 6,
       "gender": "Male",
       "personality": [
@@ -43,6 +45,7 @@
     "character": {
       "name": "Luna Owl",
       "species": "Owl",
+      "appearance": "Luna is a small owl with soft lavender-grey feathers, big round golden eyes, and two tufted feathers above her head like little eyebrows. Her wings have a gentle speckled pattern.",
       "age": 7,
       "gender": "Female",
       "personality": [
@@ -63,6 +66,7 @@
     "character": {
       "name": "Toby Turtle",
       "species": "Sea Turtle",
+      "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
       "age": 6,
       "gender": "Male",
       "personality": [
@@ -83,6 +87,7 @@
     "character": {
       "name": "Max Monkey",
       "species": "Monkey",
+      "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
       "age": 5,
       "gender": "Male",
       "personality": [
@@ -103,6 +108,7 @@
     "character": {
       "name": "Penny Penguin",
       "species": "Penguin",
+      "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
       "age": 5,
       "gender": "Female",
       "personality": [
@@ -123,6 +129,7 @@
     "character": {
       "name": "Barnaby Bunny",
       "species": "Rabbit",
+      "appearance": "Barnaby is a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look.",
       "age": 4,
       "gender": "Male",
       "personality": [
