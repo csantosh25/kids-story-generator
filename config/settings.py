@@ -55,8 +55,8 @@ SMTP_SERVER = "smtp.gmail.com"
 
 SMTP_PORT = 465
 
-EMAIL_USERNAME = "c.santosh.2586@gmail.com"
+EMAIL_USERNAME = os.getenv("EMAIL_USERNAME")
 
-EMAIL_PASSWORD = "nstivmrrlpunmlbg"
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
-EMAIL_TO = "c.santosh.2586@gmail.com"
+EMAIL_TO = os.getenv("EMAIL_TO")
