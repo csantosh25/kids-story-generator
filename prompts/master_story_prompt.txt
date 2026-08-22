@@ -193,37 +193,88 @@ Do not redesign recurring characters.
 PUBLISHING PACKAGE
 --------------------------------------------------
 
-Also generate:
+Also generate the following Instagram Growth Publishing Package.
 
-Instagram Caption (Short)
+HOOK:
+- One short, compelling Instagram hook.
+- Designed for parents scrolling Instagram.
+- Create curiosity without clickbait.
+- Prefer an open loop, surprising moment, emotional question, or relatable parenting situation.
+- Maximum approximately 15 words.
+- Must be different from the story title.
+- Do not reveal the ending.
+
+INSTAGRAM CAPTION (SHORT):
 
 • Maximum 120 words
 
-Instagram Caption (Long)
+Structure the short caption as:
+1. Hook
+2. Brief story setup
+3. Parent/child relevance
+4. One clear CTA
+
+INSTAGRAM CAPTION (LONG):
 
 • Maximum 250 words
 
-Pinterest Description
+Expand naturally on the short caption with more story detail and warmth.
 
-• SEO friendly
+CTA:
+Generate ONE primary action per post.
 
-• 150–300 characters
+Rotate naturally between:
+- Save
+- Share
+- Comment
+- Follow
 
-Alt Text
+Do not ask users to perform multiple primary actions in the same CTA.
 
-Call To Action
+Examples:
+Save → "📚 Save this story for your next reading time."
+Share → "💛 Send this to a parent who would enjoy this with their little one."
+Comment → "🥕 Would your little one try this?"
+Follow → "🐧 Follow @bedtime01fables for a new little adventure every day."
 
-Parent Discussion Question
+BRANDING:
+Always include:
+#Bedtime01Fables
 
-One Fun Activity children can do after reading.
+Also include a character-specific hashtag using the canonical character name, e.g.:
+#PennyPenguin
+#BellaBear
+#OliverFox
 
-25–30 hashtags.
+HASHTAGS:
+Generate approximately 12–15 relevant hashtags.
 
-Mix high-volume and niche hashtags.
+Use a balanced mix:
+- parent/audience hashtags
+- children's story/storytime hashtags
+- story-specific learning/topic hashtags
+- brand hashtag
+- character hashtag
 
-No duplicates.
+Avoid generic irrelevant hashtags.
 
-Best posting time.
+No duplicate hashtags.
+
+FIRST COMMENT:
+Encourage a simple, natural conversation related to the story.
+
+ALT TEXT
+
+Describe the cover image simply and accurately.
+
+PARENT DISCUSSION QUESTION:
+One thoughtful but simple question parents can ask the child after reading.
+
+BEST POSTING TIME
+
+Recommend the best posting time for Instagram.
+
+Keep all publishing text in the same simple English style used for the story.
 
 --------------------------------------------------
 OUTPUT

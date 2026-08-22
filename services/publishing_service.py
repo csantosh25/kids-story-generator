@@ -23,6 +23,12 @@ class PublishingService:
 
 ---
 
+## Hook
+
+{story.publishing.hook}
+
+---
+
 ## Instagram Caption (Short)
 
 {story.publishing.instagram_caption_short}

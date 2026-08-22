@@ -64,9 +64,10 @@ The JSON must exactly follow this structure:
     "keywords": [
       "bedtime story"
     ]
-  }
+  },
 
   "publishing": {
+  "hook": "",
   "instagram_caption_short": "",
   "instagram_caption_long": "",
   "hashtags": [],

@@ -55,6 +55,7 @@ class YouTube(BaseModel):
     keywords: List[str]
 
 class PublishingPack(BaseModel):
+    hook: str
     instagram_caption_short: str
     instagram_caption_long: str
     hashtags: List[str]
