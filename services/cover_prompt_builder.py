@@ -42,27 +42,58 @@ class CoverPromptBuilder:
 
         {story.story_info.subtitle}
 
-        SCENE
+        STORY ACTION
 
+        Scene description:
         {first_slide.text}
 
-        VISUAL GOAL
+        Visual theme:
+        {first_slide.visual_theme}
 
-        Create an image that immediately catches attention while scrolling Instagram.
+        Visual motif:
+        {first_slide.icon}
 
-        The character should show a strong happy emotion with large expressive eyes and a joyful smile.
+        Show the character actively performing the central action from this scene.
 
-        The character must occupy about 60–70% of the image.
+        Do not show the character simply standing, smiling, facing the camera, or posing for a portrait.
 
-        BACKGROUND
+        Do not invent unrelated story events.
 
-        Simple.
-        Bright.
-        Colourful.
-        Clean.
-        Not crowded.
+        STORY ENVIRONMENT
 
-        Use only a few supporting objects.
+        Show the actual environment and location suggested by the scene description above.
+
+        The environment must be recognizable and relevant to what is happening.
+
+        Avoid generic or empty backgrounds.
+
+        STORY ELEMENTS
+
+        Include approximately 2-5 meaningful visual elements that are actually supported by the scene
+        (for example: food, flowers, books, toys, leaves, baskets, trees, furniture, other story
+        characters, or objects involved in the action).
+
+        Do not add random decorative objects simply to fill space.
+
+        COMPOSITION
+
+        Use a children's storybook composition with visual depth across three layers:
+
+        Foreground:
+        small story-relevant details or objects.
+
+        Middle ground:
+        the main character performing the main action.
+
+        Background:
+        the story environment, with enough detail to establish place and context.
+
+        CHARACTER SCALE
+
+        The character should be visually important and clearly recognizable, but should occupy a
+        natural proportion of the scene so that the environment and story action remain visible.
+
+        Do not let the character fill the entire frame.
 
         LIGHTING
 
@@ -75,13 +106,23 @@ class CoverPromptBuilder:
         High contrast
         Kid friendly
 
-        COMPOSITION
+        BACKGROUND
 
-        Character in the foreground.
+        Keep the background sufficiently detailed to communicate the story setting, while maintaining
+        clear visual hierarchy so the character performing the action remains the focal point.
 
-        Background softly blurred.
+        Do not blur or soften the background into emptiness.
 
-        Leave clear empty space at the top for the title.
+        TITLE SPACE
+
+        The application overlays the story title in a bar across the LOWER portion of the final
+        image. Keep the lower portion of the composition relatively calm and visually clean so the
+        title overlay remains legible, without turning the overall image into a portrait.
+
+        VISUAL STYLE
+
+        The final result should feel like a premium children's storybook cover illustrating a moment
+        from the story, not a character portrait.
 
         QUALITY
 
@@ -99,6 +140,13 @@ class CoverPromptBuilder:
         No blurry face
         No cropped face
         No dark image
+        No static portrait pose
+        No character facing camera without action
+        No plain or empty background
+        No generic background
+        No excessive close-up
+        No character filling the entire frame
+        No random unrelated objects
         """
 
         return prompt.strip()
