@@ -8,6 +8,25 @@ class CoverDesigner:
     WIDTH = 1080
     HEIGHT = 1350
 
+    def _crop_to_aspect_ratio(self, img):
+
+        width, height = img.size
+
+        target_height = width * self.HEIGHT / self.WIDTH
+
+        if height > target_height:
+
+            target_height = round(target_height)
+
+            crop_amount = height - target_height
+
+            top = crop_amount // 2
+            bottom = height - (crop_amount - top)
+
+            img = img.crop((0, top, width, bottom))
+
+        return img
+
     def render(self, story, assets):
 
         input_image = assets.get_cover_path()
@@ -16,6 +35,7 @@ class CoverDesigner:
         title = story.story_info.title
 
         img = Image.open(input_image)
+        img = self._crop_to_aspect_ratio(img)
         img = img.resize((self.WIDTH, self.HEIGHT))
 
         overlay = Image.new(
