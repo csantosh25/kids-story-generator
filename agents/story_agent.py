@@ -161,7 +161,10 @@ class StoryAgent:
                 canonical_character["personality"]
             )
 
-            valid, errors = StoryValidator.validate(story)
+            valid, errors = StoryValidator.validate(
+                story,
+                day=story_context.get("day"),
+            )
 
             if valid:
                 print("✅ Story validation passed.")

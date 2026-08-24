@@ -1,8 +1,10 @@
 Story Requirements
 
-- Target age: 3–6 years
+- Target age: 4–7 years
 - Reading time: approximately 2 minutes
-- Exactly 6 story slides
+- 4 to 6 story slides, depending on the natural length of the story. Choose
+  the smallest number of slides that tells the story well. Do not pad the
+  story with unnecessary slides or filler sentences just to reach 6.
 - Gentle pacing
 - Positive ending
 - Educational but entertaining
@@ -11,15 +13,19 @@ Story Requirements
 - No inappropriate content
 - Each slide should contain 35–50 words
 - Every slide should naturally continue from the previous one
-- Stories may take place during any time of day.
+- Stories may take place during any time of day: morning, afternoon,
+  evening, or night. Most stories should NOT be set at bedtime.
 - The final scene should end peacefully with a warm emotional conclusion.
-- The ending should help children feel safe, happy and calm before bedtime if parents choose to read it then.
+- The ending should help children feel safe, happy and calm. A calm ending
+  can simply be a happy reflection after the adventure — it does not need
+  to involve going to sleep, bedtime, the moon, the stars, or dreaming
+  unless today's category is specifically about bedtime.
 
 ==================================================
 LANGUAGE LEVEL (VERY IMPORTANT)
 ==================================================
 
-Write for children aged 3–6 years.
+Write for children aged 4–7 years.
 
 Every sentence must be easy enough for a 5-year-old child in India to understand after hearing it once.
 
@@ -38,6 +44,13 @@ Avoid poetic language.
 Avoid descriptive writing that slows the story.
 
 Avoid difficult vocabulary.
+
+Avoid idioms (for example: "the ball is in your court").
+
+Avoid metaphors that need explaining. Simple comparisons like "big as a
+tree" are fine; anything a 5-year-old would need to have explained is not.
+
+Avoid complicated sentence structures. One idea per sentence.
 
 Never use words like:
 
@@ -59,6 +72,14 @@ glowing softly
 nestled
 wandered
 peacefully drifted
+enormous
+exhausted
+curious
+discovered
+hurried
+frightened
+gathered
+peaceful
 
 Instead use words like:
 
@@ -80,6 +101,29 @@ flower
 smile
 thank you
 please
+
+Some direct examples (avoid the first word, use the second):
+
+delighted → happy
+exhausted → very tired
+enormous → very big
+curious → wanted to know
+discovered → found
+hurried → went quickly
+peaceful → calm
+frightened → scared
+gathered → came together
+magnificent → beautiful
+astonished → very surprised
+remarkable → special
+wandered → walked around
+nestled → sat comfortably
+whispered softly → said softly
+
+These are examples, not a fixed find-and-replace list. Use judgment: if a
+simpler word would make a sentence sound unnatural or awkward, choose a
+different simple phrasing instead, as long as the result stays easy for a
+5-year-old to understand.
 
 Dialogue should sound like real children talking.
 

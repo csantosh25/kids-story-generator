@@ -34,11 +34,11 @@ class CoverPromptBuilder:
         Personality:
         {character.personality}
 
-        BOOK TITLE
+        BOOK TITLE (for context only — do NOT draw this as text in the image)
 
         {story.story_info.title}
 
-        SUBTITLE
+        SUBTITLE (for context only — do NOT draw this as text in the image)
 
         {story.story_info.subtitle}
 
@@ -124,6 +124,15 @@ class CoverPromptBuilder:
         The final result should feel like a premium children's storybook cover illustrating a moment
         from the story, not a character portrait.
 
+        NO TEXT IN THE IMAGE (STRICT)
+
+        Generate ONLY the illustration itself. The title, subtitle, and all branding are added
+        separately by the application after this image is generated.
+
+        The image must contain absolutely no letters, words, numbers, titles, subtitles, captions,
+        labels, signage, book covers, logos, or watermarks of any kind, even as background details
+        (for example: no signs, no open books with visible writing, no readable text on objects).
+
         QUALITY
 
         Ultra detailed
@@ -134,6 +143,11 @@ class CoverPromptBuilder:
         NEGATIVE PROMPT
 
         No text
+        No title text
+        No subtitle text
+        No letters or numbers of any kind
+        No signage or readable text on objects
+        No book covers or pages with visible writing
         No watermark
         No logo
         No extra characters unless required

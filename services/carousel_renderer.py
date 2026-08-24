@@ -1,9 +1,9 @@
 from pathlib import Path
-from textwrap import fill
 
 from PIL import Image, ImageDraw, ImageFont
 
 from services.brand_loader import BrandLoader
+from utils.text_layout import fit_text_block, draw_text_block, wrap_text_to_width
 
 
 class CarouselRenderer:
@@ -14,8 +14,18 @@ class CarouselRenderer:
     MARGIN = 80
 
     TITLE_SIZE = 60
+    TITLE_MIN_SIZE = 34
+    SUBTITLE_SIZE = 52
+    SUBTITLE_MIN_SIZE = 30
     BODY_SIZE = 42
     FOOTER_SIZE = 30
+
+    HEADER_TOP = 108
+    HEADER_MAX_HEIGHT = 150
+    SUBHEADER_MAX_HEIGHT = 130
+
+    BODY_TOP_MIN = 340
+    BODY_BOTTOM = 1180
 
     def __init__(self):
 
@@ -27,13 +37,15 @@ class CarouselRenderer:
             / "fonts"
         )
 
+        self.font_path = str(self.font_folder / "Poppins-Bold.ttf")
+
         self.title_font = ImageFont.truetype(
-            str(self.font_folder / "Poppins-Bold.ttf"),
+            self.font_path,
             self.TITLE_SIZE,
         )
 
         self.footer_font = ImageFont.truetype(
-            str(self.font_folder / "Poppins-Bold.ttf"),
+            self.font_path,
             self.FOOTER_SIZE,
         )
 
@@ -82,6 +94,9 @@ class CarouselRenderer:
 
         draw = ImageDraw.Draw(image)
 
+        content_x = self.MARGIN
+        content_width = self.WIDTH - (2 * self.MARGIN)
+
         draw.rounded_rectangle(
             [(40, 20), (1040, 100)],
             radius=25,
@@ -103,48 +118,123 @@ class CarouselRenderer:
             fill="white",
         )
 
-        draw.text(
-            (self.MARGIN, 100),
-            story_title,
-            font=self.title_font,
+        # -------------------------------------------------------------
+        # Story title (auto-wraps and shrinks instead of running off-canvas)
+        # -------------------------------------------------------------
+
+        y = self.HEADER_TOP
+
+        title_font, title_lines, title_line_h = fit_text_block(
+            draw=draw,
+            text=story_title,
+            font_path=self.font_path,
+            max_width=content_width,
+            max_height=self.HEADER_MAX_HEIGHT,
+            start_size=self.TITLE_SIZE,
+            min_size=self.TITLE_MIN_SIZE,
+        )
+
+        y = draw_text_block(
+            draw=draw,
+            lines=title_lines,
+            font=title_font,
+            x=content_x,
+            y=y,
+            line_height=title_line_h,
             fill=self.brand["text_color"],
         )
 
+        y += 12
+
+        # -------------------------------------------------------------
+        # Tagline
+        # -------------------------------------------------------------
+
         draw.text(
-            (self.MARGIN, 170),
+            (content_x, y),
             self.brand["tagline"],
             font=self.footer_font,
             fill="#777777",
         )
 
-        draw.text(
-            (self.MARGIN, 250),
-            slide.title,
-            font=self.title_font,
+        tagline_bbox = draw.textbbox(
+            (content_x, y),
+            self.brand["tagline"],
+            font=self.footer_font,
+        )
+
+        y = tagline_bbox[3] + 16
+
+        # -------------------------------------------------------------
+        # Slide title (auto-wraps and shrinks instead of running off-canvas)
+        # -------------------------------------------------------------
+
+        subtitle_font, subtitle_lines, subtitle_line_h = fit_text_block(
+            draw=draw,
+            text=slide.title,
+            font_path=self.font_path,
+            max_width=content_width,
+            max_height=self.SUBHEADER_MAX_HEIGHT,
+            start_size=self.SUBTITLE_SIZE,
+            min_size=self.SUBTITLE_MIN_SIZE,
+        )
+
+        y = draw_text_block(
+            draw=draw,
+            lines=subtitle_lines,
+            font=subtitle_font,
+            x=content_x,
+            y=y,
+            line_height=subtitle_line_h,
             fill=self.brand["primary_color"],
         )
 
+        y += 24
+
+        # -------------------------------------------------------------
+        # Divider + body box
+        # (bottom edge stays fixed so the footer/page-numbering position
+        # never moves, regardless of how much the header grew)
+        # -------------------------------------------------------------
+
+        divider_y = y
+
         draw.line(
-            [(80, 310), (1000, 310)],
+            [(80, divider_y), (1000, divider_y)],
             fill="#DDDDDD",
             width=3,
         )
 
+        body_top = max(self.BODY_TOP_MIN, divider_y + 30)
+
         draw.rounded_rectangle(
-            [(60, 340), (1020, 1180)],
+            [(60, body_top), (1020, self.BODY_BOTTOM)],
             radius=55,
             fill="#FFFDF8",
         )
 
-        wrapped = fill(slide.text, width=34)
+        body_font = self.get_body_font(slide.text)
 
-        draw.multiline_text(
-            (100, 390),
-            wrapped,
-            font=self.get_body_font(slide.text),
-            spacing=12,
+        body_max_width = 1020 - 60 - 80  # matches original ~34-char wrap box
+
+        wrapped_lines = wrap_text_to_width(draw, slide.text, body_font, body_max_width)
+
+        body_bbox = draw.textbbox((0, 0), "Agy", font=body_font)
+        body_line_height = (body_bbox[3] - body_bbox[1]) + 12
+
+        draw_text_block(
+            draw=draw,
+            lines=wrapped_lines,
+            font=body_font,
+            x=100,
+            y=body_top + 50,
+            line_height=body_line_height,
             fill="#333333",
         )
+
+        # -------------------------------------------------------------
+        # Footer (unchanged position: brand handle + page numbering)
+        # -------------------------------------------------------------
 
         draw.line(
             [(80, 1220), (1000, 1220)],

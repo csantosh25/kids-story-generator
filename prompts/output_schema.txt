@@ -81,8 +81,13 @@ The JSON must exactly follow this structure:
 
 Important Rules
 
-- Generate exactly 6 slides.
-- Slide numbers must be 1 to 6.
+- Generate between 4 and 6 slides — choose the number that best fits the
+  natural length of the story. Do not pad the story with extra slides or
+  filler text just to reach 6.
+- Slide numbers must be sequential starting at 1 and match the total
+  number of slides generated (for example, a 5-slide story uses pages 1-5).
 - Every slide must include all fields.
+- The "publishing.hashtags" array must contain EXACTLY 5 hashtags, with no
+  duplicates.
 - Return only JSON.
 - Do not omit any field.

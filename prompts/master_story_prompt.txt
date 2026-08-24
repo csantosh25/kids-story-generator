@@ -140,6 +140,11 @@ Generate a unique story title.
 
 Do not repeat titles from previous stories.
 
+The title should match the actual adventure in the story. Unless today's
+category is Bedtime (Sunday), avoid titles that sound like a bedtime,
+sleepy, dream, moon, or star story. Keep titles simple, warm, and
+child-friendly — avoid unnecessarily advanced words in titles too.
+
 --------------------------------------------------
 VARIETY
 --------------------------------------------------
@@ -149,6 +154,7 @@ Every story should feel fresh.
 Vary:
 
 - setting
+- time of day
 - weather
 - season
 - supporting characters
@@ -158,6 +164,16 @@ Vary:
 - lesson
 - opening scene
 - ending
+
+The adventure does NOT need to happen at bedtime. Set most stories during
+the morning, afternoon, or a daytime activity. Good settings/activities to
+draw from (pick whatever fits today's category and theme):
+
+- morning, afternoon, evening (not only night)
+- school, garden, beach, picnic, farm, library
+- a rainy day, a birthday, baking, music, painting, kite flying
+- helping a friend, a nature walk, visiting grandparents
+- a treasure hunt, a lost toy, camping, learning something new
 
 Avoid repeatedly using:
 
@@ -171,6 +187,12 @@ Avoid repeatedly using:
 unless today's category specifically requires them.
 
 Only Sunday bedtime stories should naturally focus on calming bedtime themes.
+
+The ENDING must not default to going to bed, sleeping, looking at the moon
+or stars, or dreaming, unless today's category is Bedtime (Sunday). A calm,
+warm, positive ending can simply be a happy reflection after the adventure
+— for example the character feeling proud, thankful, or happy with a
+friend — without any sleep or nighttime imagery.
 
 --------------------------------------------------
 VISUAL CONSISTENCY
@@ -247,18 +269,18 @@ Also include a character-specific hashtag using the canonical character name, e.
 #OliverFox
 
 HASHTAGS:
-Generate approximately 12–15 relevant hashtags.
+Generate EXACTLY 5 hashtags in total — no more, no fewer.
 
-Use a balanced mix:
-- parent/audience hashtags
-- children's story/storytime hashtags
-- story-specific learning/topic hashtags
-- brand hashtag
-- character hashtag
-
-Avoid generic irrelevant hashtags.
+The 5 hashtags must include the two required hashtags from BRANDING above
+(#Bedtime01Fables and the character-specific hashtag), plus 3 more that:
+- mix one broad parent/storytime hashtag with one niche/topic hashtag
+  specific to today's lesson or theme, and one additional relevant hashtag
+- are relevant to this specific story (not generic filler)
+- vary from story to story — do not reuse the same 5 hashtags every time
 
 No duplicate hashtags.
+
+Avoid generic irrelevant hashtags.
 
 FIRST COMMENT:
 Encourage a simple, natural conversation related to the story.
