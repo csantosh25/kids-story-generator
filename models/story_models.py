@@ -38,6 +38,13 @@ class Cover(BaseModel):
     negative_prompt: str
     style: str
     title_position: str
+    # Concise, structured fields used to build the actual image-generation
+    # prompt (see CoverPromptBuilder), instead of reusing full slide text.
+    # Defaulted for backward compatibility with older story data.
+    setting: str = ""
+    visual_action: str = ""
+    visual_object: str = ""
+    mood: str = ""
 
 
 class Slide(BaseModel):

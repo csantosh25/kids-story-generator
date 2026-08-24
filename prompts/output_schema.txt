@@ -38,7 +38,11 @@ The JSON must exactly follow this structure:
     "prompt": "",
     "negative_prompt": "text, watermark, blurry, logo",
     "style": "Pixar 3D",
-    "title_position": "bottom"
+    "title_position": "bottom",
+    "setting": "",
+    "visual_action": "",
+    "visual_object": "",
+    "mood": ""
   },
 
   "slides": [
@@ -103,5 +107,8 @@ Important Rules
   (usually 0, occasionally 1, rarely 2). Every supporting character listed
   must have a complete name, species, and appearance (appearance must be
   descriptive enough to draw consistently, not just one or two words).
+- "cover.setting", "cover.visual_action", "cover.visual_object", and
+  "cover.mood" must each be short phrases (a few words), not sentences
+  copied from any slide's text.
 - Return only JSON.
 - Do not omit any field.

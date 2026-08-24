@@ -1,236 +1,163 @@
 class CoverPromptBuilder:
 
-    @staticmethod
-    def _build_supporting_character_section(supporting):
+    MAX_COVER_SUPPORTING_CHARACTERS = 2
 
-        if supporting is None:
-            return """
-        SUPPORTING CHARACTERS
-
-        This story has no important supporting character for the cover. Show
-        only the main character. Do not invent an additional character.
-        """
-
-        return f"""
-        IMPORTANT SUPPORTING CHARACTER
-
-        Name:
-        {supporting.name}
-
-        Animal:
-        {supporting.species}
-
-        Appearance:
-        {supporting.appearance}
-
-        Role in this story:
-        {supporting.role or "a close friend in this story"}
-
-        Include this supporting character alongside the main character,
-        interacting naturally with them (for example: helping, side by side,
-        handing something over, or reacting together).
-
-        Preserve this exact appearance for the supporting character. Do not
-        change their species, colors, or defining features.
-
-        Do not invent any other characters beyond the main character and
-        this one supporting character.
-        """
+    FALLBACK_WORD_LIMIT = 15
 
     @staticmethod
-    def _build_central_idea(story, supporting):
+    def _supporting_brief(supporting_characters):
 
-        parts = [story.story_info.theme]
+        selected = supporting_characters[:CoverPromptBuilder.MAX_COVER_SUPPORTING_CHARACTERS]
 
-        if story.story_info.moral:
-            parts.append(story.story_info.moral)
+        if not selected:
+            return (
+                "No important supporting character for this cover. Show "
+                "only the main character. Do not invent one."
+            )
 
-        if supporting is not None and supporting.role:
-            parts.append(supporting.role)
+        sections = []
 
-        return " — ".join(part for part in parts if part)
+        for supporting in selected:
+
+            role = supporting.role or "a close friend in this story"
+
+            sections.append(
+                f"Name: {supporting.name}\n"
+                f"Species: {supporting.species}\n"
+                f"Appearance: {supporting.appearance}\n"
+                f"Role: {role}"
+            )
+
+        return (
+            "Include this/these supporting character(s), interacting "
+            "naturally with the main character. Preserve their exact "
+            "appearance, species, and colors. Do not invent any character "
+            "beyond those listed here.\n\n" + "\n\n".join(sections)
+        )
+
+    @staticmethod
+    def _visual_action(story):
+
+        action = (story.cover.visual_action or "").strip()
+
+        if action:
+            return action
+
+        # Defensive fallback only, for older-style story data that predates
+        # the concise cover fields: a short excerpt, never the full slide.
+        words = story.slides[0].text.split()
+
+        excerpt = " ".join(words[:CoverPromptBuilder.FALLBACK_WORD_LIMIT])
+
+        if len(words) > CoverPromptBuilder.FALLBACK_WORD_LIMIT:
+            excerpt += "..."
+
+        return excerpt
 
     @staticmethod
     def build(story):
+        """Builds the primary, concise cover visual brief. Deliberately
+        does NOT include full slide narrative text — only short, structured
+        fields needed to draw the scene."""
 
         character = story.character_sheet.main_character
+        supporting_characters = story.character_sheet.supporting_characters
         first_slide = story.slides[0]
 
-        supporting_characters = story.character_sheet.supporting_characters
-        supporting = supporting_characters[0] if supporting_characters else None
+        setting = (story.cover.setting or first_slide.visual_theme or "a friendly outdoor setting").strip()
+        visual_action = CoverPromptBuilder._visual_action(story)
+        visual_object = (story.cover.visual_object or first_slide.icon or "").strip()
+        mood = (story.cover.mood or "warm and cheerful").strip()
 
-        supporting_section = CoverPromptBuilder._build_supporting_character_section(supporting)
-        central_idea = CoverPromptBuilder._build_central_idea(story, supporting)
+        supporting_brief = CoverPromptBuilder._supporting_brief(supporting_characters)
 
         prompt = f"""
-        Create an award-winning children's storybook cover.
+        Create a children's storybook illustration for a book cover.
 
-        STYLE
-        Pixar-quality 3D illustration.
-        Premium children's book artwork.
-        Professional Disney-inspired lighting.
-        Rich textures.
-        Ultra detailed.
+        CHILDREN'S STORYBOOK ILLUSTRATION
 
-        FORMAT
+        Friendly animal characters. Wholesome, everyday setting. Warm,
+        colorful, Pixar-quality 3D storybook style suitable for young
+        children aged 4-7.
 
-        Instagram portrait (4:5).
+        MAIN CHARACTER (visually dominant)
 
-        MAIN CHARACTER (must remain the visually dominant character)
+        Name: {character.name}
+        Species: {character.species}
+        Appearance: {character.appearance}
 
-        Name:
-        {character.name}
+        SUPPORTING CHARACTER(S)
 
-        Animal:
-        {character.species}
+        {supporting_brief}
 
-        Appearance:
-        {character.appearance}
+        SETTING
 
-        Personality:
-        {character.personality}
+        {setting}
 
-        {supporting_section}
+        MAIN VISUAL ACTION
 
-        BOOK TITLE (for context only — do NOT draw this as text in the image)
+        {visual_action}
 
-        {story.story_info.title}
+        IMPORTANT STORY OBJECT
 
-        SUBTITLE (for context only — do NOT draw this as text in the image)
+        {visual_object or "none"}
 
-        {story.story_info.subtitle}
+        MOOD
 
-        CENTRAL STORY IDEA
-
-        {central_idea}
-
-        The cover should visually communicate this central idea, not just
-        show the main character alone.
-
-        STORY ACTION
-
-        Scene description:
-        {first_slide.text}
-
-        Visual theme:
-        {first_slide.visual_theme}
-
-        Visual motif:
-        {first_slide.icon}
-
-        Show the character actively performing the central action from this scene.
-
-        Do not show the character simply standing, smiling, facing the camera, or posing for a portrait.
-
-        Do not invent unrelated story events.
-
-        STORY ENVIRONMENT
-
-        Show the actual environment and location suggested by the scene description above.
-
-        The environment must be recognizable and relevant to what is happening.
-
-        Avoid generic or empty backgrounds.
-
-        STORY ELEMENTS
-
-        Include approximately 2-5 meaningful visual elements that are actually supported by the scene
-        (for example: food, flowers, books, toys, leaves, baskets, trees, furniture, other story
-        characters, or objects involved in the action).
-
-        Do not add random decorative objects simply to fill space.
+        {mood}
 
         COMPOSITION
 
-        Use a children's storybook composition with visual depth across three layers:
+        Children's storybook composition with foreground, middle-ground and
+        background depth. The main character is visually dominant and
+        performing the main action, in natural proportion — do not let any
+        character fill the entire frame. Keep the lower portion of the
+        image visually calm and clean; the application adds a title bar
+        there afterward.
 
-        Foreground:
-        small story-relevant details or objects.
+        STRICT CONTENT REQUIREMENTS
 
-        Middle ground:
-        the main character (and the supporting character, if specified above) performing the main action.
-
-        Background:
-        the story environment, with enough detail to establish place and context.
-
-        CHARACTER SCALE
-
-        The main character should be visually important, clearly recognizable, and remain the
-        dominant figure in the composition. A supporting character, if present, should be smaller
-        or positioned so it does not compete with the main character for visual weight.
-
-        The main character should occupy a natural proportion of the scene so that the environment
-        and story action remain visible.
-
-        Do not let any character fill the entire frame.
-
-        LIGHTING
-
-        Warm morning sunlight or soft golden afternoon light depending on the story.
-
-        COLOURS
-
-        Bright
-        Cheerful
-        High contrast
-        Kid friendly
-
-        BACKGROUND
-
-        Keep the background sufficiently detailed to communicate the story setting, while maintaining
-        clear visual hierarchy so the main character performing the action remains the focal point.
-
-        Do not blur or soften the background into emptiness.
-
-        TITLE SPACE
-
-        The application overlays the story title in a bar across the LOWER portion of the final
-        image. Keep the lower portion of the composition relatively calm and visually clean so the
-        title overlay remains legible, without turning the overall image into a portrait.
-
-        VISUAL STYLE
-
-        The final result should feel like a premium children's storybook cover illustrating a moment
-        from the story, not a character portrait.
-
-        NO TEXT IN THE IMAGE (STRICT)
-
-        Generate ONLY the illustration itself. The title, subtitle, and all branding are added
-        separately by the application after this image is generated.
-
-        The image must contain absolutely no letters, words, numbers, titles, subtitles, captions,
-        labels, signage, book covers, logos, or watermarks of any kind, even as background details
-        (for example: no signs, no open books with visible writing, no readable text on objects).
-
-        QUALITY
-
-        Ultra detailed
-        Pixar quality
-        Storybook illustration
-        Professional children's publishing quality
+        - Children's storybook illustration only, in a wholesome everyday setting.
+        - Friendly animal characters, smiling and safe.
+        - No text, no title, no subtitle, no words, no letters, no numbers, no logo, no watermark.
+        - No scary content, no violence, no injury, no weapons, no dangerous behavior, no adult themes.
+        - Nothing frightening, threatening, or unsafe for a young child.
 
         NEGATIVE PROMPT
 
-        No text
-        No title text
-        No subtitle text
-        No letters or numbers of any kind
-        No signage or readable text on objects
-        No book covers or pages with visible writing
-        No watermark
-        No logo
-        No characters beyond the main character and the one specified supporting character (if any)
-        No blurry face
-        No cropped face
-        No dark image
-        No static portrait pose
-        No character facing camera without action
-        No plain or empty background
-        No generic background
-        No excessive close-up
-        No character filling the entire frame
-        No random unrelated objects
-        No changes to any character's species, colors, or defining features
+        text, title, subtitle, words, letters, numbers, logo, watermark,
+        scary content, violence, weapons, blood, injury, dangerous
+        behavior, adult content, static portrait pose, character facing
+        camera without action, character filling the entire frame, plain
+        empty background, extra unrelated characters, random unrelated
+        objects
         """
 
         return prompt.strip()
+
+    @staticmethod
+    def build_fallback(story):
+        """A substantially simpler, more generic prompt used only after the
+        primary prompt's OUTPUT was blocked by the provider's moderation
+        system. Deliberately avoids proper names and story specifics to
+        maximize the chance of a safe, benign result."""
+
+        character = story.character_sheet.main_character
+        supporting_characters = story.character_sheet.supporting_characters
+
+        supporting_clause = ""
+
+        if supporting_characters:
+
+            supporting = supporting_characters[0]
+
+            supporting_clause = f", with a friendly {supporting.species.lower()} nearby"
+
+        return (
+            f"A wholesome children's storybook illustration of a friendly "
+            f"{character.species.lower()}{supporting_clause}, in a bright "
+            f"natural setting. The characters are smiling and safe. Warm "
+            f"daylight. Soft, colorful 3D storybook style. No text, no "
+            f"words, no letters, no numbers, no logo, no watermark. No "
+            f"scary content, no violence, no weapons."
+        )
