@@ -1,5 +1,5 @@
 from typing import List
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class StoryInfo(BaseModel):
@@ -18,8 +18,19 @@ class MainCharacter(BaseModel):
     personality: str
 
 
+class SupportingCharacter(BaseModel):
+    name: str
+    species: str
+    appearance: str
+    role: str = ""
+
+
 class CharacterSheet(BaseModel):
     main_character: MainCharacter
+    # Optional and defaulted for backward compatibility: existing story.json
+    # files and any code that builds a CharacterSheet without this field
+    # continue to work unchanged.
+    supporting_characters: List[SupportingCharacter] = Field(default_factory=list)
 
 
 class Cover(BaseModel):

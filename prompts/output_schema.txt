@@ -23,7 +23,15 @@ The JSON must exactly follow this structure:
       "species": "",
       "appearance": "",
       "personality": ""
-    }
+    },
+    "supporting_characters": [
+      {
+        "name": "",
+        "species": "",
+        "appearance": "",
+        "role": ""
+      }
+    ]
   },
 
   "cover": {
@@ -89,5 +97,11 @@ Important Rules
 - Every slide must include all fields.
 - The "publishing.hashtags" array must contain EXACTLY 5 hashtags, with no
   duplicates.
+- "character_sheet.supporting_characters" is OPTIONAL. Use an empty array
+  [] when no supporting character is central to the story. Only include a
+  supporting character here when they are genuinely important to the plot
+  (usually 0, occasionally 1, rarely 2). Every supporting character listed
+  must have a complete name, species, and appearance (appearance must be
+  descriptive enough to draw consistently, not just one or two words).
 - Return only JSON.
 - Do not omit any field.

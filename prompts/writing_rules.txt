@@ -11,7 +11,11 @@ Story Requirements
 - No violence
 - No scary scenes
 - No inappropriate content
-- Each slide should contain 35–50 words
+- Each slide should generally contain approximately 50–65 words. This is a
+  target, not a rigid requirement — never pad a slide with unnecessary
+  description just to reach it, and never cut a naturally shorter or
+  longer slide to force this range. Reach this length through meaningful
+  action, dialogue, or a step in the story, not through description.
 - Every slide should naturally continue from the previous one
 - Stories may take place during any time of day: morning, afternoon,
   evening, or night. Most stories should NOT be set at bedtime.
@@ -51,6 +55,27 @@ Avoid metaphors that need explaining. Simple comparisons like "big as a
 tree" are fine; anything a 5-year-old would need to have explained is not.
 
 Avoid complicated sentence structures. One idea per sentence.
+
+--------------------------------------------------
+STORY DEPTH (use this to reach the word target — not description)
+--------------------------------------------------
+
+When a slide needs more content, add one of these instead of describing
+things at length:
+
+- a meaningful action the character takes
+- a short line of simple dialogue
+- an interaction between characters
+- a small moment of discovery
+- a step toward the problem or its solution
+
+Prefer simple and complete over long and descriptive. For example:
+
+Prefer:
+"The best berries were high up. Pip could not reach them."
+
+Avoid:
+"The most delicious berries were growing high above, beyond Pip's reach."
 
 Never use words like:
 

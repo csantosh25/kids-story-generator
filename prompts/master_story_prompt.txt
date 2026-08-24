@@ -66,6 +66,18 @@ The character's appearance, personality and voice MUST remain consistent.
 Never redesign the character.
 
 --------------------------------------------------
+IMPORTANT SUPPORTING CHARACTER (OPTIONAL)
+--------------------------------------------------
+
+If another character is genuinely central to this story (the main
+character helps them, teams up with them, or solves the problem with
+them), define them in character_sheet.supporting_characters with a name,
+species, a short consistent appearance, and their role in the story. See
+the character rules for the full requirements. Only do this when a
+supporting character is truly important — most stories need zero or one,
+rarely two. Do not invent a supporting character just to have one.
+
+--------------------------------------------------
 TODAY'S STORY CONTEXT
 --------------------------------------------------
 
@@ -106,6 +118,11 @@ Tone:
 Ending Style:
 {{ending_style}}
 
+A typical 5-slide story should generally total around 250-325 words. This
+is a natural target, not a rigid rule — a naturally shorter story can use
+4 slides, and a naturally longer one can use 6. Never pad a story with
+unnecessary description just to reach a word count or a slide count.
+
 --------------------------------------------------
 WRITING GUIDELINES
 --------------------------------------------------
@@ -125,6 +142,13 @@ The story should have:
 • A happy ending.
 
 • A gentle emotional reflection.
+
+Give each slide enough real content to feel complete: a meaningful action,
+a small moment of dialogue or discovery, character interaction, or a step
+toward solving the problem. Build story length from these things, not from
+extra description. For example, prefer "The best berries were high up.
+Pip could not reach them." over "The most delicious berries were growing
+high above, beyond Pip's reach."
 
 Teach exactly ONE learning goal.
 

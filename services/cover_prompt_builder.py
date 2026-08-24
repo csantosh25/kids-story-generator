@@ -1,10 +1,66 @@
 class CoverPromptBuilder:
 
     @staticmethod
+    def _build_supporting_character_section(supporting):
+
+        if supporting is None:
+            return """
+        SUPPORTING CHARACTERS
+
+        This story has no important supporting character for the cover. Show
+        only the main character. Do not invent an additional character.
+        """
+
+        return f"""
+        IMPORTANT SUPPORTING CHARACTER
+
+        Name:
+        {supporting.name}
+
+        Animal:
+        {supporting.species}
+
+        Appearance:
+        {supporting.appearance}
+
+        Role in this story:
+        {supporting.role or "a close friend in this story"}
+
+        Include this supporting character alongside the main character,
+        interacting naturally with them (for example: helping, side by side,
+        handing something over, or reacting together).
+
+        Preserve this exact appearance for the supporting character. Do not
+        change their species, colors, or defining features.
+
+        Do not invent any other characters beyond the main character and
+        this one supporting character.
+        """
+
+    @staticmethod
+    def _build_central_idea(story, supporting):
+
+        parts = [story.story_info.theme]
+
+        if story.story_info.moral:
+            parts.append(story.story_info.moral)
+
+        if supporting is not None and supporting.role:
+            parts.append(supporting.role)
+
+        return " — ".join(part for part in parts if part)
+
+    @staticmethod
     def build(story):
 
         character = story.character_sheet.main_character
         first_slide = story.slides[0]
+
+        supporting_characters = story.character_sheet.supporting_characters
+        supporting = supporting_characters[0] if supporting_characters else None
+
+        supporting_section = CoverPromptBuilder._build_supporting_character_section(supporting)
+        central_idea = CoverPromptBuilder._build_central_idea(story, supporting)
 
         prompt = f"""
         Create an award-winning children's storybook cover.
@@ -20,7 +76,7 @@ class CoverPromptBuilder:
 
         Instagram portrait (4:5).
 
-        MAIN CHARACTER
+        MAIN CHARACTER (must remain the visually dominant character)
 
         Name:
         {character.name}
@@ -34,6 +90,8 @@ class CoverPromptBuilder:
         Personality:
         {character.personality}
 
+        {supporting_section}
+
         BOOK TITLE (for context only — do NOT draw this as text in the image)
 
         {story.story_info.title}
@@ -41,6 +99,13 @@ class CoverPromptBuilder:
         SUBTITLE (for context only — do NOT draw this as text in the image)
 
         {story.story_info.subtitle}
+
+        CENTRAL STORY IDEA
+
+        {central_idea}
+
+        The cover should visually communicate this central idea, not just
+        show the main character alone.
 
         STORY ACTION
 
@@ -83,17 +148,21 @@ class CoverPromptBuilder:
         small story-relevant details or objects.
 
         Middle ground:
-        the main character performing the main action.
+        the main character (and the supporting character, if specified above) performing the main action.
 
         Background:
         the story environment, with enough detail to establish place and context.
 
         CHARACTER SCALE
 
-        The character should be visually important and clearly recognizable, but should occupy a
-        natural proportion of the scene so that the environment and story action remain visible.
+        The main character should be visually important, clearly recognizable, and remain the
+        dominant figure in the composition. A supporting character, if present, should be smaller
+        or positioned so it does not compete with the main character for visual weight.
 
-        Do not let the character fill the entire frame.
+        The main character should occupy a natural proportion of the scene so that the environment
+        and story action remain visible.
+
+        Do not let any character fill the entire frame.
 
         LIGHTING
 
@@ -109,7 +178,7 @@ class CoverPromptBuilder:
         BACKGROUND
 
         Keep the background sufficiently detailed to communicate the story setting, while maintaining
-        clear visual hierarchy so the character performing the action remains the focal point.
+        clear visual hierarchy so the main character performing the action remains the focal point.
 
         Do not blur or soften the background into emptiness.
 
@@ -150,7 +219,7 @@ class CoverPromptBuilder:
         No book covers or pages with visible writing
         No watermark
         No logo
-        No extra characters unless required
+        No characters beyond the main character and the one specified supporting character (if any)
         No blurry face
         No cropped face
         No dark image
@@ -161,6 +230,7 @@ class CoverPromptBuilder:
         No excessive close-up
         No character filling the entire frame
         No random unrelated objects
+        No changes to any character's species, colors, or defining features
         """
 
         return prompt.strip()

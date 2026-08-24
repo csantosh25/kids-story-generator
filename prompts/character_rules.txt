@@ -16,6 +16,28 @@ The supplied character MUST remain the protagonist throughout the entire story.
 
 Supporting characters may be introduced only if they help the story.
 
-Every illustration prompt must use exactly the same appearance description.
+If a supporting character is central to the story — for example the main
+character helps them, teams up with them, or solves a problem together —
+define them clearly and add them to character_sheet.supporting_characters:
+
+- name
+- species
+- a short, consistent appearance description (2-3 concrete details is
+  enough, for example: "a small blue bird with a yellow chest and tiny
+  orange feet")
+- role: a short phrase describing why they matter to this story (for
+  example: "cannot reach the berries and needs help")
+
+Keep a supporting character's appearance consistent if they are mentioned
+again later in the same story.
+
+Do NOT add a character to character_sheet.supporting_characters if they
+are only mentioned briefly or are not central to the plot. Most stories
+will have zero or one important supporting character; only rarely two.
+Leave character_sheet.supporting_characters as an empty list when there is
+no character that meaningful.
+
+Every illustration prompt must use exactly the same appearance description,
+for the main character and for any supporting character.
 
 The reader should recognize the character across multiple stories as part of the Wonderwood Valley universe.

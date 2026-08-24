@@ -5,10 +5,13 @@ class StoryValidator:
 
     MIN_SLIDES = 4
     MAX_SLIDES = 6
-    MIN_WORDS = 20
-    MAX_WORDS = 80
+    MIN_WORDS = 30
+    MAX_WORDS = 90
 
     MAX_SENTENCE_WORDS = 14
+
+    MAX_SUPPORTING_CHARACTERS = 2
+    MIN_SUPPORTING_APPEARANCE_LENGTH = 10
 
     # Soft "too advanced" word list, mirroring prompts/writing_rules.txt.
     # A hit here fails validation (triggering the existing regenerate/retry
@@ -162,6 +165,35 @@ class StoryValidator:
             errors.append(
                 "Main character never appears in the story."
             )
+
+        # ---------- Supporting Characters ----------
+
+        supporting_characters = story.character_sheet.supporting_characters
+
+        if len(supporting_characters) > StoryValidator.MAX_SUPPORTING_CHARACTERS:
+            errors.append(
+                f"Too many supporting characters ({len(supporting_characters)}); "
+                f"only include characters who are central to the story "
+                f"(max {StoryValidator.MAX_SUPPORTING_CHARACTERS})."
+            )
+
+        for supporting in supporting_characters:
+
+            if not supporting.name.strip():
+                errors.append(
+                    "A supporting character is missing a name."
+                )
+
+            if not supporting.species.strip():
+                errors.append(
+                    f"Supporting character '{supporting.name}' is missing a species."
+                )
+
+            if len(supporting.appearance.strip()) < StoryValidator.MIN_SUPPORTING_APPEARANCE_LENGTH:
+                errors.append(
+                    f"Supporting character '{supporting.name}' needs a more "
+                    f"descriptive appearance so it can be drawn consistently."
+                )
 
         # ---------- Ending ----------
 
