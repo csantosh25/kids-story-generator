@@ -73,7 +73,10 @@ class YouTube(BaseModel):
     keywords: List[str]
 
 class PublishingPack(BaseModel):
-    hook: str
+    # Defaulted for backward compatibility: story.json files generated
+    # before this field existed (e.g. reused by the Reel generator) can
+    # still be loaded.
+    hook: str = ""
     instagram_caption_short: str
     instagram_caption_long: str
     hashtags: List[str]

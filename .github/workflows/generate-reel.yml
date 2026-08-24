@@ -1,0 +1,71 @@
+name: Generate Reel (Manual Test)
+
+on:
+  workflow_dispatch:
+    inputs:
+      content_id:
+        description: "Content Library ID of the story to turn into a Reel"
+        required: true
+
+jobs:
+  generate-reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version
+          ffprobe -version
+
+      - name: Run Reel Generator
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python generate_reel.py --content-id "${{ github.event.inputs.content_id }}"
+
+      # generate_reel.py already fails (non-zero exit) with a clear message
+      # for: unknown content ID, missing story assets, TTS failure, ffmpeg
+      # failure, or a missing/empty reel.mp4 -- so a failure in the step
+      # above already stops the job here. This upload is the final,
+      # explicit check that a real reel.mp4 exists on disk.
+      - name: Upload reel.mp4
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-video
+          path: output/**/reel.mp4
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload reel_script.json (optional, for inspection)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-script
+          path: output/**/reel_script.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload reel_narration.mp3 (optional, for inspection)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-narration
+          path: output/**/reel_narration.mp3
+          if-no-files-found: warn
+          retention-days: 14
