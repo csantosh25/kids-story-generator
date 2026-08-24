@@ -42,3 +42,17 @@ Instagram friendly
 Do NOT include text inside the artwork.
 
 Reserve the lower third of the cover image for title placement.
+
+Also generate a short, structured COVER VISUAL BRIEF for the cover image.
+This is used instead of full story text to build the actual image prompt,
+so keep every part of it short and concrete — a few words each, never a
+sentence copied from a slide.
+
+- cover.setting: where the cover scene happens (for example: "a sunny
+  forest clearing").
+- cover.visual_action: the single central action for the cover, under 15
+  words (for example: "Bella helps Pip reach the high berries").
+- cover.visual_object: one important story object visible in the scene, if
+  any (for example: "a basket of red berries"). Leave empty if none.
+- cover.mood: the emotional tone of the cover (for example: "warm and
+  cheerful").

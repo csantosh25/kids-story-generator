@@ -1,5 +1,5 @@
 from typing import List
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class StoryInfo(BaseModel):
@@ -18,8 +18,19 @@ class MainCharacter(BaseModel):
     personality: str
 
 
+class SupportingCharacter(BaseModel):
+    name: str
+    species: str
+    appearance: str
+    role: str = ""
+
+
 class CharacterSheet(BaseModel):
     main_character: MainCharacter
+    # Optional and defaulted for backward compatibility: existing story.json
+    # files and any code that builds a CharacterSheet without this field
+    # continue to work unchanged.
+    supporting_characters: List[SupportingCharacter] = Field(default_factory=list)
 
 
 class Cover(BaseModel):
@@ -27,6 +38,13 @@ class Cover(BaseModel):
     negative_prompt: str
     style: str
     title_position: str
+    # Concise, structured fields used to build the actual image-generation
+    # prompt (see CoverPromptBuilder), instead of reusing full slide text.
+    # Defaulted for backward compatibility with older story data.
+    setting: str = ""
+    visual_action: str = ""
+    visual_object: str = ""
+    mood: str = ""
 
 
 class Slide(BaseModel):

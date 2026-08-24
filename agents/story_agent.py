@@ -161,7 +161,22 @@ class StoryAgent:
                 canonical_character["personality"]
             )
 
-            valid, errors = StoryValidator.validate(story)
+            # ---------------------------------------
+            # Enforce Established Posting Time
+            # ---------------------------------------
+            # Guaranteed in code, not left to the model's judgment -- the
+            # prompt already asks for this value, but this overwrite
+            # ensures it's never a random/unrelated time regardless of
+            # what the model actually returns.
+
+            story.publishing.best_posting_time = (
+                "7:00–9:00 PM IST — our established Instagram posting window."
+            )
+
+            valid, errors = StoryValidator.validate(
+                story,
+                day=story_context.get("day"),
+            )
 
             if valid:
                 print("✅ Story validation passed.")

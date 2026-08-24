@@ -23,14 +23,26 @@ The JSON must exactly follow this structure:
       "species": "",
       "appearance": "",
       "personality": ""
-    }
+    },
+    "supporting_characters": [
+      {
+        "name": "",
+        "species": "",
+        "appearance": "",
+        "role": ""
+      }
+    ]
   },
 
   "cover": {
     "prompt": "",
     "negative_prompt": "text, watermark, blurry, logo",
     "style": "Pixar 3D",
-    "title_position": "bottom"
+    "title_position": "bottom",
+    "setting": "",
+    "visual_action": "",
+    "visual_object": "",
+    "mood": ""
   },
 
   "slides": [
@@ -81,8 +93,22 @@ The JSON must exactly follow this structure:
 
 Important Rules
 
-- Generate exactly 6 slides.
-- Slide numbers must be 1 to 6.
+- Generate between 4 and 6 slides — choose the number that best fits the
+  natural length of the story. Do not pad the story with extra slides or
+  filler text just to reach 6.
+- Slide numbers must be sequential starting at 1 and match the total
+  number of slides generated (for example, a 5-slide story uses pages 1-5).
 - Every slide must include all fields.
+- The "publishing.hashtags" array must contain EXACTLY 5 hashtags, with no
+  duplicates.
+- "character_sheet.supporting_characters" is OPTIONAL. Use an empty array
+  [] when no supporting character is central to the story. Only include a
+  supporting character here when they are genuinely important to the plot
+  (usually 0, occasionally 1, rarely 2). Every supporting character listed
+  must have a complete name, species, and appearance (appearance must be
+  descriptive enough to draw consistently, not just one or two words).
+- "cover.setting", "cover.visual_action", "cover.visual_object", and
+  "cover.mood" must each be short phrases (a few words), not sentences
+  copied from any slide's text.
 - Return only JSON.
 - Do not omit any field.
