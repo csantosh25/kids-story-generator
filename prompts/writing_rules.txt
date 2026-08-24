@@ -11,11 +11,13 @@ Story Requirements
 - No violence
 - No scary scenes
 - No inappropriate content
-- Each slide should generally contain approximately 50–65 words. This is a
-  target, not a rigid requirement — never pad a slide with unnecessary
-  description just to reach it, and never cut a naturally shorter or
-  longer slide to force this range. Reach this length through meaningful
-  action, dialogue, or a step in the story, not through description.
+- Each slide should generally contain approximately 55–70 words when the
+  story naturally supports it. This is a target, not a rigid requirement —
+  never pad a slide with unnecessary description just to reach it, and
+  never cut a naturally shorter or longer slide to force this range.
+  Natural story flow always comes before filling visual space. Reach this
+  length through meaningful action, dialogue, or a step in the story, not
+  through description.
 - Every slide should naturally continue from the previous one
 - Stories may take place during any time of day: morning, afternoon,
   evening, or night. Most stories should NOT be set at bedtime.
@@ -55,6 +57,33 @@ Avoid metaphors that need explaining. Simple comparisons like "big as a
 tree" are fine; anything a 5-year-old would need to have explained is not.
 
 Avoid complicated sentence structures. One idea per sentence.
+
+--------------------------------------------------
+SOUND LIKE A PARENT TALKING, NOT A BOOK
+--------------------------------------------------
+
+Some wording can use only simple words and still sound literary, stiff, or
+AI-generated instead of like natural spoken English. Prefer the version
+that sounds like a parent talking out loud to their child.
+
+For example:
+
+Instead of:
+"The tastiest acorns were too high."
+
+Prefer:
+"The best acorns were too high."
+
+Instead of:
+"His little nose was twitching slowly."
+
+Prefer:
+"Squeaky looked up at the acorns."
+
+These are examples of the kind of adjustment to make, not a fixed
+replacement list. Read each sentence and ask: would a parent actually say
+this out loud to their child? If not, rewrite it in plainer, more natural
+spoken English.
 
 --------------------------------------------------
 STORY DEPTH (use this to reach the word target — not description)

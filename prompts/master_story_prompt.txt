@@ -118,10 +118,11 @@ Tone:
 Ending Style:
 {{ending_style}}
 
-A typical 5-slide story should generally total around 250-325 words. This
+A typical 5-slide story should generally total around 275-350 words. This
 is a natural target, not a rigid rule — a naturally shorter story can use
-4 slides, and a naturally longer one can use 6. Never pad a story with
-unnecessary description just to reach a word count or a slide count.
+4 slides, and a naturally longer one can use 6. Natural story flow always
+comes before filling visual space — never pad a story with unnecessary
+description just to reach a word count or a slide count.
 
 --------------------------------------------------
 WRITING GUIDELINES
@@ -168,6 +169,13 @@ The title should match the actual adventure in the story. Unless today's
 category is Bedtime (Sunday), avoid titles that sound like a bedtime,
 sleepy, dream, moon, or star story. Keep titles simple, warm, and
 child-friendly — avoid unnecessarily advanced words in titles too.
+
+The title should accurately describe the main action of the story,
+including the important supporting character when there is one. For
+example, if the main character helps a supporting character reach some
+acorns, prefer a title like "Bella Bear Helps Squeaky Reach the Acorns"
+rather than a title that implies a different action. Let the title arise
+naturally from the actual story — do not force a specific title format.
 
 --------------------------------------------------
 VARIETY
@@ -318,7 +326,11 @@ One thoughtful but simple question parents can ask the child after reading.
 
 BEST POSTING TIME
 
-Recommend the best posting time for Instagram.
+Always use "7:00–9:00 PM IST" as the recommended posting time, with a
+brief note that this is the account's established Instagram posting
+window. Do not recommend any other time (for example, do not suggest
+morning times such as "10 AM IST") — this value is fixed and not up to
+your judgment.
 
 Keep all publishing text in the same simple English style used for the story.
 
