@@ -10,6 +10,7 @@ from services.reel_service import (
     ReelService,
     ReelGenerationError,
 )
+from services.reel_image_service import ReelImageGenerationError
 
 
 def _write_minimal_story_assets(folder: Path):
@@ -87,9 +88,9 @@ def _write_minimal_story_assets(folder: Path):
     Image.new("RGB", (1080, 1350), "#EED9B8").save(folder / "cover_final.png")
 
     # Slide PNGs only need to exist for the eligibility/completeness check
-    # (discover_story_images) -- the new Reel pipeline never opens them as
-    # images (see reel_service module docstring), so placeholder bytes are
-    # fine here.
+    # (discover_story_images) -- the Reel pipeline never opens carousel
+    # slide PNGs as images (see reel_service module docstring), so
+    # placeholder bytes are fine here.
     (folder / "slide_1.png").write_bytes(b"fake-png")
     (folder / "slide_2.png").write_bytes(b"fake-png")
     (folder / "slide_3.png").write_bytes(b"fake-png")
@@ -109,16 +110,37 @@ _VALID_METADATA = {
 }
 
 
+def _fake_ensure_scenes_writing_real_images(folder):
+    """Returns a function suitable as ReelImageService.ensure_scenes'
+    side_effect: writes a REAL, decodable PNG for each requested beat
+    (since materialize_scene_images() actually opens/crops these with
+    PIL) and returns the same {"slide_index", "image_path"} shape the
+    real ReelImageService returns -- without ever calling OpenAI."""
+
+    def fake_ensure_scenes(story, content_id, beat_indices, beat_texts, **kwargs):
+        target_folder = kwargs.get("folder", folder)
+        results = []
+        for slide_index in beat_indices:
+            path = target_folder / f"reel_scene_{slide_index + 1:02d}.png"
+            Image.new("RGB", (1024, 1536), "#C9A0DC").save(path)
+            results.append({"slide_index": slide_index, "image_path": path})
+        return results
+
+    return fake_ensure_scenes
+
+
 class ReelServiceGenerateTests(unittest.TestCase):
     """Exercises ReelService.generate() end-to-end against real temp-dir
     story assets, with only the true external boundaries mocked: the
-    Content Library backing store, OpenAI TTS, and the ffmpeg/ffprobe
-    subprocess calls. No real API or subprocess call is ever made."""
+    Content Library backing store, OpenAI TTS, the Reel image-generation
+    service, and the ffmpeg/ffprobe subprocess calls. No real API or
+    subprocess call is ever made."""
 
     def _make_service(self, folder, content_id="KS-000001"):
 
         with patch("services.reel_service.ContentLibraryService"), \
              patch("services.reel_service.OpenAITTSService"), \
+             patch("services.reel_service.ReelImageService"), \
              patch("services.reel_service.BrandLoader.load", return_value={}):
 
             service = ReelService()
@@ -136,6 +158,10 @@ class ReelServiceGenerateTests(unittest.TestCase):
             return output_file
 
         service.tts.generate.side_effect = fake_tts_generate
+
+        # Default image-service behaviour: write real, decodable PNGs for
+        # each requested beat scene (no real OpenAI image call).
+        service.images.ensure_scenes.side_effect = _fake_ensure_scenes_writing_real_images(folder)
 
         return service
 
@@ -160,8 +186,9 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
     def test_success_materializes_full_bleed_scene_images(self):
         """The rendered scene images fed to ffmpeg must already be exactly
-        1080x1920 (full-bleed cover crop + colour beat cards) -- no more
-        1080x1350-on-cream-padding."""
+        1080x1920 (full-bleed cover crop + full-bleed illustrated beat
+        scenes) -- no more 1080x1350-on-cream-padding, and not the same
+        single image repeated for every scene."""
 
         with TemporaryDirectory() as tmp:
 
@@ -194,8 +221,32 @@ class ReelServiceGenerateTests(unittest.TestCase):
                     self.assertEqual(image.size, (1080, 1920))
 
             # More than one distinct image file was used (cover + at least
-            # one beat card) -- not the same single image repeated.
+            # one illustrated beat scene) -- not the same single image
+            # repeated for the whole Reel.
             self.assertGreater(len(set(image_paths)), 1)
+
+    def test_image_service_called_with_matching_beat_indices_and_texts(self):
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
+
+                service.generate(content_id="KS-000001")
+
+            service.images.ensure_scenes.assert_called_once()
+            _, kwargs = service.images.ensure_scenes.call_args
+
+            self.assertEqual(kwargs["content_id"], "KS-000001")
+            self.assertLessEqual(len(kwargs["beat_indices"]), 3)
+            self.assertEqual(len(kwargs["beat_indices"]), len(kwargs["beat_texts"]))
+            self.assertEqual(kwargs["folder"], folder)
 
     def test_unknown_content_id_fails_without_touching_ffmpeg(self):
 
@@ -247,6 +298,53 @@ class ReelServiceGenerateTests(unittest.TestCase):
                  patch("services.reel_service.run_ffmpeg_command") as mock_ffmpeg:
 
                 with self.assertRaises(ReelGenerationError):
+                    service.generate(content_id="KS-000001")
+
+            mock_ffmpeg.assert_not_called()
+            service.library.update_reel.assert_not_called()
+
+    def test_image_generation_failure_does_not_update_library(self):
+        """Mirrors the TTS/ffmpeg failure contract: if Reel scene image
+        generation fails, the whole Reel attempt fails and the Content
+        Library is left unchanged -- no silent fallback to a flat visual."""
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+            service.images.ensure_scenes.side_effect = ReelImageGenerationError("image API boom")
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command") as mock_ffmpeg:
+
+                with self.assertRaises(ReelGenerationError):
+                    service.generate(content_id="KS-000001")
+
+            mock_ffmpeg.assert_not_called()
+            service.library.update_reel.assert_not_called()
+            self.assertFalse((folder / "reel.mp4").exists())
+
+    def test_missing_illustrated_scene_fails_before_ffmpeg(self):
+        """Defensive check: if ensure_scenes returns fewer scenes than
+        there are beat segments (a broken/incomplete mock or a future
+        regression), materialize_scene_images must fail loudly rather
+        than silently rendering with a missing visual."""
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+            service.images.ensure_scenes.side_effect = None
+            service.images.ensure_scenes.return_value = []  # no scenes at all
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command") as mock_ffmpeg:
+
+                with self.assertRaises(Exception):
                     service.generate(content_id="KS-000001")
 
             mock_ffmpeg.assert_not_called()

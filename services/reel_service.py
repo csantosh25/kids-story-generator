@@ -10,6 +10,7 @@ from models.story_models import StoryPackage
 from services.brand_loader import BrandLoader
 from services.content_library_service import ContentLibraryService
 from services.openai_tts_service import OpenAITTSService
+from services.reel_image_service import ReelImageGenerationError, ReelImageService
 from utils.text_layout import wrap_text_to_width
 
 
@@ -353,16 +354,14 @@ def save_reel_script(script, folder: Path) -> Path:
 # the text cards' content is illegible at Reel scale and their pale
 # backgrounds visually blend with the cover's own padding colour.
 #
-# Since generating new illustrations per Reel is explicitly out of scope
-# (cost), the only genuinely usable illustrated asset per story is the
-# cover. The design here leans on that fact honestly instead of pretending
-# the slides are cinematic: the cover provides the one real "scene" (used
-# to open AND close the Reel, with different narration each time so it
-# doesn't feel repeated), and each selected story beat is instead given
-# its own full-bleed colour card built from that beat's own
-# background_color (already authored per-slide by the daily pipeline, so
-# it's real, existing story data -- not a new asset) -- giving genuine,
-# deterministic, zero-cost visual variation between beats.
+# V3: rather than falling back to a flat colour card per beat (V2), each
+# selected story beat now gets its own dedicated, AI-illustrated Reel
+# scene (see services/reel_image_service.py) -- up to
+# DEFAULT_MAX_STORY_SLIDES_IN_REEL new images total, cached across runs.
+# The existing cover is still reused (never regenerated) to open and
+# close the Reel. Every scene image, illustrated or the cover, is
+# converted to a full-bleed 1080x1920 frame the same way: crop_to_fill()
+# below -- no padding, no distortion.
 # =====================================================================
 
 DEFAULT_MAX_STORY_SLIDES_IN_REEL = 3  # + cover(open) + cover(outro)
@@ -418,38 +417,36 @@ def crop_to_fill(image: Image.Image, target_width=TARGET_WIDTH, target_height=TA
     return resized.crop((left, top, left + target_width, top + target_height))
 
 
-def prepare_cover_scene_image(hero_image_path: Path, output_path: Path,
-                               width=TARGET_WIDTH, height=TARGET_HEIGHT) -> Path:
-    """Materializes a full-bleed 1080x1920 Reel frame from the existing
-    cover artwork -- centre-cropped, never distorted, never padded."""
+def prepare_full_bleed_image(source_image_path: Path, output_path: Path,
+                              width=TARGET_WIDTH, height=TARGET_HEIGHT) -> Path:
+    """Materializes a full-bleed 1080x1920 Reel frame from ANY existing
+    source image (the cover art, or a dedicated Reel scene illustration
+    from ReelImageService) -- centre-cropped, never distorted, never
+    padded. Generic on purpose: the cover and the illustrated beat scenes
+    go through the exact same, single crop-fit path."""
 
-    with Image.open(hero_image_path) as source:
+    with Image.open(source_image_path) as source:
         filled = crop_to_fill(source.convert("RGB"), width, height)
         filled.save(output_path)
 
     return output_path
 
 
-def prepare_beat_card_image(background_color: str, output_path: Path,
-                             width=TARGET_WIDTH, height=TARGET_HEIGHT) -> Path:
-    """Builds a full-bleed 1080x1920 solid-colour Reel frame from a story
-    beat's own background_color. Zero new AI calls, zero new art assets --
-    this is existing story data (authored per-slide by the daily
-    pipeline), just not the dense text-card PNG built from it."""
-
-    Image.new("RGB", (width, height), background_color).save(output_path)
-
-    return output_path
-
-
-def materialize_scene_images(segments, hero_image_path: Path, story: StoryPackage, work_dir: Path):
+def materialize_scene_images(segments, hero_image_path: Path, work_dir: Path, illustrated_images):
     """Turns each script segment into an actual 1080x1920 PNG on disk.
     This is the only step that touches PIL/image files; everything
     downstream (build_ffmpeg_command) just sees a flat list of already-
-    correctly-shaped images, exactly like before this change."""
+    correctly-shaped images, exactly like before this change.
+
+    `illustrated_images` maps slide_index -> Path for each "beat" segment
+    and MUST already contain an entry for every beat segment present in
+    `segments` (see ReelImageService.ensure_scenes) -- there is no
+    silent visual fallback if a required illustration is missing; that's
+    treated as a hard Reel-generation failure, exactly like a missing
+    narration file would be."""
 
     cover_image_path = work_dir / "reel_scene_cover.png"
-    prepare_cover_scene_image(hero_image_path, cover_image_path)
+    prepare_full_bleed_image(hero_image_path, cover_image_path)
 
     paths = []
 
@@ -459,10 +456,19 @@ def materialize_scene_images(segments, hero_image_path: Path, story: StoryPackag
             paths.append(cover_image_path)
             continue
 
-        slide = story.slides[segment["slide_index"]]
-        beat_path = work_dir / f"reel_scene_beat_{segment['slide_index']}.png"
-        prepare_beat_card_image(slide.background_color, beat_path)
-        paths.append(beat_path)
+        slide_index = segment["slide_index"]
+        source_path = illustrated_images.get(slide_index)
+
+        if source_path is None:
+            raise MissingStoryAssetsError(
+                f"No illustrated Reel scene image available for slide "
+                f"{slide_index} -- ReelImageService must generate/cache "
+                f"one for every beat segment before rendering."
+            )
+
+        full_bleed_path = work_dir / f"{Path(source_path).stem}_fullbleed.png"
+        prepare_full_bleed_image(source_path, full_bleed_path)
+        paths.append(full_bleed_path)
 
     return paths
 
@@ -935,6 +941,7 @@ class ReelService:
 
         self.library = ContentLibraryService()
         self.tts = OpenAITTSService()
+        self.images = ReelImageService()
         self.brand = BrandLoader.load()
 
         self.font_path = (
@@ -1017,7 +1024,8 @@ class ReelService:
     # Main entry point
     # -----------------------------------------------------------------
 
-    def generate(self, content_id, overwrite=False, music_track=None, force_narration=False):
+    def generate(self, content_id, overwrite=False, music_track=None,
+                 force_narration=False, force_images=False):
 
         entry = self.library.get_story(content_id)
 
@@ -1075,7 +1083,34 @@ class ReelService:
         word_counts = [len(segment["text"].split()) for segment in segments]
         scene_durations = compute_scene_durations(word_counts, script["duration_target"])
 
-        scene_images = materialize_scene_images(segments, hero_image_path, story, folder)
+        beat_segments = [segment for segment in segments if segment["kind"] == "beat"]
+        beat_indices_for_images = [segment["slide_index"] for segment in beat_segments]
+        beat_texts_for_images = [segment["text"] for segment in beat_segments]
+
+        print("🎨 Reel scene generation")
+        print("   Existing cover: reused")
+
+        try:
+            scene_results = self.images.ensure_scenes(
+                story=story,
+                content_id=content_id,
+                beat_indices=beat_indices_for_images,
+                beat_texts=beat_texts_for_images,
+                folder=folder,
+                force=force_images,
+            )
+        except ReelImageGenerationError as error:
+            raise ReelGenerationError(
+                f"Reel scene image generation failed: {error}"
+            ) from error
+
+        print()
+
+        illustrated_images = {
+            result["slide_index"]: result["image_path"] for result in scene_results
+        }
+
+        scene_images = materialize_scene_images(segments, hero_image_path, folder, illustrated_images)
 
         caption_cues = build_caption_cues(segments, scene_durations, self.font_path)
 

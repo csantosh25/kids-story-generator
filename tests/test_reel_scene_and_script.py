@@ -11,8 +11,7 @@ from services.reel_service import (
     compute_scene_durations,
     crop_to_fill,
     load_story_package,
-    prepare_beat_card_image,
-    prepare_cover_scene_image,
+    prepare_full_bleed_image,
     select_beat_indices,
     select_reel_hero_image,
     CAPTION_FONT_SIZE,
@@ -183,7 +182,7 @@ class CoverCropTests(unittest.TestCase):
         result = crop_to_fill(source, TARGET_WIDTH, TARGET_HEIGHT)
         self.assertEqual(result.size, (TARGET_WIDTH, TARGET_HEIGHT))
 
-    def test_prepare_cover_scene_image_against_real_cover_art(self):
+    def test_prepare_full_bleed_image_against_real_cover_art(self):
         # End-to-end against the ACTUAL cover.png shipped for KS-000001,
         # not a synthetic stand-in.
         import tempfile
@@ -193,7 +192,7 @@ class CoverCropTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp:
             out_path = Path(tmp) / "scene.png"
-            prepare_cover_scene_image(hero, out_path)
+            prepare_full_bleed_image(hero, out_path)
 
             with Image.open(out_path) as result:
                 self.assertEqual(result.size, (TARGET_WIDTH, TARGET_HEIGHT))
@@ -208,24 +207,6 @@ class CoverCropTests(unittest.TestCase):
 
             hero = select_reel_hero_image(folder, final_cover)
             self.assertEqual(hero, final_cover)
-
-
-class BeatCardTests(unittest.TestCase):
-
-    def test_prepare_beat_card_image_is_full_bleed_exact_color(self):
-        import tempfile
-
-        with tempfile.TemporaryDirectory() as tmp:
-            out_path = Path(tmp) / "beat.png"
-            prepare_beat_card_image("#FDE9D9", out_path)
-
-            with Image.open(out_path) as result:
-                self.assertEqual(result.size, (TARGET_WIDTH, TARGET_HEIGHT))
-                self.assertEqual(result.getpixel((0, 0)), (0xFD, 0xE9, 0xD9))
-                self.assertEqual(
-                    result.getpixel((TARGET_WIDTH - 1, TARGET_HEIGHT - 1)),
-                    (0xFD, 0xE9, 0xD9),
-                )
 
 
 class ComputeSceneDurationsTests(unittest.TestCase):
