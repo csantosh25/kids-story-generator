@@ -110,19 +110,25 @@ _VALID_METADATA = {
 }
 
 
+_FAKE_SCENE_COLORS = ["#C9A0DC", "#6EC6FF", "#8BC34A", "#FF8A65"]
+
+
 def _fake_ensure_scenes_writing_real_images(folder):
     """Returns a function suitable as ReelImageService.ensure_scenes'
-    side_effect: writes a REAL, decodable PNG for each requested beat
-    (since materialize_scene_images() actually opens/crops these with
-    PIL) and returns the same {"slide_index", "image_path"} shape the
+    side_effect: writes a REAL, decodable, DISTINCT-per-scene PNG for each
+    requested beat (since materialize_scene_images() actually opens/crops
+    these with PIL, and the temporary V3 diagnostic instrumentation in
+    reel_diagnostics.py asserts generated scenes aren't identical to each
+    other) and returns the same {"slide_index", "image_path"} shape the
     real ReelImageService returns -- without ever calling OpenAI."""
 
     def fake_ensure_scenes(story, content_id, beat_indices, beat_texts, **kwargs):
         target_folder = kwargs.get("folder", folder)
         results = []
-        for slide_index in beat_indices:
+        for position, slide_index in enumerate(beat_indices):
             path = target_folder / f"reel_scene_{slide_index + 1:02d}.png"
-            Image.new("RGB", (1024, 1536), "#C9A0DC").save(path)
+            color = _FAKE_SCENE_COLORS[position % len(_FAKE_SCENE_COLORS)]
+            Image.new("RGB", (1024, 1536), color).save(path)
             results.append({"slide_index": slide_index, "image_path": path})
         return results
 
@@ -197,10 +203,10 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
             service = self._make_service(folder)
 
-            captured = {}
+            captured_commands = []
 
             def fake_ffmpeg(command):
-                captured["command"] = command
+                captured_commands.append(command)
                 return _fake_ffmpeg_writes_output(command)
 
             with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
@@ -209,8 +215,14 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
                 service.generate(content_id="KS-000001")
 
+            # V4 renders each scene independently (one run_ffmpeg_command
+            # call per scene clip), so PNG inputs are spread across
+            # several captured commands rather than one -- collect them
+            # all.
             image_paths = [
-                Path(arg) for arg in captured["command"]
+                Path(arg)
+                for command in captured_commands
+                for arg in command
                 if str(arg).endswith(".png")
             ]
 

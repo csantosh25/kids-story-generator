@@ -70,3 +70,30 @@ jobs:
           path: output/**/reel_narration.mp3
           if-no-files-found: warn
           retention-days: 14
+
+      # Diagnostic bundle: everything needed to review or debug a real
+      # Reel run without re-running it -- the generated/cached illustrated
+      # scenes, their cache metadata, the materialized full-bleed frames
+      # actually handed to the renderer, and (V4) the intermediate
+      # per-scene clips. render_reel_video() deletes reel_scene_clips/ on
+      # a fully successful render, so it only appears here when a render
+      # failed partway -- exactly the case where it's useful for
+      # diagnosis. `if: always()` so this uploads even if the run fails.
+      - name: Upload Reel Debug Bundle (diagnostic)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-debug-${{ inputs.content_id }}
+          path: |
+            output/**/reel.mp4
+            output/**/reel_script.json
+            output/**/reel_narration.mp3
+            output/**/reel_scenes.json
+            output/**/reel_scene_01.png
+            output/**/reel_scene_02.png
+            output/**/reel_scene_03.png
+            output/**/reel_scene_cover.png
+            output/**/reel_scene_*_fullbleed.png
+            output/**/reel_scene_clips/**
+          if-no-files-found: warn
+          retention-days: 14

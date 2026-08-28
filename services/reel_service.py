@@ -10,6 +10,7 @@ from models.story_models import StoryPackage
 from services.brand_loader import BrandLoader
 from services.content_library_service import ContentLibraryService
 from services.openai_tts_service import OpenAITTSService
+from services.reel_diagnostics import verify_rendered_video_has_scene_changes
 from services.reel_image_service import ReelImageGenerationError, ReelImageService
 from utils.text_layout import wrap_text_to_width
 
@@ -639,78 +640,129 @@ def escape_drawtext(text):
     return text
 
 
-def build_ffmpeg_command(
-    scene_images,
-    scene_durations,
+# V4 rendering architecture
+# =====================================================================
+# V3 built ONE filter_complex containing a separate `zoompan` filter
+# instance per scene, all feeding a single `concat`. A forensic
+# investigation (real ffmpeg, real production code, reproducible locally)
+# proved this construction has a real defect on the ffmpeg build used in
+# production: with 2+ zoompan instances sharing one filter graph before
+# concat, every scene after the first collapses into the first scene's
+# content -- the final video shows only the opening cover for its entire
+# duration, even though the ffmpeg *inputs* are provably correct and
+# distinct. Removing zoompan (or using only one instance) fixes it, which
+# pinpoints zoompan+concat multi-instance interaction as the cause.
+#
+# V4 avoids ever having more than one zoompan filter in the same graph:
+#
+#   Stage 1 (per scene, N separate ffmpeg processes): render each scene
+#   image into its own short, silent, video-only clip. Each process's
+#   filter graph contains exactly ONE zoompan instance.
+#
+#   Stage 2 (one ffmpeg process, concat DEMUXER): losslessly stream-copy
+#   the N clips into a single silent video. This is a container-level
+#   operation with NO filter graph at all, so it cannot reintroduce the
+#   defect.
+#
+#   Stage 3 (one ffmpeg process): take that single concatenated video +
+#   narration (+ optional music), burn in captions (drawtext only -- never
+#   implicated by the investigation) and mux audio, producing the final
+#   reel.mp4.
+# =====================================================================
+
+def build_scene_clip_command(image_path: Path, duration, output_path: Path,
+                              zoom_in, fps=25, width=TARGET_WIDTH, height=TARGET_HEIGHT):
+    """Builds the ffmpeg argv for rendering ONE scene image into its own
+    short, silent, video-only clip with independent zoom motion. Exactly
+    one zoompan filter per process/graph -- see the V4 module notes
+    above for why that matters."""
+
+    if zoom_in:
+        zoom_expr = "min(zoom+0.0012,1.15)"
+    else:
+        zoom_expr = "if(eq(on,1),1.15,max(zoom-0.0012,1.0))"
+
+    frames = max(1, round(duration * fps))
+
+    vf = (
+        f"zoompan=z='{zoom_expr}':"
+        f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+        f"d={frames}:s={width}x{height}:fps={fps},setsar=1"
+    )
+
+    return [
+        FFMPEG_BIN, "-y",
+        "-loop", "1", "-t", f"{duration:.3f}", "-i", str(image_path),
+        "-vf", vf,
+        "-c:v", "libx264",
+        "-pix_fmt", "yuv420p",
+        "-r", str(fps),
+        "-t", f"{duration:.3f}",
+        str(output_path),
+    ]
+
+
+def write_concat_list_file(clip_paths, list_path: Path) -> Path:
+    """Writes an ffmpeg concat-demuxer list file. Paths are made absolute
+    and escaped per the concat demuxer's own quoting rules (each path
+    single-quoted; internal single quotes escaped as '\\''), independent
+    of the OS path separator style."""
+
+    lines = []
+
+    for clip_path in clip_paths:
+        absolute = Path(clip_path).resolve().as_posix()
+        escaped = absolute.replace("'", "'\\''")
+        lines.append(f"file '{escaped}'")
+
+    list_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    return list_path
+
+
+def build_concat_command(list_path: Path, output_path: Path):
+    """Builds the ffmpeg argv that stitches pre-rendered scene clips
+    together via the concat DEMUXER: a container-level stream copy, no
+    filter graph, no re-encode -- so this step cannot reintroduce the
+    zoompan+concat defect. Requires every clip to share identical codec/
+    pixel-format/resolution/frame-rate, which build_scene_clip_command
+    guarantees by construction."""
+
+    return [
+        FFMPEG_BIN, "-y",
+        "-f", "concat", "-safe", "0", "-i", str(list_path),
+        "-c", "copy",
+        str(output_path),
+    ]
+
+
+def build_final_assembly_command(
+    concatenated_video_path: Path,
     narration_path: Path,
     output_path: Path,
     caption_cues,
     font_path: Path,
+    total_duration,
     music_path=None,
     music_volume=0.10,
     fps=25,
-    width=TARGET_WIDTH,
-    height=TARGET_HEIGHT,
 ):
-    """Builds the full ffmpeg argv list for a single-pass render: subtle
-    zoompan motion per image, hard-cut concat, burned-in captions, and an
-    optional low-volume background-music mix under the narration.
+    """Builds the ffmpeg argv for the final assembly pass: ONE video
+    input (the already-concatenated silent scene video) plus narration
+    (+ optional music), burned-in captions, and audio muxing. The filter
+    graph here only ever contains drawtext/volume/amix filters -- never
+    zoompan -- so it cannot exhibit the defect this architecture was
+    built to avoid."""
 
-    All scene_images are expected to already be exactly width x height
-    (see materialize_scene_images) -- so unlike the old pad-to-fill
-    approach, no letterboxing/padding filter is needed here at all."""
-
-    if len(scene_images) != len(scene_durations):
-        raise ValueError("scene_images and scene_durations must be the same length")
-
-    inputs = []
-
-    for image_path, duration in zip(scene_images, scene_durations):
-        inputs += ["-loop", "1", "-t", f"{duration:.3f}", "-i", str(image_path)]
-
-    narration_input_index = len(scene_images)
-
-    inputs += ["-i", str(narration_path)]
+    inputs = ["-i", str(concatenated_video_path), "-i", str(narration_path)]
 
     music_input_index = None
 
     if music_path is not None:
-        music_input_index = narration_input_index + 1
+        music_input_index = 2
         inputs += ["-i", str(music_path)]
 
     filters = []
-
-    scene_labels = []
-
-    for i, duration in enumerate(scene_durations):
-
-        frames = max(1, round(duration * fps))
-
-        # Slow, centered zoom (alternates in/out per scene for subtle
-        # variety); zoompan itself preserves the source image's content --
-        # no cropping/distortion beyond the deliberate slow zoom.
-        zoom_in = (i % 2 == 0)
-
-        if zoom_in:
-            zoom_expr = "min(zoom+0.0012,1.15)"
-        else:
-            zoom_expr = "if(eq(on,1),1.15,max(zoom-0.0012,1.0))"
-
-        filters.append(
-            f"[{i}:v]"
-            f"zoompan=z='{zoom_expr}':"
-            f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
-            f"d={frames}:s={width}x{height}:fps={fps},"
-            f"setsar=1[v{i}]"
-        )
-
-        scene_labels.append(f"[v{i}]")
-
-    concat_inputs = "".join(scene_labels)
-
-    filters.append(
-        f"{concat_inputs}concat=n={len(scene_labels)}:v=1:a=0[vraw]"
-    )
 
     # Burned-in captions: chained drawtext filters, each windowed to its
     # own time range, centered in the lower-middle safe area. Multi-line
@@ -718,7 +770,14 @@ def build_ffmpeg_command(
     # 2-character '\n' sequence drawtext renders as a manual line break;
     # text_w/text_h reflect the full (possibly 2-line) block, so the block
     # stays centered and the y anchor stays fixed regardless of line count.
-    caption_label = "vraw"
+    caption_label = "0:v"
+
+    # A colon inside the quoted fontfile value (e.g. a Windows drive
+    # letter, "C:/...") isn't reliably parsed by ffmpeg's filter-option
+    # parser even though it's quoted. Escaping it is a no-op on Linux
+    # paths (which never contain a colon) but fixes local Windows
+    # development/testing.
+    safe_font_path = font_path.as_posix().replace(":", "\\:")
 
     for i, cue in enumerate(caption_cues):
 
@@ -728,7 +787,7 @@ def build_ffmpeg_command(
 
         filters.append(
             f"[{caption_label}]drawtext="
-            f"fontfile='{font_path.as_posix()}':"
+            f"fontfile='{safe_font_path}':"
             f"text='{safe_text}':"
             f"fontsize={CAPTION_FONT_SIZE}:fontcolor=white:"
             f"line_spacing=8:"
@@ -740,36 +799,35 @@ def build_ffmpeg_command(
 
         caption_label = next_label
 
-    video_out_label = caption_label
+    # No drawtext filters were added if there were no caption cues -- in
+    # that case caption_label is still the raw "0:v" input reference, not
+    # a filtergraph pad, so it must be mapped as an unfiltered stream.
+    video_used_filtergraph = caption_label != "0:v"
 
     # Audio: narration always present; optional low-volume music mixed
     # underneath, never louder than narration (default ~10%).
     if music_input_index is not None:
 
-        filters.append(f"[{narration_input_index}:a]volume=1.0[narr]")
+        filters.append("[1:a]volume=1.0[narr]")
         filters.append(f"[{music_input_index}:a]volume={music_volume}[music]")
         filters.append(
             "[narr][music]amix=inputs=2:duration=first:dropout_transition=2[aout]"
         )
 
-        audio_out_label = "aout"
-
     else:
 
-        filters.append(f"[{narration_input_index}:a]anull[aout]")
-
-        audio_out_label = "aout"
+        filters.append("[1:a]anull[aout]")
 
     filter_complex = ";".join(filters)
 
-    total_duration = sum(scene_durations)
+    video_map = f"[{caption_label}]" if video_used_filtergraph else "0:v"
 
     command = [
         FFMPEG_BIN, "-y",
         *inputs,
         "-filter_complex", filter_complex,
-        "-map", f"[{video_out_label}]",
-        "-map", f"[{audio_out_label}]",
+        "-map", video_map,
+        "-map", "[aout]",
         "-c:v", "libx264",
         "-c:a", "aac",
         "-pix_fmt", "yuv420p",
@@ -780,6 +838,96 @@ def build_ffmpeg_command(
     ]
 
     return command
+
+
+def render_reel_video(scene_images, scene_durations, narration_path: Path,
+                       output_path: Path, caption_cues, font_path: Path,
+                       work_dir: Path, music_path=None, music_volume=0.10, fps=25):
+    """Orchestrates the full V4 three-stage render (see module notes
+    above): per-scene clips -> concat-demuxer stitch -> final assembly
+    with captions/audio. Raises FFmpegNotAvailableError/ReelGenerationError
+    exactly like the old single-pass build_ffmpeg_command()+
+    run_ffmpeg_command() pair did, so callers don't need to change their
+    error handling.
+
+    Intermediate clips live in `work_dir` (a fresh, dedicated
+    subdirectory -- see ReelService.generate()) and are deleted on
+    success; left in place on failure for diagnosis, matching the
+    existing "don't silently retry, don't pollute on success" philosophy
+    already used for reel.mp4 itself."""
+
+    if len(scene_images) != len(scene_durations):
+        raise ValueError("scene_images and scene_durations must be the same length")
+
+    work_dir.mkdir(parents=True, exist_ok=True)
+
+    clip_paths = []
+
+    for i, (image_path, duration) in enumerate(zip(scene_images, scene_durations)):
+
+        zoom_in = (i % 2 == 0)
+        clip_path = work_dir / f"scene_{i:02d}.mp4"
+
+        command = build_scene_clip_command(image_path, duration, clip_path, zoom_in, fps=fps)
+
+        try:
+            run_ffmpeg_command(command)
+        except ReelGenerationError as error:
+            raise ReelGenerationError(
+                f"Rendering scene clip {i} ({image_path}) failed: {error}"
+            ) from error
+
+        if not clip_path.exists() or clip_path.stat().st_size == 0:
+            raise ReelGenerationError(
+                f"Scene clip {i} ({clip_path}) was not produced."
+            )
+
+        clip_paths.append(clip_path)
+
+    concat_list_path = work_dir / "concat_list.txt"
+    write_concat_list_file(clip_paths, concat_list_path)
+
+    concatenated_path = work_dir / "concatenated_silent.mp4"
+    concat_command = build_concat_command(concat_list_path, concatenated_path)
+
+    try:
+        run_ffmpeg_command(concat_command)
+    except ReelGenerationError as error:
+        raise ReelGenerationError(
+            f"Concatenating {len(clip_paths)} scene clips failed: {error}"
+        ) from error
+
+    if not concatenated_path.exists() or concatenated_path.stat().st_size == 0:
+        raise ReelGenerationError(
+            f"Concatenated scene video {concatenated_path} was not produced."
+        )
+
+    total_duration = sum(scene_durations)
+
+    final_command = build_final_assembly_command(
+        concatenated_video_path=concatenated_path,
+        narration_path=narration_path,
+        output_path=output_path,
+        caption_cues=caption_cues,
+        font_path=font_path,
+        total_duration=total_duration,
+        music_path=music_path,
+        music_volume=music_volume,
+        fps=fps,
+    )
+
+    try:
+        run_ffmpeg_command(final_command)
+    except ReelGenerationError as error:
+        raise ReelGenerationError(
+            f"Final Reel assembly (captions + audio) failed: {error}"
+        ) from error
+
+    # Only clean up the intermediate clips after every stage has
+    # succeeded -- a failure above leaves them in place for diagnosis.
+    shutil.rmtree(work_dir, ignore_errors=True)
+
+    return output_path
 
 
 EXPECTED_WIDTH = TARGET_WIDTH
@@ -1121,24 +1269,38 @@ class ReelService:
             if candidate.exists():
                 music_path = candidate
 
-        command = build_ffmpeg_command(
-            scene_images=scene_images,
-            scene_durations=scene_durations,
-            narration_path=narration_path,
-            output_path=output_path,
-            caption_cues=caption_cues,
-            font_path=self.font_path,
-            music_path=music_path,
-        )
-
         print("🎞️ Rendering Reel with FFmpeg...")
 
+        clips_dir = folder / "reel_scene_clips"
+
         try:
-            run_ffmpeg_command(command)
+            render_reel_video(
+                scene_images=scene_images,
+                scene_durations=scene_durations,
+                narration_path=narration_path,
+                output_path=output_path,
+                caption_cues=caption_cues,
+                font_path=self.font_path,
+                work_dir=clips_dir,
+                music_path=music_path,
+            )
         except (FFmpegNotAvailableError, ReelGenerationError):
             if output_path.exists():
                 output_path.unlink()
             raise
+
+        # Permanent safeguard: confirms the RENDERED video actually shows
+        # different content at different timestamps. A real production
+        # defect (multiple zoompan filter instances collapsing every
+        # scene into the first) previously slipped past 92 passing mocked
+        # tests because none of them executed real ffmpeg end to end --
+        # this catches that entire class of regression automatically.
+        try:
+            verify_rendered_video_has_scene_changes(output_path)
+        except RuntimeError as error:
+            if output_path.exists():
+                output_path.unlink()
+            raise ReelGenerationError(str(error)) from error
 
         metadata = probe_video_metadata(output_path)
 
