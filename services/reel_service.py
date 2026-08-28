@@ -476,6 +476,50 @@ def build_ffmpeg_command(
     return command
 
 
+EXPECTED_WIDTH = 1080
+EXPECTED_HEIGHT = 1920
+
+
+def validate_video_output(path: Path, metadata):
+    """Hard gate run right after ffmpeg reports success: confirms the file
+    on disk is actually a valid, correctly-shaped Reel before the Content
+    Library is ever updated. Raises ReelGenerationError (never updates the
+    library) if anything here doesn't check out."""
+
+    if not path.exists() or path.stat().st_size == 0:
+        raise ReelGenerationError(
+            f"{path} does not exist or is empty after ffmpeg reported success."
+        )
+
+    if "width" not in metadata or "height" not in metadata:
+        raise ReelGenerationError(
+            f"Could not verify {path} dimensions (ffprobe unavailable or "
+            f"failed). Install ffprobe (bundled with ffmpeg) to validate "
+            f"Reel output."
+        )
+
+    if metadata["width"] != EXPECTED_WIDTH or metadata["height"] != EXPECTED_HEIGHT:
+        raise ReelGenerationError(
+            f"{path} is {metadata['width']}x{metadata['height']}, expected "
+            f"{EXPECTED_WIDTH}x{EXPECTED_HEIGHT}."
+        )
+
+    duration = metadata.get("duration_seconds")
+
+    if duration is None:
+        raise ReelGenerationError(
+            f"Could not verify {path} duration (ffprobe unavailable or failed)."
+        )
+
+    if not (MIN_DURATION_SECONDS <= duration <= MAX_DURATION_SECONDS + 5):
+        # +5s tolerance for container/encoder overhead beyond the script's
+        # own duration_target, which is already clamped to [MIN, MAX].
+        raise ReelGenerationError(
+            f"{path} duration is {duration}s, expected roughly "
+            f"{MIN_DURATION_SECONDS}-{MAX_DURATION_SECONDS}s."
+        )
+
+
 def probe_video_metadata(path: Path):
     """Best-effort ffprobe lookup for duration/width/height. Reel generation
     has already succeeded by the time this runs, so any failure here just
@@ -670,15 +714,25 @@ class ReelService:
                 "and verify with `ffmpeg -version` before generating a Reel."
             )
 
+        print("📖 Loading existing story...")
+
         cover_path, slide_paths = discover_story_images(folder)
 
         story = load_story_package(folder)
+
+        print(f"✅ Story found: {story.story_info.title}")
+        print()
 
         script = build_reel_script(story, instagram_handle=self.brand.get("instagram_handle", "@bedtime01fables"))
 
         save_reel_script(script, folder)
 
+        print("🎙️ Generating Reel narration...")
+
         narration_path = self._get_or_generate_narration(folder, script, force=force_narration)
+
+        print("✅ Narration generated.")
+        print()
 
         scene_images = select_scene_images(cover_path, slide_paths)
         scene_durations = compute_scene_durations(script["duration_target"], len(scene_images))
@@ -703,6 +757,8 @@ class ReelService:
             music_path=music_path,
         )
 
+        print("🎞️ Rendering Reel with FFmpeg...")
+
         try:
             run_ffmpeg_command(command)
         except (FFmpegNotAvailableError, ReelGenerationError):
@@ -710,13 +766,27 @@ class ReelService:
                 output_path.unlink()
             raise
 
-        if not output_path.exists() or output_path.stat().st_size == 0:
-            raise ReelGenerationError(
-                "ffmpeg reported success but no valid reel.mp4 was produced."
-            )
+        metadata = probe_video_metadata(output_path)
 
-        # Only now, after a verified successful render, update the
-        # Content Library -- never mark reel.generated on a failed attempt.
+        try:
+            validate_video_output(output_path, metadata)
+        except ReelGenerationError:
+            if output_path.exists():
+                output_path.unlink()
+            raise
+
+        print("✅ Reel generated.")
+        print()
+        print("📱 Video:")
+        print(f"   {metadata['width']} x {metadata['height']}")
+        print(f"   Duration: {metadata['duration_seconds']}s")
+        print()
+
+        # Only now, after a verified successful render AND a verified,
+        # correctly-shaped output file, update the Content Library -- never
+        # mark reel.generated on a failed or invalid attempt.
         self.library.update_reel(content_id, output_path)
+
+        print("📦 Reel artifact ready.")
 
         return output_path

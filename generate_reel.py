@@ -136,6 +136,14 @@ def run_interactive(service):
 
 def run_non_interactive(service, content_id):
 
+    print("Mode: Non-interactive")
+    print(f"Content ID: {content_id}")
+    print()
+    print("This run operates ONLY on the existing Content Library entry")
+    print("above. No new story, cover, or slides will be generated, and no")
+    print("email will be sent.")
+    print()
+
     entry = service.library.get_story(content_id)
 
     if entry is None:
@@ -146,8 +154,6 @@ def run_non_interactive(service, content_id):
     print("-----------------------")
     print(entry["title"])
     print(entry["folder"])
-    print()
-    print("🎬 Generating Reel...")
     print()
 
     try:

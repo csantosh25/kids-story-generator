@@ -6,6 +6,7 @@ on:
       content_id:
         description: "Content Library ID of the story to turn into a Reel"
         required: true
+        type: string
 
 jobs:
   generate-reel:
@@ -37,7 +38,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python generate_reel.py --content-id "${{ github.event.inputs.content_id }}"
+          python generate_reel.py --content-id "${{ inputs.content_id }}"
 
       # generate_reel.py already fails (non-zero exit) with a clear message
       # for: unknown content ID, missing story assets, TTS failure, ffmpeg
@@ -47,7 +48,7 @@ jobs:
       - name: Upload reel.mp4
         uses: actions/upload-artifact@v4
         with:
-          name: reel-video
+          name: reel-${{ inputs.content_id }}
           path: output/**/reel.mp4
           if-no-files-found: error
           retention-days: 14
