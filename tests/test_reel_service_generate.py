@@ -4,6 +4,8 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import MagicMock, patch
 
+from PIL import Image
+
 from services.reel_service import (
     ReelService,
     ReelGenerationError,
@@ -12,8 +14,10 @@ from services.reel_service import (
 
 def _write_minimal_story_assets(folder: Path):
     """Writes a real, minimal story.json + cover + slide images to disk so
-    ReelService.generate() exercises its actual file-loading and asset
-    discovery code, not a mock of it."""
+    ReelService.generate() exercises its actual file-loading, asset
+    discovery, and PIL image-processing code -- not a mock of it. The
+    cover files must be real, decodable PNGs (not placeholder bytes),
+    since materialize_scene_images() now actually opens/crops them."""
 
     folder.mkdir(parents=True, exist_ok=True)
 
@@ -24,7 +28,7 @@ def _write_minimal_story_assets(folder: Path):
             "theme": "kindness",
             "target_age": "3-5",
             "reading_time": "3 min",
-            "moral": "Be kind to others.",
+            "moral": "Being kind makes everyone happy.",
         },
         "character_sheet": {
             "main_character": {
@@ -44,20 +48,20 @@ def _write_minimal_story_assets(folder: Path):
         "slides": [
             {
                 "page": 1, "title": "T1",
-                "text": "Pip found a problem to solve today.",
-                "background_color": "#fff", "visual_theme": "",
+                "text": "Pip saw a friend who felt sad and alone. Pip wanted to help.",
+                "background_color": "#FDE9D9", "visual_theme": "",
                 "icon": "", "speaker_notes": "",
             },
             {
                 "page": 2, "title": "T2",
-                "text": "Pip went on an adventure to fix it.",
-                "background_color": "#fff", "visual_theme": "",
+                "text": "Pip went on an adventure to find the lost toy.",
+                "background_color": "#FEF8F0", "visual_theme": "",
                 "icon": "", "speaker_notes": "",
             },
             {
                 "page": 3, "title": "T3",
-                "text": "Pip felt proud at the end.",
-                "background_color": "#fff", "visual_theme": "",
+                "text": "Pip felt proud and happy at the end of the day.",
+                "background_color": "#F7DEBE", "visual_theme": "",
                 "icon": "", "speaker_notes": "",
             },
         ],
@@ -65,7 +69,7 @@ def _write_minimal_story_assets(folder: Path):
         "email": {"subject": "", "preview": ""},
         "youtube": {"title": "", "description": "", "keywords": []},
         "publishing": {
-            "hook": "Pip has a big problem today!",
+            "hook": "",
             "instagram_caption_short": "",
             "instagram_caption_long": "",
             "hashtags": [],
@@ -78,7 +82,14 @@ def _write_minimal_story_assets(folder: Path):
     }
 
     (folder / "story.json").write_text(json.dumps(story), encoding="utf-8")
-    (folder / "cover_final.png").write_bytes(b"fake-png")
+
+    Image.new("RGB", (1080, 1350), "#EED9B8").save(folder / "cover.png")
+    Image.new("RGB", (1080, 1350), "#EED9B8").save(folder / "cover_final.png")
+
+    # Slide PNGs only need to exist for the eligibility/completeness check
+    # (discover_story_images) -- the new Reel pipeline never opens them as
+    # images (see reel_service module docstring), so placeholder bytes are
+    # fine here.
     (folder / "slide_1.png").write_bytes(b"fake-png")
     (folder / "slide_2.png").write_bytes(b"fake-png")
     (folder / "slide_3.png").write_bytes(b"fake-png")
@@ -91,6 +102,11 @@ def _fake_ffmpeg_writes_output(command):
     output = Path(command[-1])
     output.write_bytes(b"fake-mp4-bytes")
     return MagicMock(returncode=0)
+
+
+_VALID_METADATA = {
+    "width": 1080, "height": 1920, "duration_seconds": 25.0, "has_audio": True,
+}
 
 
 class ReelServiceGenerateTests(unittest.TestCase):
@@ -134,15 +150,52 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
             with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
                  patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
-                 patch("services.reel_service.probe_video_metadata", return_value={
-                     "width": 1080, "height": 1920, "duration_seconds": 25.0,
-                 }):
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
 
                 result = service.generate(content_id="KS-000001")
 
             self.assertEqual(result, folder / "reel.mp4")
             self.assertTrue(result.exists())
             service.library.update_reel.assert_called_once_with("KS-000001", folder / "reel.mp4")
+
+    def test_success_materializes_full_bleed_scene_images(self):
+        """The rendered scene images fed to ffmpeg must already be exactly
+        1080x1920 (full-bleed cover crop + colour beat cards) -- no more
+        1080x1350-on-cream-padding."""
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+
+            captured = {}
+
+            def fake_ffmpeg(command):
+                captured["command"] = command
+                return _fake_ffmpeg_writes_output(command)
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=fake_ffmpeg), \
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
+
+                service.generate(content_id="KS-000001")
+
+            image_paths = [
+                Path(arg) for arg in captured["command"]
+                if str(arg).endswith(".png")
+            ]
+
+            self.assertTrue(image_paths)
+
+            for path in image_paths:
+                with Image.open(path) as image:
+                    self.assertEqual(image.size, (1080, 1920))
+
+            # More than one distinct image file was used (cover + at least
+            # one beat card) -- not the same single image repeated.
+            self.assertGreater(len(set(image_paths)), 1)
 
     def test_unknown_content_id_fails_without_touching_ffmpeg(self):
 
@@ -211,7 +264,7 @@ class ReelServiceGenerateTests(unittest.TestCase):
             with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
                  patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
                  patch("services.reel_service.probe_video_metadata", return_value={
-                     "width": 720, "height": 1280, "duration_seconds": 25.0,
+                     "width": 720, "height": 1280, "duration_seconds": 25.0, "has_audio": True,
                  }):
 
                 with self.assertRaises(ReelGenerationError):
@@ -253,13 +306,34 @@ class ReelServiceGenerateTests(unittest.TestCase):
             with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
                  patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
                  patch("services.reel_service.probe_video_metadata", return_value={
-                     "width": 1080, "height": 1920, "duration_seconds": 90.0,
+                     "width": 1080, "height": 1920, "duration_seconds": 90.0, "has_audio": True,
                  }):
 
                 with self.assertRaises(ReelGenerationError):
                     service.generate(content_id="KS-000001")
 
             service.library.update_reel.assert_not_called()
+
+    def test_missing_audio_fails_and_does_not_update_library(self):
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
+                 patch("services.reel_service.probe_video_metadata", return_value={
+                     "width": 1080, "height": 1920, "duration_seconds": 25.0, "has_audio": False,
+                 }):
+
+                with self.assertRaises(ReelGenerationError):
+                    service.generate(content_id="KS-000001")
+
+            service.library.update_reel.assert_not_called()
+            self.assertFalse((folder / "reel.mp4").exists())
 
     def test_missing_story_folder_fails_before_any_generation(self):
 
@@ -273,6 +347,62 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
         mock_ffmpeg.assert_not_called()
         service.library.update_reel.assert_not_called()
+
+    def test_stale_narration_is_regenerated_when_script_text_changes(self):
+        """A leftover reel_narration.mp3 from a run with different script
+        text (e.g. after this story's content or the Reel script logic
+        changed) must NOT be silently reused -- it would narrate the wrong
+        words for the new captions."""
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            (folder / "reel_narration.mp3").write_bytes(b"stale-old-audio")
+            (folder / "reel_narration.txt").write_text("some old narration text", encoding="utf-8")
+
+            service = self._make_service(folder)
+
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
+
+                service.generate(content_id="KS-000001")
+
+            service.tts.generate.assert_called_once()
+            self.assertEqual(
+                (folder / "reel_narration.mp3").read_bytes(), b"fake-mp3-bytes"
+            )
+
+    def test_matching_narration_is_reused_not_regenerated(self):
+
+        with TemporaryDirectory() as tmp:
+
+            folder = Path(tmp) / "story"
+            _write_minimal_story_assets(folder)
+
+            service = self._make_service(folder)
+
+            # First run writes reel_narration.mp3 + reel_narration.txt for
+            # the current script text.
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
+
+                service.generate(content_id="KS-000001")
+
+            service.tts.generate.reset_mock()
+
+            # Second run against the same, unchanged story: narration text
+            # will be identical, so TTS must not be called again.
+            with patch("services.reel_service.check_ffmpeg_available", return_value=True), \
+                 patch("services.reel_service.run_ffmpeg_command", side_effect=_fake_ffmpeg_writes_output), \
+                 patch("services.reel_service.probe_video_metadata", return_value=_VALID_METADATA):
+
+                service.generate(content_id="KS-000001", overwrite=True)
+
+            service.tts.generate.assert_not_called()
 
 
 if __name__ == "__main__":
