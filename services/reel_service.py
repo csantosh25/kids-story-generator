@@ -530,11 +530,39 @@ def compute_scene_durations(word_counts, total_duration, min_scene_seconds=1.6):
 # existing utils.text_layout helper already used by the carousel/cover
 # renderers) instead of a fixed word count, so a caption can never be
 # wider than the safe on-screen area and never gets clipped.
+#
+# V5.1: a real (non-mocked) ffmpeg render proved that a PIXEL-SAFE chunk
+# could still render clipped edge-to-edge in the actual MP4. Root cause
+# (confirmed by rendering real frames and measuring pixels, not just
+# reasoning about it): the two-line join below used to build the
+# multi-line `text=` value with the literal two-character escape
+# sequence "\n" (backslash + n). ffmpeg's drawtext does NOT turn that
+# into a line break -- it strips the backslash and leaves a bare "n"
+# glued onto the surrounding words, collapsing what should have been two
+# short wrapped lines into one much longer single line. That single line
+# was then centered via text_w and, being far wider than the safe
+# width, overflowed the 1080px frame on both sides -- exactly the
+# "beginning of the sentence cut off" symptom observed in production.
+# The fix (verified with a real ffmpeg render + pixel bounding-box
+# check) is to join lines with an ACTUAL newline character instead --
+# see build_final_assembly_command below. PIL's own measured text width
+# was cross-checked against ffmpeg's real rendered pixel width for the
+# same font/string and tracks within single-digit pixels, so the pixel-
+# width safety check here was never the problem.
 # =====================================================================
 
 CAPTION_FONT_SIZE = 64
-CAPTION_SAFE_WIDTH_PX = 860  # within the 850-900px safe-width target
+CAPTION_SAFE_WIDTH_PX = 900  # ~90px margin each side of 1080px (80-100px target)
 CAPTION_MAX_LINES = 2
+
+# Reel captions are short on-screen phrases, not narration transcripts:
+# each caption chunk is also capped at this many words (on top of the
+# pixel-width fit above), and a chunk never spans a sentence boundary
+# (see build_caption_chunks_for_text) -- so a short sentence in the
+# story's own text becomes one clean caption, and a longer one splits
+# into a couple of short ones, without inventing or rewriting any story
+# content.
+CAPTION_MAX_WORDS_PER_CHUNK = 6
 
 # Lower-middle safe area: low enough to read as "captions", high enough
 # to stay clear of Instagram's own bottom UI chrome (like/comment/share
@@ -557,12 +585,16 @@ def _fits_within_lines(draw, words, font, max_width_px, max_lines):
     return len(lines) <= max_lines
 
 
-def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lines=CAPTION_MAX_LINES):
+def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lines=CAPTION_MAX_LINES,
+                          max_words_per_chunk=CAPTION_MAX_WORDS_PER_CHUNK):
     """Splits `text` into a sequence of caption chunks. Each chunk is
     guaranteed (via measured pixel width at the real caption font/size) to
     render as at most `max_lines` lines that each fit within
     max_width_px -- so a caption can never be horizontally clipped and
-    never needs '...' to hide overflow. Any overflow simply starts a new,
+    never needs '...' to hide overflow -- AND capped at `max_words_per_
+    chunk` words, so a chunk reads as a short on-screen phrase rather
+    than a long narration transcript even when it would otherwise fit
+    within max_width_px/max_lines. Any overflow simply starts a new,
     later-timed chunk instead of being dropped."""
 
     draw = _dummy_draw()
@@ -573,7 +605,7 @@ def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lin
 
     while remaining:
 
-        lo, hi, best = 1, len(remaining), 1
+        lo, hi, best = 1, min(len(remaining), max_words_per_chunk), 1
 
         while lo <= hi:
 
@@ -591,6 +623,34 @@ def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lin
         chunks.append({"lines": lines, "words": chosen})
 
         remaining = remaining[best:]
+
+    return chunks
+
+
+def build_caption_chunks_for_text(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lines=CAPTION_MAX_LINES,
+                                   max_words_per_chunk=CAPTION_MAX_WORDS_PER_CHUNK):
+    """Splits `text` into short, Reel-style caption chunks: first at
+    SENTENCE boundaries (reusing the same _SENTENCE_SPLIT_RE already used
+    by trim_to_sentences, so a caption chunk never runs two separate
+    sentences together), then each sentence through build_caption_chunks
+    for its pixel-width/line-count/word-count safety. A short sentence in
+    the story's own text (common in this project's simple-English style)
+    becomes exactly one clean caption; a longer one splits into a couple
+    of short ones. Purely local/deterministic re-chunking of the text
+    that's already there -- no AI call, nothing invented, nothing
+    reworded."""
+
+    sentences = [s.strip() for s in _SENTENCE_SPLIT_RE.findall(text) if s.strip()]
+
+    if not sentences:
+        return build_caption_chunks(text, font, max_width_px, max_lines, max_words_per_chunk)
+
+    chunks = []
+
+    for sentence in sentences:
+        chunks.extend(
+            build_caption_chunks(sentence, font, max_width_px, max_lines, max_words_per_chunk)
+        )
 
     return chunks
 
@@ -620,7 +680,7 @@ def build_caption_cues(segments, scene_durations, font_path,
             t = scene_start + duration
             continue
 
-        chunks = build_caption_chunks(segment["text"], font, max_width_px, max_lines)
+        chunks = build_caption_chunks_for_text(segment["text"], font, max_width_px, max_lines)
         chunk_word_total = sum(len(c["words"]) for c in chunks) or 1
 
         for chunk in chunks:
@@ -653,8 +713,9 @@ def escape_drawtext(text):
     """Escapes a single line of text for safe use inside an ffmpeg
     drawtext filter, which is itself embedded inside a filter_complex
     string. Must be applied per-line (BEFORE joining multi-line captions
-    with the literal '\\n' separator drawtext expects), since escaping
-    would otherwise double the backslash in that separator."""
+    with an actual newline character -- see build_final_assembly_command
+    -- never the literal two-character '\\n' sequence, which ffmpeg's
+    drawtext does not treat as a line break)."""
 
     text = text.replace("\\", "\\\\")
     text = text.replace(":", "\\:")
@@ -801,11 +862,25 @@ def build_final_assembly_command(
     filters = []
 
     # Burned-in captions: chained drawtext filters, each windowed to its
-    # own time range, centered in the lower-middle safe area. Multi-line
-    # cues (see build_caption_chunks) join their lines with the literal
-    # 2-character '\n' sequence drawtext renders as a manual line break;
-    # text_w/text_h reflect the full (possibly 2-line) block, so the block
-    # stays centered and the y anchor stays fixed regardless of line count.
+    # own time range, centered in the lower-middle safe area via ffmpeg's
+    # own text_w/text_h (never a hardcoded x position, so this stays
+    # correct regardless of the actual rendered text width).
+    #
+    # V5.1 fix: multi-line cues MUST be joined with a real newline BYTE
+    # (chr(10)) -- NOT the two-character escape sequence "\n" (backslash
+    # + n) used previously. Verified with a real ffmpeg render + pixel
+    # bounding-box measurement: ffmpeg's drawtext does not treat a
+    # literal backslash-n as a line break -- it silently drops the
+    # backslash and leaves a bare "n" glued onto the surrounding words,
+    # collapsing two short wrapped lines into one much longer single
+    # line that, once centered via text_w, overflowed the 1080px frame
+    # on both sides. That was the actual cause of the clipped captions
+    # seen in the real production Reel (mocked-ffmpeg tests never
+    # exercised a real 2-line render, so they never caught it). A real
+    # newline byte here is correctly rendered by drawtext as an actual
+    # line break, and text_w/text_h then correctly reflect the full
+    # (possibly 2-line) block, so the block stays centered and the y
+    # anchor stays fixed regardless of line count.
     caption_label = "0:v"
 
     # A colon inside the quoted fontfile value (e.g. a Windows drive
@@ -819,7 +894,7 @@ def build_final_assembly_command(
 
         next_label = f"vcap{i}"
 
-        safe_text = "\\n".join(escape_drawtext(line) for line in cue["lines"])
+        safe_text = "\n".join(escape_drawtext(line) for line in cue["lines"])
 
         filters.append(
             f"[{caption_label}]drawtext="
