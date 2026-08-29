@@ -1,3 +1,4 @@
+import hashlib
 import json
 import re
 import shutil
@@ -369,6 +370,29 @@ DEFAULT_MAX_STORY_SLIDES_IN_REEL = 3  # + cover(open) + cover(outro)
 
 TARGET_WIDTH = 1080
 TARGET_HEIGHT = 1920
+
+
+# =====================================================================
+# Reel narration voice -- a single, consistent, warm FEMALE voice so the
+# account (@bedtime01fables) develops a recognisable narration identity
+# across Reels. "coral" is one of the voices the installed OpenAI SDK's
+# Voice type actually supports (openai.types.audio.speech_create_params.
+# Voice: alloy, ash, ballad, coral, echo, sage, shimmer, verse, marin,
+# cedar, or a custom voice id) and is documented/characterised as a warm,
+# friendly, natural, conversational voice -- fitting for gentle bedtime
+# storytelling without sounding dramatic or ad-like. This constant is
+# scoped to the Reel pipeline only: the daily story pipeline's
+# narration.mp3 (services/narration_service.py) does not pass a `voice`
+# and keeps using OpenAITTSService's own unrelated default.
+# =====================================================================
+
+REEL_NARRATION_VOICE = "coral"
+
+REEL_NARRATION_INSTRUCTIONS = (
+    "Warm, calm, gentle storytelling voice for a young child's bedtime "
+    "story. Natural, unhurried pace, comforting and friendly tone -- "
+    "never dramatic, never like an advertisement."
+)
 
 
 def select_beat_indices(num_slides, max_beats=DEFAULT_MAX_STORY_SLIDES_IN_REEL):
@@ -744,15 +768,25 @@ def build_final_assembly_command(
     font_path: Path,
     total_duration,
     music_path=None,
-    music_volume=0.10,
+    music_volume=None,
     fps=25,
 ):
     """Builds the ffmpeg argv for the final assembly pass: ONE video
     input (the already-concatenated silent scene video) plus narration
     (+ optional music), burned-in captions, and audio muxing. The filter
-    graph here only ever contains drawtext/volume/amix filters -- never
-    zoompan -- so it cannot exhibit the defect this architecture was
-    built to avoid."""
+    graph here only ever contains drawtext/volume/amix/afade filters --
+    never zoompan -- so it cannot exhibit the defect this architecture
+    was built to avoid.
+
+    Music duration is never authoritative: `-stream_loop -1` makes the
+    music input loop indefinitely so it always covers the full Reel even
+    if the source track is shorter, and the amix filter's
+    `duration=first` (paired with the narration always being input 1)
+    plus the output-level `-t total_duration` below both trim it back
+    down if the track is longer -- narration/video duration always wins."""
+
+    if music_volume is None:
+        music_volume = MUSIC_VOLUME_DEFAULT
 
     inputs = ["-i", str(concatenated_video_path), "-i", str(narration_path)]
 
@@ -760,7 +794,9 @@ def build_final_assembly_command(
 
     if music_path is not None:
         music_input_index = 2
-        inputs += ["-i", str(music_path)]
+        # -stream_loop -1 loops the track indefinitely (see docstring)
+        # rather than trying to compute an exact repeat count.
+        inputs += ["-stream_loop", "-1", "-i", str(music_path)]
 
     filters = []
 
@@ -805,11 +841,19 @@ def build_final_assembly_command(
     video_used_filtergraph = caption_label != "0:v"
 
     # Audio: narration always present; optional low-volume music mixed
-    # underneath, never louder than narration (default ~10%).
+    # underneath, never louder than narration (default ~10%), with a
+    # short fade-in/out so it never starts or stops abruptly.
     if music_input_index is not None:
 
+        fade_out_start = max(0.0, total_duration - MUSIC_FADE_OUT_SECONDS)
+
         filters.append("[1:a]volume=1.0[narr]")
-        filters.append(f"[{music_input_index}:a]volume={music_volume}[music]")
+        filters.append(
+            f"[{music_input_index}:a]volume={music_volume},"
+            f"afade=t=in:st=0:d={MUSIC_FADE_IN_SECONDS},"
+            f"afade=t=out:st={fade_out_start:.2f}:d={MUSIC_FADE_OUT_SECONDS}"
+            f"[music]"
+        )
         filters.append(
             "[narr][music]amix=inputs=2:duration=first:dropout_transition=2[aout]"
         )
@@ -842,7 +886,7 @@ def build_final_assembly_command(
 
 def render_reel_video(scene_images, scene_durations, narration_path: Path,
                        output_path: Path, caption_cues, font_path: Path,
-                       work_dir: Path, music_path=None, music_volume=0.10, fps=25):
+                       work_dir: Path, music_path=None, music_volume=None, fps=25):
     """Orchestrates the full V4 three-stage render (see module notes
     above): per-scene clips -> concat-demuxer stitch -> final assembly
     with captions/audio. Raises FFmpegNotAvailableError/ReelGenerationError
@@ -1065,18 +1109,103 @@ def run_ffmpeg_command(command):
 
 
 # =====================================================================
-# Music (local, royalty-free tracks only -- no downloads, no AI music)
+# Music (local, royalty-free tracks only -- no downloads, no AI music,
+# zero extra API calls). The user drops licensed/royalty-free .mp3 files
+# into assets/music/ (see assets/music/README.md) -- this module never
+# creates, downloads, or generates any audio file there.
 # =====================================================================
 
 MUSIC_DIR = Path("assets/music")
 
+MUSIC_VOLUME_DEFAULT = 0.10  # ~10% relative to narration -- narration always dominant
+MUSIC_FADE_IN_SECONDS = 0.6
+MUSIC_FADE_OUT_SECONDS = 1.0
+
 
 def list_music_tracks():
+    """All *.mp3 files directly in assets/music/, sorted for a stable,
+    deterministic ordering -- select_music_track()'s hashed index depends
+    on this order being the same across runs/machines."""
 
     if not MUSIC_DIR.exists():
         return []
 
     return sorted(MUSIC_DIR.glob("*.mp3"))
+
+
+def probe_audio_duration(path: Path):
+    """Best-effort ffprobe duration lookup for a local audio file.
+    Returns None if the file is missing/empty, ffprobe is unavailable, or
+    the file simply isn't a decodable audio file -- used to filter out an
+    invalid optional music file BEFORE it ever reaches the ffmpeg render,
+    so a bad track can never corrupt the Reel (see list_valid_music_
+    tracks). Mirrors probe_video_metadata's "never raises, just returns
+    less information" contract."""
+
+    if not path.exists() or path.stat().st_size == 0:
+        return None
+
+    ffprobe_bin = shutil.which("ffprobe")
+
+    if ffprobe_bin is None:
+        return None
+
+    try:
+        result = subprocess.run(
+            [
+                ffprobe_bin,
+                "-v", "error",
+                "-show_entries", "format=duration",
+                "-of", "json",
+                str(path),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+        if result.returncode != 0:
+            return None
+        data = json.loads(result.stdout)
+        duration = data.get("format", {}).get("duration")
+        return float(duration) if duration is not None else None
+    except Exception:
+        return None
+
+
+def list_valid_music_tracks():
+    """list_music_tracks(), filtered down to files that are actually
+    present, non-empty, and ffprobe-decodable. A corrupt, empty, or
+    otherwise unreadable file is silently skipped here -- one bad track
+    must never crash Reel generation, and a still-valid track should be
+    tried instead when one is available."""
+
+    return [
+        path for path in list_music_tracks()
+        if probe_audio_duration(path) is not None
+    ]
+
+
+def select_music_track(content_id, tracks=None):
+    """Deterministically selects ONE valid background-music track for a
+    given content_id: hashing content_id (sha256, mod track count) means
+    the same content_id always lands on the same track -- so a Reel never
+    changes unexpectedly when regenerated -- while different content_ids
+    can land on different tracks, rotating usage across the library.
+
+    Returns None if no valid track is available; callers must treat that
+    as "generate without music", never as an error (see module docstring
+    and assets/music/README.md)."""
+
+    if tracks is None:
+        tracks = list_valid_music_tracks()
+
+    if not tracks:
+        return None
+
+    digest = hashlib.sha256((content_id or "").encode("utf-8")).hexdigest()
+    index = int(digest, 16) % len(tracks)
+
+    return tracks[index]
 
 
 # =====================================================================
@@ -1133,6 +1262,16 @@ class ReelService:
         narration_path = folder / "reel_narration.mp3"
         narration_text_path = folder / "reel_narration.txt"
 
+        # Cache key includes the voice, not just the text: if
+        # REEL_NARRATION_VOICE ever changes (e.g. this female-voice
+        # rollout, replacing whatever voice a prior run used), any
+        # existing cached narration no longer matches this key and is
+        # regenerated exactly once, rather than silently being reused
+        # with the wrong voice. A cache file written before this key
+        # format existed also simply won't match, which correctly forces
+        # one regeneration too.
+        cache_key = f"{REEL_NARRATION_VOICE}|{script['full_narration']}"
+
         cached_text = (
             narration_text_path.read_text(encoding="utf-8")
             if narration_text_path.exists() else None
@@ -1141,7 +1280,7 @@ class ReelService:
         already_valid = (
             narration_path.exists()
             and narration_path.stat().st_size > 0
-            and cached_text == script["full_narration"]
+            and cached_text == cache_key
         )
 
         if already_valid and not force:
@@ -1149,7 +1288,12 @@ class ReelService:
             return narration_path
 
         try:
-            self.tts.generate(text=script["full_narration"], output_file=narration_path)
+            self.tts.generate(
+                text=script["full_narration"],
+                output_file=narration_path,
+                voice=REEL_NARRATION_VOICE,
+                instructions=REEL_NARRATION_INSTRUCTIONS,
+            )
         except Exception as error:
             if narration_path.exists():
                 narration_path.unlink()
@@ -1162,18 +1306,56 @@ class ReelService:
                 "Reel narration (TTS) did not produce an audio file."
             )
 
-        # Records exactly what text this audio narrates, so a future run
-        # only reuses it if the script hasn't changed in the meantime.
-        narration_text_path.write_text(script["full_narration"], encoding="utf-8")
+        # Records exactly what text+voice this audio narrates, so a
+        # future run only reuses it if neither has changed since.
+        narration_text_path.write_text(cache_key, encoding="utf-8")
 
         return narration_path
+
+    # -----------------------------------------------------------------
+    # Background music (local files only -- see module docstring above
+    # list_music_tracks(). Zero API calls, zero downloads.)
+    # -----------------------------------------------------------------
+
+    def _resolve_music_path(self, content_id, music_track, disable_music):
+        """Resolves which local music track (if any) this Reel should
+        use:
+
+        - disable_music=True: no music, regardless of what's available
+          (an explicit user choice -- see the interactive CLI).
+        - music_track given: an explicit filename override (from the
+          interactive CLI's track picker). Falls back to deterministic
+          auto-selection if that specific file is missing or invalid,
+          rather than failing the whole Reel over an optional asset.
+        - Otherwise (the default): deterministic selection by content_id
+          (see select_music_track) -- same content_id always picks the
+          same track; different content_ids can rotate across the
+          library. Returns None if assets/music/ has no valid tracks --
+          a narration-only Reel is a normal, expected outcome, never an
+          error."""
+
+        if disable_music:
+            return None
+
+        valid_tracks = list_valid_music_tracks()
+
+        if music_track:
+            candidate = MUSIC_DIR / music_track
+            if candidate in valid_tracks:
+                return candidate
+            print(
+                f"⚠️ Requested music track '{music_track}' is missing or "
+                f"invalid -- falling back to automatic track selection."
+            )
+
+        return select_music_track(content_id, tracks=valid_tracks)
 
     # -----------------------------------------------------------------
     # Main entry point
     # -----------------------------------------------------------------
 
     def generate(self, content_id, overwrite=False, music_track=None,
-                 force_narration=False, force_images=False):
+                 disable_music=False, force_narration=False, force_images=False):
 
         entry = self.library.get_story(content_id)
 
@@ -1217,6 +1399,18 @@ class ReelService:
             story, beat_indices,
             instagram_handle=self.brand.get("instagram_handle", "@bedtime01fables"),
         )
+
+        # Resolved BEFORE saving the script so the actual selected track
+        # (or the absence of one) is recorded in reel_script.json, and so
+        # regenerating this same content_id later reproduces the same
+        # pick (see select_music_track).
+        music_path = self._resolve_music_path(content_id, music_track, disable_music)
+
+        script["music"] = {
+            "enabled": music_path is not None,
+            "file": (f"assets/music/{music_path.name}" if music_path is not None else None),
+            "volume": MUSIC_VOLUME_DEFAULT,
+        }
 
         save_reel_script(script, folder)
 
@@ -1262,14 +1456,12 @@ class ReelService:
 
         caption_cues = build_caption_cues(segments, scene_durations, self.font_path)
 
-        music_path = None
-
-        if music_track is not None:
-            candidate = MUSIC_DIR / music_track
-            if candidate.exists():
-                music_path = candidate
-
         print("🎞️ Rendering Reel with FFmpeg...")
+
+        if music_path is not None:
+            print(f"   Background music: {music_path.name}")
+        else:
+            print("   Background music: none")
 
         clips_dir = folder / "reel_scene_clips"
 
@@ -1283,6 +1475,7 @@ class ReelService:
                 font_path=self.font_path,
                 work_dir=clips_dir,
                 music_path=music_path,
+                music_volume=MUSIC_VOLUME_DEFAULT,
             )
         except (FFmpegNotAvailableError, ReelGenerationError):
             if output_path.exists():

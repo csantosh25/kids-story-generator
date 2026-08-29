@@ -457,7 +457,7 @@ class ReelServiceRenderFailureIntegrationTests(unittest.TestCase):
             service.library.get_story.return_value = {
                 "content_id": "KS-000001", "title": "T", "folder": str(folder),
             }
-            service.tts.generate.side_effect = lambda text, output_file: Path(output_file).write_bytes(b"fake-mp3")
+            service.tts.generate.side_effect = lambda text, output_file, **kwargs: Path(output_file).write_bytes(b"fake-mp3")
 
             def fake_ensure_scenes(story, content_id, beat_indices, beat_texts, **kwargs):
                 results = []

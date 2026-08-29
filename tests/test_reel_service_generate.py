@@ -159,7 +159,11 @@ class ReelServiceGenerateTests(unittest.TestCase):
 
         # Default TTS behaviour: actually write bytes to the requested
         # narration path, like the real OpenAITTSService.generate() would.
-        def fake_tts_generate(text, output_file):
+        # Accepts **kwargs (e.g. voice/instructions) since ReelService
+        # passes those through to the real service -- see
+        # tests/test_reel_music_and_voice.py for assertions on their
+        # actual values.
+        def fake_tts_generate(text, output_file, **kwargs):
             Path(output_file).write_bytes(b"fake-mp3-bytes")
             return output_file
 

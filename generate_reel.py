@@ -80,6 +80,7 @@ def run_interactive(service):
         overwrite = True
 
     music_choice = None
+    disable_music = False
 
     tracks = list_music_tracks()
 
@@ -89,9 +90,17 @@ def run_interactive(service):
         for i, track in enumerate(tracks, start=1):
             print(f"{i}. {track.name}")
         print()
-        music_input = input("Select a track number (or press Enter for no music): ").strip()
+        music_input = input(
+            "Select a track number, 0 for no music, or press Enter to "
+            "auto-select a track for this story: "
+        ).strip()
         if music_input.isdigit() and 1 <= int(music_input) <= len(tracks):
             music_choice = tracks[int(music_input) - 1].name
+        elif music_input == "0":
+            disable_music = True
+        # Blank input: leave music_choice=None, disable_music=False --
+        # ReelService.generate() auto-selects a track deterministically
+        # by content_id (see select_music_track).
     else:
         print("No background music tracks found in assets/music/ -- continuing")
         print("with narration only.")
@@ -106,6 +115,7 @@ def run_interactive(service):
             content_id=selected["content_id"],
             overwrite=overwrite,
             music_track=music_choice,
+            disable_music=disable_music,
         )
 
     except FFmpegNotAvailableError as error:
@@ -158,9 +168,13 @@ def run_non_interactive(service, content_id):
 
     try:
 
-        # No music prompt in non-interactive mode; overwrite=True since
-        # there is no one to confirm a replacement, and this mode exists
-        # specifically to (re-)generate the Reel for a given content ID.
+        # No music prompt in non-interactive mode -- music_track=None (the
+        # default) lets ReelService.generate() auto-select a track
+        # deterministically by content_id when assets/music/ has valid
+        # tracks (see select_music_track), or continue narration-only
+        # otherwise. overwrite=True since there is no one to confirm a
+        # replacement, and this mode exists specifically to (re-)generate
+        # the Reel for a given content ID.
         video_path = service.generate(
             content_id=content_id,
             overwrite=True,
