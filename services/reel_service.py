@@ -101,14 +101,28 @@ def discover_story_images(folder: Path):
 
 
 def select_reel_hero_image(folder: Path, discovered_cover_path: Path) -> Path:
-    """Prefers the raw (textless) AI cover art for the Reel's full-bleed
-    hero crop over cover_final.png. cover_final.png bakes a title overlay
-    into the bottom of the 4:5 image (see CoverDesigner); centre-cropping
-    that up to a 9:16 frame can clip the title text sideways, whereas the
-    Reel renders its own hook caption instead (see build_hook/build_
-    reel_script), so the baked title isn't needed and the textless art is
-    strictly safer to crop. Falls back to whatever discover_story_images
-    already found if the raw cover isn't on disk."""
+    """Prefers the raw AI cover art for the Reel's full-bleed hero crop
+    over cover_final.png. cover_final.png ADDITIONALLY bakes a title
+    overlay into the bottom of the 4:5 image (see CoverDesigner);
+    centre-cropping that up to a 9:16 frame can clip the title text
+    sideways, whereas the Reel renders its own hook caption instead (see
+    build_hook/build_reel_script), so that overlay isn't needed and the
+    raw art is strictly safer to crop. Falls back to whatever discover_
+    story_images already found if the raw cover isn't on disk.
+
+    KNOWN LIMITATION (V6): the raw cover.png itself can still contain
+    AI-hallucinated title/subtitle text baked directly into the
+    illustration by the image model -- this is a daily cover-generation
+    pipeline concern (CoverDesigner / the image prompt), not something
+    the Reel pipeline can edit or crop around without either another AI
+    call (out of scope/cost) or risking cropping out the main subject
+    (crop_to_fill already uses the full available margin for a clean
+    9:16 "cover" fit -- there is no further slack to bias the crop
+    without zooming in past that fit). The Reel's only available
+    mitigation is presentational: keep the cover on screen only briefly
+    (see REEL_OPENING_COVER_MAX_FRACTION / REEL_CLOSING_COVER_MAX_
+    FRACTION below) and let the 3 illustrated, text-free beat scenes
+    carry most of the Reel's screen time instead."""
 
     raw_cover = folder / "cover.png"
 
@@ -373,6 +387,29 @@ TARGET_HEIGHT = 1920
 
 
 # =====================================================================
+# V6: pacing -- keep the (title-heavy) cover brief at both ends so the
+# Reel reads as a short story, not a slideshow that lingers on the
+# cover. Passed to compute_scene_durations as first_scene_max_fraction/
+# last_scene_max_fraction (see build_reel_script's fixed [cover,
+# beat..., cover] segment order -- index 0 and the last index are always
+# the two cover segments). The opening is capped tighter than the
+# closing: the hook just needs to land quickly and hand off to the
+# story, while the closing carries the resolution's payoff line AND the
+# CTA, so it gets a little more breathing room. Still fully derived from
+# narration word counts (see compute_scene_durations), never a fixed/
+# decoupled timer -- and this also happens to be the Reel's only lever
+# for the known cover-baked-AI-text issue (see module docstring near
+# select_reel_hero_image): it can't edit the cover art itself (that's
+# the daily pipeline's job, out of scope here), but it CAN make sure the
+# Reel doesn't dwell on it, favouring the 3 illustrated beat scenes
+# instead.
+# =====================================================================
+
+REEL_OPENING_COVER_MAX_FRACTION = 0.12
+REEL_CLOSING_COVER_MAX_FRACTION = 0.18
+
+
+# =====================================================================
 # Reel narration voice -- a single, consistent, warm FEMALE voice so the
 # account (@bedtime01fables) develops a recognisable narration identity
 # across Reels. "coral" is one of the voices the installed OpenAI SDK's
@@ -498,13 +535,27 @@ def materialize_scene_images(segments, hero_image_path: Path, work_dir: Path, il
     return paths
 
 
-def compute_scene_durations(word_counts, total_duration, min_scene_seconds=1.6):
+def compute_scene_durations(word_counts, total_duration, min_scene_seconds=1.6,
+                             first_scene_max_fraction=None, last_scene_max_fraction=None):
     """Allocates total_duration across scenes proportionally to each
     scene's own narration word count (so a scene lasts as long as what's
     being said over it, and transitions land on story-beat boundaries --
     not a fixed timer), with a floor so no scene flashes by too fast.
     Floored durations are rescaled back down so the total still sums to
-    exactly total_duration."""
+    exactly total_duration.
+
+    V6: `first_scene_max_fraction`/`last_scene_max_fraction` (both
+    default None -- off, identical to the pre-V6 behaviour) optionally
+    cap the FIRST and LAST scene's share of total_duration -- in
+    practice always the opening/closing cover (see build_reel_script's
+    fixed [cover, beat..., cover] segment order) -- so the Reel doesn't
+    linger on the (title-heavy) cover. Still fully deterministic and
+    still derived from narration word counts, not a fixed/decoupled
+    timer: any time trimmed off a capped end is handed to the story
+    beats in between, in proportion to their own existing share, before
+    the same total-duration rescale as always. A no-op unless there are
+    at least 3 scenes (cover + >=1 beat + cover) -- with only 1-2 scenes
+    there's no "story" to redistribute into."""
 
     if not word_counts:
         return []
@@ -519,6 +570,35 @@ def compute_scene_durations(word_counts, total_duration, min_scene_seconds=1.6):
         max(min_scene_seconds, total_duration * (wc / total_words))
         for wc in word_counts
     ]
+
+    if len(raw) > 2 and (first_scene_max_fraction or last_scene_max_fraction):
+
+        capped_indices = set()
+        excess = 0.0
+
+        if first_scene_max_fraction:
+            cap = max(min_scene_seconds, total_duration * first_scene_max_fraction)
+            if raw[0] > cap:
+                excess += raw[0] - cap
+                raw[0] = cap
+                capped_indices.add(0)
+
+        if last_scene_max_fraction:
+            cap = max(min_scene_seconds, total_duration * last_scene_max_fraction)
+            last_index = len(raw) - 1
+            if raw[last_index] > cap:
+                excess += raw[last_index] - cap
+                raw[last_index] = cap
+                capped_indices.add(last_index)
+
+        if excess > 0:
+
+            middle_indices = [i for i in range(len(raw)) if i not in capped_indices]
+            middle_total = sum(raw[i] for i in middle_indices)
+
+            if middle_total > 0:
+                for i in middle_indices:
+                    raw[i] += excess * (raw[i] / middle_total)
 
     scale = total_duration / sum(raw)
 
@@ -564,6 +644,29 @@ CAPTION_MAX_LINES = 2
 # content.
 CAPTION_MAX_WORDS_PER_CHUNK = 6
 
+# V6: a real render (V5.1's own pixel-safe fix) still produced captions
+# like "Pip the squirrel played near a" and "'Don't worry, Lily,' he
+# said with" -- technically within the pixel/word limits, but ending on
+# an obviously incomplete grammatical fragment. A caption chunk must
+# never end on one of these words WHEN MORE TEXT REMAINS after it (see
+# build_caption_chunks) -- if it's genuinely the sentence's own last
+# word, ending there is unavoidable and correct (nothing to drop or
+# rewrite). This is a fixed, explicit list rather than real NLP/grammar
+# analysis -- deliberately simple, local, and deterministic.
+#
+# Base list as given; the possessive determiners (his/her/their/its/
+# our/your/my) and a few more prepositions (at/for/by) were added after
+# an offline real-render check against the actual KS-000001 story
+# surfaced "Pip and Lily sat by their" / "pretty leaf pile." -- "their"
+# is exactly as dangling as "the" or "a" but wasn't in the original
+# list. Deliberately NOT adding words like "that"/"this"/"it", which CAN
+# validly end a complete sentence ("I know that.").
+CAPTION_WEAK_TRAILING_WORDS = {
+    "a", "an", "the", "to", "of", "in", "on", "near", "with", "at", "for", "by",
+    "and", "or", "but", "said", "was", "is", "are", "he", "she", "they",
+    "his", "her", "their", "its", "our", "your", "my",
+}
+
 # Lower-middle safe area: low enough to read as "captions", high enough
 # to stay clear of Instagram's own bottom UI chrome (like/comment/share
 # bar), which can cover the very bottom of the frame.
@@ -585,6 +688,19 @@ def _fits_within_lines(draw, words, font, max_width_px, max_lines):
     return len(lines) <= max_lines
 
 
+def _ends_on_weak_word(words):
+    """True if the last word of `words` (ignoring trailing punctuation
+    like commas/periods/quote marks) is one of CAPTION_WEAK_TRAILING_
+    WORDS -- e.g. "...near a" or "...he said with" both end weak."""
+
+    if not words:
+        return False
+
+    core = re.sub(r"[^A-Za-z]+$", "", words[-1])
+
+    return core.lower() in CAPTION_WEAK_TRAILING_WORDS
+
+
 def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lines=CAPTION_MAX_LINES,
                           max_words_per_chunk=CAPTION_MAX_WORDS_PER_CHUNK):
     """Splits `text` into a sequence of caption chunks. Each chunk is
@@ -595,7 +711,16 @@ def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lin
     chunk` words, so a chunk reads as a short on-screen phrase rather
     than a long narration transcript even when it would otherwise fit
     within max_width_px/max_lines. Any overflow simply starts a new,
-    later-timed chunk instead of being dropped."""
+    later-timed chunk instead of being dropped.
+
+    V6: within that pixel/word-capped budget, a chunk also prefers NOT
+    to end on a weak continuation word (see CAPTION_WEAK_TRAILING_WORDS)
+    when more text follows it -- it backs off to the longest shorter
+    boundary that doesn't, so "Pip the squirrel played near a [big
+    tree]" becomes "Pip the squirrel played" / "near a big tree."
+    instead. Sentence/phrase structure decides the boundary first;
+    pixel measurement (already enforced above) is the safety net, not
+    the primary driver."""
 
     draw = _dummy_draw()
     words = text.split()
@@ -617,6 +742,19 @@ def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lin
             else:
                 hi = mid - 1
 
+        # Only meaningful to avoid a weak ending if there's a NEXT chunk
+        # to carry the deferred word(s) into -- if this chunk already
+        # consumes everything left, there's nothing to defer to, and
+        # backing off would just drop words rather than say them later.
+        if best < len(remaining):
+
+            natural = best
+
+            while natural > 1 and _ends_on_weak_word(remaining[:natural]):
+                natural -= 1
+
+            best = natural
+
         chosen = remaining[:best]
         lines = wrap_text_to_width(draw, " ".join(chosen), font, max_width_px)
 
@@ -625,6 +763,27 @@ def build_caption_chunks(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lin
         remaining = remaining[best:]
 
     return chunks
+
+
+def _merge_dangling_punctuation_fragments(sentences):
+    """A closing quote (or similar) placed right after terminal
+    punctuation -- e.g. '...are you okay?"' -- can split off as its own
+    punctuation-only "sentence" from _SENTENCE_SPLIT_RE (it contains no
+    letters/digits, so it isn't itself a real narrated word). Left alone
+    that becomes its own one-"word" caption chunk that's just a bare
+    quote mark -- a dangling-punctuation caption. Merges any such
+    fragment onto the neighbouring sentence instead; nothing is dropped,
+    only regrouped, so the exact original characters are preserved."""
+
+    merged = []
+
+    for sentence in sentences:
+        if merged and not re.search(r"[A-Za-z0-9]", sentence):
+            merged[-1] = merged[-1] + sentence
+        else:
+            merged.append(sentence)
+
+    return merged
 
 
 def build_caption_chunks_for_text(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX, max_lines=CAPTION_MAX_LINES,
@@ -641,6 +800,7 @@ def build_caption_chunks_for_text(text, font, max_width_px=CAPTION_SAFE_WIDTH_PX
     reworded."""
 
     sentences = [s.strip() for s in _SENTENCE_SPLIT_RE.findall(text) if s.strip()]
+    sentences = _merge_dangling_punctuation_fragments(sentences)
 
     if not sentences:
         return build_caption_chunks(text, font, max_width_px, max_lines, max_words_per_chunk)
@@ -1498,7 +1658,11 @@ class ReelService:
 
         segments = script["segments"]
         word_counts = [len(segment["text"].split()) for segment in segments]
-        scene_durations = compute_scene_durations(word_counts, script["duration_target"])
+        scene_durations = compute_scene_durations(
+            word_counts, script["duration_target"],
+            first_scene_max_fraction=REEL_OPENING_COVER_MAX_FRACTION,
+            last_scene_max_fraction=REEL_CLOSING_COVER_MAX_FRACTION,
+        )
 
         beat_segments = [segment for segment in segments if segment["kind"] == "beat"]
         beat_indices_for_images = [segment["slide_index"] for segment in beat_segments]
