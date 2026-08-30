@@ -3,6 +3,7 @@ import json
 import re
 import shutil
 import subprocess
+from datetime import datetime
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -1486,6 +1487,46 @@ class ReelService:
             eligible.append(entry)
 
         return eligible
+
+    def get_latest_eligible_story(self):
+        """The single most recently CREATED eligible story -- by the
+        Content Library's own `created_date` field, NOT simply the
+        highest content_id (a Content ID could in principle be reused/
+        reassigned, or entries could be edited out of numeric order; a
+        real date is the actual source of truth for "most recent").
+
+        Reuses list_reel_eligible_stories() for the actual "does this
+        story have everything a Reel needs on disk" check, so
+        eligibility means exactly the same thing here as it does for the
+        interactive picker -- one rule, not two. An incomplete newer
+        story is therefore skipped automatically: it's simply never in
+        that eligible list to begin with, so the next-newest eligible
+        one wins.
+
+        Ties on created_date (multiple stories generated the same day)
+        break on content_id: ContentLibraryService.next_content_id()
+        assigns these strictly increasing, so a higher content_id was
+        created later that same day.
+
+        Returns None if no story is eligible."""
+
+        eligible = self.list_reel_eligible_stories()
+
+        if not eligible:
+            return None
+
+        def sort_key(entry):
+
+            try:
+                created = datetime.strptime(entry.get("created_date", ""), "%Y-%m-%d")
+            except (TypeError, ValueError):
+                # Missing/malformed created_date sorts first (oldest),
+                # never accidentally wins "most recent".
+                created = datetime.min
+
+            return (created, entry.get("content_id", ""))
+
+        return max(eligible, key=sort_key)
 
     # -----------------------------------------------------------------
     # Narration (reuses OpenAITTSService; skips regenerating if a valid

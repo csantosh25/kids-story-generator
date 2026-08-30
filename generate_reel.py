@@ -15,7 +15,9 @@ def parse_args(argv=None):
 
     parser = argparse.ArgumentParser(description="Kids Story Reel Generator")
 
-    parser.add_argument(
+    selection = parser.add_mutually_exclusive_group()
+
+    selection.add_argument(
         "--content-id",
         dest="content_id",
         default=None,
@@ -23,6 +25,18 @@ def parse_args(argv=None):
             "Content Library ID of the story to turn into a Reel. "
             "Runs non-interactively (no prompts, no music selection) and "
             "never posts to Instagram."
+        ),
+    )
+
+    selection.add_argument(
+        "--latest",
+        dest="latest",
+        action="store_true",
+        help=(
+            "Select the most recently created eligible story (by "
+            "created_date, not just the highest Content ID) instead of a "
+            "specific Content ID. Same non-interactive, no-music-prompt, "
+            "never-posts-to-Instagram behaviour as --content-id."
         ),
     )
 
@@ -144,27 +158,36 @@ def run_interactive(service):
     print("   (This tool never posts automatically.)")
 
 
-def run_non_interactive(service, content_id):
+def _print_selection_summary(mode_label, entry):
+    """Prints the "which story is this run using, and why" summary
+    shared by both non-interactive selection modes (a specific Content
+    ID, or the latest eligible story) -- see generate_reel.py's own
+    "Selection mode" header format. `entry` is a Content Library dict
+    (see ContentLibraryService); missing optional fields print blank
+    rather than erroring."""
 
-    print("Mode: Non-interactive")
-    print(f"Content ID: {content_id}")
+    character = entry.get("character") or {}
+    character_label = f"{character.get('name', '')} {character.get('species', '')}".strip()
+
+    print(f"Selection mode: {mode_label}")
     print()
-    print("This run operates ONLY on the existing Content Library entry")
-    print("above. No new story, cover, or slides will be generated, and no")
-    print("email will be sent.")
+    print(f"Content ID : {entry.get('content_id', '')}")
+    print(f"Title      : {entry.get('title', '')}")
+    print(f"Created    : {entry.get('created_date', '')}")
+    print(f"Character  : {character_label}")
+    print()
+    print("Using existing story assets.")
+    print("No new story will be generated.")
+    print("No email will be sent.")
     print()
 
-    entry = service.library.get_story(content_id)
 
-    if entry is None:
-        print(f"❌ No story found in the Content Library for content ID: {content_id}")
-        raise SystemExit(1)
-
-    print("Selected Story (non-interactive)")
-    print("-----------------------")
-    print(entry["title"])
-    print(entry["folder"])
-    print()
+def _generate_and_report(service, content_id, entry):
+    """Shared "run the existing Reel generation pipeline and report the
+    result" core for both non-interactive selection modes -- exactly one
+    place calls service.generate(), so a specific-Content-ID run and a
+    latest-eligible-story run behave identically once a content_id has
+    been resolved."""
 
     try:
 
@@ -203,7 +226,7 @@ def run_non_interactive(service, content_id):
     print("✅ Reel generated successfully.")
     print()
     print(f"Content ID: {content_id}")
-    print(f"Story Title: {entry['title']}")
+    print(f"Story Title: {entry.get('title', '')}")
     print(f"Output Path: {video_path}")
 
     if "duration_seconds" in metadata:
@@ -214,6 +237,43 @@ def run_non_interactive(service, content_id):
 
     print()
     print("This tool never posts to Instagram automatically.")
+
+
+def run_non_interactive(service, content_id):
+    """Specific-Content-ID path: uses exactly the supplied content_id,
+    never silently substituting a different story. Fails clearly if it
+    doesn't exist in the Content Library."""
+
+    entry = service.library.get_story(content_id)
+
+    if entry is None:
+        print(f"❌ No story found in the Content Library for content ID: {content_id}")
+        raise SystemExit(1)
+
+    _print_selection_summary("Specific Content ID", entry)
+    _generate_and_report(service, content_id, entry)
+
+
+def run_latest_non_interactive(service):
+    """Latest-eligible-story path: picks the most recently created
+    (by created_date, not the highest Content ID) story that already has
+    everything a Reel needs on disk -- see ReelService.get_latest_
+    eligible_story(), which reuses the same eligibility check as the
+    interactive picker (list_reel_eligible_stories()) rather than a
+    separate set of rules. An incomplete newer story is skipped
+    automatically, since it's simply not in that eligible list."""
+
+    entry = service.get_latest_eligible_story()
+
+    if entry is None:
+        print("❌ No eligible story found in the Content Library.")
+        print("A story needs story.json, a cover image, and its carousel")
+        print("slide images on disk before it can be turned into a Reel.")
+        print("Generate a story via the daily pipeline first.")
+        raise SystemExit(1)
+
+    _print_selection_summary("Latest eligible story", entry)
+    _generate_and_report(service, entry["content_id"], entry)
 
 
 def main(argv=None):
@@ -245,6 +305,8 @@ def main(argv=None):
 
     if args.content_id:
         run_non_interactive(service, args.content_id)
+    elif args.latest:
+        run_latest_non_interactive(service)
     else:
         run_interactive(service)
 
