@@ -1,0 +1,129 @@
+{
+    "story_info": {
+        "title": "Bella Bear Helps Grandma",
+        "subtitle": "A Cozy Afternoon of Kindness",
+        "theme": "Kindness and Family",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Helping others, especially family, makes everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Grandma Bear",
+                "species": "Bear",
+                "appearance": "A kind, older brown bear with slightly lighter fur around her muzzle and soft, wise eyes. She wears a cozy knitted shawl.",
+                "role": "Needs Bella's help with tidying her yarn."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D, children's book illustration. Bella Bear, a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, a little cream-colored tummy patch and short rounded ears, is gently helping Grandma Bear sort colorful yarn. Grandma Bear is a kind, older brown bear with slightly lighter fur around her muzzle and soft, wise eyes, wearing a cozy knitted shawl. They are inside Grandma's cozy den in Sunny Forest, with a basket of yarn next to them. Soft lighting, pastel colours, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Grandma Bear's cozy den in Sunny Forest",
+        "visual_action": "Bella Bear helps Grandma Bear sort colorful yarn",
+        "visual_object": "a basket of colorful yarn",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Visit to Grandma",
+            "text": "Bella Bear bounced to Grandma Bear's home. It was a sunny afternoon. Grandma Bear lived in a cozy den in Sunny Forest. Bella had soft honey-colored fur and a gentle smile. She loved visiting Grandma. 'Hello, Grandma!' Bella called. Grandma smiled, but she looked a little tired.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "Grandma's cozy den",
+            "icon": "bear house",
+            "speaker_notes": "Bella Bear arrives at Grandma's house, seeing Grandma looking a bit tired."
+        },
+        {
+            "page": 2,
+            "title": "A Basket of Yarn",
+            "text": "'Oh, hello, my sweet Bella,' Grandma Bear said. Grandma had kind, wise eyes and wore a cozy shawl. 'My back is a bit stiff today. I wanted to sort my yarn balls. They are all mixed up!' She pointed to a big basket. It was full of colorful yarn.",
+            "background_color": "#D4E8F8",
+            "visual_theme": "Grandma's den",
+            "icon": "yarn basket",
+            "speaker_notes": "Grandma Bear explains her problem to Bella, showing the messy yarn basket."
+        },
+        {
+            "page": 3,
+            "title": "Bella Offers to Help",
+            "text": "Bella looked at the basket. Red, blue, yellow, and green yarn. 'I can help you, Grandma!' Bella said with a kind smile. 'Kind hearts make happy days!' She sat down. Bella picked up a red yarn ball. Then she found another red one.",
+            "background_color": "#FAEBE0",
+            "visual_theme": "yarn sorting",
+            "icon": "yarn ball",
+            "speaker_notes": "Bella offers to help Grandma and starts sorting the yarn."
+        },
+        {
+            "page": 4,
+            "title": "Working Together",
+            "text": "Bella carefully put all the red yarn together. Then she found all the blue yarn. Grandma Bear watched. Her heart felt warm. Bella worked patiently. She made neat piles of yarn. Soon, the big basket was tidy and colorful.",
+            "background_color": "#E9F9F0",
+            "visual_theme": "tidy den",
+            "icon": "sorted yarn",
+            "speaker_notes": "Bella patiently sorts the yarn into neat piles while Grandma watches happily."
+        },
+        {
+            "page": 5,
+            "title": "Happy Hearts",
+            "text": "'Thank you, Bella,' Grandma said. She hugged Bella gently. 'You are such a kind bear.' Bella felt happy inside. Helping Grandma made her feel good. They shared a warm cup of berry tea. It was a wonderful afternoon.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "cozy tea time",
+            "icon": "berry tea",
+            "speaker_notes": "Grandma thanks Bella, and they enjoy a warm moment together, feeling happy."
+        }
+    ],
+    "instagram": {
+        "caption": "Bella Bear loves helping! 🐻✨ In Wonderwood Valley, every little act of kindness shines bright. Today, Bella visits Grandma Bear and helps her with a special task. It teaches us that even small paws can do big things! Your little one will love this heartwarming story about empathy and family. #Bedtime01Fables #BellaBear #KidsStories #KindnessMatters #FamilyTime",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsStories",
+            "#KindnessMatters",
+            "#FamilyTime"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Bella Bear's Kind Heart Helps Grandma!",
+        "preview": "Join Bella Bear as she shows kindness and helps her Grandma in Sunny Forest. A heartwarming tale for your little one."
+    },
+    "youtube": {
+        "title": "Bella Bear Helps Grandma | A Story About Kindness for Kids",
+        "description": "Come along with Bella Bear on a sunny afternoon visit to Grandma Bear's cozy den in Wonderwood Valley. Grandma needs a little help, and Bella shows just how much a kind heart can do! This heartwarming story teaches children about empathy, helping family, and the joy of being kind. Perfect for kids aged 4-7.",
+        "keywords": [
+            "Bella Bear",
+            "children's story",
+            "kindness for kids",
+            "helping grandma",
+            "Wonderwood Valley",
+            "kids story",
+            "empathy for children",
+            "preschool story",
+            "moral story"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when Grandma needs a helping paw?",
+        "instagram_caption_short": "Bella Bear loves helping! 🐻✨ In Wonderwood Valley, every little act of kindness shines bright. Today, Bella visits Grandma Bear and helps her with a special task. It teaches us that even small paws can do big things! Your little one will love this heartwarming story about empathy and family. Save this story for your next reading time.",
+        "instagram_caption_long": "Come along with Bella Bear on a sunny afternoon visit to her dear Grandma Bear in Wonderwood Valley's Sunny Forest! Grandma Bear needs a little helping paw to sort her colorful yarn balls, and Bella, with her kind heart, is ready to jump right in. This heartwarming tale is perfect for teaching children aged 4-7 about empathy, kindness, and the special joy of helping family. Watch as Bella's gentle patience makes Grandma's day brighter and her den tidier. It’s a wonderful reminder that 'Kind hearts make happy days!' Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsStories",
+            "#KindnessMatters",
+            "#FamilyTime"
+        ],
+        "first_comment": "What is one kind thing your little one loves to do for their grandparents?",
+        "alt_text": "Bella Bear, a small brown bear cub, gently helping Grandma Bear, an older bear, sort colorful yarn in a cozy den. A basket of yarn is nearby.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What kind thing can we do to help someone in our family today?"
+    }
+}

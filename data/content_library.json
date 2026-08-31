@@ -26,5 +26,33 @@
             "posted": false,
             "url": ""
         }
+    },
+    {
+        "content_id": "KS-000002",
+        "created_date": "2026-08-31",
+        "status": "completed",
+        "title": "Bella Bear Helps Grandma",
+        "theme": "Kindness and Family",
+        "character": {
+            "name": "Bella Bear",
+            "species": "Bear"
+        },
+        "folder": "output/20260831_093924_bella_bear_helps_grandma",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
     }
 ]
