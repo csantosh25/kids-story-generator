@@ -409,7 +409,9 @@ class ReelGenerationUnchangedAndFileWrittenTests(unittest.TestCase):
 
 class ArtifactBundleTests(unittest.TestCase):
     """Item 18: reel_caption.txt is included in the primary GitHub
-    artifact (the "Upload reel.mp4" step)."""
+    artifact (the "Upload Reel Package (primary)" step). See also
+    tests/test_generate_reel_workflow.py::PrimaryArtifactContentsTests for
+    the fuller set of assertions on this same step."""
 
     def test_primary_artifact_includes_reel_caption_txt(self):
 
@@ -417,7 +419,7 @@ class ArtifactBundleTests(unittest.TestCase):
             data = yaml.safe_load(f)
 
         steps = data["jobs"]["generate-reel"]["steps"]
-        upload = next(s for s in steps if s["name"] == "Upload reel.mp4")
+        upload = next(s for s in steps if s["name"] == "Upload Reel Package (primary)")
 
         path_value = upload["with"]["path"]
 

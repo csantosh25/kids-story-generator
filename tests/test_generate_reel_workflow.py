@@ -261,5 +261,147 @@ class NewerStorySelectedOverStaleKS000001Tests(unittest.TestCase):
             self.assertEqual(entry["content_id"], "KS-000001")
 
 
+class PrimaryArtifactContentsTests(unittest.TestCase):
+    """Storage cleanup: the primary artifact contains ONLY what a user
+    needs to post the Reel -- reel.mp4 and reel_caption.txt -- nothing
+    else (items 1-4)."""
+
+    def _primary_step(self):
+        return next(s for s in _steps() if s.get("name") == "Upload Reel Package (primary)")
+
+    def test_primary_artifact_contains_reel_mp4(self):
+        path_value = self._primary_step()["with"]["path"]
+        self.assertIn("reel.mp4", path_value)
+
+    def test_primary_artifact_contains_reel_caption_txt(self):
+        path_value = self._primary_step()["with"]["path"]
+        self.assertIn("reel_caption.txt", path_value)
+
+    def test_primary_artifact_excludes_intermediate_and_debug_files(self):
+
+        path_value = self._primary_step()["with"]["path"]
+
+        for excluded in [
+            "reel_scene_01.png", "reel_scene_02.png", "reel_scene_03.png",
+            "reel_scene_cover.png", "reel_scene_*_fullbleed.png",
+            "reel_scene_clips", "reel_narration.mp3", "reel_narration.txt",
+            "reel_script.json", "reel_scenes.json", "reel_run.log",
+        ]:
+            self.assertNotIn(excluded, path_value)
+
+    def test_primary_artifact_retention_is_seven_days(self):
+        self.assertEqual(self._primary_step()["with"]["retention-days"], 7)
+
+    def test_primary_artifact_name_uses_reel_package_prefix(self):
+        name = self._primary_step()["with"]["name"]
+        self.assertTrue(name.startswith("reel-package-"))
+
+    def test_primary_artifact_fails_loudly_if_missing(self):
+        """Failure behaviour: never a misleading/partial primary
+        package -- if-no-files-found must stay 'error', and the step
+        must NOT have if: always() (so a failed generator run skips it
+        entirely rather than uploading nothing as if it were fine)."""
+
+        step = self._primary_step()
+        self.assertEqual(step["with"]["if-no-files-found"], "error")
+        self.assertNotIn("if", step)
+
+
+class DebugArtifactContentsTests(unittest.TestCase):
+    """Item 5-6: a separate debug artifact, retained only briefly,
+    troubleshooting-only content."""
+
+    def _debug_step(self):
+        return next(s for s in _steps() if s.get("name") == "Upload Reel Debug Bundle")
+
+    def test_debug_artifact_is_a_separate_step_from_primary(self):
+
+        names = [s.get("name") for s in _steps()]
+        self.assertIn("Upload Reel Package (primary)", names)
+        self.assertIn("Upload Reel Debug Bundle", names)
+        self.assertNotEqual("Upload Reel Package (primary)", "Upload Reel Debug Bundle")
+
+    def test_debug_artifact_retention_is_three_days(self):
+        self.assertEqual(self._debug_step()["with"]["retention-days"], 3)
+
+    def test_debug_artifact_uploads_even_on_failure(self):
+        self.assertEqual(self._debug_step().get("if"), "always()")
+
+    def test_debug_artifact_does_not_duplicate_reel_mp4_or_narration_audio(self):
+        """The debug bundle intentionally omits reel.mp4 (already in the
+        primary package on success) and the narration .mp3 (the .txt
+        transcript is enough for troubleshooting) to stay lean."""
+
+        path_value = self._debug_step()["with"]["path"]
+        self.assertNotIn("reel.mp4", path_value)
+        self.assertNotIn("reel_narration.mp3", path_value)
+
+    def test_debug_artifact_contains_troubleshooting_files(self):
+
+        path_value = self._debug_step()["with"]["path"]
+
+        for expected in [
+            "reel_run.log", "reel_script.json", "reel_narration.txt",
+            "reel_scenes.json", "reel_scene_clips",
+        ]:
+            self.assertIn(expected, path_value)
+
+    def test_debug_artifact_never_marked_as_required(self):
+        """A debug bundle that can't fully materialize for some failure
+        modes must warn, not error out the job."""
+
+        self.assertEqual(self._debug_step()["with"]["if-no-files-found"], "warn")
+
+
+class NoGitOperationsInReelWorkflowTests(unittest.TestCase):
+    """Items 7-9: the Reel workflow contains no git add/commit/push --
+    Reel output must never become permanent Git content."""
+
+    def test_no_git_add_commit_or_push_in_reel_workflow(self):
+
+        text = WORKFLOW_PATH.read_text(encoding="utf-8")
+
+        executable_lines = [
+            line for line in text.splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        ]
+        executable_text = "\n".join(executable_lines)
+
+        for forbidden in ["git add", "git commit", "git push"]:
+            self.assertNotIn(forbidden, executable_text)
+
+
+class ReelOutputNotPersistedTests(unittest.TestCase):
+    """Item 10: Reel output is not part of the Daily Story persistence
+    mechanism -- the Daily Story workflow's own `git add -A output/
+    data/content_library.json` would never pick up a Reel file, both
+    because the two workflows never share a runner/output directory AND
+    because .gitignore now excludes Reel-specific filenames explicitly
+    (defence in depth, e.g. for a local developer's own working copy)."""
+
+    def test_reel_filenames_are_gitignored(self):
+
+        gitignore = Path(".gitignore").read_text(encoding="utf-8")
+
+        for pattern in [
+            "reel.mp4", "reel_narration.mp3", "reel_narration.txt",
+            "reel_script.json", "reel_caption.txt", "reel_scenes.json",
+            "reel_scene_*.png", "reel_scene_clips/",
+        ]:
+            self.assertIn(pattern, gitignore)
+
+    def test_output_directory_itself_is_not_blanket_ignored(self):
+        """The daily story source assets under output/ must remain
+        trackable -- only Reel-specific filenames are excluded."""
+
+        gitignore_lines = [
+            line.strip() for line in Path(".gitignore").read_text(encoding="utf-8").splitlines()
+        ]
+
+        self.assertNotIn("output/", gitignore_lines)
+        self.assertNotIn("/output/", gitignore_lines)
+        self.assertNotIn("output", gitignore_lines)
+
+
 if __name__ == "__main__":
     unittest.main()
