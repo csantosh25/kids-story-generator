@@ -225,11 +225,19 @@ jobs:
       # missing/empty reel.mp4 -- so a failure in the step above already
       # stops the job here. This upload is the final, explicit check that
       # a real reel.mp4 exists on disk.
+      # reel_caption.txt (the copy-ready Instagram post text + hashtags --
+      # see services/reel_posting_copy_service.py) is bundled into this
+      # SAME primary artifact alongside reel.mp4, since posting the Reel
+      # needs both together. It's produced deterministically early in
+      # ReelService.generate() -- same reliability as reel.mp4 itself by
+      # the time this step runs (a failed run never reaches here).
       - name: Upload reel.mp4
         uses: actions/upload-artifact@v4
         with:
           name: reel-${{ steps.run_reel.outputs.content_id }}
-          path: output/**/reel.mp4
+          path: |
+            output/**/reel.mp4
+            output/**/reel_caption.txt
           if-no-files-found: error
           retention-days: 14
 
