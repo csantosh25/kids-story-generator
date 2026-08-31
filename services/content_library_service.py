@@ -161,3 +161,26 @@ class ContentLibraryService:
                 break
 
         self._save(library)
+
+    def remove_stories(self, content_ids):
+        """Removes every entry whose content_id is in `content_ids` from
+        the Content Library. Used by story retention (see
+        services/story_retention_service.py) to drop entries for
+        expired stories once their output folders have been deleted.
+        A no-op for any ID that isn't present -- never raises for an
+        unknown/already-removed ID -- and a no-op entirely if
+        `content_ids` is empty (no unnecessary write)."""
+
+        if not content_ids:
+            return
+
+        ids_to_remove = set(content_ids)
+
+        library = self._load()
+
+        library = [
+            story for story in library
+            if story["content_id"] not in ids_to_remove
+        ]
+
+        self._save(library)
