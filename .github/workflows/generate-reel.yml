@@ -3,9 +3,17 @@ name: Generate Reel (Manual Test)
 on:
   workflow_dispatch:
     inputs:
-      content_id:
-        description: "Content Library ID of the story to turn into a Reel"
+      selection_mode:
+        description: "Choose which existing story to turn into a Reel"
         required: true
+        type: choice
+        options:
+          - latest
+          - specific
+        default: specific
+      content_id:
+        description: "Content ID (required only when selection_mode=specific)"
+        required: false
         type: string
 
 jobs:
@@ -34,21 +42,98 @@ jobs:
           ffmpeg -version
           ffprobe -version
 
+      # workflow_dispatch can't natively express "content_id is required
+      # only when selection_mode=specific" (it's a plain optional
+      # string input) -- this step is that validation, so a missing
+      # content_id in specific mode fails clearly and immediately rather
+      # than falling through to generate_reel.py with a blank ID.
+      - name: Validate inputs
+        run: |
+          if [ "${{ inputs.selection_mode }}" = "specific" ] && [ -z "${{ inputs.content_id }}" ]; then
+            echo "❌ selection_mode=specific requires a content_id input."
+            exit 1
+          fi
+
+      # Both modes go through the SAME generate_reel.py CLI used locally
+      # (python generate_reel.py --content-id ... / --latest) -- no
+      # separate workflow-only selection logic, and neither mode ever
+      # touches the daily story pipeline (no run_daily.py, no
+      # StoryPipeline, no new story/cover/email). generate_reel.py's own
+      # "Content ID : ..." summary line (printed by both --latest and
+      # --content-id) is captured here purely so later steps can name
+      # their artifacts after the actual story used, even in --latest
+      # mode where the workflow input itself doesn't know it in advance.
       - name: Run Reel Generator
+        id: run_reel
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python generate_reel.py --content-id "${{ inputs.content_id }}"
+          # Without this, `python ... | tee reel_run.log`'s exit status is
+          # tee's (almost always 0), NOT python's -- GitHub's default
+          # shell when no `shell:` key is set is `bash -e {0}` (errexit
+          # only, no pipefail; `pipefail` is only added when you
+          # explicitly request `shell: bash`). That let a real
+          # generate_reel.py failure be reported as this step succeeding,
+          # which only surfaced later as a confusing "no files found" at
+          # the artifact-upload step. `set -o pipefail` makes this
+          # pipeline's exit status reflect ANY failing command in it
+          # (python included), for both selection-mode branches below.
+          set -o pipefail
+
+          if [ "${{ inputs.selection_mode }}" = "latest" ]; then
+            python generate_reel.py --latest | tee reel_run.log
+          else
+            python generate_reel.py --content-id "${{ inputs.content_id }}" | tee reel_run.log
+          fi
+          RESOLVED_ID=$(grep -m1 "^Content ID :" reel_run.log | sed 's/^Content ID : *//')
+          echo "content_id=${RESOLVED_ID:-unknown}" >> "$GITHUB_OUTPUT"
+
+      # TEMPORARY DIAGNOSTIC (investigating the "No files were found with
+      # the provided path: output/**/reel.mp4" artifact-upload failure --
+      # remove once root-caused/fixed). `if: always()` so this runs even
+      # if the step above reported failure, AND even in the suspected
+      # case where it silently reports success despite generate_reel.py
+      # itself having failed (a bare `CMD | tee LOG` pipeline with no
+      # `pipefail` reports tee's exit status, not CMD's -- GitHub's
+      # documented default shell when no `shell:` key is set is
+      # `bash -e {0}`, WITHOUT pipefail, unlike the `-eo pipefail` you get
+      # by explicitly requesting `shell: bash`). reel_run.log was written
+      # by `tee` regardless of that masking, so it still shows exactly
+      # what generate_reel.py printed -- including any ❌ failure it hit.
+      - name: Diagnose reel.mp4 location (temporary)
+        if: always()
+        run: |
+          echo "== pwd =="
+          pwd
+          echo
+          echo "== reel_run.log (captured stdout of generate_reel.py) =="
+          if [ -f reel_run.log ]; then cat reel_run.log; else echo "(reel_run.log not found)"; fi
+          echo
+          echo "== resolved content_id output =="
+          echo "steps.run_reel.outputs.content_id = ${{ steps.run_reel.outputs.content_id }}"
+          echo
+          echo "== data/content_library.json =="
+          cat data/content_library.json || echo "(not found)"
+          echo
+          echo "== find output -type f =="
+          find output -type f 2>&1 | sort
+          echo
+          echo "== find . -name reel.mp4 -type f =="
+          find . -name "reel.mp4" -type f 2>&1
+          echo
+          echo "== find . -name reel_script.json -type f =="
+          find . -name "reel_script.json" -type f 2>&1
 
       # generate_reel.py already fails (non-zero exit) with a clear message
-      # for: unknown content ID, missing story assets, TTS failure, ffmpeg
-      # failure, or a missing/empty reel.mp4 -- so a failure in the step
-      # above already stops the job here. This upload is the final,
-      # explicit check that a real reel.mp4 exists on disk.
+      # for: no eligible story (latest mode), unknown/missing content ID,
+      # missing story assets, TTS failure, ffmpeg failure, or a
+      # missing/empty reel.mp4 -- so a failure in the step above already
+      # stops the job here. This upload is the final, explicit check that
+      # a real reel.mp4 exists on disk.
       - name: Upload reel.mp4
         uses: actions/upload-artifact@v4
         with:
-          name: reel-${{ inputs.content_id }}
+          name: reel-${{ steps.run_reel.outputs.content_id }}
           path: output/**/reel.mp4
           if-no-files-found: error
           retention-days: 14
@@ -68,5 +153,32 @@ jobs:
         with:
           name: reel-narration
           path: output/**/reel_narration.mp3
+          if-no-files-found: warn
+          retention-days: 14
+
+      # Diagnostic bundle: everything needed to review or debug a real
+      # Reel run without re-running it -- the generated/cached illustrated
+      # scenes, their cache metadata, the materialized full-bleed frames
+      # actually handed to the renderer, and (V4) the intermediate
+      # per-scene clips. render_reel_video() deletes reel_scene_clips/ on
+      # a fully successful render, so it only appears here when a render
+      # failed partway -- exactly the case where it's useful for
+      # diagnosis. `if: always()` so this uploads even if the run fails.
+      - name: Upload Reel Debug Bundle (diagnostic)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-debug-${{ steps.run_reel.outputs.content_id }}
+          path: |
+            output/**/reel.mp4
+            output/**/reel_script.json
+            output/**/reel_narration.mp3
+            output/**/reel_scenes.json
+            output/**/reel_scene_01.png
+            output/**/reel_scene_02.png
+            output/**/reel_scene_03.png
+            output/**/reel_scene_cover.png
+            output/**/reel_scene_*_fullbleed.png
+            output/**/reel_scene_clips/**
           if-no-files-found: warn
           retention-days: 14

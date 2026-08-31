@@ -19,6 +19,21 @@ class OpenAIService:
 
         return result.data[0].b64_json
 
+    def generate_image(self, prompt, size="1024x1536", quality="high"):
+        """Generic text-to-image call, reusing the same client/config as
+        generate_cover(). Used by ReelImageService for dedicated Reel
+        scene illustrations -- kept separate from generate_cover so the
+        daily cover-generation call path/behavior is never touched."""
+
+        result = self.client.images.generate(
+            model="gpt-image-1",
+            prompt=prompt,
+            size=size,
+            quality=quality,
+        )
+
+        return result.data[0].b64_json
+
     @staticmethod
     def is_moderation_blocked(error):
         """Detects OpenAI's moderation_blocked BadRequestError without

@@ -6,14 +6,37 @@ on:
   schedule:
     - cron: "30 0 * * *"   # 6:00 AM IST
 
+# This workflow commits the newly generated story (and applies rolling
+# retention -- see apply_retention.py) back to the repository so a
+# later, separate GitHub Actions run (e.g. the manual Reel workflow) can
+# discover it. That requires GITHUB_TOKEN to have write access to repo
+# contents -- do not assume the repository/org default is already
+# sufficient.
+permissions:
+  contents: write
+
+# Serializes runs of this workflow (never two at once) so two
+# concurrent runs can't race to commit/push generated content and
+# retention results against the same branch.
+concurrency:
+  group: daily-story-main
+  cancel-in-progress: false
+
 jobs:
   generate-story:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
     steps:
+      # This workflow is intended to always generate content on, and
+      # persist it to, main -- regardless of which ref a manual
+      # workflow_dispatch happens to be triggered against. Pinning the
+      # checkout ref here (rather than relying on whatever ref actually
+      # got checked out) keeps that explicit rather than accidental.
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -35,3 +58,35 @@ jobs:
 
         run: |
           python run_daily.py
+
+      # Only reached if `Run Story Generator` succeeded (story generated
+      # AND its Content Library entry added -- see StoryPipeline.run()).
+      # Strict rolling retention: keeps only the newest 10 stories (by
+      # created_date, tie-broken by content_id -- see
+      # services/story_retention_service.py), with NO exceptions for
+      # reel/instagram/pinterest/youtube posted-status. Deletes nothing
+      # if retention itself fails for any reason, and exits non-zero in
+      # that case so the commit/push step below never runs.
+      - name: Apply Story Retention (keep newest 10)
+        run: |
+          python apply_retention.py
+
+      # Persist the retained story assets + updated Content Library so a
+      # separate, later workflow run (checkout is a fresh clone every
+      # time) can see them -- otherwise everything above only ever
+      # existed on this ephemeral runner. Commits only when there's
+      # actually something staged (a fresh story, and/or a retention
+      # deletion) -- never an empty commit.
+      - name: Commit and Push Generated Story
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A output/ data/content_library.json
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Add daily story and apply 10-story retention [skip ci]"
+            git push origin HEAD:main
+          fi
