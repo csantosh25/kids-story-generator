@@ -216,3 +216,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Reel-generated files (services/reel_service.py,
+# services/reel_image_service.py, services/reel_posting_copy_service.py)
+# -- these are produced fresh by every Reel run (locally or in the
+# ephemeral "Generate Reel" GitHub Actions runner) and are never meant to
+# be permanent repository content; the workflow only ever uploads them as
+# short-lived build artifacts (see .github/workflows/generate-reel.yml),
+# it never commits them. Narrowly scoped to Reel-specific filenames only
+# -- NOT the whole output/ directory, whose daily story source assets
+# (story.json, cover.png, cover_final.png, slide_*.png, story_book.pdf,
+# publish.md, report.md) are intentionally committed and governed by the
+# Daily Story workflow's own 10-story retention (services/
+# story_retention_service.py), and must remain trackable.
+output/**/reel.mp4
+output/**/reel_narration.mp3
+output/**/reel_narration.txt
+output/**/reel_script.json
+output/**/reel_caption.txt
+output/**/reel_metadata.json
+output/**/reel_scenes.json
+output/**/reel_scene_*.png
+output/**/reel_scene_clips/

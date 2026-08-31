@@ -219,63 +219,56 @@ jobs:
           echo "== find . -name reel_script.json -type f =="
           find . -name "reel_script.json" -type f 2>&1
 
-      # generate_reel.py already fails (non-zero exit) with a clear message
-      # for: no eligible story (latest mode), unknown/missing content ID,
-      # missing story assets, TTS failure, ffmpeg failure, or a
-      # missing/empty reel.mp4 -- so a failure in the step above already
-      # stops the job here. This upload is the final, explicit check that
-      # a real reel.mp4 exists on disk.
-      # reel_caption.txt (the copy-ready Instagram post text + hashtags --
-      # see services/reel_posting_copy_service.py) is bundled into this
-      # SAME primary artifact alongside reel.mp4, since posting the Reel
-      # needs both together. It's produced deterministically early in
-      # ReelService.generate() -- same reliability as reel.mp4 itself by
-      # the time this step runs (a failed run never reaches here).
-      - name: Upload reel.mp4
+      # PRIMARY package: exactly the two files a user needs to post the
+      # Reel -- reel.mp4 and reel_caption.txt (the copy-ready Instagram
+      # post text + hashtags, see services/reel_posting_copy_service.py)
+      # -- nothing else. Reel outputs are NEVER committed to Git (see
+      # .gitignore) -- they exist only on this ephemeral runner and as
+      # this short-lived artifact, which is enough time for the user to
+      # download and post. No `if: always()` here on purpose: if `Run
+      # Reel Generator` failed, this step is skipped entirely (GitHub
+      # Actions' default `if: success()`), so a failed run can never
+      # upload a misleading "primary package" or a partial reel.mp4 --
+      # generate_reel.py already fails (non-zero exit) with a clear
+      # message for every real failure mode (no eligible story, unknown/
+      # missing content ID, missing story assets, TTS failure, ffmpeg
+      # failure, missing/empty reel.mp4), and that failure already stops
+      # the job before this step is ever reached.
+      - name: Upload Reel Package (primary)
         uses: actions/upload-artifact@v4
         with:
-          name: reel-${{ steps.run_reel.outputs.content_id }}
+          name: reel-package-${{ steps.run_reel.outputs.content_id }}
           path: |
             output/**/reel.mp4
             output/**/reel_caption.txt
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 7
 
-      - name: Upload reel_script.json (optional, for inspection)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: reel-script
-          path: output/**/reel_script.json
-          if-no-files-found: warn
-          retention-days: 14
-
-      - name: Upload reel_narration.mp3 (optional, for inspection)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: reel-narration
-          path: output/**/reel_narration.mp3
-          if-no-files-found: warn
-          retention-days: 14
-
-      # Diagnostic bundle: everything needed to review or debug a real
-      # Reel run without re-running it -- the generated/cached illustrated
-      # scenes, their cache metadata, the materialized full-bleed frames
-      # actually handed to the renderer, and (V4) the intermediate
-      # per-scene clips. render_reel_video() deletes reel_scene_clips/ on
-      # a fully successful render, so it only appears here when a render
-      # failed partway -- exactly the case where it's useful for
-      # diagnosis. `if: always()` so this uploads even if the run fails.
-      - name: Upload Reel Debug Bundle (diagnostic)
+      # DEBUG bundle: troubleshooting-only, never part of the primary
+      # package above (no reel.mp4/reel_narration.mp3 here -- the
+      # narration TEXT is enough to check content/timing without the
+      # audio bytes, and reel.mp4 is already in the primary package on a
+      # successful run). Short retention since it's only useful shortly
+      # after a run. `if: always()` so it still uploads on a failed/
+      # partial render -- this never affects the Content Library (that's
+      # ReelService.generate()'s own contract: it only calls update_reel
+      # after a verified successful render, completely independent of
+      # what gets uploaded here) and never substitutes for the primary
+      # package on failure (`if-no-files-found: warn`, not `error` --
+      # some of these files legitimately won't exist for every failure
+      # mode, e.g. no scene images yet if narration failed first).
+      # render_reel_video() deletes reel_scene_clips/ on a fully
+      # successful render, so it only appears here when a render failed
+      # partway -- exactly the case this bundle exists for.
+      - name: Upload Reel Debug Bundle
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: reel-debug-${{ steps.run_reel.outputs.content_id }}
           path: |
-            output/**/reel.mp4
+            reel_run.log
             output/**/reel_script.json
-            output/**/reel_narration.mp3
+            output/**/reel_narration.txt
             output/**/reel_scenes.json
             output/**/reel_scene_01.png
             output/**/reel_scene_02.png
@@ -284,4 +277,4 @@ jobs:
             output/**/reel_scene_*_fullbleed.png
             output/**/reel_scene_clips/**
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 3
