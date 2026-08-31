@@ -22,8 +22,23 @@ jobs:
     timeout-minutes: 20
 
     steps:
+      # The entire approved Reel feature set (this workflow's own code
+      # path, ReelService, the Daily Story workflow's persistence, and
+      # the Content Library / output/ it writes) lives on main. Without
+      # an explicit ref, actions/checkout@v4 on a workflow_dispatch run
+      # checks out whatever ref the run was dispatched against -- which
+      # is NOT guaranteed to be main's current tip (e.g. a stale branch
+      # selection left over from testing this workflow before it was
+      # merged). That produced a real symptom: `selection_mode=latest`
+      # kept resolving to KS-000001 even after the Daily Story workflow
+      # had already persisted a newer story to main, because this
+      # checkout's data/content_library.json was still the old one.
+      # Pinning `ref: main` here makes this workflow always operate on
+      # the current persisted state, regardless of dispatch selection.
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -53,6 +68,86 @@ jobs:
             echo "❌ selection_mode=specific requires a content_id input."
             exit 1
           fi
+
+      # Diagnostic-only, read-only visibility into what THIS checkout
+      # actually sees before generation runs -- nothing here generates
+      # anything or calls an OpenAI API. Reuses story_retention_
+      # service's own "newest first" sort key (so this can never
+      # disagree with what retention already treats as newest) and the
+      # real, unmodified ReelService.get_latest_eligible_story() for
+      # "what --latest will actually select" -- no ranking/eligibility
+      # logic is reimplemented here. OPENAI_API_KEY is only needed
+      # because constructing ReelService also constructs
+      # OpenAITTSService, whose client requires SOME api_key value to
+      # initialize -- no TTS/image call is made.
+      - name: Diagnose Content Library State
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PYEOF'
+          import subprocess
+          from pathlib import Path
+
+          from services.content_library_service import ContentLibraryService
+          from services.reel_service import ReelService, discover_story_images, MissingStoryAssetsError
+          from services.story_retention_service import determine_retained_and_expired
+
+          commit = subprocess.run(
+              ["git", "rev-parse", "HEAD"], capture_output=True, text=True
+          ).stdout.strip()
+
+          print("Repository ref: main")
+          print(f"Git commit: {commit}")
+          print()
+
+          library = ContentLibraryService()
+          stories = library.get_all_stories()
+
+          print(f"Content Library entries: {len(stories)}")
+          print()
+          print("Content Library:")
+          for story in stories:
+              print(f"  {story.get('content_id')} | {story.get('created_date')} | {story.get('title')}")
+          print()
+
+          if not stories:
+              print("Latest library entry: (none -- library is empty)")
+          else:
+              newest_retained, _ = determine_retained_and_expired(stories, keep=1)
+              newest = newest_retained[0]
+
+              print(f"Latest library entry: {newest.get('content_id')} ({newest.get('title')})")
+
+              folder = Path(newest.get("folder", ""))
+              print()
+              print(f"Output folder: {folder}")
+              print(f"Exists: {'yes' if folder.exists() else 'no'}")
+
+              if folder.exists():
+                  try:
+                      discover_story_images(folder)
+                      print("Required Reel assets present: yes")
+                  except MissingStoryAssetsError as error:
+                      print(f"Required Reel assets present: no ({error})")
+              else:
+                  print("Required Reel assets present: no (folder missing)")
+
+          print()
+
+          try:
+              latest_eligible = ReelService().get_latest_eligible_story()
+          except Exception as error:
+              print(f"ReelService.get_latest_eligible_story() raised: {error}")
+          else:
+              if latest_eligible is None:
+                  print("ReelService.get_latest_eligible_story() -> None (no eligible story)")
+              else:
+                  print(
+                      "ReelService.get_latest_eligible_story() -> "
+                      f"{latest_eligible.get('content_id')} ({latest_eligible.get('title')}) "
+                      "-- this is what --latest will actually select"
+                  )
+          PYEOF
 
       # Both modes go through the SAME generate_reel.py CLI used locally
       # (python generate_reel.py --content-id ... / --latest) -- no
@@ -130,11 +225,19 @@ jobs:
       # missing/empty reel.mp4 -- so a failure in the step above already
       # stops the job here. This upload is the final, explicit check that
       # a real reel.mp4 exists on disk.
+      # reel_caption.txt (the copy-ready Instagram post text + hashtags --
+      # see services/reel_posting_copy_service.py) is bundled into this
+      # SAME primary artifact alongside reel.mp4, since posting the Reel
+      # needs both together. It's produced deterministically early in
+      # ReelService.generate() -- same reliability as reel.mp4 itself by
+      # the time this step runs (a failed run never reaches here).
       - name: Upload reel.mp4
         uses: actions/upload-artifact@v4
         with:
           name: reel-${{ steps.run_reel.outputs.content_id }}
-          path: output/**/reel.mp4
+          path: |
+            output/**/reel.mp4
+            output/**/reel_caption.txt
           if-no-files-found: error
           retention-days: 14
 

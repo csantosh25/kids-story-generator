@@ -14,6 +14,7 @@ from services.content_library_service import ContentLibraryService
 from services.openai_tts_service import OpenAITTSService
 from services.reel_diagnostics import verify_rendered_video_has_scene_changes
 from services.reel_image_service import ReelImageGenerationError, ReelImageService
+from services.reel_posting_copy_service import build_reel_posting_copy, save_reel_posting_copy
 from utils.text_layout import wrap_text_to_width
 
 
@@ -1689,6 +1690,18 @@ class ReelService:
         }
 
         save_reel_script(script, folder)
+
+        # Instagram posting copy (reel_caption.txt) -- entirely
+        # deterministic/local (see services/reel_posting_copy_service.py),
+        # zero additional API cost. Not the on-screen burned subtitle
+        # text (that's caption_cues/build_caption_chunks below) -- this
+        # is the post description + hashtags a human copy-pastes into
+        # Instagram when they publish the Reel themselves.
+        posting_copy = build_reel_posting_copy(
+            story, script, content_id,
+            instagram_handle=self.brand.get("instagram_handle", "@bedtime01fables"),
+        )
+        save_reel_posting_copy(posting_copy, folder)
 
         print("🎙️ Generating Reel narration...")
 
