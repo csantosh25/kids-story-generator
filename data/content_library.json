@@ -54,5 +54,33 @@
             "posted": false,
             "url": ""
         }
+    },
+    {
+        "content_id": "KS-000003",
+        "created_date": "2026-09-01",
+        "status": "completed",
+        "title": "Oliver Fox and the Wobbly Tower",
+        "theme": "Forgiveness",
+        "character": {
+            "name": "Oliver Fox",
+            "species": "Fox"
+        },
+        "folder": "output/20260901_052945_oliver_fox_and_the_wobbly_tower",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
     }
 ]

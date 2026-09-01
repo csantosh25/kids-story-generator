@@ -1,0 +1,126 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Wobbly Tower",
+        "subtitle": "Learning to Say Sorry",
+        "theme": "Forgiveness",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Saying sorry and helping makes friendships strong."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Barnaby Badger",
+                "species": "Badger",
+                "appearance": "A small, stout badger with black and white stripes on his face, small round ears, and short grey fur.",
+                "role": "Oliver's friend whose block tower gets knocked over."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D style, warm cinematic lighting, children's book illustration, vertical composition, Instagram friendly: Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, perky triangular ears, clever amber eyes, and a playful, confident grin, and Barnaby Badger, a small, stout badger with black and white stripes on his face, small round ears, and short grey fur, happily building a colourful block tower together in a sunny Blossom Meadow. No text.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A sunny Blossom Meadow",
+        "visual_action": "Oliver Fox and Barnaby Badger happily building a block tower together",
+        "visual_object": "A colourful block tower",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Oliver Sees a Tower",
+            "text": "Oliver Fox loved Blossom Meadow. The sun felt warm on his fur. He saw Barnaby Badger building. Barnaby stacked many colourful blocks. He was making a very tall tower. \"Hello, Barnaby!\" Oliver called out. He wagged his fluffy tail. Oliver ran to see the tower. Barnaby smiled at his friend. \"Look how tall it is!\" Barnaby said. Oliver thought it was amazing.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Introduce Oliver and Barnaby in Blossom Meadow, setting a happy scene."
+        },
+        {
+            "page": 2,
+            "title": "Oops, It Fell Down!",
+            "text": "Oliver wanted to help. He quickly put a block on top. But Oliver was too fast. The big tower began to wobble. \"Oh no!\" cried Barnaby. Crash! All the blocks fell down. They scattered all around. Barnaby felt very sad. He had worked so hard.",
+            "background_color": "#D4EDF7",
+            "visual_theme": "sadness",
+            "icon": "rain cloud",
+            "speaker_notes": "Show the small conflict: Oliver's accidental mistake and Barnaby's sadness."
+        },
+        {
+            "page": 3,
+            "title": "Oliver Says Sorry",
+            "text": "Oliver's playful grin faded. He saw Barnaby's sad face. \"I am so sorry, Barnaby,\" Oliver said softly. Barnaby did not look up. His eyes were watering. He just looked at the fallen blocks. Oliver knew he made a mistake. He thought, \"Let's solve it together!\"",
+            "background_color": "#FFC0CB",
+            "visual_theme": "apology",
+            "icon": "heart",
+            "speaker_notes": "Oliver reflects on his mistake and uses his catchphrase to find a solution."
+        },
+        {
+            "page": 4,
+            "title": "Building Together",
+            "text": "\"Let's build it again!\" Oliver said. \"Even better!\" Barnaby slowly looked up. Oliver picked up a big red block. \"We can build it super strong,\" Oliver cheered. Barnaby picked up a blue block. Together, they started to stack. They laughed as they built.",
+            "background_color": "#FFFDD0",
+            "visual_theme": "teamwork",
+            "icon": "building blocks",
+            "speaker_notes": "Oliver and Barnaby start working together, showing a step towards resolution."
+        },
+        {
+            "page": 5,
+            "title": "Friends Again!",
+            "text": "Soon, a new tower stood tall. It was bigger and much stronger! Barnaby clapped his paws. \"Thank you, Oliver!\" he said. Oliver felt warm inside. Making friends happy felt wonderful. Saying sorry and helping makes friendships strong. They played happily all afternoon.",
+            "background_color": "#CCEEFF",
+            "visual_theme": "friendship",
+            "icon": "two friends",
+            "speaker_notes": "The happy resolution, emphasizing the lesson of forgiveness and strong friendships."
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox and Barnaby Badger learn a big lesson about friendship today! Sometimes, even good friends make mistakes. See how Oliver makes things right and builds something even better with Barnaby Badger. A sweet story about saying sorry and helping friends. Save this story for your little one! #Bedtime01Fables #OliverFox #KidsStories #Forgiveness #FriendshipGoals",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsStories",
+            "#Forgiveness",
+            "#FriendshipGoals"
+        ]
+    },
+    "email": {
+        "subject": "A Special Story: Oliver Fox and the Wobbly Tower!",
+        "preview": "Join Oliver Fox and Barnaby Badger in a heartwarming tale about friendship and forgiveness."
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Wobbly Tower | A Story About Forgiveness and Friendship",
+        "description": "Come along with Oliver Fox as he learns a valuable lesson about saying sorry and making things right with his friend Barnaby Badger. This sweet story from Wonderwood Valley teaches children aged 3-6 about forgiveness and how to build strong friendships. Perfect for a fun adventure any time of day!",
+        "keywords": [
+            "childrens stories",
+            "oliver fox",
+            "forgiveness for kids",
+            "friendship stories",
+            "kids learning",
+            "wonderwood valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Oops! What happens when a game goes wrong?",
+        "instagram_caption_short": "Oliver Fox learns a big lesson about friendship today! Sometimes, even good friends make mistakes. See how Oliver makes things right and builds something even better with Barnaby Badger. A sweet story about saying sorry and helping friends. Save this story for your little one!",
+        "instagram_caption_long": "Every Tuesday, we share a new adventure from Wonderwood Valley! Today, our funny and friendly Oliver Fox is playing in Blossom Meadow with his friend Barnaby Badger. But oh no, a small accident makes Barnaby sad! How does Oliver use his brave and creative spirit to make things right again? This heartwarming tale teaches children about saying 'I'm sorry' and working together to build strong friendships. It's a sweet reminder that forgiveness helps us grow closer. Perfect for children aged 3-6! Save this story for a special reading moment.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsStories",
+            "#Forgiveness",
+            "#FriendshipGoals"
+        ],
+        "first_comment": "Has your child ever made a small mistake with a friend? How did they make things better? Share their stories below!",
+        "alt_text": "Oliver Fox and Barnaby Badger smiling and building a colourful block tower in a sunny meadow.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we make our friends feel better when we make a mistake?"
+    }
+}
