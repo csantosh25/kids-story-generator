@@ -82,5 +82,33 @@
             "posted": false,
             "url": ""
         }
+    },
+    {
+        "content_id": "KS-000004",
+        "created_date": "2026-09-03",
+        "status": "completed",
+        "title": "Toby Turtle's Flower Friend",
+        "theme": "Flowers",
+        "character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle"
+        },
+        "folder": "output/20260903_045255_toby_turtle_s_flower_friend",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
     }
 ]

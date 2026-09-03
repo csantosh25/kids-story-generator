@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Toby Turtle's Flower Friend",
+        "subtitle": "A kind act in Blossom Meadow",
+        "theme": "Flowers",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Even small actions can help nature grow and stay beautiful."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell, gentle brown eyes, and smooth blue-green flippers. He is in a sunny Blossom Meadow, gently tipping water from a broad green leaf onto a small purple flower. The flower is vibrant. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A sunny Blossom Meadow",
+        "visual_action": "Toby Turtle gently waters a small purple flower with a leaf",
+        "visual_object": "A vibrant purple flower, a broad green leaf with water",
+        "mood": "Warm, gentle, caring"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Morning in Blossom Meadow",
+            "text": "Toby Turtle loved Blossom Meadow. His teal-green shell shone in the morning sun. Many colourful flowers grew there. Red, yellow, and blue flowers smiled up at him. \"Slow and steady discovers wonders!\" Toby said softly. He loved to walk among them. He watched busy bees fly from flower to flower.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Introduce Toby and the setting, highlighting his love for nature."
+        },
+        {
+            "page": 2,
+            "title": "A Thirsty Little Flower",
+            "text": "As Toby walked, he saw a small purple flower. It looked a little droopy. Its petals were not bright and happy. \"Oh, little flower,\" Toby thought. \"You look thirsty.\" The ground around it was dry. Toby knew flowers need water to grow tall and strong.",
+            "background_color": "#DDEEDD",
+            "visual_theme": "dry ground",
+            "icon": "droopy flower",
+            "speaker_notes": "Introduce the challenge: a sad, thirsty flower needing help."
+        },
+        {
+            "page": 3,
+            "title": "Toby's Clever Idea",
+            "text": "Toby looked around with his gentle brown eyes. He saw a big, broad leaf on the ground. \"I can use this!\" he thought. He carefully picked up the leaf. He would carry water in it. The stream was not too far away. He knew he had to be very careful.",
+            "background_color": "#FDF0D9",
+            "visual_theme": "finding a leaf",
+            "icon": "leaf",
+            "speaker_notes": "Show Toby's thoughtfulness and problem-solving, finding a simple tool."
+        },
+        {
+            "page": 4,
+            "title": "Bringing Water Gently",
+            "text": "Toby slowly carried the leaf full of water. His flippers moved steadily. He walked back to the little purple flower. \"Here you go, friend,\" he said. He tilted the leaf gently. The cool water touched the dry soil around the flower. It drank the water slowly.",
+            "background_color": "#DDEEFD",
+            "visual_theme": "watering flower",
+            "icon": "water droplet",
+            "speaker_notes": "Describe Toby's action of carefully watering the flower, reinforcing his patient nature."
+        },
+        {
+            "page": 5,
+            "title": "A Happy Bloom",
+            "text": "Soon, the little flower began to perk up! Its purple petals lifted. It looked bright and happy again. Toby smiled. He felt warm inside. Taking care of nature made Blossom Meadow beautiful for everyone. He knew his small help made a big difference.",
+            "background_color": "#E9FDD9",
+            "visual_theme": "happy meadow",
+            "icon": "happy flower",
+            "speaker_notes": "Conclude with the happy outcome and Toby's positive emotional reflection on helping nature."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Toby Turtle on a gentle morning adventure in Blossom Meadow! He finds a thirsty little flower and knows just what to do. This sweet story teaches kids how small acts of kindness can help nature. Read along and see how Toby makes a difference! #Bedtime01Fables #TobyTurtle #NatureKids #FlowerStory #KindnessMatters",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#FlowerStory",
+            "#KindnessMatters"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Gentle Adventure: Helping a Thirsty Flower!",
+        "preview": "Join Toby Turtle in Blossom Meadow as he shows us how to care for nature."
+    },
+    "youtube": {
+        "title": "Toby Turtle's Flower Friend: A Story About Helping Nature | Wonderwood Valley",
+        "description": "Come along with Toby Turtle as he discovers a thirsty flower in Blossom Meadow! Learn with Toby how a little kindness can make a big difference for our beautiful nature. A gentle story for children aged 3-6 years, teaching love and protection for plants.",
+        "keywords": [
+            "Toby Turtle",
+            "children's story",
+            "nature story",
+            "flowers",
+            "Wonderwood Valley",
+            "kindergarten story",
+            "helping nature",
+            "kids education",
+            "preschool story",
+            "kindness"
+        ]
+    },
+    "publishing": {
+        "hook": "What if a tiny flower needed a big friend's help?",
+        "instagram_caption_short": "Join Toby Turtle on a gentle morning adventure in Blossom Meadow! He finds a thirsty little flower and knows just what to do. This sweet story teaches kids how small acts of kindness can help nature. Read along and see how Toby makes a difference! Save this story for your next reading time.",
+        "instagram_caption_long": "Good morning, Wonderwood Valley friends! Today, our thoughtful Toby Turtle explores the beautiful Blossom Meadow. He loves seeing all the colourful flowers, but one small purple flower looks a bit sad and droopy. Toby, with his calm and patient heart, decides to help. He finds a clever way to give the thirsty flower the water it needs. This heartwarming tale shows children how simple acts of care can protect and nurture nature around us. It's a lovely reminder that even the smallest help can make a big difference in making our world beautiful. Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#FlowerStory",
+            "#KindnessMatters"
+        ],
+        "first_comment": "Which flower is your child's favourite? Let us know in the comments!",
+        "alt_text": "Toby Turtle with a teal-green shell is in a sunny meadow, gently tipping water from a green leaf onto a small purple flower.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What is one small way we can help plants and flowers around our home?"
+    }
+}
