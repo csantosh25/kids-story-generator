@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Glow-Berry Quest",
+        "subtitle": "A brave climb for a special treat.",
+        "theme": "Magic Forest",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Being brave helps you do amazing things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Max Monkey, a small energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager wide-open smile, happily looking up at a very tall, old tree with a single glowing berry on its highest branch in a magical Adventure Jungle. Soft cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Magical Adventure Jungle",
+        "visual_action": "Max Monkey looks up at a glowing berry",
+        "visual_object": "A glowing berry on a tall tree",
+        "mood": "Warm and adventurous"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sparkly Surprise",
+            "text": "Max Monkey loved Adventure Jungle. \"Adventure is waiting!\" he said with a happy jump. Today, he heard about a special treat. They were called Glow-Berries. They grew only on the tallest trees. Max wanted to find one very much. It would be a super exciting quest!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "magic forest",
+            "icon": "sparkle",
+            "speaker_notes": "Introduce Max and his excitement for a new quest in his favorite jungle."
+        },
+        {
+            "page": 2,
+            "title": "The Tall Tree",
+            "text": "Max found a very old, big tree. Its branches reached up to the sky. He looked up, up, up! He saw a tiny bright light. It was a Glow-Berry! The climb looked very, very long. Max felt a tiny bit unsure at first.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "magic forest",
+            "icon": "tree",
+            "speaker_notes": "Show Max's initial hesitation when faced with the tall challenge."
+        },
+        {
+            "page": 3,
+            "title": "Max is Brave",
+            "text": "Max closed his eyes for a moment. He remembered his strong arms. He remembered his clever, helpful tail. He took a deep, brave breath. \"I can do this!\" he whispered to himself. Up he went, branch by branch. He moved carefully, but also very fast.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "magic forest",
+            "icon": "climbing",
+            "speaker_notes": "Illustrate Max gathering his courage and starting the climb with confidence."
+        },
+        {
+            "page": 4,
+            "title": "A Glowing Treasure",
+            "text": "Higher and higher Max climbed. The leaves tickled his nose. Soon, he reached the very top branch. There sat the Glow-Berry. It shimmered with soft, magical light. Max smiled a big, happy smile. He gently picked the special berry. What a wonderful find!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "magic forest",
+            "icon": "berry",
+            "speaker_notes": "Show Max successfully reaching the Glow-Berry, feeling happy and proud."
+        },
+        {
+            "page": 5,
+            "title": "Happy and Confident",
+            "text": "Max climbed back down carefully. He held the Glow-Berry close. It felt warm in his hand. He felt so proud of himself. He did something tricky all by himself! Max knew he was brave and strong. His heart felt very warm and happy. He felt so confident now.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "magic forest",
+            "icon": "smile",
+            "speaker_notes": "End with Max feeling proud and confident after his adventure."
+        }
+    ],
+    "instagram": {
+        "caption": "Max Monkey loves adventures! Today, he found a big, tall tree with a special Glow-Berry. It looked tricky to reach! But Max remembered how brave he is. With a deep breath, he started his climb. And guess what? He did it! This sweet story helps little ones feel confident and happy. Save for a warm read before naptime!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#MagicForest"
+        ]
+    },
+    "email": {
+        "subject": "🐒 Max Monkey's Brave Glow-Berry Quest!",
+        "preview": "Join Max as he climbs high to find a glowing treasure and learns to be confident!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Glow-Berry Quest | A Story About Being Brave | Wonderwood Valley Kids Stories",
+        "description": "Join Max Monkey on an exciting quest in Adventure Jungle! Max sees a sparkly Glow-Berry on the tallest tree. It looks very high! Will Max be brave enough to climb all the way to the top? This story teaches children about confidence and trying new things. Perfect for kids aged 4-7.",
+        "keywords": [
+            "Max Monkey story",
+            "kids adventure",
+            "bravery story",
+            "confidence for kids",
+            "children's story",
+            "Wonderwood Valley",
+            "preschool stories",
+            "moral stories for kids",
+            "read aloud",
+            "magic forest"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when Max sees a magical glowing berry high up?",
+        "instagram_caption_short": "Max Monkey loves adventures! Today, he found a big, tall tree with a special Glow-Berry. It looked tricky to reach! But Max remembered how brave he is. With a deep breath, he started his climb. And guess what? He did it! This sweet story helps little ones feel confident and happy. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "Max Monkey loves adventures in the magical Wonderwood Valley! In today's tale, Max is on an exciting quest in the Adventure Jungle. He spots a beautiful, sparkly Glow-Berry, but it's on the very tippy-top of the tallest tree! It looks like a long, tricky climb, and Max feels a tiny bit unsure at first. But brave Max remembers his strong arms and clever tail. He takes a deep breath and decides to try! This heartwarming story is perfect for teaching children aged 4-7 about the power of confidence and facing small challenges. Watch Max shine as he learns that he is brave and strong, and can do amazing things all by himself! 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#MagicForest"
+        ],
+        "first_comment": "What brave thing did your little one do today?",
+        "alt_text": "Max Monkey looking up at a glowing berry on a tall tree in a magical jungle.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What made Max feel brave today?"
+    }
+}

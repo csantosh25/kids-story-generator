@@ -110,5 +110,33 @@
             "posted": false,
             "url": ""
         }
+    },
+    {
+        "content_id": "KS-000005",
+        "created_date": "2026-09-04",
+        "status": "completed",
+        "title": "Max Monkey's Glow-Berry Quest",
+        "theme": "Magic Forest",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20260904_045630_max_monkey_s_glow_berry_quest",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
     }
 ]
