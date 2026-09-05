@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Bright White Smile",
+        "subtitle": "A Story About Keeping Teeth Clean",
+        "theme": "Healthy Habits",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Brushing your teeth keeps them healthy and helps you feel good."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Penny Penguin smiling brightly with shiny white teeth, holding a blue toothbrush. She is standing on the snowy shore with gentle waves behind her. Soft lighting, pastel colours, children's book style, vertical composition.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Snowy Shores beach",
+        "visual_action": "Penny Penguin smiling with clean teeth",
+        "visual_object": "a blue toothbrush",
+        "mood": "cheerful and healthy"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Saturday Morning",
+            "text": "Penny Penguin woke up early. The sun peeked over Snowy Shores. \"It's Saturday!\" she chirped. \"Time for fun!\" She stretched her little wings. Penny felt so happy. She thought about playing outside. Running on the soft snow sounded nice. She wanted to slide and splash. \"What a wonderful day!\" Penny giggled. Her bright orange beak smiled. She felt bouncy and ready to go.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sunny morning",
+            "icon": "sun",
+            "speaker_notes": "Penny Penguin wakes up excited for a fun Saturday, ready to play on Snowy Shores."
+        },
+        {
+            "page": 2,
+            "title": "Something Important to Remember",
+            "text": "Penny almost hopped out the door. Then, she stopped. \"Wait a minute!\" she thought. Her tummy felt a little bit grumbly. She had just eaten her yummy fish breakfast. She remembered what her Mummy always said. \"Clean teeth help you feel good.\" Penny touched her small beak. Did her teeth feel clean? She was not so sure.",
+            "background_color": "#FDF3E6",
+            "visual_theme": "penguin's home interior",
+            "icon": "house",
+            "speaker_notes": "Penny is about to leave but pauses, recalling a reminder about clean teeth after breakfast."
+        },
+        {
+            "page": 3,
+            "title": "A Tiny Bit of Fish!",
+            "text": "Penny waddled to her small bathroom. She looked in the mirror. Oh dear! She saw tiny little bits. A small piece of fish was stuck! \"Uh-oh!\" she said softly. Penny remembered her special saying. \"Healthy habits make every day fun!\" Brushing her teeth was a very good habit. It made her feel sparkly and clean.",
+            "background_color": "#E6F3FD",
+            "visual_theme": "bathroom mirror",
+            "icon": "mirror",
+            "speaker_notes": "Penny finds a bit of food in her teeth and remembers her catchphrase about healthy habits."
+        },
+        {
+            "page": 4,
+            "title": "Brush, Brush, Brush!",
+            "text": "Penny grabbed her bright blue toothbrush. She squeezed a tiny bit of mint toothpaste. Swish-swish-swish! Up and down she brushed. She brushed her front teeth. She brushed her back teeth too. Penny sang a happy little song. Her webbed feet tapped on the floor. \"Brush, brush, brush!\" she sang. Her mouth felt very bubbly.",
+            "background_color": "#D9F1FD",
+            "visual_theme": "brushing teeth",
+            "icon": "toothbrush",
+            "speaker_notes": "Penny cheerfully brushes her teeth, singing and tapping her feet, making her mouth feel bubbly."
+        },
+        {
+            "page": 5,
+            "title": "Ready for Fun!",
+            "text": "Soon, Penny rinsed her mouth. She spit out the bubbly foam. Her teeth felt so smooth. They looked shiny and white! Penny smiled a big, happy smile. \"My teeth feel super clean!\" she cheered. \"Now I am ready to play!\" Healthy habits made her feel healthy and strong. Penny was ready for a fantastic Saturday.",
+            "background_color": "#DDFDF0",
+            "visual_theme": "happy penguin clean teeth",
+            "icon": "smile",
+            "speaker_notes": "Penny finishes brushing, feels proud of her clean teeth, and is now ready for a wonderful day."
+        }
+    ],
+    "instagram": {
+        "caption": "What makes Penny Penguin's smile so bright? Today, Penny learns a super important secret for a happy, healthy day! Join her adventure as she remembers one small, fun habit. It helps her feel great and ready to play. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealthyHabits",
+            "#ChildrensBooksIndia",
+            "#DentalCareForKids"
+        ]
+    },
+    "email": {
+        "subject": "Penny Penguin's Secret for a Super Smile!",
+        "preview": "Discover how Penny Penguin keeps her teeth bright and clean for a day full of fun!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Bright White Smile | Healthy Habits for Kids",
+        "description": "Join Penny Penguin on a Saturday morning adventure as she learns the importance of brushing her teeth! This story from Wonderwood Valley teaches children aged 3-6 about healthy habits for a happy body and mind. Perfect for encouraging good dental care.",
+        "keywords": [
+            "Penny Penguin",
+            "healthy habits",
+            "brushing teeth",
+            "kids story",
+            "Wonderwood Valley",
+            "children's dental care",
+            "story for kids",
+            "preschool learning",
+            "healthy body",
+            "happy mind"
+        ]
+    },
+    "publishing": {
+        "hook": "What makes Penny Penguin's smile so bright?",
+        "instagram_caption_short": "What makes Penny Penguin's smile so bright? Today, Penny learns a super important secret for a happy, healthy day! Join her adventure as she remembers one small, fun habit. It helps her feel great and ready to play. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "What makes Penny Penguin's smile so bright? Today, Penny learns a super important secret for a happy, healthy day! It’s Saturday, and Penny is ready for fun on Snowy Shores. But first, she remembers a very special healthy habit. Follow Penny as she finds out how a clean mouth makes her feel fantastic and ready for any adventure. This gentle story helps little ones understand why brushing their teeth is so important for a healthy body and mind. It's an easy way to feel good and have lots of energy! 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealthyHabits",
+            "#ChildrensBooksIndia",
+            "#DentalCareForKids"
+        ],
+        "first_comment": "Does your little one have a favourite toothbrush? Tell us about it!",
+        "alt_text": "Penny Penguin, a small, cheerful penguin, stands on Snowy Shores, smiling with shiny white teeth and holding a blue toothbrush.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What healthy habits do you like to do every morning to start your day?"
+    }
+}
