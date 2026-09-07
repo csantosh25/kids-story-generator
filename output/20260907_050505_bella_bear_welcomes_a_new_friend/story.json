@@ -1,0 +1,122 @@
+{
+    "story_info": {
+        "title": "Bella Bear Welcomes a New Friend",
+        "subtitle": "Kindness by Crystal Lake",
+        "theme": "Welcoming Someone New",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Being kind and welcoming makes everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Chirp",
+                "species": "Bluebird",
+                "appearance": "A small blue bird with a yellow chest and tiny orange feet.",
+                "role": "A new friend who feels shy and needs a welcome."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration, Bella Bear, a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, a little cream-colored tummy patch and short rounded ears, gently smiling at Chirp, a small blue bird with a yellow chest and tiny orange feet. They are by a calm Crystal Lake with sparkling water and green reeds. Soft cinematic lighting, pastel colors, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Crystal Lake shore",
+        "visual_action": "Bella Bear kindly greets Chirp the bluebird",
+        "visual_object": "Crystal Lake",
+        "mood": "warm and welcoming"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A New Face by the Lake",
+            "text": "Bella Bear was near Crystal Lake. The morning sun was bright. She saw a little blue bird. The bird sat quietly on a big rock. It looked a bit shy and sad. Bella smiled her gentle smile. \"Kind hearts make happy days!\" she thought. She knew how to help new friends feel happy and safe in Wonderwood Valley.",
+            "background_color": "#E0F7FA",
+            "visual_theme": "lake",
+            "icon": "fish",
+            "speaker_notes": "Introduce Bella at Crystal Lake and the new, shy bird."
+        },
+        {
+            "page": 2,
+            "title": "Hello, Chirp!",
+            "text": "Bella walked slowly towards the bird. \"Hello!\" she said softly. \"Are you new here?\" The little bird, Chirp, nodded. Chirp chirped a very small, quiet sound. \"My home is far away,\" Chirp said. \"I do not know anyone here. I feel a little bit lost.\" Bella understood.",
+            "background_color": "#E6EE9C",
+            "visual_theme": "bird",
+            "icon": "bird",
+            "speaker_notes": "Bella gently talks to Chirp, who explains why they are sad."
+        },
+        {
+            "page": 3,
+            "title": "Sharing Happy Places",
+            "text": "Bella thought for a moment. \"It is okay, Chirp!\" she said. \"I can show you special places.\" She pointed a paw. \"See the pretty flowers near the water? We can find the sweetest berries there!\" Chirp looked at Bella. A tiny smile started on Chirp's beak. Bella knew sharing a happy activity helps.",
+            "background_color": "#FFF9C4",
+            "visual_theme": "flowers",
+            "icon": "flower",
+            "speaker_notes": "Bella offers to show Chirp around and find berries."
+        },
+        {
+            "page": 4,
+            "title": "Exploring Together",
+            "text": "Bella and Chirp walked by the lake. Chirp saw colourful fish swimming. Bella showed Chirp a big, strong tree. \"This tree has soft leaves for a cozy nest,\" Bella said. Chirp chirped a happy song this time. Bella shared a juicy berry she found. They sat and ate together.",
+            "background_color": "#C8E6C9",
+            "visual_theme": "tree",
+            "icon": "tree",
+            "speaker_notes": "They explore the lake and share a berry, Chirp starts to feel happier."
+        },
+        {
+            "page": 5,
+            "title": "A Warm Welcome",
+            "text": "Chirp felt warm and happy with Bella. \"Thank you, Bella!\" Chirp said. \"You are very kind.\" Bella hugged Chirp gently. \"Kind hearts make happy days!\" she said. Chirp now had a new friend and felt safe in Wonderwood Valley. They knew they would play together again very soon.",
+            "background_color": "#B2EBF2",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Chirp feels welcomed and happy, Bella's kindness shines through."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when a new friend feels shy? Join Bella Bear as she meets a little blue bird named Chirp by Crystal Lake. Bella knows just how to make new friends feel welcome and happy!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Bella Bear Welcomes a New Friend!",
+        "preview": "Join Bella Bear as she shows a shy new bird what kindness means in Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Bella Bear Welcomes a New Friend | Wonderwood Valley Stories",
+        "description": "Come along with Bella Bear in Wonderwood Valley! In this heartwarming story, Bella meets a shy little blue bird named Chirp by Crystal Lake. Watch as Bella shows Chirp how kindness can make new friends feel right at home. A sweet story about empathy and welcoming others, perfect for children aged 4-7.",
+        "keywords": [
+            "childrens story",
+            "kindness story",
+            "new friends",
+            "Bella Bear",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when a new friend feels shy?",
+        "instagram_caption_short": "What happens when a new friend feels shy? Join Bella Bear as she meets a little blue bird named Chirp by Crystal Lake. Bella knows just how to make new friends feel welcome and happy! Learning to welcome others is a wonderful lesson for little ones. 💛 Send this to a parent who would enjoy this with their little one.",
+        "instagram_caption_long": "What happens when a new friend feels shy? Join Bella Bear as she meets a little blue bird named Chirp by Crystal Lake. Chirp feels a little lost and sad, not knowing anyone in Wonderwood Valley. But Bella, with her kind heart, knows just how to make new friends feel welcome and happy! This heartwarming story teaches children aged 4-7 about empathy and the joy of welcoming others. It reminds us that a little kindness can go a long way in making everyone feel safe and loved. 💛 Send this to a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsKindness",
+            "#NewFriendStory",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "How do you help new friends feel welcome in your school or play area?",
+        "alt_text": "Bella Bear, a brown bear cub, gently smiling at Chirp, a small blue bird, by a calm Crystal Lake with green reeds.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we help new friends feel welcome when they are shy?"
+    }
+}
