@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Wobbly Tower",
+        "subtitle": "Building Fun with Friends",
+        "theme": "Playing Together",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Playing and helping friends makes friendships strong."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Squirrel",
+                "species": "Squirrel",
+                "appearance": "A tiny brown squirrel with a bushy tail and bright, curious eyes. He wears a small green scarf.",
+                "role": "Needs help building a tall block tower that keeps falling down."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, clever amber eyes and a playful, confident grin, helping Pip Squirrel, a tiny brown squirrel with a bushy tail and bright, curious eyes, wearing a small green scarf. They are in a sunny Blossom Meadow, building a tall, colourful block tower. The tower is almost finished and looks sturdy. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny Blossom Meadow",
+        "visual_action": "Oliver Fox and Pip Squirrel building a tall block tower together",
+        "visual_object": "a colourful block tower",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Day in Blossom Meadow",
+            "text": "Oliver Fox skipped to Blossom Meadow. The sun was warm and bright. He saw his friend, Pip Squirrel. Pip had many colourful blocks. He wanted to build a very tall tower. But *plink, plonk!* The tower kept falling down. Pip looked a little sad. Oliver walked closer to see.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": ""
+        },
+        {
+            "page": 2,
+            "title": "Pip Needs Help",
+            "text": "“Hello, Pip!” Oliver said with a smile. Pip looked up. “Hi, Oliver,” he chirped. “I want to build a super tall tower. But it keeps falling down!” Pip sighed. Oliver saw how much Pip wanted to play. “Maybe I can help?” Oliver asked.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friends",
+            "icon": "handshake",
+            "speaker_notes": ""
+        },
+        {
+            "page": 3,
+            "title": "Let's Solve It Together!",
+            "text": "Pip brightened. “Really?” he asked. Oliver nodded his fluffy tail. “Yes! Let's solve it together!” he said. “Maybe we can make the bottom blocks wider?” Oliver showed Pip how. Pip added blocks carefully. They took turns placing each one.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "teamwork",
+            "icon": "blocks",
+            "speaker_notes": ""
+        },
+        {
+            "page": 4,
+            "title": "A Tall, Strong Tower",
+            "text": "Up, up, up the tower grew! Oliver placed a red block. Pip placed a blue block. They giggled as it got taller. They worked as a team. The tower stood strong and straight. It was almost as tall as Oliver! What a great job they were doing.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "building",
+            "icon": "tower",
+            "speaker_notes": ""
+        },
+        {
+            "page": 5,
+            "title": "Happy Friends",
+            "text": "“We did it!” Pip cheered. Oliver grinned. “We built such a big tower!” They both felt very proud. Playing together was so much fun. It made their friendship strong. They knew they could always help each other. Oliver gave Pip a happy high-five.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "joy",
+            "icon": "star",
+            "speaker_notes": ""
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox skipped to Blossom Meadow! He found his friend Pip Squirrel trying to build a tall block tower, but it kept falling down. See how Oliver helps Pip and what fun they have together!",
+        "hashtags": [
+            "#OliverFox",
+            "#Bedtime01Fables",
+            "#KidsStories",
+            "#FriendshipGoals",
+            "#PlayTime"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Oliver Fox and the Wobbly Tower",
+        "preview": "Join Oliver Fox and Pip Squirrel in a fun adventure about teamwork and friendship!"
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Wobbly Tower - A Story About Friendship | Wonderwood Valley",
+        "description": "Come along to Blossom Meadow with Oliver Fox! His friend Pip Squirrel needs help building a tall, wobbly block tower. Watch as they learn to play and build together, making their friendship even stronger. A wonderful story about teamwork and helping friends.",
+        "keywords": [
+            "Oliver Fox story",
+            "Wonderwood Valley",
+            "children's story",
+            "friendship lesson",
+            "playing together",
+            "kids adventure",
+            "preschool story",
+            "bedtime story"
+        ]
+    },
+    "publishing": {
+        "hook": "A tower that keeps falling? Oliver Fox knows just what to do!",
+        "instagram_caption_short": "Oliver Fox finds his friend Pip Squirrel feeling sad. Pip's block tower keeps falling! See how Oliver uses his clever ideas to help Pip. This story shows how much fun playing together can be. It teaches little ones about building strong friendships and working as a team. Save this story for your next reading time!",
+        "instagram_caption_long": "In Blossom Meadow, Oliver Fox discovers his friend Pip Squirrel facing a challenge. Pip wants to build a super tall block tower, but it just won't stay up! Feeling a little sad, Pip isn't sure what to do. That's when Oliver steps in with his friendly grin and clever ideas. Together, they learn the joy of teamwork, taking turns, and finding creative solutions. This heartwarming story is perfect for teaching children aged 3-6 about the power of strong friendships and how much fun playing together can be. It’s a wonderful reminder that helping each other makes every adventure better. Save this story for your next reading time!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#Teamwork",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What is your little one's favourite game to play with friends?",
+        "alt_text": "Oliver Fox, a slim orange fox, and Pip Squirrel, a tiny brown squirrel, are happily building a tall block tower together in a sunny meadow.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Oliver and Pip feel when they played together? What did they learn about helping each other?"
+    }
+}
