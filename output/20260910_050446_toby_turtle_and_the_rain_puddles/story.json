@@ -1,0 +1,121 @@
+{
+    "story_info": {
+        "title": "Toby Turtle and the Rain Puddles",
+        "subtitle": "Toby helps nature during a rainy day.",
+        "theme": "Rain",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Taking care of nature is important."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression. He is standing beside Crystal Lake after a rain shower, looking at tiny green plants protected by small mud walls he made. Small green plants and calm lake water are visible. Warm and peaceful mood. Children's book illustration, vertical composition, Instagram friendly, soft cinematic lighting, pastel colors.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Beside Crystal Lake, after a rain shower",
+        "visual_action": "Toby Turtle looks at protected green plants",
+        "visual_object": "Small green plants, calm lake water",
+        "mood": "Warm and peaceful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Calm Morning",
+            "text": "Toby Turtle was by Crystal Lake. The morning was fresh and cool. He watched small green plants grow near the water. Tiny insects buzzed gently. \"Slow and steady discovers wonders!\" Toby said with a soft smile. He loved watching nature awaken. Everything felt calm and full of life. He felt happy to be there.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "morning",
+            "icon": "sun",
+            "speaker_notes": "Toby Turtle is happy by Crystal Lake, observing small plants and insects."
+        },
+        {
+            "page": 2,
+            "title": "Rain Begins to Fall",
+            "text": "Soon, the sky turned a dark grey. Big clouds filled the air. Drip, drop! A single raindrop fell onto Toby's shell. Then more came down. The rain grew stronger and stronger. It began to pour over Blossom Meadow and the valley. Toby quickly moved under a big leaf. He watched the rain fall.",
+            "background_color": "#D8EBFD",
+            "visual_theme": "rain",
+            "icon": "cloud",
+            "speaker_notes": "The weather changes from sunny to rainy, Toby finds shelter under a leaf."
+        },
+        {
+            "page": 3,
+            "title": "Plants in Trouble",
+            "text": "The rainwater made many small rivers. These little rivers rushed past the small plants. Toby saw something important. The rushing water was washing away loose soil. It was taking the tiny plants with it. Oh dear, the little plants could get washed away! Toby knew he had to think fast.",
+            "background_color": "#BCE3FD",
+            "visual_theme": "rain",
+            "icon": "raindrops",
+            "speaker_notes": "Toby observes the heavy rain creating small rivers that threaten the plants."
+        },
+        {
+            "page": 4,
+            "title": "Toby's Clever Idea",
+            "text": "Toby thought for a quiet moment. He had a very good idea. He used his strong blue-green flippers. He gently pushed soft mud to make little walls. His hard, teal-green shell helped push the soil too. He made the water flow safely around the plants. Toby worked carefully and slowly. He wanted them to be safe.",
+            "background_color": "#A0D9F7",
+            "visual_theme": "problem solving",
+            "icon": "idea",
+            "speaker_notes": "Toby uses his flippers and shell to build mud walls to protect the plants."
+        },
+        {
+            "page": 5,
+            "title": "Nature is Safe!",
+            "text": "Soon, the heavy rain stopped. The clouds moved away. The warm sun peeked out again. Toby looked at the plants. They were all safe and sound! The small mud walls had worked perfectly. \"Slow and steady discovers wonders!\" Toby smiled happily. He felt very good about helping nature. He felt calm and proud.",
+            "background_color": "#C4E8FD",
+            "visual_theme": "calm",
+            "icon": "rainbow",
+            "speaker_notes": "The rain stops, the sun comes out, and Toby sees the plants are safe thanks to his efforts."
+        }
+    ],
+    "instagram": {
+        "caption": "A beautiful morning by Crystal Lake turned rainy! Toby Turtle, with his calm heart and love for nature, noticed the heavy rain was washing away the soil around little green plants. He knew he had to help! With thoughtfulness and steady effort, Toby used his flippers to build small mud walls, guiding the water away and keeping the plants safe. This story reminds us that even small actions can make a big difference in protecting our precious nature. Join Toby on his rainy-day adventure! Save this heartwarming tale for a special moment with your child. #Bedtime01Fables #TobyTurtle #KidsNature #RainyDayFun #ChildrensBooksIndia",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#RainyDayFun",
+            "#ChildrensBooksIndia"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Rainy Day Adventure! 🌧️",
+        "preview": "Discover how Toby Turtle saved tiny plants during a big rain shower in Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Toby Turtle and the Rain Puddles | A Wonderwood Valley Story for Kids",
+        "description": "Join Toby Turtle on a gentle adventure as he protects little plants from a heavy rain shower by Crystal Lake. This story teaches young children about loving and protecting nature. Perfect for kids aged 3-6!",
+        "keywords": [
+            "Toby Turtle",
+            "children's story",
+            "nature for kids",
+            "rainy day story",
+            "Wonderwood Valley",
+            "kids learning",
+            "preschool story",
+            "animal stories"
+        ]
+    },
+    "publishing": {
+        "hook": "The rain was strong! What did Toby Turtle do to help?",
+        "instagram_caption_short": "The rain poured down on Wonderwood Valley! Toby Turtle saw tiny plants in trouble. Find out how his patient heart and strong flippers saved the day. A sweet story about protecting nature, perfect for your little one. Save this for a cozy read! #Bedtime01Fables #TobyTurtle",
+        "instagram_caption_long": "A beautiful morning by Crystal Lake turned rainy! Toby Turtle, with his calm heart and love for nature, noticed the heavy rain was washing away the soil around little green plants. He knew he had to help! With thoughtfulness and steady effort, Toby used his flippers to build small mud walls, guiding the water away and keeping the plants safe. This story reminds us that even small actions can make a big difference in protecting our precious nature. Join Toby on his rainy-day adventure! Save this heartwarming tale for a special moment with your child. #Bedtime01Fables #TobyTurtle #KidsNature #RainyDayFun #ChildrensBooksIndia",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#RainyDayFun",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What is your child's favourite sound when it rains? 🌧️",
+        "alt_text": "Toby Turtle with his teal-green shell looking at protected green plants next to Crystal Lake after a rain shower.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we help protect the plants and animals around our home when it rains?"
+    }
+}
