@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Pip's Colourful Help
+Bella Bear's Kind Help
 
 Subtitle:
-A Story About Helping Friends
+A Story of Helping Hands
 
 Theme:
-Friendship and Sharing
+Helping Grandma
 
 Moral:
-Helping friends makes everyone happy.
+Helping others makes everyone happy.
 
 Reading Time:
 2 minutes
@@ -25,26 +25,26 @@ Target Age:
 ## Character
 
 Name:
-Pip
+Bella Bear
 
 Species:
-Squirrel
+Bear
 
 Personality:
-Pip is very kind and always happy to help. He is curious and loves to learn new things. He is a good friend to everyone.
+Kind, Helpful, Gentle, Patient
 
 ---
 
 ## Statistics
 
 Slides:
-6
+5
 
 Total Words:
-236
+249
 
 Generated:
-2026-07-18 15:22:01
+2026-09-14 05:19:37
 
 ---
 

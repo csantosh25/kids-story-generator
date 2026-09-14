@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000001",
-        "created_date": "2026-07-18",
-        "status": "completed",
-        "title": "Pip's Colourful Help",
-        "theme": "Friendship and Sharing",
-        "character": {
-            "name": "Pip",
-            "species": "Squirrel"
-        },
-        "folder": "output/20260718_152106_pip_s_colourful_help",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000002",
         "created_date": "2026-08-31",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Penguin"
         },
         "folder": "output/20260912_045258_penny_penguin_s_sparkly_teeth",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000011",
+        "created_date": "2026-09-14",
+        "status": "completed",
+        "title": "Bella Bear's Kind Help",
+        "theme": "Helping Grandma",
+        "character": {
+            "name": "Bella Bear",
+            "species": "Bear"
+        },
+        "folder": "output/20260914_051843_bella_bear_s_kind_help",
         "instagram": {
             "posted": true,
             "post_url": ""

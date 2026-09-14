@@ -1,0 +1,130 @@
+{
+    "story_info": {
+        "title": "Bella Bear's Kind Help",
+        "subtitle": "A Story of Helping Hands",
+        "theme": "Helping Grandma",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping others makes everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Grandma Bear",
+                "species": "Bear",
+                "appearance": "An older brown bear with softer, greying fur around her muzzle, wearing a cozy knitted shawl.",
+                "role": "Needs help carrying a heavy berry basket."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly. Bella Bear, a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, a little cream-colored tummy patch and short rounded ears, helps Grandma Bear, an older brown bear with softer, greying fur around her muzzle, wearing a cozy knitted shawl, carry a large basket of red berries on a sunny forest path near a cozy house.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny forest path near a cozy house",
+        "visual_action": "Bella Bear helps Grandma Bear carry a heavy basket of berries",
+        "visual_object": "A big basket of red berries",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Morning",
+            "text": "Bella Bear loved sunny mornings. She walked in Sunny Forest. Birds sang happy songs. Up ahead, she saw Grandma Bear by her door. Grandma was holding a big basket. It was full of juicy berries. The basket looked very heavy. Grandma looked a little tired. \"Hello, Grandma!\" Bella called out, with a kind smile.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Introduce Bella Bear and Grandma Bear in Sunny Forest. Emphasize Grandma's tiredness and the heavy basket."
+        },
+        {
+            "page": 2,
+            "title": "Grandma Needs Help",
+            "text": "\"Oh, hello, dear Bella!\" Grandma said with a soft smile. \"This basket is so heavy today. I picked many juicy berries for jam. My arms feel very tired. I need to take it inside.\" Grandma sighed softly. Bella saw Grandma's tired face. She wanted to help her kind Grandma.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "home entrance",
+            "icon": "house",
+            "speaker_notes": "Show Grandma expressing her struggle. Bella notices and feels empathy."
+        },
+        {
+            "page": 3,
+            "title": "Bella's Offer",
+            "text": "Bella thought for a moment. She had strong little paws. \"I can help you, Grandma!\" Bella said. \"Let me carry the basket.\" Grandma looked surprised. \"Are you sure, dear?\" she asked. \"Yes!\" Bella said happily. She took the basket carefully. It was heavy, but Bella was strong.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "kindness",
+            "icon": "heart",
+            "speaker_notes": "Bella offers help. Show her confidence and strength despite the heavy basket."
+        },
+        {
+            "page": 4,
+            "title": "Carrying the Berries",
+            "text": "Bella held the big berry basket with both paws. She walked slowly, step by step, towards the door. Grandma opened the door wide for her. \"You are such a wonderful helper, dear Bella,\" Grandma said gently. Bella smiled a big, happy smile. They walked into the cozy kitchen. Bella put the heavy basket safely on the table.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "cozy kitchen",
+            "icon": "kitchenware",
+            "speaker_notes": "Depict Bella carrying the basket with determination and Grandma's appreciation. The act of helping is completed."
+        },
+        {
+            "page": 5,
+            "title": "Kind Hearts Make Happy Days",
+            "text": "\"Thank you, Bella,\" Grandma said. \"You have a kind heart.\" Grandma gave Bella a warm hug. Then she gave Bella some sweet berries. Bella ate the yummy berries. Her tummy felt happy. Her heart felt even happier. Kind hearts make happy days!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "happy ending",
+            "icon": "smile",
+            "speaker_notes": "The comforting, happy ending. Bella receives gratitude and a reward, reflecting on the joy of kindness."
+        }
+    ],
+    "instagram": {
+        "caption": "Little paws, big heart! ❤️ Bella Bear sees Grandma needs a hand with her berry basket. Watch as Bella shows how a little kindness can make a big difference. Teach your child about empathy and helping others with this sweet story. Share this tale of a kind heart!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsKindness",
+            "#HelpingHands",
+            "#PreschoolStories"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Bella Bear's Kind Help 🐻❤️",
+        "preview": "Join Bella Bear as she helps Grandma Bear in Sunny Forest! A heartwarming tale of kindness."
+    },
+    "youtube": {
+        "title": "Bella Bear's Kind Help | Wonderwood Valley Stories for Kids",
+        "description": "Join Bella Bear on a sunny morning in Wonderwood Valley! She sees Grandma Bear struggling with a heavy basket of berries and immediately offers her kind help. This sweet story teaches children aged 3-6 about empathy, kindness, and the joy of helping others. Perfect for a heartwarming story time!",
+        "keywords": [
+            "Bella Bear",
+            "kids stories",
+            "kindness",
+            "empathy",
+            "helping grandma",
+            "Wonderwood Valley",
+            "children's books",
+            "preschool stories",
+            "moral story",
+            "kids learning"
+        ]
+    },
+    "publishing": {
+        "hook": "Little paws, big heart! See how Bella makes Grandma's day brighter.",
+        "instagram_caption_short": "Little paws, big heart! ❤️ Bella Bear sees Grandma needs a hand with her berry basket. Watch as Bella shows how a little kindness can make a big difference. Teach your child about empathy and helping others with this sweet story. Share this tale of a kind heart!",
+        "instagram_caption_long": "Little paws, big heart! ❤️ It's a sunny morning in Wonderwood Valley, and Bella Bear is off for a walk. She sees her dear Grandma Bear struggling with a very heavy basket of fresh berries. Grandma looks tired, and Bella knows just what to do! This heartwarming story teaches little ones the importance of empathy and how even small acts of kindness can brighten someone's day. Join Bella as she helps Grandma, and discover how good it feels to lend a hand. Perfect for encouraging helpfulness in your child. Share this tale of a kind heart!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsKindness",
+            "#HelpingHands",
+            "#PreschoolStories"
+        ],
+        "first_comment": "What is one kind thing your little one did today? Tell us below!",
+        "alt_text": "Bella Bear, a small brown bear cub, helps Grandma Bear carry a large basket of red berries on a sunny forest path.",
+        "call_to_action": "Share this story with a friend!",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Bella show she cared for Grandma?"
+    }
+}
