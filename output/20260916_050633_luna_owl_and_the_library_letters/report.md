@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Bella Bear Helps Grandma
+Luna Owl and the Library Letters
 
 Subtitle:
-A Cozy Afternoon of Kindness
+A curious discovery with Luna and Pip
 
 Theme:
-Kindness and Family
+Letters
 
 Moral:
-Helping others, especially family, makes everyone happy.
+Being curious helps us learn new and wonderful things.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Bella Bear
+Luna Owl
 
 Species:
-Bear
+Owl
 
 Personality:
-Kind, Helpful, Gentle, Patient
+Wise, Curious, Calm, Encouraging
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-216
+267
 
 Generated:
-2026-08-31 09:41:15
+2026-09-16 05:07:27
 
 ---
 

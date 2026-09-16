@@ -1,0 +1,126 @@
+{
+    "story_info": {
+        "title": "Luna Owl and the Library Letters",
+        "subtitle": "A curious discovery with Luna and Pip",
+        "theme": "Letters",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Being curious helps us learn new and wonderful things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Luna Owl",
+            "species": "Owl",
+            "appearance": "Luna is a small owl with soft lavender-grey feathers, big round golden eyes, and two tufted feathers above her head like little eyebrows. Her wings have a gentle speckled pattern.",
+            "personality": "Wise, Curious, Calm, Encouraging"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Squirrel",
+                "species": "Squirrel",
+                "appearance": "A tiny, fluffy brown squirrel with a bushy tail and bright, quick eyes. He always carries a small nut.",
+                "role": "Finds strange marks and asks Luna for help understanding them."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration. A small owl, Luna, with soft lavender-grey feathers, big round golden eyes, and two tufted feathers, and a tiny fluffy brown squirrel, Pip, with a bushy tail and bright quick eyes, looking at an old open book with letters. They are inside a warm, sunny Old Oak Library. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Old Oak Library, sunny afternoon",
+        "visual_action": "Luna Owl and Pip Squirrel looking at an old page with letters",
+        "visual_object": "An old, open book with letters",
+        "mood": "Warm and curious"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Puzzled Friend",
+            "text": "Luna Owl loved the Old Oak Library. It was a calm place with tall shelves. One sunny afternoon, she saw Pip Squirrel. Pip had a bushy tail and bright, quick eyes. He was looking at something dusty. Pip looked very puzzled. Luna flew closer. \"Hello, Pip,\" she said gently. Her curiosity started to grow.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "library",
+            "icon": "book",
+            "speaker_notes": "Luna Owl discovers her friend Pip Squirrel looking puzzled in the library."
+        },
+        {
+            "page": 2,
+            "title": "Secret Squiggles",
+            "text": "Pip held an old, crinkly page. It was yellow and soft. On the page were many tiny squiggles. \"Luna,\" Pip squeaked, \"what are these funny lines? Are they secret drawings?\" Luna looked closely. The squiggles looked like small hooks and circles. She had never seen them quite like this before. It was a little puzzle.",
+            "background_color": "#DFF2E3",
+            "visual_theme": "old page",
+            "icon": "scroll",
+            "speaker_notes": "Pip shows Luna an old page with strange squiggles, making Luna curious."
+        },
+        {
+            "page": 3,
+            "title": "What Are Letters?",
+            "text": "Luna tilted her head. Then she remembered a very old scroll! \"Pip,\" she said, \"these are not drawings. These are letters! Letters are like special shapes. They help us make sounds.\" Luna pointed to a curvy shape. \"This is letter 'S'. It makes a 'ssss' sound, like a snake!\" Pip's eyes grew wide.",
+            "background_color": "#DDEBF7",
+            "visual_theme": "learning",
+            "icon": "lightbulb",
+            "speaker_notes": "Luna explains that the squiggles are letters and what they do."
+        },
+        {
+            "page": 4,
+            "title": "Letters Make Words",
+            "text": "\"And when letters stand together, they make words!\" Luna showed him. She pointed to three letters: 'S', 'U', 'N'. \"See? S-U-N spells SUN! We see the sun every day!\" Pip tried to make the sounds. He felt very clever. \"Wow!\" he squeaked. Luna smiled. \"Every question opens a new adventure!\" she said softly.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "discovery",
+            "icon": "star",
+            "speaker_notes": "Luna teaches Pip how letters combine to form words."
+        },
+        {
+            "page": 5,
+            "title": "A Wonderful Discovery",
+            "text": "Luna and Pip looked at more pages. They found letters for 'tree' and 'leaf'. Learning letters felt like a fun game. Pip felt happy. He found a new way to understand books. Luna felt warm in her heart. She loved helping her friend discover something new. The library felt even more wonderful.",
+            "background_color": "#DFF2E3",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Luna and Pip share a happy moment of learning and friendship in the library."
+        }
+    ],
+    "instagram": {
+        "caption": "Luna Owl and Pip Squirrel learn something amazing in the Old Oak Library. Every question opens a new adventure!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#LunaOwl",
+            "#KidsLearning",
+            "#EarlyLiteracy",
+            "#ChildrensBooks"
+        ]
+    },
+    "email": {
+        "subject": "🦉 New Story! Luna Owl and the Library Letters",
+        "preview": "Join Luna Owl and Pip Squirrel on a curious adventure in the Old Oak Library!"
+    },
+    "youtube": {
+        "title": "Luna Owl and the Library Letters | A Wonderwood Valley Story",
+        "description": "Come along with Luna Owl and her friend Pip Squirrel as they discover the magic of letters in the Old Oak Library! A heartwarming tale about curiosity and learning, perfect for little ones aged 4-7. What new things will you discover today?",
+        "keywords": [
+            "Luna Owl",
+            "childrens stories",
+            "learning letters",
+            "kids books",
+            "wonderwood valley",
+            "bedtime stories"
+        ]
+    },
+    "publishing": {
+        "hook": "What tiny squiggles did Luna Owl and Pip Squirrel find?",
+        "instagram_caption_short": "What tiny squiggles did Luna Owl and Pip Squirrel find today? Join them in the Old Oak Library as they uncover a secret about special shapes! This story encourages curiosity and the joy of learning new things. 📚 Save this story for your next reading time!",
+        "instagram_caption_long": "What tiny squiggles did Luna Owl and Pip Squirrel find today? Luna Owl, with her wise golden eyes, and her friend Pip Squirrel had a special afternoon in the Old Oak Library. Pip was puzzled by some funny lines on an old page. Luna's curiosity sparked, and she gently showed Pip that these were not just lines, but magical letters! Together, they learned how these little shapes make sounds and build words. This sweet story encourages children to ask questions and discover new wonders every day, just like Luna and Pip. 📚 Save this story for your next reading time!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#LunaOwl",
+            "#KidsLearning",
+            "#EarlyLiteracy",
+            "#ChildrensBooks"
+        ],
+        "first_comment": "What's the first letter your little one learned to recognize?",
+        "alt_text": "Luna Owl and Pip Squirrel looking at an old open book inside a cozy library.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What new thing did Luna and Pip learn about today?"
+    }
+}

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000002",
-        "created_date": "2026-08-31",
-        "status": "completed",
-        "title": "Bella Bear Helps Grandma",
-        "theme": "Kindness and Family",
-        "character": {
-            "name": "Bella Bear",
-            "species": "Bear"
-        },
-        "folder": "output/20260831_093924_bella_bear_helps_grandma",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000003",
         "created_date": "2026-09-01",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Bear"
         },
         "folder": "output/20260914_051843_bella_bear_s_kind_help",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000012",
+        "created_date": "2026-09-16",
+        "status": "completed",
+        "title": "Luna Owl and the Library Letters",
+        "theme": "Letters",
+        "character": {
+            "name": "Luna Owl",
+            "species": "Owl"
+        },
+        "folder": "output/20260916_050633_luna_owl_and_the_library_letters",
         "instagram": {
             "posted": true,
             "post_url": ""
