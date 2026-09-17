@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Toby Turtle and the Tangled Feather",
+        "subtitle": "A gentle forest adventure",
+        "theme": "Forest Animals",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Being gentle helps us protect nature."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Sparrow",
+                "species": "Sparrow",
+                "appearance": "a small brown bird with a grey head, bright black eyes, and tiny orange feet.",
+                "role": "needs help freeing a feather for her nest"
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers, gently freeing a soft white feather from a thorny bush with his flipper. Pip Sparrow, a small brown bird with a grey head, bright black eyes, and tiny orange feet, watches with hopeful eyes. The setting is a sunny forest clearing with warm cinematic lighting and pastel colours. Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "sunny forest clearing",
+        "visual_action": "Toby Turtle gently frees a white feather from a thorny bush while Pip Sparrow watches.",
+        "visual_object": "a soft white feather",
+        "mood": "warm and helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Walk in Sunny Forest",
+            "text": "Toby Turtle walked in Sunny Forest. The morning sun felt warm. He saw green leaves and pretty flowers. \"Slow and steady discovers wonders!\" he said. Toby liked to look closely. Then he heard a little \"Chirp! Chirp!\" It was Pip Sparrow. Pip looked very worried.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Introduce Toby in his favorite place, Sunny Forest, and the start of a small problem."
+        },
+        {
+            "page": 2,
+            "title": "Pip's Problem",
+            "text": "\"Oh, Toby!\" chirped Pip. \"My softest feather for my nest is stuck!\" She pointed to a thorny bush. A fluffy white feather was tangled deep inside. \"I tried to pull it. But it just went deeper,\" Pip said sadly. She needed that feather for her cozy nest.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "bush",
+            "icon": "leaf",
+            "speaker_notes": "Pip explains her problem to Toby, highlighting the challenge."
+        },
+        {
+            "page": 3,
+            "title": "Toby's Thought",
+            "text": "Toby saw the feather. He knew pulling hard would not help. \"Let us look carefully, Pip,\" Toby said. He slowly moved closer to the bush. Toby looked at the feather and the tiny thorns. He thought about how to set it free. He remembered his favourite saying.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "thought",
+            "icon": "lightbulb",
+            "speaker_notes": "Toby applies his thoughtful and patient personality to the problem."
+        },
+        {
+            "page": 4,
+            "title": "A Gentle Touch",
+            "text": "Toby used his smooth blue-green flipper. He very gently held a tiny thorny branch. He moved it just a little bit. Zip! The fluffy white feather came out! \"You did it, Toby!\" Pip chirped happily. Pip carefully picked up her soft feather.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "help",
+            "icon": "hand",
+            "speaker_notes": "Toby's gentle solution solves the problem, showing the 'love and protect nature' lesson."
+        },
+        {
+            "page": 5,
+            "title": "Happy in the Forest",
+            "text": "Pip gave Toby a happy chirp. \"Thank you, friend!\" she said. She flew off to make her nest cozy. Toby smiled. He felt good inside. Being gentle helps keep nature safe and happy. The Sunny Forest felt calm and kind.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "flower",
+            "speaker_notes": "A calm and comforting ending, reflecting on the lesson and Toby's happiness."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when a little bird needs help? 🤔 Join Toby Turtle as he walks through Sunny Forest and discovers Pip Sparrow's big problem! This sweet story teaches us how a gentle touch can protect nature and make friends happy. It's a wonderful lesson in patience and kindness for your little one. 📚 Save this gentle story for your next quiet moment.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNatureStories",
+            "#ForestAnimals",
+            "#GentleLearning"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Gentle Adventure in Sunny Forest! 🐢🌳",
+        "preview": "Discover how Toby helps a little bird with a big problem using patience and kindness!"
+    },
+    "youtube": {
+        "title": "Toby Turtle and the Tangled Feather | A Gentle Forest Story for Kids",
+        "description": "Join Toby Turtle on a peaceful morning walk in Sunny Forest! He meets his friend Pip Sparrow who has a little problem: her special feather for her nest is stuck! Watch how Toby uses his calm and gentle nature to help Pip and learn about protecting nature with kindness. Perfect for children aged 3-6.",
+        "keywords": [
+            "Toby Turtle",
+            "childrens stories",
+            "nature stories for kids",
+            "forest animals",
+            "kindness for kids",
+            "gentle lessons",
+            "preschool stories",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when a little bird loses her favorite feather?",
+        "instagram_caption_short": "What happens when a little bird needs help? 🤔 Join Toby Turtle as he walks through Sunny Forest and discovers Pip Sparrow's big problem! This sweet story teaches us how a gentle touch can protect nature and make friends happy. 📚 Save this gentle story for your next quiet moment.",
+        "instagram_caption_long": "What happens when a little bird needs help? 🤔 Join Toby Turtle as he walks through Sunny Forest and discovers Pip Sparrow's big problem! Pip needs a soft, fluffy feather for her cozy nest, but it's stuck deep inside a thorny bush. She's tried to pull it, but it only gets more tangled! Will Toby's calm and thoughtful nature help save the day? This sweet story teaches us how being gentle and patient can help protect nature and make our friends happy. It's a wonderful lesson in kindness and caring for the world around us, perfect for your little one's quiet reading time. 📚 Save this gentle story for your next quiet moment.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNatureStories",
+            "#ForestAnimals",
+            "#GentleLearning"
+        ],
+        "first_comment": "What small wonders do you love to look at in nature?",
+        "alt_text": "Toby Turtle, a teal-green sea turtle, gently frees a white feather from a thorny bush with his flipper, while Pip Sparrow, a small brown bird, watches happily.",
+        "call_to_action": "📚 Save this gentle story for your next quiet moment.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we be gentle with plants and animals around us?"
+    }
+}

@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Oliver Fox and the Wobbly Tower
+Toby Turtle and the Tangled Feather
 
 Subtitle:
-Learning to Say Sorry
+A gentle forest adventure
 
 Theme:
-Forgiveness
+Forest Animals
 
 Moral:
-Saying sorry and helping makes friendships strong.
+Being gentle helps us protect nature.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Oliver Fox
+Toby Turtle
 
 Species:
-Fox
+Sea Turtle
 
 Personality:
-Funny, Creative, Friendly, Brave
+Patient, Thoughtful, Nature Lover, Calm
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-237
+221
 
 Generated:
-2026-09-01 05:30:37
+2026-09-17 05:09:36
 
 ---
 

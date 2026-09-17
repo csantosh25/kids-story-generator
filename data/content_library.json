@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000003",
-        "created_date": "2026-09-01",
-        "status": "completed",
-        "title": "Oliver Fox and the Wobbly Tower",
-        "theme": "Forgiveness",
-        "character": {
-            "name": "Oliver Fox",
-            "species": "Fox"
-        },
-        "folder": "output/20260901_052945_oliver_fox_and_the_wobbly_tower",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000004",
         "created_date": "2026-09-03",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Owl"
         },
         "folder": "output/20260916_050633_luna_owl_and_the_library_letters",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000013",
+        "created_date": "2026-09-17",
+        "status": "completed",
+        "title": "Toby Turtle and the Tangled Feather",
+        "theme": "Forest Animals",
+        "character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle"
+        },
+        "folder": "output/20260917_050844_toby_turtle_and_the_tangled_feather",
         "instagram": {
             "posted": true,
             "post_url": ""
