@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000004",
-        "created_date": "2026-09-03",
-        "status": "completed",
-        "title": "Toby Turtle's Flower Friend",
-        "theme": "Flowers",
-        "character": {
-            "name": "Toby Turtle",
-            "species": "Sea Turtle"
-        },
-        "folder": "output/20260903_045255_toby_turtle_s_flower_friend",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000005",
         "created_date": "2026-09-04",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Sea Turtle"
         },
         "folder": "output/20260917_050844_toby_turtle_and_the_tangled_feather",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000014",
+        "created_date": "2026-09-19",
+        "status": "completed",
+        "title": "Penny Penguin's Thirsty Day",
+        "theme": "Drinking Water",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20260919_045331_penny_penguin_s_thirsty_day",
         "instagram": {
             "posted": true,
             "post_url": ""

@@ -1,0 +1,117 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Thirsty Day",
+        "subtitle": "A refreshing adventure about drinking water!",
+        "theme": "Drinking Water",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Drinking water keeps you healthy and full of energy!"
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance. She is sitting on a patch of ice near Snowy Shores, holding a bright blue water bottle, looking happy and refreshed. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Snowy Shores, a sunny day",
+        "visual_action": "Penny Penguin happily drinking from her water bottle",
+        "visual_object": "A bright blue water bottle",
+        "mood": "Refreshing and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Playing in the Sun",
+            "text": "Penny Penguin loved Saturdays. She played near Snowy Shores. The sun felt warm on her feathers. Penny decided to run and jump. \"Healthy habits make every day fun!\" she chirped loudly. She chased a rolling snowball. Penny felt strong and very happy. Her cheeks glowed pink from all the fun.",
+            "background_color": "#D1EEF4",
+            "visual_theme": "snowy shore",
+            "icon": "sun",
+            "speaker_notes": "Introduce Penny playing energetically in her favorite place."
+        },
+        {
+            "page": 2,
+            "title": "Feeling a Bit Tired",
+            "text": "Penny ran and jumped some more. She loved to slide on the ice. She waddled fast, then slid far! \"Whee!\" she called out with joy. After a while, Penny felt hot. Her throat felt a little dry. She did not stop playing yet. She just kept on moving her feet. Her energy felt a bit low.",
+            "background_color": "#C3E8EE",
+            "visual_theme": "ice slide",
+            "icon": "sweat drop",
+            "speaker_notes": "Show Penny continuing to play but starting to feel tired and warm."
+        },
+        {
+            "page": 3,
+            "title": "A Missing Habit",
+            "text": "Soon, Penny felt very tired. She sat down on a cool ice patch. \"Phew!\" she sighed softly. \"Why do I feel so sleepy?\" she thought. Penny remembered her catchphrase. \"Healthy habits make every day fun!\" What healthy habit did she forget today? She closed her eyes and thought hard. It felt like a big puzzle.",
+            "background_color": "#B4E1E6",
+            "visual_theme": "thinking penguin",
+            "icon": "question mark",
+            "speaker_notes": "Penny reflects on why she feels tired, linking it to her catchphrase."
+        },
+        {
+            "page": 4,
+            "title": "The Big Sip!",
+            "text": "Then, Penny looked at her bag. She saw her bright blue water bottle! \"Oh!\" she said, eyes wide open. \"I forgot to drink my water!\" Penny knew drinking water was important. It helps keep penguins strong. She opened her bottle and took a big sip. Ah, that felt so good and cool!",
+            "background_color": "#A6D9DD",
+            "visual_theme": "drinking water",
+            "icon": "water bottle",
+            "speaker_notes": "Penny discovers the solution and takes her first drink."
+        },
+        {
+            "page": 5,
+            "title": "Strong and Happy",
+            "text": "Penny drank more water slowly. She felt her energy come back. Her dry throat felt much better. A big smile spread on her face. \"Healthy habits make every day fun!\" she chirped again. Penny felt happy and refreshed. She knew staying hydrated kept her healthy. Now she could play all afternoon!",
+            "background_color": "#98D1D4",
+            "visual_theme": "happy penguin playing",
+            "icon": "smile",
+            "speaker_notes": "Penny feels better and is ready to play again, understanding the lesson."
+        }
+    ],
+    "instagram": {
+        "caption": "Is your little one forgetting to stay hydrated? 💧 Penny Penguin was having so much fun playing in Snowy Shores, she almost forgot a very important healthy habit! Read how Penny remembers to keep her body strong and full of energy. A sweet story about the simple magic of drinking water! #Bedtime01Fables #PennyPenguin",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin"
+        ]
+    },
+    "email": {
+        "subject": "💧 Penny Penguin's Refreshing Adventure!",
+        "preview": "Join Penny as she learns why drinking water is so important for playing all day!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Thirsty Day | A Story About Drinking Water for Kids",
+        "description": "Join Penny Penguin on a sunny Saturday at Snowy Shores! She loves to play, but she starts to feel tired. Can Penny remember the important healthy habit that will make her feel strong and happy again? A sweet story about why drinking water is important for a healthy body and mind. Perfect for children aged 3-6.",
+        "keywords": [
+            "Penny Penguin story",
+            "drinking water for kids",
+            "healthy habits for children",
+            "children's story",
+            "Wonderwood Valley",
+            "kids health",
+            "preschool stories"
+        ]
+    },
+    "publishing": {
+        "hook": "Is your little one forgetting to stay hydrated?",
+        "instagram_caption_short": "Is your little one forgetting to stay hydrated? 💧 Penny Penguin was having so much fun playing in Snowy Shores, she almost forgot a very important healthy habit! Read how Penny remembers to keep her body strong and full of energy. A sweet story about the simple magic of drinking water!",
+        "instagram_caption_long": "Is your little one forgetting to stay hydrated? 💧 Penny Penguin loves to run, jump, and slide! On a sunny Saturday at Snowy Shores, she was having such a wonderful time that she played and played, feeling hot and tired without realizing why. It wasn't until she remembered her catchphrase, 'Healthy habits make every day fun!', that she realized what was missing. This cheerful story follows Penny as she discovers the simple yet powerful secret to staying energized and happy: drinking enough water! It's a gentle reminder for all little ones that a healthy body and mind start with good habits. Join Penny on her refreshing adventure and see how a sip of water brings her smile back! 🐧💙",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealth",
+            "#DrinkingWater",
+            "#HealthyHabits"
+        ],
+        "first_comment": "What is your child's favourite drink to stay hydrated?",
+        "alt_text": "A happy Penny Penguin holding a blue water bottle, sitting on ice near snowy shores with a sunny sky.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "Why is it important for Penny to drink water?"
+    }
+}
