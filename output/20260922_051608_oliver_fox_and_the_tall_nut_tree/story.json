@@ -1,0 +1,129 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Tall Nut Tree",
+        "subtitle": "A Story About Trust",
+        "theme": "Trust",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Good friends help each other and build trust."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small brown squirrel with a bushy tail and bright, quick eyes. He wears a tiny green scarf.",
+                "role": "Needs help getting nuts and learns to trust Oliver."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, perky triangular ears, clever amber eyes, and a playful, confident grin, smiling while gently shaking a vine on a tall green tree. Squeaky Squirrel, a small brown squirrel with a bushy tail and bright, quick eyes, wearing a tiny green scarf, watches him from the ground, looking happy. Nuts are falling from the tree. The sun is shining in a warm forest clearing, vertical composition, soft lighting, pastel colours, children's book illustration, Instagram friendly, reserve lower third for title.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny Maple Woods clearing",
+        "visual_action": "Oliver Fox gently shakes a vine, nuts fall, Squeaky Squirrel watches",
+        "visual_object": "Nuts falling from a tree",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Morning in Maple Woods",
+            "text": "Oliver Fox loved his Maple Woods home. The morning sun felt warm and bright. He bounced through the green grass. He looked for fun things to do. Suddenly, he saw Squeaky Squirrel. Squeaky sat under a very tall tree. He looked a little sad. \"Hello, Squeaky!\" Oliver called out. \"What is wrong?\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver Fox is exploring Maple Woods on a bright morning. He spots his friend Squeaky Squirrel looking sad under a tall tree."
+        },
+        {
+            "page": 2,
+            "title": "Squeaky's Secret Tree",
+            "text": "Squeaky looked up at Oliver. \"Oh, Oliver,\" Squeaky said softly. \"My favorite nuts are up there. They are so sweet and yummy. But the tree is very tall. I am scared to climb so high. And it's my secret nut tree.\" He looked at Oliver, unsure.",
+            "background_color": "#DFF2E2",
+            "visual_theme": "squirrel",
+            "icon": "nut",
+            "speaker_notes": "Squeaky Squirrel explains his problem to Oliver. He wants nuts from a tall tree but is afraid to climb and worried about his secret spot."
+        },
+        {
+            "page": 3,
+            "title": "Oliver's Clever Idea",
+            "text": "Oliver smiled. \"I can help!\" he said. \"I will not tell anyone your secret. Let's solve it together!\" He looked around the tree. He saw a long, strong vine hanging down. \"Maybe this can help us,\" Oliver said. Squeaky watched Oliver, feeling a bit brave.",
+            "background_color": "#FEE8D7",
+            "visual_theme": "fox",
+            "icon": "idea",
+            "speaker_notes": "Oliver reassures Squeaky and offers his help. He sees a vine and comes up with a creative solution to get the nuts down."
+        },
+        {
+            "page": 4,
+            "title": "Sharing the Yummy Nuts",
+            "text": "Oliver held the vine tightly. He gave it a gentle shake. Plop! Plop! Plop! Three big, yummy nuts fell down. Squeaky jumped with joy! \"Thank you, Oliver!\" he chattered. Oliver picked up the nuts. He gave two shiny nuts to Squeaky. Squeaky hugged his nuts tight.",
+            "background_color": "#E6F3FF",
+            "visual_theme": "food",
+            "icon": "apple",
+            "speaker_notes": "Oliver successfully shakes the nuts down with the vine. Squeaky is overjoyed, and Oliver shares the nuts with him."
+        },
+        {
+            "page": 5,
+            "title": "Friends Who Trust",
+            "text": "\"You are a very good friend,\" Squeaky said. He crunched his yummy nut happily. Oliver smiled. \"Friends help each other. And friends always trust each other. It makes our friendship strong.\" They played a fun game of chase. Squeaky felt so happy and safe with Oliver. It was a warm, happy day in Maple Woods.",
+            "background_color": "#FAE7F3",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Squeaky expresses gratitude, and Oliver explains how trust makes friendships strong. They play happily, ending the day on a warm note."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Oliver Fox in the sunny Maple Woods! He meets Squeaky Squirrel, who has a secret and a problem. Squeaky needs yummy nuts from a tall tree but is a little scared. Oliver shows him how friends can help and build trust. It’s a sweet adventure about kindness and being a good friend. Your little one will love this joyful tale! 💛 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TrustStories",
+            "#WonderwoodValley"
+        ]
+    },
+    "email": {
+        "subject": "Oliver Fox Learns About Trust!",
+        "preview": "Join Oliver Fox and Squeaky Squirrel in a sweet story about friendship and helping each other."
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Tall Nut Tree | A Story About Trust & Friendship",
+        "description": "Dive into Wonderwood Valley with Oliver Fox! In this heartwarming adventure, Oliver helps his friend Squeaky Squirrel and learns the importance of trust in building strong friendships. Perfect for children aged 3-6 years.",
+        "keywords": [
+            "Oliver Fox",
+            "children's story",
+            "friendship",
+            "trust",
+            "Wonderwood Valley",
+            "kids stories",
+            "read aloud",
+            "moral story",
+            "kindergarten"
+        ]
+    },
+    "publishing": {
+        "hook": "Does your child know why trust is so important?",
+        "instagram_caption_short": "Oliver Fox learns about building strong friendships with Squeaky Squirrel! See how helping a friend makes bonds grow stronger in Wonderwood Valley. ✨ Save this story for your next reading time.",
+        "instagram_caption_long": "Join Oliver Fox in the sunny Maple Woods! He meets Squeaky Squirrel, who has a secret and a problem. Squeaky needs yummy nuts from a tall tree but is a little scared. Oliver shows him how friends can help and build trust. It’s a sweet adventure about kindness and being a good friend. Your little one will love this joyful tale! 💛 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TrustStories",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "What's one kind thing your little one did for a friend today?",
+        "alt_text": "Oliver Fox, a bright orange-red fox, is smiling while gently shaking a vine on a tall green tree. Squeaky Squirrel, a small brown squirrel, is watching him from the ground, looking happy. Nuts are falling from the tree. The sun is shining in a warm forest.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "Why did Squeaky feel happy when Oliver helped him?"
+    }
+}

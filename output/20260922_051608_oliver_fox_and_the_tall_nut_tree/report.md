@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Max Monkey's Glow-Berry Quest
+Oliver Fox and the Tall Nut Tree
 
 Subtitle:
-A brave climb for a special treat.
+A Story About Trust
 
 Theme:
-Magic Forest
+Trust
 
 Moral:
-Being brave helps you do amazing things.
+Good friends help each other and build trust.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
 ## Character
 
 Name:
-Max Monkey
+Oliver Fox
 
 Species:
-Monkey
+Fox
 
 Personality:
-Adventurous, Playful, Energetic, Curious
+Funny, Creative, Friendly, Brave
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-225
+244
 
 Generated:
-2026-09-04 04:57:23
+2026-09-22 05:17:00
 
 ---
 
