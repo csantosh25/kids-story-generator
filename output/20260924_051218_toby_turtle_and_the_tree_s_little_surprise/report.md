@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Penny Penguin's Bright White Smile
+Toby Turtle and the Tree's Little Surprise
 
 Subtitle:
-A Story About Keeping Teeth Clean
+Toby helps keep Wonderwood Valley clean.
 
 Theme:
-Healthy Habits
+Trees
 
 Moral:
-Brushing your teeth keeps them healthy and helps you feel good.
+We can all help keep nature clean and safe.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Penny Penguin
+Toby Turtle
 
 Species:
-Penguin
+Sea Turtle
 
 Personality:
-Healthy, Sporty, Cheerful, Helpful
+Patient, Thoughtful, Nature Lover, Calm
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-284
+254
 
 Generated:
-2026-09-05 04:51:29
+2026-09-24 05:13:12
 
 ---
 

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000006",
-        "created_date": "2026-09-05",
-        "status": "completed",
-        "title": "Penny Penguin's Bright White Smile",
-        "theme": "Healthy Habits",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20260905_045038_penny_penguin_s_bright_white_smile",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000007",
         "created_date": "2026-09-07",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Fox"
         },
         "folder": "output/20260922_051608_oliver_fox_and_the_tall_nut_tree",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000016",
+        "created_date": "2026-09-24",
+        "status": "completed",
+        "title": "Toby Turtle and the Tree's Little Surprise",
+        "theme": "Trees",
+        "character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle"
+        },
+        "folder": "output/20260924_051218_toby_turtle_and_the_tree_s_little_surprise",
         "instagram": {
             "posted": true,
             "post_url": ""

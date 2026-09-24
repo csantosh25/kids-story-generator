@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Toby Turtle and the Tree's Little Surprise",
+        "subtitle": "Toby helps keep Wonderwood Valley clean.",
+        "theme": "Trees",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "We can all help keep nature clean and safe."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell and gentle brown eyes, carefully picking up a shiny sweet wrapper near the roots of a tall green tree. The scene is set in Sunny Forest near Crystal Lake, with warm cinematic lighting and pastel colours. Vertical composition, children's book style.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny Forest near Crystal Lake",
+        "visual_action": "Toby Turtle picks up a wrapper near a tree",
+        "visual_object": "a sweet wrapper, a tall green tree",
+        "mood": "warm and caring"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Toby's Favourite Place",
+            "text": "Toby Turtle loved Crystal Lake. It was a bright morning. He swam by the shore. Big green trees stood tall nearby. Toby looked at their strong branches. He saw their big roots in the earth. 'Slow and steady discovers wonders!' he thought. He loved how trees made the air fresh and cool.",
+            "background_color": "#E0F2F7",
+            "visual_theme": "morning lake",
+            "icon": "sun",
+            "speaker_notes": "Introduce Toby Turtle and his love for nature, especially trees, at Crystal Lake."
+        },
+        {
+            "page": 2,
+            "title": "The Old Tree's Story",
+            "text": "Toby slowly walked closer to a very old tree. Its bark was wrinkly, like a friendly old face. Tiny ants marched up its trunk. A little bird sang a happy song from its leaves. Toby smiled. Trees are homes for many friends. He wanted to feel the soft moss near its roots.",
+            "background_color": "#D4EDDA",
+            "visual_theme": "old tree roots",
+            "icon": "tree",
+            "speaker_notes": "Toby explores the tree, highlighting its role as a home for creatures and its texture."
+        },
+        {
+            "page": 3,
+            "title": "A Little Surprise",
+            "text": "As Toby moved, he saw something bright. It was a shiny sweet wrapper. It lay right next to the tree's big roots. Toby felt a little sad. This wrapper did not belong here. It could make the tree sick. It was not good for the little ants or birds.",
+            "background_color": "#F0E4D2",
+            "visual_theme": "litter by tree",
+            "icon": "sad face",
+            "speaker_notes": "Introduce the problem: Toby finds litter, which concerns him for nature's health."
+        },
+        {
+            "page": 4,
+            "title": "Toby's Helping Hand",
+            "text": "Toby thought about his catchphrase. Slow and steady, he could help. He carefully used his strong flipper. He gently picked up the sweet wrapper. It was light. He held it safe. He knew a bin was not too far away. He started to walk towards it.",
+            "background_color": "#CCE5FF",
+            "visual_theme": "picking up litter",
+            "icon": "bin",
+            "speaker_notes": "Toby decides to solve the problem by picking up the wrapper and taking it to a bin."
+        },
+        {
+            "page": 5,
+            "title": "Nature Stays Happy",
+            "text": "Toby put the wrapper in the bin. He felt happy. Now the tree was clean and safe. The ants and birds could play without it. Toby looked back at the tall tree. It looked happy too. Toby knew he helped take care of Wonderwood Valley. He swam back to Crystal Lake, feeling calm and proud.",
+            "background_color": "#D4EDDA",
+            "visual_theme": "clean forest",
+            "icon": "flower",
+            "speaker_notes": "Toby feels good about helping nature, reinforcing the lesson of protecting the environment."
+        }
+    ],
+    "instagram": {
+        "caption": "What little surprise did Toby find by the big tree? This bright morning, Toby Turtle is enjoying his favourite place, Crystal Lake. He loves looking at the strong, old trees. He thinks about how they give us fresh air and are home to many small friends. As he explores, he finds something shiny that shouldn't be there. It's a little wrapper! Toby feels a bit sad because it's not good for the tree or its tiny residents. But Toby, true to his calm and thoughtful nature, knows exactly what to do. With his patient help, he makes the spot clean again. This story gently teaches children about caring for nature and why it's important to keep our surroundings clean. It's a lovely reminder that even small actions can make a big difference! 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#CleanUpCrew",
+            "#KidsCareForEarth"
+        ]
+    },
+    "email": {
+        "subject": "A Little Help for the Trees: Toby Turtle's Nature Adventure!",
+        "preview": "Join Toby Turtle as he learns to protect the beautiful trees of Wonderwood Valley in a sweet new story!"
+    },
+    "youtube": {
+        "title": "Toby Turtle and the Tree's Little Surprise | Wonderwood Valley Kids Story",
+        "description": "Join Toby Turtle, the patient sea turtle, on a bright morning adventure in Wonderwood Valley. He loves the tall trees and all the tiny friends who live in them. But when he finds something that doesn't belong, Toby learns a simple way to help keep nature clean and safe for everyone. This story teaches young children about caring for our environment in a gentle and fun way. Perfect for kids aged 4-7!",
+        "keywords": [
+            "Toby Turtle",
+            "Wonderwood Valley",
+            "kids story",
+            "nature story",
+            "protecting nature",
+            "clean environment",
+            "preschool story",
+            "children's books",
+            "trees",
+            "learning to help"
+        ]
+    },
+    "publishing": {
+        "hook": "What little surprise did Toby find by the big tree?",
+        "instagram_caption_short": "What little surprise did Toby find by the big tree? Toby Turtle loves the tall trees around Crystal Lake. But one morning, he finds something that doesn't belong. Join Toby as he discovers a simple way to help nature! A sweet story about keeping our world clean for little ones. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "What little surprise did Toby find by the big tree? This bright morning, Toby Turtle is enjoying his favourite place, Crystal Lake. He loves looking at the strong, old trees. He thinks about how they give us fresh air and are home to many small friends. As he explores, he finds something shiny that shouldn't be there. It's a little wrapper! Toby feels a bit sad because it's not good for the tree or its tiny residents. But Toby, true to his calm and thoughtful nature, knows exactly what to do. With his patient help, he makes the spot clean again. This story gently teaches children about caring for nature and why it's important to keep our surroundings clean. It's a lovely reminder that even small actions can make a big difference! 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#CleanUpCrew",
+            "#KidsCareForEarth"
+        ],
+        "first_comment": "What is one small thing your child can do to help keep nature clean today?",
+        "alt_text": "Toby Turtle, a young sea turtle with a teal-green shell, is carefully picking up a sweet wrapper near the roots of a tall green tree.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What did Toby do to help the tree? Why is it important to put rubbish in the bin?"
+    }
+}
