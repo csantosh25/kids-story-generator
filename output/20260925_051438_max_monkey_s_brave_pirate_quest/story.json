@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Brave Pirate Quest",
+        "subtitle": "A story about finding courage",
+        "theme": "Pirates",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Being confident means being brave enough to try, even when you feel a little scared."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D style, children's book illustration of Max Monkey, a small energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager wide-open smile, in a sunny Adventure Jungle clearing, looking at an old crinkly treasure map with a curious expression. The rolled-up treasure map is visible. Warm cinematic lighting, pastel colours, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Adventure Jungle clearing",
+        "visual_action": "Max Monkey looking at an old treasure map with a curious expression",
+        "visual_object": "a rolled-up, crinkly treasure map",
+        "mood": "adventurous and curious"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Secret Map",
+            "text": "Max Monkey woke up with a happy stretch. The sun shone bright in Adventure Jungle. \"Adventure is waiting!\" he chirped, eager to play. He found an old, crinkly map under a big leaf. It showed an 'X' in a secret, hidden spot. Max's heart went thump-thump. It looked like a pirate treasure map! He felt very excited to go find it.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "tree",
+            "speaker_notes": "Introduce Max and the discovery of the map, highlighting his excitement and initial feelings."
+        },
+        {
+            "page": 2,
+            "title": "Into the Cave",
+            "text": "Max held the map tight in his paw. He followed the dashed line through the trees. He swung on long vines and jumped over bumpy roots. Soon, the map pointed to a big, dark opening in a rock. It was a cave! Max felt a little scared. It looked very quiet and deep inside. But his adventurous spirit was strong, so he took a step.",
+            "background_color": "#DDE9D9",
+            "visual_theme": "cave entrance",
+            "icon": "cave",
+            "speaker_notes": "Show Max's journey following the map and his initial hesitation at the cave entrance."
+        },
+        {
+            "page": 3,
+            "title": "The Wobbly Log",
+            "text": "Max took a deep breath and walked into the cool cave. It was not too dark inside. Soft light came from cracks high above. He saw funny, tall shadows dancing on the walls. They looked like pirate hats and big swords! Max saw a small, wobbly log. It crossed a little stream of water. Max knew he had to walk carefully over it.",
+            "background_color": "#D9E9FD",
+            "visual_theme": "inside cave",
+            "icon": "log",
+            "speaker_notes": "Illustrate Max facing the challenge inside the cave, focusing on the wobbly log."
+        },
+        {
+            "page": 4,
+            "title": "A Colourful Treasure",
+            "text": "Max stepped bravely onto the wobbly log. He took small, slow steps. One paw after another, he made it across! Max cheered quietly, proud of himself. The big 'X' on the map was right there! It was under a pile of soft, green leaves. He dug quickly with his small monkey hands. He found a bright, colourful box!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "treasure spot",
+            "icon": "treasure",
+            "speaker_notes": "Show Max successfully crossing the log and finding the treasure box."
+        },
+        {
+            "page": 5,
+            "title": "Brave and Happy",
+            "text": "Max opened the special box with a big smile. Inside was a beautiful, shiny parrot feather! It was bright red, blue, and green. He held it up to the light. Max felt so happy and very proud! He was brave. He went into the cave, even when he felt a little scared. Max knew he could do anything if he tried his best.",
+            "background_color": "#DDF9D9",
+            "visual_theme": "jungle clearing",
+            "icon": "feather",
+            "speaker_notes": "Conclude the story with Max reflecting on his bravery and feeling happy and confident."
+        }
+    ],
+    "instagram": {
+        "caption": "Is your little one ready for a treasure hunt? Join Max Monkey as he finds a mysterious map and sets off on a brave pirate quest! This tale teaches children that being brave means trying new things, even when they feel a little scared. Hit save to read this inspiring adventure later! #Bedtime01Fables #MaxMonkey #KidsAdventure #BuildingConfidence #PirateStory",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#BuildingConfidence",
+            "#PirateStory"
+        ]
+    },
+    "email": {
+        "subject": "New Adventure! Max Monkey's Brave Pirate Quest!",
+        "preview": "Join Max Monkey on a thrilling treasure hunt and discover the magic of being brave!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Brave Pirate Quest: A Story About Confidence for Kids | Wonderwood Valley",
+        "description": "Get ready for a swashbuckling adventure with Max Monkey! In 'Max Monkey's Brave Pirate Quest,' Max finds a secret map leading to hidden treasure. He faces a spooky cave and a wobbly log, learning that being brave means trying even when you're a little scared. This story encourages confidence and courage in young children.",
+        "keywords": [
+            "Max Monkey",
+            "Wonderwood Valley",
+            "kids story",
+            "childrens book",
+            "adventure story",
+            "pirate story",
+            "confidence for kids",
+            "bravery story",
+            "preschool story",
+            "kindergarten story"
+        ]
+    },
+    "publishing": {
+        "hook": "Is your little one ready for a treasure hunt?",
+        "instagram_caption_short": "Is your little one ready for a treasure hunt? Join Max Monkey as he finds a mysterious map and sets off on a brave pirate quest! This tale teaches children that being brave means trying new things, even when they feel a little scared. Hit save to read this inspiring adventure later!",
+        "instagram_caption_long": "Max Monkey loves adventures in the Wonderwood Valley. One sunny morning, he finds an old, crinkly map. It shows a big 'X' in a hidden part of the Adventure Jungle! Max feels a mix of excitement and a tiny bit of worry. But with his brave heart, he decides to follow the map. He hops, swings, and finally faces a small challenge in a cool, quiet cave. See how Max discovers a wonderful treasure and learns that being confident means being brave enough to try, even when things seem a little new or scary. This story encourages children to trust themselves and find their own courage in everyday adventures. Hit save to read this inspiring adventure later!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#BuildingConfidence",
+            "#PirateStory"
+        ],
+        "first_comment": "What do you think Max found in his treasure box? Share your guesses!",
+        "alt_text": "Max Monkey, a small brown monkey, holding an old treasure map in Adventure Jungle, with a curious smile.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "When did Max feel a little scared in the story? What did he do to be brave?"
+    }
+}

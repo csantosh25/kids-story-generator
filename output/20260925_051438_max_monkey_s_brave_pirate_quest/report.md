@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Bella Bear Welcomes a New Friend
+Max Monkey's Brave Pirate Quest
 
 Subtitle:
-Kindness by Crystal Lake
+A story about finding courage
 
 Theme:
-Welcoming Someone New
+Pirates
 
 Moral:
-Being kind and welcoming makes everyone happy.
+Being confident means being brave enough to try, even when you feel a little scared.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Bella Bear
+Max Monkey
 
 Species:
-Bear
+Monkey
 
 Personality:
-Kind, Helpful, Gentle, Patient
+Adventurous, Playful, Energetic, Curious
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-255
+310
 
 Generated:
-2026-09-07 05:06:05
+2026-09-25 05:15:32
 
 ---
 
