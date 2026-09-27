@@ -1,0 +1,119 @@
+{
+    "story_info": {
+        "title": "Barnaby's Twinkling Star Wish",
+        "subtitle": "A quiet evening in Wonderwood Valley.",
+        "theme": "Stars, Calmness",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Taking deep breaths helps you feel calm and ready for sleep."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit",
+            "appearance": "Barnaby is a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look.",
+            "personality": "Gentle, Sleepy, Kind, Imaginative"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Barnaby Bunny, a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look. He is lying comfortably on soft grass in Moonlight Meadow, looking up at a night sky full of gently twinkling stars. The setting sun casts a warm, soft glow, with the first stars appearing.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Moonlight Meadow at dusk",
+        "visual_action": "Barnaby looking at stars",
+        "visual_object": "Twinkling stars",
+        "mood": "Calm and peaceful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Evening in Moonlight Meadow",
+            "text": "Barnaby Bunny sat in Moonlight Meadow. The sun was going down. Pink and orange colours filled the sky. Soon, the first tiny stars twinkled. Barnaby's sleepy eyes looked up. He loved how the night began. He felt a soft, happy feeling inside.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "evening sky",
+            "icon": "sunset",
+            "speaker_notes": "Barnaby watches the sun set, feeling happy as stars start to appear."
+        },
+        {
+            "page": 2,
+            "title": "Many Twinkling Lights",
+            "text": "Darkness came. Many more stars popped out. The sky looked like a dark blanket. It had shiny, tiny lights. Barnaby wanted to see every single one. He found a cozy spot. It was under a big, friendly bush. He lay down on the soft grass.",
+            "background_color": "#C7D2EB",
+            "visual_theme": "night sky",
+            "icon": "stars",
+            "speaker_notes": "Barnaby finds a cozy spot to watch the many stars."
+        },
+        {
+            "page": 3,
+            "title": "A Big, Starry Sky",
+            "text": "\"So many stars!\" Barnaby said softly. His eyes felt a little tired. He wanted to enjoy them all. But the sky was very, very big. He closed his eyes for a moment. He remembered a special trick. It helped him feel calm and quiet.",
+            "background_color": "#A7B8D6",
+            "visual_theme": "big sky",
+            "icon": "thought bubble",
+            "speaker_notes": "Barnaby feels a little overwhelmed by the vast sky and remembers a calming trick."
+        },
+        {
+            "page": 4,
+            "title": "Taking Calm Breaths",
+            "text": "Barnaby took a deep, slow breath. He held it, then let it out slowly. He did it again. In, and out. \"One star at a time,\" he thought. He found a bright star. He watched it twinkle. Then he moved to the next one. He felt peace grow inside him.",
+            "background_color": "#8C99BD",
+            "visual_theme": "calming breaths",
+            "icon": "breath",
+            "speaker_notes": "Barnaby uses deep breaths to calm himself and focus on one star at a time."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Dreams Begin",
+            "text": "Barnaby smiled. He felt warm and calm. The stars looked like little friends. They shone just for him. He gave a gentle yawn. \"Sweet dreams begin with a smile!\" he whispered. He closed his sleepy eyes, ready for a cozy night.",
+            "background_color": "#6F7A9B",
+            "visual_theme": "sleepy stars",
+            "icon": "yawn",
+            "speaker_notes": "Barnaby feels peaceful and ready for sleep after enjoying the stars."
+        }
+    ],
+    "instagram": {
+        "caption": "It’s Sunday night in Wonderwood Valley! Join Barnaby Bunny as he finds a cozy spot in Moonlight Meadow. The sky is full of twinkling stars! But how does he enjoy them all? This calming story helps little ones relax and get ready for sweet dreams. 💛 Send this to a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtime",
+            "#CalmingStory",
+            "#StarGazing"
+        ]
+    },
+    "email": {
+        "subject": "Barnaby Bunny's Calm Starry Night!",
+        "preview": "Help your little one relax with Barnaby Bunny under the twinkling stars."
+    },
+    "youtube": {
+        "title": "Barnaby's Twinkling Star Wish | A Bedtime Story for Kids",
+        "description": "Join Barnaby Bunny on a peaceful evening in Moonlight Meadow as he discovers a simple way to relax and enjoy the beautiful stars. This calming story is perfect for helping children aged 3-6 unwind before bedtime. Learn how to feel calm with Barnaby!",
+        "keywords": [
+            "bedtime story",
+            "Barnaby Bunny",
+            "kids relaxation",
+            "star story",
+            "calming story",
+            "children's sleep story"
+        ]
+    },
+    "publishing": {
+        "hook": "Watching stars can make you feel so calm.",
+        "instagram_caption_short": "It’s Sunday night in Wonderwood Valley! Join Barnaby Bunny as he finds a cozy spot in Moonlight Meadow. The sky is full of twinkling stars! But how does he enjoy them all? This calming story helps little ones relax and get ready for sweet dreams.\n💛 Send this to a parent who would enjoy this with their little one.",
+        "instagram_caption_long": "It’s Sunday night in Wonderwood Valley! Join Barnaby Bunny for a very special, quiet adventure. As the sun sets over Moonlight Meadow, Barnaby finds a cozy spot to watch the first stars appear. Soon, the whole sky is filled with twinkling lights! It's so beautiful, but also very big. Barnaby remembers a clever trick to help him feel calm and enjoy the magic of the night sky, one star at a time. This gentle story helps little ones learn how to take slow, deep breaths to relax their minds and bodies, making them feel peaceful and ready for sweet dreams.\n💛 Send this to a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtime",
+            "#CalmingStory",
+            "#StarGazing"
+        ],
+        "first_comment": "What makes your little one feel calm before bedtime? Share with us!",
+        "alt_text": "Barnaby Bunny, a grey-and-white bunny, lies on grass in Moonlight Meadow, looking up at a night sky full of twinkling stars.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How does Barnaby make himself feel calm when there are so many stars?"
+    }
+}

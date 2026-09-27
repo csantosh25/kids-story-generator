@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Toby Turtle and the Rain Puddles
+Barnaby's Twinkling Star Wish
 
 Subtitle:
-Toby helps nature during a rainy day.
+A quiet evening in Wonderwood Valley.
 
 Theme:
-Rain
+Stars, Calmness
 
 Moral:
-Taking care of nature is important.
+Taking deep breaths helps you feel calm and ready for sleep.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Toby Turtle
+Barnaby Bunny
 
 Species:
-Sea Turtle
+Rabbit
 
 Personality:
-Patient, Thoughtful, Nature Lover, Calm
+Gentle, Sleepy, Kind, Imaginative
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-266
+222
 
 Generated:
-2026-09-10 05:05:39
+2026-09-27 05:37:45
 
 ---
 
