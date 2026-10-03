@@ -1,0 +1,121 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Tidy Home Fun",
+        "subtitle": "A story about helping at home.",
+        "theme": "Helping at Home",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping to tidy your home makes your body move and your mind feel happy and quiet."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D style, children's book illustration, Penny Penguin happily tidying her cozy igloo home, with a small basket of colourful pebbles and a toy fish nearby, warm cinematic lighting, pastel colours, vertical composition",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Inside Penny's cozy igloo home",
+        "visual_action": "Penny Penguin happily tidying her toys",
+        "visual_object": "A small basket of colourful pebbles",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Saturday Morning",
+            "text": "Saturday morning was bright. Penny Penguin woke up with a big smile. She stretched her little wings and feet. \"Healthy habits make every day fun!\" she said loudly. Penny looked around her cozy igloo. Her favourite fluffy cloud toy was on the floor. Her shiny shells were scattered near her bed.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "home",
+            "icon": "igloo",
+            "speaker_notes": "Introduce Penny and her home on a bright Saturday morning. Show her energetic start."
+        },
+        {
+            "page": 2,
+            "title": "A Little Mess",
+            "text": "\"Oh dear,\" Penny said, looking around. Her home was a bit messy. It was hard to find her things. A clean home helps a happy mind. Penny loved to play fun games. But she also loved a clean, quiet place. She wanted to feel ready for Saturday adventures.",
+            "background_color": "#FDF3E7",
+            "visual_theme": "messy room",
+            "icon": "toy fish",
+            "speaker_notes": "Penny notices the mess and understands why a tidy space is good for her mind. Set up the small challenge."
+        },
+        {
+            "page": 3,
+            "title": "Tidying Game",
+            "text": "Penny had a good idea! She put on her favourite happy music. It had a bouncy beat. Penny started a sorting game. \"Let's put all the blue things here!\" she sang. She moved quickly around her room. She put her small blue scarf into a blue box.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "playful cleaning",
+            "icon": "music note",
+            "speaker_notes": "Penny finds a creative solution to the mess by making tidying a fun game with music."
+        },
+        {
+            "page": 4,
+            "title": "Helping Herself",
+            "text": "Next, Penny picked up her storybooks. She stacked them neatly on her little shelf. Then she wiped her tiny table clean. Her small, strong flippers worked fast. Tidying made her body move. It felt like a fun little dance as she worked!",
+            "background_color": "#FDF3E7",
+            "visual_theme": "organizing",
+            "icon": "book",
+            "speaker_notes": "Detail Penny's actions as she tidies, showing the physical aspect of helping at home."
+        },
+        {
+            "page": 5,
+            "title": "Happy and Ready",
+            "text": "Soon, Penny's home was clean and neat. Everything had its own special place. She felt so happy and good. Penny smiled a big, proud smile. Her healthy body worked hard. Now her mind felt quiet. She was ready for a lovely, fun Saturday!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "clean home",
+            "icon": "sparkle",
+            "speaker_notes": "The story ends with Penny enjoying the results of her hard work, feeling happy and calm, ready for the rest of her day."
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin loves helping at home! 🏡 Watch how she makes tidying her room a fun game and feels super happy afterwards. A tidy space helps a happy mind! 🐧💖 #Bedtime01Fables #PennyPenguin",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsLearning",
+            "#HealthyHabitsForKids",
+            "#HelpingAtHome"
+        ]
+    },
+    "email": {
+        "subject": "Penny Penguin's Fun Way to Tidy Up!",
+        "preview": "See how Penny Penguin makes helping at home a happy game, and how it makes her feel great!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Tidy Home Fun - A Wonderwood Valley Story!",
+        "description": "Join Penny Penguin on a Saturday morning as she learns that helping to tidy her home can be a fun game! See how keeping her space clean makes her body move and her mind feel happy and ready for new adventures. Perfect for children aged 3-6 years to learn about healthy habits and responsibility at home.",
+        "keywords": [
+            "Penny Penguin story",
+            "children's story",
+            "healthy habits for kids",
+            "helping at home",
+            "kids responsibility",
+            "wonderwood valley",
+            "preschool stories",
+            "kids cleaning game"
+        ]
+    },
+    "publishing": {
+        "hook": "Ever wonder how tidying up can be a fun game?",
+        "instagram_caption_short": "Saturday morning fun for Penny Penguin! Her home needs a little tidy. Watch how she makes it a game and feels so happy afterward. A clean space helps a happy mind! ✨ Save this story to inspire your little one. 🐧💖 #Bedtime01Fables #PennyPenguin",
+        "instagram_caption_long": "Saturday morning fun for Penny Penguin! She wakes up ready for the day, but her cozy igloo needs a little tidy. Instead of feeling worried, Penny has a clever idea! She puts on some happy music and turns tidying into a fun sorting game. See how moving her body and making her space neat makes her feel so good and ready for more adventures. This sweet story shows how healthy habits, like helping at home, can make both our bodies and minds happy and quiet. ✨ Save this story for your next reading time to show your little one the joy of keeping a tidy home! 🐧💖 #Bedtime01Fables #PennyPenguin",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsLearning",
+            "#HealthyHabitsForKids",
+            "#HelpingAtHome"
+        ],
+        "first_comment": "Does your little one love to help with tidying too? What's their favourite way to make it fun?",
+        "alt_text": "A cheerful Penny Penguin, a small round penguin with black and white feathers and an orange beak, happily tidying her cozy igloo home. She is surrounded by a few colourful toys, including a basket of pebbles and a toy fish.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What's one small thing your child can help tidy in their room today?"
+    }
+}

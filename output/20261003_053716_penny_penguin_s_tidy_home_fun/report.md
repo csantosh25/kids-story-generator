@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Penny Penguin's Sparkly Teeth
+Penny Penguin's Tidy Home Fun
 
 Subtitle:
-A happy start to a healthy Saturday!
+A story about helping at home.
 
 Theme:
-Brushing Teeth
+Helping at Home
 
 Moral:
-Brushing your teeth every day helps keep them strong and clean.
+Helping to tidy your home makes your body move and your mind feel happy and quiet.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-249
+231
 
 Generated:
-2026-09-12 04:53:50
+2026-10-03 05:38:09
 
 ---
 

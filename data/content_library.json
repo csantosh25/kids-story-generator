@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000010",
-        "created_date": "2026-09-12",
-        "status": "completed",
-        "title": "Penny Penguin's Sparkly Teeth",
-        "theme": "Brushing Teeth",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20260912_045258_penny_penguin_s_sparkly_teeth",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000011",
         "created_date": "2026-09-14",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Rabbit"
         },
         "folder": "output/20260927_053658_barnaby_s_twinkling_star_wish",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000020",
+        "created_date": "2026-10-03",
+        "status": "completed",
+        "title": "Penny Penguin's Tidy Home Fun",
+        "theme": "Helping at Home",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261003_053716_penny_penguin_s_tidy_home_fun",
         "instagram": {
             "posted": true,
             "post_url": ""
