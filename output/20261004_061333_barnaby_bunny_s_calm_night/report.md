@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Bella Bear's Kind Help
+Barnaby Bunny's Calm Night
 
 Subtitle:
-A Story of Helping Hands
+Finding Peace Before Sleep
 
 Theme:
-Helping Grandma
+Good Night Friends
 
 Moral:
-Helping others makes everyone happy.
+Thinking of happy memories and friends can help you relax before sleep.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Bella Bear
+Barnaby Bunny
 
 Species:
-Bear
+Rabbit
 
 Personality:
-Kind, Helpful, Gentle, Patient
+Gentle, Sleepy, Kind, Imaginative
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-249
+216
 
 Generated:
-2026-09-14 05:19:37
+2026-10-04 06:14:20
 
 ---
 

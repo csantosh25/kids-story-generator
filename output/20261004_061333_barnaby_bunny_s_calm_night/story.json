@@ -1,0 +1,119 @@
+{
+    "story_info": {
+        "title": "Barnaby Bunny's Calm Night",
+        "subtitle": "Finding Peace Before Sleep",
+        "theme": "Good Night Friends",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Thinking of happy memories and friends can help you relax before sleep."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit",
+            "appearance": "Barnaby is a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look.",
+            "personality": "Gentle, Sleepy, Kind, Imaginative"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Barnaby Bunny, a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose, sitting peacefully in Moonlight Meadow at dusk. He looks very calm. A few small, soft glowing fireflies are nearby. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly. Reserve the lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Moonlight Meadow at dusk",
+        "visual_action": "Barnaby Bunny sitting peacefully, looking calm",
+        "visual_object": "small, soft glowing fireflies",
+        "mood": "Calm and comforting"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Tiny Wiggle",
+            "text": "Barnaby Bunny felt a tiny wiggle inside. It was almost bedtime. Barnaby was not feeling sleepy. He wanted to feel calm and ready to dream. 'How can I find peace?' he thought. He looked at his cozy bed. He wanted a soft feeling.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "evening",
+            "icon": "bed",
+            "speaker_notes": "Barnaby is in his room, looking at his bed, feeling restless."
+        },
+        {
+            "page": 2,
+            "title": "A Quiet Walk",
+            "text": "Barnaby decided to go for a quiet walk. Moonlight Meadow was his favorite place. The evening air felt cool. It felt soft on his nose. Barnaby hopped gently on the path. He looked at the tall grass. He looked at the sleeping flowers.",
+            "background_color": "#D9E9FD",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Barnaby is gently hopping through Moonlight Meadow at dusk."
+        },
+        {
+            "page": 3,
+            "title": "Happy Firefly Friend",
+            "text": "Suddenly, a little light danced by. It was a happy firefly! It reminded Barnaby of Pip the Squirrel. Pip loved to play hide-and-seek. Barnaby smiled softly at the memory. Thinking of friends made his heart happy. It made his heart feel light.",
+            "background_color": "#E5F7E0",
+            "visual_theme": "night",
+            "icon": "firefly",
+            "speaker_notes": "Barnaby sees a firefly, which sparks a memory of Pip."
+        },
+        {
+            "page": 4,
+            "title": "Cloud and Carrots",
+            "text": "Next, Barnaby looked up. He saw a big, fluffy cloud. It floated slowly in the night sky. This cloud made him think of Bella Bear. Bella loved to share juicy carrots. Barnaby felt warm. He felt thankful inside his chest.",
+            "background_color": "#D9E9FD",
+            "visual_theme": "sky",
+            "icon": "cloud",
+            "speaker_notes": "Barnaby looks at a cloud and thinks of Bella Bear."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Dreams Begin",
+            "text": "Barnaby found a very comfy spot. He lay down on the soft grass. He closed his round, sleepy eyes. He thought of all his kind friends. He remembered their happy smiles. He remembered gentle hugs. He felt very calm now. 'Sweet dreams begin with a smile!' he whispered.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Barnaby lies down in the meadow, feeling peaceful and ready for sleep."
+        }
+    ],
+    "instagram": {
+        "caption": "Barnaby Bunny felt a tiny wiggle inside. It was almost bedtime! Join Barnaby on a quiet walk through Moonlight Meadow as he finds a special way to feel calm. This sweet story helps little ones relax their minds for peaceful sleep. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtimeStories",
+            "#RelaxationForKids",
+            "#WonderwoodValley"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Barnaby Bunny Finds Calm for Bedtime",
+        "preview": "Join Barnaby Bunny on a gentle evening walk to find peace before sleep. Perfect for little dreamers!"
+    },
+    "youtube": {
+        "title": "Barnaby Bunny's Calm Night | A Wonderwood Valley Bedtime Story for Kids",
+        "description": "It's almost bedtime, but Barnaby Bunny feels a little restless. Come along with Barnaby as he takes a peaceful walk in Moonlight Meadow, remembering his friends and finding a calm heart for sweet dreams. A gentle story to help children relax before sleep.",
+        "keywords": [
+            "bedtime story",
+            "kids story",
+            "relaxation for kids",
+            "children's sleep story",
+            "wonderwood valley",
+            "barnaby bunny"
+        ]
+    },
+    "publishing": {
+        "hook": "Is your little one restless before bed?",
+        "instagram_caption_short": "Barnaby Bunny felt a tiny wiggle inside. It was almost bedtime! Join Barnaby on a quiet walk through Moonlight Meadow as he finds a special way to feel calm. This sweet story helps little ones relax their minds for peaceful sleep. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "Barnaby Bunny felt a tiny wiggle inside. It was almost bedtime, but he was not feeling sleepy! Join Barnaby on a quiet walk through his favorite Moonlight Meadow. He looks at fireflies and fluffy clouds, remembering happy moments with his friends Pip and Bella. This gentle story teaches little ones how simple memories can help them feel calm and ready for peaceful sleep. It’s a perfect tale to wind down your evening. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtimeStories",
+            "#RelaxationForKids",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "What helps your little one feel calm before bed?",
+        "alt_text": "Barnaby Bunny, a soft grey-and-white bunny, sits calmly in a moonlit meadow, looking peaceful with sleepy eyes. A few fireflies glow gently around him.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What helps you feel calm before you go to sleep?"
+    }
+}
