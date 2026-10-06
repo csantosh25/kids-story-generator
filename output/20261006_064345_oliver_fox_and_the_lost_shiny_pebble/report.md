@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Luna Owl and the Library Letters
+Oliver Fox and the Lost Shiny Pebble
 
 Subtitle:
-A curious discovery with Luna and Pip
+A lesson in listening carefully
 
 Theme:
-Letters
+Listening
 
 Moral:
-Being curious helps us learn new and wonderful things.
+Good friends listen carefully to each other.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Luna Owl
+Oliver Fox
 
 Species:
-Owl
+Fox
 
 Personality:
-Wise, Curious, Calm, Encouraging
+Funny, Creative, Friendly, Brave
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-267
+252
 
 Generated:
-2026-09-16 05:07:27
+2026-10-06 06:44:35
 
 ---
 

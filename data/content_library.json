@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000012",
-        "created_date": "2026-09-16",
-        "status": "completed",
-        "title": "Luna Owl and the Library Letters",
-        "theme": "Letters",
-        "character": {
-            "name": "Luna Owl",
-            "species": "Owl"
-        },
-        "folder": "output/20260916_050633_luna_owl_and_the_library_letters",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000013",
         "created_date": "2026-09-17",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Rabbit"
         },
         "folder": "output/20261004_061333_barnaby_bunny_s_calm_night",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000022",
+        "created_date": "2026-10-06",
+        "status": "completed",
+        "title": "Oliver Fox and the Lost Shiny Pebble",
+        "theme": "Listening",
+        "character": {
+            "name": "Oliver Fox",
+            "species": "Fox"
+        },
+        "folder": "output/20261006_064345_oliver_fox_and_the_lost_shiny_pebble",
         "instagram": {
             "posted": true,
             "post_url": ""

@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Lost Shiny Pebble",
+        "subtitle": "A lesson in listening carefully",
+        "theme": "Listening",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Good friends listen carefully to each other."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Sparrow",
+                "species": "Sparrow",
+                "appearance": "A small brown sparrow with a fluffy chest and tiny yellow beak.",
+                "role": "lost her favourite shiny pebble and needs help finding it"
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, perky triangular ears, and clever amber eyes. He is in a sunny Blossom Meadow, looking closely at the ground. Next to him, Pip Sparrow, a small brown sparrow with a fluffy chest and tiny yellow beak, is perched on a pink flower, also looking down. A tiny shiny pebble is partly visible under a green leaf. Warm cinematic lighting, pastel colours, vertical composition.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny Blossom Meadow",
+        "visual_action": "Oliver Fox and Pip Sparrow searching for a shiny pebble",
+        "visual_object": "a small shiny pebble",
+        "mood": "warm and helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Oliver in Blossom Meadow",
+            "text": "One sunny morning, Oliver Fox skipped through Blossom Meadow. Pink, yellow, and blue flowers grew everywhere. Oliver loved to smell them. He felt happy. He saw his friend, Pip Sparrow, on a branch. Pip looked very sad. Her little head was down low. Oliver stopped to say hello.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Oliver Fox sees his friend Pip Sparrow looking sad in Blossom Meadow."
+        },
+        {
+            "page": 2,
+            "title": "Pip is Upset",
+            "text": "'Hello, Pip! Why are you so sad?' Oliver asked softly. Pip chirped quickly. 'Oh dear! Oh no! It’s gone! My favourite, shiny, round…' Pip flapped her wings fast. Oliver could not understand her. 'Wait, Pip,' he said. 'Please speak slowly. I want to help you.'",
+            "background_color": "#E0F7FA",
+            "visual_theme": "friendship",
+            "icon": "bird",
+            "speaker_notes": "Oliver tries to understand Pip, who is speaking too quickly because she is upset."
+        },
+        {
+            "page": 3,
+            "title": "Listening to Clues",
+            "text": "Pip took a deep breath. 'I lost my shiny pebble,' she said slowly. 'It’s my favourite one. I found it yesterday. I was playing near the big pink flowers. Then I flew to the tall green grass. Now it is gone!' A tear rolled down Pip's tiny cheek. Oliver listened carefully.",
+            "background_color": "#FFF3E0",
+            "visual_theme": "memory",
+            "icon": "leaf",
+            "speaker_notes": "Pip explains what happened, giving Oliver clues about where she lost her pebble."
+        },
+        {
+            "page": 4,
+            "title": "Searching Together",
+            "text": "Oliver thought for a moment. 'You played near the big pink flowers first,' he said. 'Then you went to the tall green grass.' Pip nodded. 'Yes, that’s right!' Oliver looked closely at the ground. He walked slowly. His clever amber eyes looked for something shiny. 'Let's solve it together!' he said.",
+            "background_color": "#D1E7D1",
+            "visual_theme": "adventure",
+            "icon": "magnifying glass",
+            "speaker_notes": "Oliver uses Pip's clues to start searching for the pebble, encouraging Pip."
+        },
+        {
+            "page": 5,
+            "title": "A Happy Find",
+            "text": "Near the big pink flowers, Oliver saw a sparkle! 'Look, Pip!' he said. It was Pip's shiny pebble! It was hiding under a small leaf. Pip flew down fast. She picked up her pebble with her beak. 'Thank you, Oliver!' she chirped. 'You listened to me very well!' Oliver smiled. He was happy to help his friend.",
+            "background_color": "#C8E6C9",
+            "visual_theme": "joy",
+            "icon": "sparkle",
+            "speaker_notes": "Oliver finds the pebble by listening carefully, making Pip very happy."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when a friend can't find their most prized possession? 🤔 Join Oliver Fox on a sunny morning in Blossom Meadow! He learns that sometimes, the best way to help is to listen very carefully. A sweet story about friendship and understanding for your little one. 📚 Save this story for your next reading time. #Bedtime01Fables #OliverFox #FriendshipGoals #KidsLearning #ListenCarefully",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#FriendshipGoals",
+            "#KidsLearning",
+            "#ListenCarefully"
+        ]
+    },
+    "email": {
+        "subject": "Oliver Fox Learns to Listen in Blossom Meadow! 🌸",
+        "preview": "Join Oliver Fox as he helps his friend Pip Sparrow by listening carefully. A sweet story about friendship!"
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Lost Shiny Pebble | A Story About Listening to Friends",
+        "description": "One sunny morning, Oliver Fox meets his friend Pip Sparrow, who has lost her favourite shiny pebble! Oliver learns that by listening carefully to every detail, he can truly help his friend. This heartwarming adventure from Wonderwood Valley teaches children the importance of good listening and strong friendships. Perfect for ages 3-6.",
+        "keywords": [
+            "Oliver Fox story",
+            "children's story",
+            "listening skills",
+            "friendship for kids",
+            "Wonderwood Valley",
+            "kids adventure",
+            "preschool story",
+            "moral story"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when a friend can't find their most prized possession?",
+        "instagram_caption_short": "What happens when a friend can't find their most prized possession? 🤔 Join Oliver Fox on a sunny morning in Blossom Meadow! He learns that sometimes, the best way to help is to listen very carefully. A sweet story about friendship and understanding for your little one. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "What happens when a friend can't find their most prized possession? 🤔 One beautiful morning in Blossom Meadow, Oliver Fox meets his friend Pip Sparrow, who is very upset. Pip has lost her most favourite shiny pebble! Oliver wants to help right away, but Pip is chirping so fast, it's hard to understand. Oliver learns that by patiently listening to every little clue, he can truly help his friend. This heartwarming adventure teaches children the importance of listening carefully to their friends and how it makes friendships even stronger. A perfect story to share with your little one about kindness and understanding. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#FriendshipGoals",
+            "#KidsLearning",
+            "#ListenCarefully"
+        ],
+        "first_comment": "Oliver is such a good friend! What's one special thing your child likes to look for outdoors?",
+        "alt_text": "Cover image for 'Oliver Fox and the Lost Shiny Pebble'. Oliver Fox, a bright orange fox, and Pip Sparrow, a small brown bird, search for a shiny pebble in a sunny meadow full of pink flowers.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What did Oliver do to help Pip find her pebble?"
+    }
+}
