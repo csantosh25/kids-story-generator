@@ -1,0 +1,119 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Pirate Map!",
+        "subtitle": "An adventure of courage and discovery.",
+        "theme": "Pirates",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Trying new things makes you feel strong and brave."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration of Max Monkey, a small energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager wide-open smile. Max is holding a rolled-up treasure map. He looks curious and excited. The setting is a vibrant Adventure Jungle path with lush green plants and sunlight peeking through.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Adventure Jungle path",
+        "visual_action": "Max Monkey holding a rolled-up pirate map, looking curious",
+        "visual_object": "a rolled-up pirate map",
+        "mood": "Adventurous and curious"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Map in the Jungle",
+            "text": "Max Monkey was in Adventure Jungle. \"Adventure is waiting!\" he said. He loved to jump and play. Today, he found something special. It was a rolled-up paper. It looked old and exciting!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "leaf",
+            "speaker_notes": "Introduce Max and the discovery of the map."
+        },
+        {
+            "page": 2,
+            "title": "The Pirate Quest",
+            "text": "Max unrolled the paper carefully. \"A pirate map!\" he cheered. It showed a red 'X'. The 'X' was far away, past a big, green bush. Max held the map tight. \"Let's go find it!\" he thought.",
+            "background_color": "#DFF2E2",
+            "visual_theme": "map",
+            "icon": "compass",
+            "speaker_notes": "Show Max examining the map and getting ready for the quest."
+        },
+        {
+            "page": 3,
+            "title": "A Tricky Path",
+            "text": "The map showed a tricky path. It led to tall, wobbly vines. Max looked up. \"Can I swing across?\" he thought. The vines looked very high. He felt a little bit unsure.",
+            "background_color": "#E5F7F8",
+            "visual_theme": "vines",
+            "icon": "vine",
+            "speaker_notes": "Present the challenge: the tall vines. Show Max's slight hesitation."
+        },
+        {
+            "page": 4,
+            "title": "Max's Brave Swing",
+            "text": "Max took a deep breath. He remembered his strong arms. \"I can do this!\" he told himself. He grabbed the first vine. Swing! He flew through the air. One vine, then another! He was so fast.",
+            "background_color": "#FDF3D9",
+            "visual_theme": "swing",
+            "icon": "monkey",
+            "speaker_notes": "Show Max overcoming the challenge with confidence and action."
+        },
+        {
+            "page": 5,
+            "title": "A Sweet Discovery",
+            "text": "Max landed with a happy plop. He looked at the map. The red 'X' was right here! It was under a big, colourful flower bush. He found a shiny, red berry. It tasted sweet and yummy! Max smiled. He felt so brave and proud. Trying new things made him feel strong.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "flowers",
+            "icon": "berry",
+            "speaker_notes": "Max finds his 'treasure' and feels proud and confident."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Max Monkey on a thrilling jungle quest! Our little adventurer, with his big curious eyes, stumbles upon an old pirate map in Adventure Jungle. He's full of excitement, but the map leads to a tricky challenge! Will Max find the courage to swing across the wobbly vines? This warm and playful story gently encourages children aged 3-6 to feel confident and brave when trying new things. It's a joyful reminder that a little bravery goes a long way. Read along as Max discovers his inner strength! #Bedtime01Fables #MaxMonkey #KidsAdventure #PirateStory #ConfidenceForKids",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey"
+        ]
+    },
+    "email": {
+        "subject": "Max Monkey finds a secret pirate map!",
+        "preview": "Join Max Monkey on a brave adventure to find hidden jungle treasure!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Pirate Map! | A Story About Being Brave",
+        "description": "Max Monkey finds a pirate map and goes on an exciting quest! Can he be brave enough to follow the map and find the treasure? This fun story for children aged 3-6 teaches about courage and trying new things. Join Max Monkey in Wonderwood Valley for a joyful adventure!",
+        "keywords": [
+            "Max Monkey story",
+            "children's story",
+            "kids adventure",
+            "bravery story",
+            "confidence for kids",
+            "pirate story for kids",
+            "Wonderwood Valley",
+            "preschool story",
+            "jungle adventure"
+        ]
+    },
+    "publishing": {
+        "hook": "What exciting secret did Max Monkey find in the jungle today?",
+        "instagram_caption_short": "Max Monkey loves adventure! Today he found a pirate map. Will he be brave enough to follow it? This story teaches kids that trying new things makes them strong. Save this for a fun read!",
+        "instagram_caption_long": "Join Max Monkey on a thrilling jungle quest! Our little adventurer, with his big curious eyes, stumbles upon an old pirate map in Adventure Jungle. He's full of excitement, but the map leads to a tricky challenge! Will Max find the courage to swing across the wobbly vines? This warm and playful story gently encourages children aged 3-6 to feel confident and brave when trying new things. It's a joyful reminder that a little bravery goes a long way. Read along as Max discovers his inner strength! #Bedtime01Fables #MaxMonkey #KidsAdventure #PirateStory #ConfidenceForKids",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#PirateStory",
+            "#ConfidenceForKids"
+        ],
+        "first_comment": "What new thing did your little one try today? Share in the comments!",
+        "alt_text": "Max Monkey, a small brown monkey, holds a rolled-up treasure map in a vibrant jungle setting. He has a curious expression.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What made Max Monkey feel brave on his adventure?"
+    }
+}

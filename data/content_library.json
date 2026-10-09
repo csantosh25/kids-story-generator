@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000014",
-        "created_date": "2026-09-19",
-        "status": "completed",
-        "title": "Penny Penguin's Thirsty Day",
-        "theme": "Drinking Water",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20260919_045331_penny_penguin_s_thirsty_day",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000015",
         "created_date": "2026-09-22",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Sea Turtle"
         },
         "folder": "output/20261008_062947_toby_turtle_s_thirsty_flowers",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000024",
+        "created_date": "2026-10-09",
+        "status": "completed",
+        "title": "Max Monkey's Pirate Map!",
+        "theme": "Pirates",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20261009_063221_max_monkey_s_pirate_map",
         "instagram": {
             "posted": true,
             "post_url": ""

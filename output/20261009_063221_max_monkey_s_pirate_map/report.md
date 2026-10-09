@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Penny Penguin's Thirsty Day
+Max Monkey's Pirate Map!
 
 Subtitle:
-A refreshing adventure about drinking water!
+An adventure of courage and discovery.
 
 Theme:
-Drinking Water
+Pirates
 
 Moral:
-Drinking water keeps you healthy and full of energy!
+Trying new things makes you feel strong and brave.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Penny Penguin
+Max Monkey
 
 Species:
-Penguin
+Monkey
 
 Personality:
-Healthy, Sporty, Cheerful, Helpful
+Adventurous, Playful, Energetic, Curious
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-264
+187
 
 Generated:
-2026-09-19 04:54:19
+2026-10-09 06:33:11
 
 ---
 
