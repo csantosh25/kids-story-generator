@@ -1,0 +1,125 @@
+{
+    "story_info": {
+        "title": "Bella Bear Helps Squeaky Squirrel",
+        "subtitle": "A kind helper in Blossom Meadow.",
+        "theme": "Helping a Friend",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "It feels good to help friends and show kindness."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small grey squirrel with a bushy tail and bright eyes.",
+                "role": "Needs help carrying heavy nuts for winter."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Bella Bear, a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, with a little cream-colored tummy patch and short rounded ears. She is helping Squeaky Squirrel, a small grey squirrel with a bushy tail and bright eyes. They are carrying a pile of nuts together.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Blossom Meadow, sunny",
+        "visual_action": "Bella Bear helping Squeaky Squirrel carry nuts",
+        "visual_object": "A pile of nuts",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Bella's Morning Walk",
+            "text": "Bella Bear loved sunny mornings. She walked in Blossom Meadow. Golden sunshine warmed her soft fur. Many pretty flowers grew all around. Birds sang sweet, happy songs. Bella felt a deep joy inside. Then she saw her friend, Squeaky Squirrel. But Squeaky looked a little sad today.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Introduce Bella Bear walking happily in Blossom Meadow on a sunny morning, then seeing Squeaky Squirrel looking sad."
+        },
+        {
+            "page": 2,
+            "title": "Squeaky's Big Problem",
+            "text": "\"Hello, Squeaky!\" Bella smiled softly. \"Why do you look so glum today?\" Squeaky pointed with his tiny paw. A very big pile of nuts sat there. \"These are for my winter food,\" he said. \"But they are too many and too heavy for me! I cannot carry them all home.\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "squirrel",
+            "icon": "nut",
+            "speaker_notes": "Squeaky Squirrel explains his problem to Bella Bear, pointing to a large pile of nuts he cannot carry."
+        },
+        {
+            "page": 3,
+            "title": "Bella's Kind Idea",
+            "text": "Bella felt a little sad for Squeaky. She saw his worried little face. Bella knew how it felt to need help. She thought of a kind way to help him. Bella smiled a warm, gentle smile. \"Do not worry, dear friend!\" she said. \"Kind hearts make happy days! I can help you carry them.\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "kindness",
+            "icon": "heart",
+            "speaker_notes": "Bella Bear shows empathy, understands Squeaky's problem, and offers to help him with a kind smile."
+        },
+        {
+            "page": 4,
+            "title": "Working Together",
+            "text": "Bella bent down with care. She used her strong paws. Bella gently picked up a big pile of nuts. Her paws held them very easily. Squeaky picked up his own smaller pile. \"Thank you, Bella!\" he chirped happily. Together, they walked towards Squeaky's cozy home. They walked slow and steady, side by side.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "teamwork",
+            "icon": "helping hands",
+            "speaker_notes": "Bella Bear and Squeaky Squirrel work together, carrying the nuts towards Squeaky's home, showing teamwork."
+        },
+        {
+            "page": 5,
+            "title": "Happy Hearts",
+            "text": "Soon, all the nuts were safe inside Squeaky's home. Squeaky Squirrel was so happy! He gave Bella a big, warm hug. \"You are the best friend!\" he said truly. Bella felt a happy warmth deep inside. Helping Squeaky made her heart feel good. She knew it was true: Kind hearts make happy days!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friendship",
+            "icon": "warm home",
+            "speaker_notes": "Squeaky Squirrel thanks Bella Bear warmly, and Bella feels happy and fulfilled after helping her friend."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when Squeaky Squirrel has a big problem? Bella Bear finds her friend Squeaky Squirrel feeling sad. He has too many nuts to carry home! This heartwarming story shows how a little kindness can make a big difference. Perfect for teaching empathy to your little ones. Save for a sweet story time.",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory"
+        ]
+    },
+    "email": {
+        "subject": "New Story: Bella Bear Helps Squeaky Squirrel!",
+        "preview": "Join Bella Bear as she shows kindness and helps a friend in need."
+    },
+    "youtube": {
+        "title": "Bella Bear Helps Squeaky Squirrel | A Story About Kindness",
+        "description": "On a sunny morning in Blossom Meadow, Bella Bear meets her friend Squeaky Squirrel who has a big problem. He needs help carrying his winter nuts! Watch as Bella shows kindness and helps her friend. This heartwarming story teaches children about empathy and the joy of helping others. Perfect for kids aged 3-6.",
+        "keywords": [
+            "kids story",
+            "kindness story",
+            "helping friends",
+            "bella bear",
+            "wonderwood valley",
+            "children's books",
+            "preschool story",
+            "empathy for kids"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when Squeaky Squirrel has a big problem?",
+        "instagram_caption_short": "What happens when Squeaky Squirrel has a big problem? Bella Bear finds her friend Squeaky Squirrel feeling sad. He has too many nuts to carry home! This heartwarming story shows how a little kindness can make a big difference. Perfect for teaching empathy to your little ones. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "What happens when Squeaky Squirrel has a big problem? On a sunny morning in Blossom Meadow, Bella Bear finds her friend Squeaky Squirrel feeling sad. He has collected many nuts for winter, but they are too heavy to carry home alone. Bella sees his worry and knows just what to do. With her kind heart, Bella helps Squeaky carry his precious nuts. This gentle adventure reminds us that helping friends makes everyone happy. This heartwarming story is perfect for teaching empathy and the joy of helping others to your children. It's a wonderful way to talk about kindness and friendship. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsStoriesIndia",
+            "#KindnessMatters",
+            "#FriendshipGoals"
+        ],
+        "first_comment": "What is something kind your little one did today?",
+        "alt_text": "Bella Bear, a small brown bear cub, helping Squeaky Squirrel, a small grey squirrel, carry a pile of nuts through Blossom Meadow on a sunny day, smiling together.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Bella help Squeaky? What did Squeaky feel when Bella helped him?"
+    }
+}

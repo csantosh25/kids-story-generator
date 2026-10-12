@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Oliver Fox and the Tall Nut Tree
+Bella Bear Helps Squeaky Squirrel
 
 Subtitle:
-A Story About Trust
+A kind helper in Blossom Meadow.
 
 Theme:
-Trust
+Helping a Friend
 
 Moral:
-Good friends help each other and build trust.
+It feels good to help friends and show kindness.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Oliver Fox
+Bella Bear
 
 Species:
-Fox
+Bear
 
 Personality:
-Funny, Creative, Friendly, Brave
+Kind, Helpful, Gentle, Patient
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-244
+257
 
 Generated:
-2026-09-22 05:17:00
+2026-10-12 06:21:57
 
 ---
 

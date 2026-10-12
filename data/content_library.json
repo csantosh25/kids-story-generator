@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000015",
-        "created_date": "2026-09-22",
-        "status": "completed",
-        "title": "Oliver Fox and the Tall Nut Tree",
-        "theme": "Trust",
-        "character": {
-            "name": "Oliver Fox",
-            "species": "Fox"
-        },
-        "folder": "output/20260922_051608_oliver_fox_and_the_tall_nut_tree",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000016",
         "created_date": "2026-09-24",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261009_063221_max_monkey_s_pirate_map",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000025",
+        "created_date": "2026-10-12",
+        "status": "completed",
+        "title": "Bella Bear Helps Squeaky Squirrel",
+        "theme": "Helping a Friend",
+        "character": {
+            "name": "Bella Bear",
+            "species": "Bear"
+        },
+        "folder": "output/20261012_062042_bella_bear_helps_squeaky_squirrel",
         "instagram": {
             "posted": true,
             "post_url": ""
