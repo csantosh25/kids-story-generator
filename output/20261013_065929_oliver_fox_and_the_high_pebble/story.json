@@ -1,0 +1,130 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the High Pebble",
+        "subtitle": "A story about helping friends",
+        "theme": "Working Together",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping friends and working together makes problems easier."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Sparrow",
+                "species": "Sparrow",
+                "appearance": "A small brown sparrow with bright, curious eyes and tiny grey wings.",
+                "role": "Needs help getting her favourite pebble and teams up with Oliver."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration. Oliver Fox (a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, clever amber eyes, playful confident grin) and Pip Sparrow (a small brown sparrow with bright, curious eyes and tiny grey wings) in a sunny Blossom Meadow. Oliver is holding a long stick, helping Pip to reach a shiny pebble stuck in a tall, colourful flower. Warm cinematic lighting, pastel colours, vertical composition.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny Blossom Meadow",
+        "visual_action": "Oliver Fox and Pip Sparrow reaching for a shiny pebble",
+        "visual_object": "A shiny pebble, a tall colourful flower, a long stick",
+        "mood": "Warm, cheerful, helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sad Friend",
+            "text": "Oliver Fox loved sunny mornings. He walked into Blossom Meadow. Bright flowers grew tall and colourful. Oliver saw his friend, Pip Sparrow. Pip looked a little sad. Her tiny head was down. Oliver went to say hello. \"What is wrong, Pip?\" he asked kindly. \"Let's solve it together!\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "Blossom Meadow",
+            "icon": "flower",
+            "speaker_notes": "Oliver Fox finds his friend Pip Sparrow looking sad in Blossom Meadow."
+        },
+        {
+            "page": 2,
+            "title": "The High Pebble",
+            "text": "Pip pointed a tiny wing. \"My shiny pebble,\" she chirped. \"It is stuck way up high. In that very tall flower.\" Oliver looked up at the big flower. The beautiful pebble sparkled bright. It was Pip's most favourite thing. Oliver knew he had to help his good friend.",
+            "background_color": "#DDF0D7",
+            "visual_theme": "Blossom Meadow",
+            "icon": "sparkle",
+            "speaker_notes": "Pip explains her problem to Oliver: her favourite shiny pebble is stuck high in a tall flower."
+        },
+        {
+            "page": 3,
+            "title": "A Clever Idea",
+            "text": "Oliver jumped up high. He stretched his paw. But the flower was too tall to reach. \"Hmm,\" Oliver thought. He looked all around the meadow. \"I have an idea, Pip!\" he said with a grin. \"We can work together! Let's find a long, strong stick.\" Pip's eyes lit up.",
+            "background_color": "#FAE7C3",
+            "visual_theme": "Blossom Meadow",
+            "icon": "lightbulb",
+            "speaker_notes": "Oliver tries to reach the pebble but it's too high. He gets a clever idea to work with Pip using a stick."
+        },
+        {
+            "page": 4,
+            "title": "Teamwork Time",
+            "text": "Oliver and Pip looked for a big stick. Oliver found a perfect one. It was long and strong. Oliver held the stick up high. He aimed it carefully at the tall flower. \"Now, Pip!\" he said softly. Pip flew onto the stick. She walked very carefully up. Up, up, up she went!",
+            "background_color": "#FDF1E0",
+            "visual_theme": "Blossom Meadow",
+            "icon": "stick",
+            "speaker_notes": "Oliver and Pip find a long stick. Oliver holds it steady while Pip carefully climbs up."
+        },
+        {
+            "page": 5,
+            "title": "Happy Friends",
+            "text": "Pip reached the top. Her tiny beak gently picked up the shiny pebble. Then she flew back down to Oliver. \"Hooray!\" cheered Oliver. Pip dropped the pebble safely into her nest. \"Thank you, Oliver!\" she chirped. \"You are such a good friend!\" Oliver smiled. \"Working together made it easy, Pip!\" he said. Sharing problems makes friends feel happy. It also makes their friendship very strong.",
+            "background_color": "#E0F5E8",
+            "visual_theme": "Blossom Meadow",
+            "icon": "heart",
+            "speaker_notes": "Pip successfully retrieves her pebble. Oliver and Pip celebrate, feeling happy about their teamwork and strong friendship."
+        }
+    ],
+    "instagram": {
+        "caption": "What a lovely morning in Wonderwood Valley! Oliver Fox, our funny and creative fox, is enjoying the bright flowers in Blossom Meadow. But then he spots his friend, Pip Sparrow, looking a little sad. Pip's most treasured shiny pebble is caught in a tall flower, and she can't reach it! Oliver, with his brave and friendly heart, knows just what to say: 'Let's solve it together!' Watch as Oliver and Pip learn how teamwork and friendship can make even the trickiest problems easy and fun. This sweet story reminds us that helping our friends builds strong connections and brings so much joy. Share this adventure with your little one and talk about how helping friends makes everyone happy! #Bedtime01Fables #OliverFox #KidsFriendship #TeamworkFun #WonderwoodValley",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TeamworkFun",
+            "#WonderwoodValley"
+        ]
+    },
+    "email": {
+        "subject": "New Story: Oliver Fox and the High Pebble – A Tale of Friendship!",
+        "preview": "Join Oliver Fox as he helps his friend Pip Sparrow and learns the joy of working together!"
+    },
+    "youtube": {
+        "title": "Oliver Fox and the High Pebble | A Story About Helping Friends | Wonderwood Valley Kids Stories",
+        "description": "Welcome to Wonderwood Valley! In today's fun adventure, Oliver Fox meets his friend Pip Sparrow, who has a problem. Pip's favourite shiny pebble is stuck high in a tall flower! Can Oliver and Pip work together to get it down? This heartwarming story teaches children aged 3-6 about the importance of teamwork and building strong friendships. Join Oliver and Pip in Blossom Meadow for a tale of cooperation and kindness!",
+        "keywords": [
+            "Oliver Fox story",
+            "kids story",
+            "friendship story",
+            "working together",
+            "children's book",
+            "Wonderwood Valley",
+            "moral story",
+            "read aloud",
+            "preschool story",
+            "teamwork for kids"
+        ]
+    },
+    "publishing": {
+        "hook": "Has your little one ever felt stuck? See how Oliver helps a friend!",
+        "instagram_caption_short": "Oliver Fox is always ready for an adventure! Today, he finds his friend Pip Sparrow feeling sad in Blossom Meadow. Pip's favourite shiny pebble is stuck high up! Can Oliver and Pip find a way to get it down? Join them to see how working together makes everything better! 💛 #Bedtime01Fables #OliverFox #KidsFriendship #TeamworkFun #WonderwoodValley",
+        "instagram_caption_long": "What a lovely morning in Wonderwood Valley! Oliver Fox, our funny and creative fox, is enjoying the bright flowers in Blossom Meadow. But then he spots his friend, Pip Sparrow, looking a little sad. Pip's most treasured shiny pebble is caught in a tall flower, and she can't reach it! Oliver, with his brave and friendly heart, knows just what to say: 'Let's solve it together!' Watch as Oliver and Pip learn how teamwork and friendship can make even the trickiest problems easy and fun. This sweet story reminds us that helping our friends builds strong connections and brings so much joy. Share this adventure with your little one and talk about how helping friends makes everyone happy! #Bedtime01Fables #OliverFox #KidsFriendship #TeamworkFun #WonderwoodValley",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TeamworkFun",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "What is something you helped your friend with today?",
+        "alt_text": "Oliver Fox and Pip Sparrow smiling after getting a shiny pebble from a tall flower in a bright meadow.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Oliver and Pip help each other in the story?"
+    }
+}

@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Toby Turtle and the Tree's Little Surprise
+Oliver Fox and the High Pebble
 
 Subtitle:
-Toby helps keep Wonderwood Valley clean.
+A story about helping friends
 
 Theme:
-Trees
+Working Together
 
 Moral:
-We can all help keep nature clean and safe.
+Helping friends and working together makes problems easier.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
 ## Character
 
 Name:
-Toby Turtle
+Oliver Fox
 
 Species:
-Sea Turtle
+Fox
 
 Personality:
-Patient, Thoughtful, Nature Lover, Calm
+Funny, Creative, Friendly, Brave
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-254
+262
 
 Generated:
-2026-09-24 05:13:12
+2026-10-13 07:00:19
 
 ---
 
