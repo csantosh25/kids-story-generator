@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Max Monkey's Brave Pirate Quest
+Luna Owl's Cloud Questions
 
 Subtitle:
-A story about finding courage
+A Sky Adventure
 
 Theme:
-Pirates
+Weather
 
 Moral:
-Being confident means being brave enough to try, even when you feel a little scared.
+Learning new things is exciting and fun.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
 ## Character
 
 Name:
-Max Monkey
+Luna Owl
 
 Species:
-Monkey
+Owl
 
 Personality:
-Adventurous, Playful, Energetic, Curious
+Wise, Curious, Calm, Encouraging
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-310
+176
 
 Generated:
-2026-09-25 05:15:32
+2026-10-14 05:15:36
 
 ---
 
