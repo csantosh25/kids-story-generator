@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000018",
-        "created_date": "2026-09-26",
-        "status": "completed",
-        "title": "Penny Penguin's Happy Brush",
-        "theme": "Brushing Teeth",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20260926_051854_penny_penguin_s_happy_brush",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000019",
         "created_date": "2026-09-27",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Owl"
         },
         "folder": "output/20261014_051335_luna_owl_s_cloud_questions",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000028",
+        "created_date": "2026-10-16",
+        "status": "completed",
+        "title": "Max Monkey's Brave Stream Jump",
+        "theme": "Magic Forest",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20261016_045050_max_monkey_s_brave_stream_jump",
         "instagram": {
             "posted": true,
             "post_url": ""
