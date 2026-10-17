@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000019",
-        "created_date": "2026-09-27",
-        "status": "completed",
-        "title": "Barnaby's Twinkling Star Wish",
-        "theme": "Stars, Calmness",
-        "character": {
-            "name": "Barnaby Bunny",
-            "species": "Rabbit"
-        },
-        "folder": "output/20260927_053658_barnaby_s_twinkling_star_wish",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000020",
         "created_date": "2026-10-03",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261016_045050_max_monkey_s_brave_stream_jump",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000029",
+        "created_date": "2026-10-17",
+        "status": "completed",
+        "title": "Penny's Playtime Water Break",
+        "theme": "Healthy Habits",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261017_045210_penny_s_playtime_water_break",
         "instagram": {
             "posted": true,
             "post_url": ""

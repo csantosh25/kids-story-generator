@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Penny's Playtime Water Break",
+        "subtitle": "A Story about Staying Hydrated for Play",
+        "theme": "Healthy Habits",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Drinking water helps us stay healthy and energetic for play."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance. Penny happily holds a blue water bottle at Snowy Shores, with a partly built snow castle in the background. Warm, cheerful, energetic mood. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Snowy Shores with a partly built snow castle",
+        "visual_action": "Penny Penguin happily holding a blue water bottle",
+        "visual_object": "a blue water bottle",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Play Day",
+            "text": "Penny Penguin was at Snowy Shores on Saturday. The sun shone bright and the air felt cool. She loved to build big snow castles there. Penny rolled a very large snowball. Then she stacked it high with smaller ones. Her flippers moved quickly, building fast. \"Healthy habits make every day fun!\" she said. She felt strong and happy as she played.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "snowy beach",
+            "icon": "snowflake",
+            "speaker_notes": "Penny Penguin starts her fun day building a snow castle at Snowy Shores."
+        },
+        {
+            "page": 2,
+            "title": "Feeling a Little Tired",
+            "text": "Penny kept playing for a long, long time. She made tall towers and strong castle walls. The sun felt warmer on her black feathers now. Penny started to feel a little bit tired. Her orange beak felt a tiny bit dry inside. She slowed down her building, feeling less zip. \"Hmm,\" Penny thought, \"I feel a bit sleepy now.\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "snowy beach",
+            "icon": "sun",
+            "speaker_notes": "Penny starts to feel tired and a bit dry while playing under the warmer sun."
+        },
+        {
+            "page": 3,
+            "title": "Remembering a Healthy Habit",
+            "text": "Penny stopped playing in the soft snow. She remembered her own happy catchphrase. \"Healthy habits make every day fun!\" she thought. What healthy habit did she forget today? Penny looked at her strong flippers. She thought about all her morning play. \"Ah!\" Penny suddenly remembered something big. She had not drunk any water all morning!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "snow home interior",
+            "icon": "water drop",
+            "speaker_notes": "Penny realizes she forgot to drink water to stay healthy and energetic."
+        },
+        {
+            "page": 4,
+            "title": "A Cool, Refreshing Drink",
+            "text": "Penny went quickly to her little snow home. She opened her small blue water bottle with her beak. The water looked so cool and refreshing inside. Penny took a big, long drink, \"Gulp, gulp!\" Then she took another happy gulp. \"Ah,\" she sighed. That felt so good and fresh! She felt the cool water giving her energy back.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "snow home interior",
+            "icon": "glass",
+            "speaker_notes": "Penny drinks water and feels the cool refreshment and renewed energy."
+        },
+        {
+            "page": 5,
+            "title": "Happy and Strong Again",
+            "text": "Penny felt much better now. Her energy came back, hop and skip! She went back to her big snow castle. Penny added the very last snowflake. It was the best castle she had ever built! \"Drinking water helps me play all day!\" she said happily. Penny smiled, feeling strong and very happy inside.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "snowy beach",
+            "icon": "completed castle",
+            "speaker_notes": "Penny finishes her castle, feeling strong and happy, remembering the importance of water."
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin is having the best time building a giant snow castle at Snowy Shores! She's rolling snowballs and stacking them high, full of energy. But after a while, even sporty Penny starts to feel a little tired and her throat feels dry. Can she remember the healthy habit she needs to feel strong again? This sweet story teaches children the importance of drinking water to keep their bodies and minds healthy, even during fun playtime! #Bedtime01Fables #PennyPenguin #KidsHealth #HydrationForKids #StorytimeFun",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealth",
+            "#HydrationForKids",
+            "#StorytimeFun"
+        ]
+    },
+    "email": {
+        "subject": "Penny Penguin's Fun Water Break!",
+        "preview": "Join Penny Penguin as she learns why drinking water helps her play all day!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Playtime Water Break | Healthy Habits for Kids",
+        "description": "Penny Penguin is playing hard at Snowy Shores, building a big snow castle! But when she starts to feel tired, she remembers a very important healthy habit. Watch as Penny discovers how drinking water helps her stay energetic and happy to play all day long. A heartwarming story about healthy habits and the importance of staying hydrated for children aged 3-6.",
+        "keywords": [
+            "healthy habits",
+            "drinking water",
+            "kids story",
+            "penguin story",
+            "children's book",
+            "Penny Penguin",
+            "Wonderwood Valley",
+            "preschool",
+            "storytime",
+            "hydration"
+        ]
+    },
+    "publishing": {
+        "hook": "Does your little one remember to drink water while playing?",
+        "instagram_caption_short": "Penny Penguin loves to play, but sometimes she forgets a very important healthy habit! Join Penny as she discovers how drinking water helps her stay strong and happy all day long. A wonderful story about staying hydrated for active little ones!",
+        "instagram_caption_long": "Penny Penguin is having the best time building a giant snow castle at Snowy Shores! She's rolling snowballs and stacking them high, full of energy. But after a while, even sporty Penny starts to feel a little tired and her throat feels dry. Can she remember the healthy habit she needs to feel strong again? This sweet story teaches children the importance of drinking water to keep their bodies and minds healthy, even during fun playtime!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealth",
+            "#HydrationForKids",
+            "#StorytimeFun"
+        ],
+        "first_comment": "What is your little one's favourite way to stay cool and hydrated? Share below!",
+        "alt_text": "Penny Penguin, a small black and white penguin, stands happily at Snowy Shores, holding a blue water bottle. A snow castle is in the background.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What do you drink when you feel thirsty after playing?"
+    }
+}

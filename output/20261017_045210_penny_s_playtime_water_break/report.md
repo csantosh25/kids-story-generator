@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Barnaby's Twinkling Star Wish
+Penny's Playtime Water Break
 
 Subtitle:
-A quiet evening in Wonderwood Valley.
+A Story about Staying Hydrated for Play
 
 Theme:
-Stars, Calmness
+Healthy Habits
 
 Moral:
-Taking deep breaths helps you feel calm and ready for sleep.
+Drinking water helps us stay healthy and energetic for play.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Barnaby Bunny
+Penny Penguin
 
 Species:
-Rabbit
+Penguin
 
 Personality:
-Gentle, Sleepy, Kind, Imaginative
+Healthy, Sporty, Cheerful, Helpful
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-222
+286
 
 Generated:
-2026-09-27 05:37:45
+2026-10-17 04:53:22
 
 ---
 
