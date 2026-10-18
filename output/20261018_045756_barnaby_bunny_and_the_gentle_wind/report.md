@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Penny Penguin's Tidy Home Fun
+Barnaby Bunny and the Gentle Wind
 
 Subtitle:
-A story about helping at home.
+A calming story for sleepytime.
 
 Theme:
-Helping at Home
+Gentle Wind
 
 Moral:
-Helping to tidy your home makes your body move and your mind feel happy and quiet.
+Finding calm through gentle breathing.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Penny Penguin
+Barnaby Bunny
 
 Species:
-Penguin
+Rabbit
 
 Personality:
-Healthy, Sporty, Cheerful, Helpful
+Gentle, Sleepy, Kind, Imaginative
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-231
+211
 
 Generated:
-2026-10-03 05:38:09
+2026-10-18 04:59:11
 
 ---
 
