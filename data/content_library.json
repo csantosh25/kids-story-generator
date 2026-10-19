@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000021",
-        "created_date": "2026-10-04",
-        "status": "completed",
-        "title": "Barnaby Bunny's Calm Night",
-        "theme": "Good Night Friends",
-        "character": {
-            "name": "Barnaby Bunny",
-            "species": "Rabbit"
-        },
-        "folder": "output/20261004_061333_barnaby_bunny_s_calm_night",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000022",
         "created_date": "2026-10-06",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Rabbit"
         },
         "folder": "output/20261018_045756_barnaby_bunny_and_the_gentle_wind",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000031",
+        "created_date": "2026-10-19",
+        "status": "completed",
+        "title": "Bella Bear and Pip's Honest Tale",
+        "theme": "Being Honest",
+        "character": {
+            "name": "Bella Bear",
+            "species": "Bear"
+        },
+        "folder": "output/20261019_050559_bella_bear_and_pip_s_honest_tale",
         "instagram": {
             "posted": true,
             "post_url": ""

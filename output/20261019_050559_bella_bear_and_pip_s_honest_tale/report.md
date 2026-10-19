@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Barnaby Bunny's Calm Night
+Bella Bear and Pip's Honest Tale
 
 Subtitle:
-Finding Peace Before Sleep
+Learning the Joy of Truth
 
 Theme:
-Good Night Friends
+Being Honest
 
 Moral:
-Thinking of happy memories and friends can help you relax before sleep.
+It's always best to be honest, even when mistakes happen. Honesty brings peace and happiness.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Barnaby Bunny
+Bella Bear
 
 Species:
-Rabbit
+Bear
 
 Personality:
-Gentle, Sleepy, Kind, Imaginative
+Kind, Helpful, Gentle, Patient
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-216
+172
 
 Generated:
-2026-10-04 06:14:20
+2026-10-19 05:07:17
 
 ---
 

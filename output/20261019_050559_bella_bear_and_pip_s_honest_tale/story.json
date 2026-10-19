@@ -1,0 +1,124 @@
+{
+    "story_info": {
+        "title": "Bella Bear and Pip's Honest Tale",
+        "subtitle": "Learning the Joy of Truth",
+        "theme": "Being Honest",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "It's always best to be honest, even when mistakes happen. Honesty brings peace and happiness."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Sparrow",
+                "species": "Sparrow",
+                "appearance": "A tiny brown sparrow with bright, quick eyes and a little chirpy beak.",
+                "role": "accidentally breaks a branch and needs help being honest"
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D style, children's book illustration. Bella Bear, a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, a little cream-colored tummy patch and short rounded ears, gently comforting Pip Sparrow, a tiny brown sparrow with bright, quick eyes and a little chirpy beak. They are in Sunny Forest, near a flower bush with a tiny broken branch. Warm cinematic lighting, pastel colors, vertical composition, Instagram friendly. Reserve lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny Forest, near a flower bush",
+        "visual_action": "Bella Bear comforting sad Pip Sparrow",
+        "visual_object": "a small flower bush with a broken branch",
+        "mood": "Warm and empathetic"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sad Morning in Sunny Forest",
+            "text": "Bella Bear walked in Sunny Forest. The morning sun felt warm. She saw her friend, Pip Sparrow. Pip sat near a pretty flower bush. Pip looked very, very sad. Bella went to say hello.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Bella Bear is walking happily in the forest. She spots her friend Pip Sparrow looking upset."
+        },
+        {
+            "page": 2,
+            "title": "Pip's Broken Secret",
+            "text": "\"Hello, Pip!\" Bella said softly. \"What is wrong?\" Pip looked up with big, sad eyes. \"I broke a branch,\" Pip chirped. Pip pointed to a small, broken branch. It was on Mama Bear's favorite bush.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "garden",
+            "icon": "flower",
+            "speaker_notes": "Bella gently asks Pip what is troubling him. Pip reveals a broken branch on a flower bush."
+        },
+        {
+            "page": 3,
+            "title": "Kind Hearts Make Happy Days!",
+            "text": "Bella saw the broken branch. She understood Pip was sad. \"Mistakes can happen, little friend,\" Bella said. \"It is important to be honest.\" Bella hugged Pip gently. \"Kind hearts make happy days!\" she whispered.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Bella reassures Pip that mistakes happen and encourages him to be honest, sharing her catchphrase."
+        },
+        {
+            "page": 4,
+            "title": "Being Brave Together",
+            "text": "\"Let's tell Mama Bear together,\" Bella said. Pip felt a little scared. But Bella held Pip's tiny wing. They walked to Mama Bear's cozy home. Pip felt brave with Bella next to him.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "home",
+            "icon": "house",
+            "speaker_notes": "Bella and Pip decide to go to Mama Bear. Bella supports Pip as they walk to her home."
+        },
+        {
+            "page": 5,
+            "title": "The Joy of Being Honest",
+            "text": "Pip told Mama Bear the truth. Mama Bear listened with a warm smile. She showed them how to help the branch. Pip felt so much better. Being honest made Pip's heart light. Bella was happy too.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "calm",
+            "icon": "smile",
+            "speaker_notes": "Pip tells Mama Bear the truth. Mama Bear helps them, and Pip feels relief and happiness from being honest."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Bella Bear and Pip Sparrow on a heartwarming journey in Sunny Forest. Pip learns that telling the truth makes everything better, even after a small accident. This story teaches little ones the importance of honesty and kindness. #Bedtime01Fables #BellaBear",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Bella Bear Teaches Pip the Power of Honesty!",
+        "preview": "Discover how Bella Bear helps her friend Pip learn about honesty and kindness in this heartwarming tale."
+    },
+    "youtube": {
+        "title": "Bella Bear and Pip's Honest Tale | A Story About Kindness & Truth",
+        "description": "Join Bella Bear and her friend Pip Sparrow in Wonderwood Valley. When Pip accidentally breaks a branch, Bella helps him understand that telling the truth is always the best way. A heartwarming story about honesty, kindness, and friendship for children aged 4-7.",
+        "keywords": [
+            "children's story",
+            "kindness story",
+            "honesty for kids",
+            "Bella Bear",
+            "Wonderwood Valley",
+            "moral story",
+            "toddler story"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when a little bird breaks a favorite branch?",
+        "instagram_caption_short": "Join Bella Bear and Pip Sparrow in Sunny Forest! Pip has a little secret, but Bella reminds him that kind hearts make happy days. This sweet tale gently teaches children the importance of being honest and how it brings peace. Save this story for your next reading time! 💛\n#Bedtime01Fables #BellaBear #KidsHonesty #MoralStoriesForKids #ChildrensBooksIndia",
+        "instagram_caption_long": "In the gentle glow of Sunny Forest, Bella Bear finds her friend Pip Sparrow looking very sad. Pip has accidentally broken a branch on Mama Bear's favorite flower bush, and he feels quite worried. But Bella, with her kind heart, reminds Pip that mistakes can happen and the most important thing is to be honest.\n\nTogether, they find the courage to tell Mama Bear the truth. This heartwarming story beautifully illustrates how being honest, even when it's a little scary, can bring a wonderful feeling of lightness and happiness. It's a perfect read to gently teach your little one about empathy, kindness, and the peace that comes from speaking the truth.\n\nSave this story for your next reading time! 💛\n#Bedtime01Fables #BellaBear #KidsHonesty #MoralStoriesForKids #ChildrensBooksIndia",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsHonesty",
+            "#MoralStoriesForKids",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "Has your little one ever felt better after telling the truth about something?",
+        "alt_text": "Bella Bear, a small brown bear cub, gently comforts Pip Sparrow, a tiny bird, who looks sad. They are in a sunny forest next to a flower bush with a small broken branch.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What does it feel like when we tell the truth?"
+    }
+}
