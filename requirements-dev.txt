@@ -1,0 +1,6 @@
+# Test-only dependencies (not needed by the GitHub Actions workflows):
+#   pip install -r requirements.txt -r requirements-dev.txt
+# pyyaml is used by the workflow-structure tests
+# (tests/test_generate_reel_workflow.py, tests/test_publish_instagram_workflow.py).
+pytest==9.0.3
+PyYAML==6.0.3
