@@ -1,0 +1,137 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and Pip Squirrel's Acorn Adventure",
+        "subtitle": "A story about trust and friendship",
+        "theme": "Trust",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Good friends help each other and build trust."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small, fluffy grey squirrel with a bushy tail, bright curious eyes, and tiny paws.",
+                "role": "Needs Oliver's help to get his favourite acorn from a thorny bush."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, with clever amber eyes and a playful, confident grin. Oliver is gently holding thorny bush branches up. Pip Squirrel, a small, fluffy grey squirrel with a bushy tail, bright curious eyes, and tiny paws, is reaching for a shiny brown acorn under the bush. The scene is in a sunny Blossom Meadow. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly, reserve lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A sunny Blossom Meadow",
+        "visual_action": "Oliver Fox holding thorny branches up for Pip Squirrel",
+        "visual_object": "A shiny brown acorn",
+        "mood": "Warm and helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sad Friend",
+            "text": "Oliver Fox walked in Blossom Meadow. The sun was warm and bright. He saw Pip Squirrel near a tall bush. Pip looked very sad. Oliver went closer. \"Hello, Pip!\" Oliver said. \"Why are you sad today?\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Introduce Oliver and Pip in a cheerful meadow, with Pip showing sadness."
+        },
+        {
+            "page": 2,
+            "title": "The Tricky Bush",
+            "text": "Pip held a tiny paw to his cheek. \"Oh, Oliver!\" he squeaked. \"My very best acorn rolled under this bush. It has sharp thorns!\" Pip pointed with his nose. \"I cannot reach it. It looks tricky.\" Oliver looked at the bush. \"Hmm, let's solve it together!\"",
+            "background_color": "#FCF6E9",
+            "visual_theme": "bush",
+            "icon": "leaf",
+            "speaker_notes": "Pip explains his problem with the thorny bush and the lost acorn."
+        },
+        {
+            "page": 3,
+            "title": "Oliver's Good Idea",
+            "text": "Oliver thought for a moment. \"Pip, I can gently hold the bush branches up. You can quickly go under and get your acorn!\" he said. Pip looked at the thorns. \"But what if I get poked? What if the branches fall?\" Pip asked. He felt a little scared.",
+            "background_color": "#FDF1E6",
+            "visual_theme": "thorny bush",
+            "icon": "thorn",
+            "speaker_notes": "Oliver shares his plan, but Pip shows hesitation and fear."
+        },
+        {
+            "page": 4,
+            "title": "Learning to Trust",
+            "text": "\"Don't worry, Pip,\" Oliver said with a kind smile. \"I will hold them very steady. You must trust me. I will not let go until you are safe. We are friends, remember?\" Pip looked at Oliver's kind face. He took a deep breath. \"Okay, Oliver. I trust you.\"",
+            "background_color": "#FAE7D4",
+            "visual_theme": "friends talking",
+            "icon": "heart",
+            "speaker_notes": "Oliver reassures Pip, explaining the importance of trust in friendship."
+        },
+        {
+            "page": 5,
+            "title": "Acorn Rescued!",
+            "text": "Oliver used his strong paws. He slowly lifted the thorny branches high. \"Now, Pip!\" he called softly. Pip quickly scurried under the bush. He grabbed his shiny acorn! \"I got it!\" Pip cheered. Oliver slowly put the branches down. Pip gave him a big hug.",
+            "background_color": "#FEEEDF",
+            "visual_theme": "rescue action",
+            "icon": "acorn",
+            "speaker_notes": "Oliver and Pip execute the plan successfully, with Pip retrieving the acorn."
+        },
+        {
+            "page": 6,
+            "title": "Happy Friends",
+            "text": "\"Thank you, Oliver!\" Pip said. \"You helped me so much.\" Oliver smiled. \"Friends help friends. We trusted each other, and it worked!\" They sat together, munching on the acorn. The sun shone on Blossom Meadow. Oliver felt happy to be a good friend.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "happy ending",
+            "icon": "sun",
+            "speaker_notes": "Oliver and Pip reflect on their successful teamwork and stronger friendship."
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox finds his friend Pip Squirrel in a tricky spot! Can they work together and trust each other to solve the problem? Join them in Blossom Meadow for a warm story about friendship and helping hands. ✨",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TrustStories",
+            "#PreschoolAdventures"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Oliver Fox and Pip Squirrel's Acorn Adventure",
+        "preview": "Join Oliver Fox and Pip Squirrel in Blossom Meadow for a story about helping friends and learning to trust!"
+    },
+    "youtube": {
+        "title": "Oliver Fox and Pip Squirrel's Acorn Adventure | A Story About Trust and Friendship",
+        "description": "Come along with Oliver Fox as he helps his friend Pip Squirrel retrieve a lost acorn from a thorny bush. This heartwarming tale teaches little ones about building strong friendships and the importance of trust. Perfect for children aged 3-6 years, filled with fun and a calming message. Join us daily for new Wonderwood Valley stories!",
+        "keywords": [
+            "Oliver Fox story",
+            "Pip Squirrel",
+            "friendship story",
+            "trust for kids",
+            "children's adventure",
+            "Wonderwood Valley",
+            "kids story time",
+            "preschool stories"
+        ]
+    },
+    "publishing": {
+        "hook": "Can Oliver help his friend Pip get his favorite acorn?",
+        "instagram_caption_short": "Oliver Fox finds his friend Pip Squirrel in a tricky spot! Can they work together and trust each other to solve the problem? Join them in Blossom Meadow for a warm story about friendship and helping hands. ✨",
+        "instagram_caption_long": "Today in Wonderwood Valley, Oliver Fox discovers his friend Pip Squirrel in a bit of a pickle! Pip's favourite acorn has rolled right under a prickly bush, and he's too scared to get it. Watch as Oliver comes up with a clever plan and helps Pip learn to trust. This story is perfect for teaching little ones about the strength of friendship and how trusting each other can make any challenge easier. It's a gentle adventure that shows how friends always help each other out. Your child will love seeing Oliver and Pip's teamwork! ❤️",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TrustStories",
+            "#PreschoolAdventures"
+        ],
+        "first_comment": "What's something special you've helped a friend with today?",
+        "alt_text": "Oliver Fox, a red fox, gently holds thorny bush branches up while Pip Squirrel, a grey squirrel, reaches for a brown acorn underneath. They are in a sunny meadow.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What does it mean to trust a friend?"
+    }
+}

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000022",
-        "created_date": "2026-10-06",
-        "status": "completed",
-        "title": "Oliver Fox and the Lost Shiny Pebble",
-        "theme": "Listening",
-        "character": {
-            "name": "Oliver Fox",
-            "species": "Fox"
-        },
-        "folder": "output/20261006_064345_oliver_fox_and_the_lost_shiny_pebble",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000023",
         "created_date": "2026-10-08",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Bear"
         },
         "folder": "output/20261019_050559_bella_bear_and_pip_s_honest_tale",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000032",
+        "created_date": "2026-10-20",
+        "status": "completed",
+        "title": "Oliver Fox and Pip Squirrel's Acorn Adventure",
+        "theme": "Trust",
+        "character": {
+            "name": "Oliver Fox",
+            "species": "Fox"
+        },
+        "folder": "output/20261020_050852_oliver_fox_and_pip_squirrel_s_acorn_adventure",
         "instagram": {
             "posted": true,
             "post_url": ""

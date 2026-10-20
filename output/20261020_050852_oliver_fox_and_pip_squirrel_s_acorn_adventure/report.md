@@ -3,22 +3,22 @@
 ## Story Information
 
 Title:
-Oliver Fox and the Lost Shiny Pebble
+Oliver Fox and Pip Squirrel's Acorn Adventure
 
 Subtitle:
-A lesson in listening carefully
+A story about trust and friendship
 
 Theme:
-Listening
+Trust
 
 Moral:
-Good friends listen carefully to each other.
+Good friends help each other and build trust.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
@@ -38,13 +38,13 @@ Funny, Creative, Friendly, Brave
 ## Statistics
 
 Slides:
-5
+6
 
 Total Words:
-252
+266
 
 Generated:
-2026-10-06 06:44:35
+2026-10-20 05:10:05
 
 ---
 
