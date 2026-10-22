@@ -1,0 +1,120 @@
+{
+    "story_info": {
+        "title": "Toby Turtle's Clean Lake Day",
+        "subtitle": "A small friend helps nature.",
+        "theme": "Nature, Ocean",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "It is good to help keep nature clean."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A cheerful young sea turtle named Toby, with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers, swimming in clear blue water. He is gently looking at a green plant with a small, shiny blue wrapper caught on it. The light is warm and cinematic, reflecting off the water.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Underwater in Crystal Lake",
+        "visual_action": "Toby Turtle looking at litter on a plant",
+        "visual_object": "A blue wrapper",
+        "mood": "Thoughtful and caring"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Toby's Morning Swim",
+            "text": "Toby Turtle loved the lake. It was a bright, sunny morning. He swam slowly in Crystal Lake. He saw many colourful fish swimming by. He saw tall, green water plants swaying gently. \"Slow and steady discovers wonders!\" he thought. He felt very happy in his beautiful home.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "ocean",
+            "icon": "fish",
+            "speaker_notes": "Introduce Toby Turtle and his love for Crystal Lake on a beautiful morning."
+        },
+        {
+            "page": 2,
+            "title": "A Sad Plant",
+            "text": "Toby swam deeper, exploring the clear water. He saw a very pretty plant with big leaves. But wait! Something blue was stuck to it. It was a shiny, crinkly wrapper. The plant looked a little sad with the wrapper on it. Toby knew litter did not belong in the lake.",
+            "background_color": "#D4EDF7",
+            "visual_theme": "ocean",
+            "icon": "plant",
+            "speaker_notes": "Introduce the small challenge: a piece of litter on a plant."
+        },
+        {
+            "page": 3,
+            "title": "Toby's Idea",
+            "text": "Toby stopped to think. He was a very patient turtle. He wanted to help the plant feel better. He knew he had to be gentle. He slowly moved his strong blue-green flippers. He got ready to take the wrapper off. He took a tiny breath.",
+            "background_color": "#FDF8E1",
+            "visual_theme": "ocean",
+            "icon": "thought bubble",
+            "speaker_notes": "Show Toby thinking and preparing to solve the problem gently."
+        },
+        {
+            "page": 4,
+            "title": "Helping Hands (or flippers!)",
+            "text": "Very carefully, Toby opened his mouth. He took the blue wrapper gently. He did not pull the plant. He held the wrapper softly in his mouth. Then, he swam slowly to the lake's edge. He put the wrapper on the sand, far away from the water.",
+            "background_color": "#DAF7DC",
+            "visual_theme": "ocean",
+            "icon": "wrapper",
+            "speaker_notes": "Show Toby taking action to remove the litter safely."
+        },
+        {
+            "page": 5,
+            "title": "A Happy Lake",
+            "text": "Now the big plant was free! It swayed happily in the clean water. The lake looked even more beautiful. Toby felt so warm inside. He helped his Crystal Lake home. He kept it safe for all the fish and plants. \"Slow and steady discovers wonders!\" he smiled proudly.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "ocean",
+            "icon": "clean water",
+            "speaker_notes": "Conclude with the happy outcome and Toby's positive feeling about helping nature."
+        }
+    ],
+    "instagram": {
+        "caption": "What if a tiny piece of trash made a big plant sad? 🐢 Dive into a gentle adventure with Toby Turtle this Thursday morning! As Toby swims through his beloved Crystal Lake, he finds a shiny blue wrapper stuck on a beautiful water plant. It looks so sad! Toby, with his patient and thoughtful heart, knows exactly what to do. This heartwarming story teaches children the joy of caring for nature and keeping our beautiful world clean, one gentle flipper at a time. It shows how even small actions can make a big difference! 💖\n📚 Save this story for your next reading time.\n#Bedtime01Fables",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#ProtectOurPlanet",
+            "#ChildrensBooksIndia"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Gentle Adventure: A Clean Lake Day! 🐢",
+        "preview": "Join Toby Turtle as he helps keep Crystal Lake clean and beautiful in this heartwarming story."
+    },
+    "youtube": {
+        "title": "Toby Turtle's Clean Lake Day | A Nature Adventure for Kids 4-7",
+        "description": "Splash into a wonderful story with Toby Turtle! Today, Toby finds a piece of litter in his beloved Crystal Lake. Watch how his patience and kindness help him keep the lake clean and safe for all the plants and fish. This story teaches little ones about loving and protecting nature. Perfect for children aged 4-7!",
+        "keywords": [
+            "Toby Turtle",
+            "children's story",
+            "nature adventure",
+            "clean lake",
+            "protect nature",
+            "kids education",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "What if a tiny piece of trash made a big plant sad?",
+        "instagram_caption_short": "What if a tiny piece of trash made a big plant sad? Join Toby Turtle as he discovers something out of place in his beautiful Crystal Lake home. See how his slow and steady help makes a big difference for nature! Share this story to inspire little ones to protect our world. #Bedtime01Fables",
+        "instagram_caption_long": "What if a tiny piece of trash made a big plant sad? 🐢 Dive into a gentle adventure with Toby Turtle this Thursday morning! As Toby swims through his beloved Crystal Lake, he finds a shiny blue wrapper stuck on a beautiful water plant. It looks so sad! Toby, with his patient and thoughtful heart, knows exactly what to do. This heartwarming story teaches children the joy of caring for nature and keeping our beautiful world clean, one gentle flipper at a time. It shows how even small actions can make a big difference! 💖\n📚 Save this story for your next reading time.\n#Bedtime01Fables",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#ProtectOurPlanet",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What small thing can your little one do today to help nature around them? Let us know! 🌎",
+        "alt_text": "Toby Turtle, a young sea turtle, gently helps to remove a blue wrapper from a green water plant in a clear lake.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "After reading, you can ask: \"Toby helped clean the lake. What small thing can we do today to help keep our park or garden clean?\""
+    }
+}

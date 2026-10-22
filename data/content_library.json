@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000023",
-        "created_date": "2026-10-08",
-        "status": "completed",
-        "title": "Toby Turtle's Thirsty Flowers",
-        "theme": "Flowers",
-        "character": {
-            "name": "Toby Turtle",
-            "species": "Sea Turtle"
-        },
-        "folder": "output/20261008_062947_toby_turtle_s_thirsty_flowers",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000024",
         "created_date": "2026-10-09",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Fox"
         },
         "folder": "output/20261020_050852_oliver_fox_and_pip_squirrel_s_acorn_adventure",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000033",
+        "created_date": "2026-10-22",
+        "status": "completed",
+        "title": "Toby Turtle's Clean Lake Day",
+        "theme": "Nature, Ocean",
+        "character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle"
+        },
+        "folder": "output/20261022_051345_toby_turtle_s_clean_lake_day",
         "instagram": {
             "posted": true,
             "post_url": ""

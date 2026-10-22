@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Toby Turtle's Thirsty Flowers
+Toby Turtle's Clean Lake Day
 
 Subtitle:
-A kind adventure in Blossom Meadow
+A small friend helps nature.
 
 Theme:
-Flowers
+Nature, Ocean
 
 Moral:
-It is good to care for nature and help living things.
+It is good to help keep nature clean.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-274
+236
 
 Generated:
-2026-10-08 06:30:36
+2026-10-22 05:14:59
 
 ---
 
