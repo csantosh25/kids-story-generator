@@ -3,22 +3,22 @@
 ## Story Information
 
 Title:
-Max Monkey's Pirate Map!
+Max Monkey's Brave Cave Hunt
 
 Subtitle:
-An adventure of courage and discovery.
+A curious monkey's big adventure!
 
 Theme:
-Pirates
+Hidden Cave
 
 Moral:
-Trying new things makes you feel strong and brave.
+Being brave helps you find wonderful things.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-187
+245
 
 Generated:
-2026-10-09 06:33:11
+2026-10-23 05:13:53
 
 ---
 

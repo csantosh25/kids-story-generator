@@ -1,0 +1,115 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Brave Cave Hunt",
+        "subtitle": "A curious monkey's big adventure!",
+        "theme": "Hidden Cave",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Being brave helps you find wonderful things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Max Monkey, a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile. Max is cautiously peeking into a small, dark cave entrance in a lush, green Adventure Jungle. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A sunny Adventure Jungle clearing near rocks",
+        "visual_action": "Max Monkey peeks into a dark cave entrance",
+        "visual_object": "A dark cave entrance",
+        "mood": "Curious, adventurous, warm"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Max's New Day",
+            "text": "Max Monkey woke up. 'Adventure is waiting!' he said. He stretched his long tail. Today felt like a special day. Max wanted to explore something new. He thought of the Adventure Jungle. It was his favorite place. He packed a juicy mango. Then, Max swung off into the trees.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "Adventure Jungle",
+            "icon": "tree",
+            "speaker_notes": "Max wakes up excited for a new adventure in his favorite place."
+        },
+        {
+            "page": 2,
+            "title": "A Hidden Spot",
+            "text": "Max jumped from vine to vine. The jungle was green and bright. He heard birds sing. Suddenly, he saw something. Hidden behind big green leaves was a small opening. It looked like a tiny door in a rock. 'Is that a cave?' Max thought. His eyes grew wide.",
+            "background_color": "#D9FDE9",
+            "visual_theme": "Adventure Jungle",
+            "icon": "leaf",
+            "speaker_notes": "Max discovers a mysterious opening in the jungle."
+        },
+        {
+            "page": 3,
+            "title": "Feeling Brave",
+            "text": "Max walked closer to the opening. It was dark inside. A little bit dark, a little bit new. Max felt a tiny flutter in his tummy. 'What if it's too spooky?' he thought. But then he remembered. Adventures are always fun. And he was Max Monkey! He was brave.",
+            "background_color": "#E9D9FD",
+            "visual_theme": "Cave Entrance",
+            "icon": "rock",
+            "speaker_notes": "Max feels a bit nervous but reminds himself to be brave."
+        },
+        {
+            "page": 4,
+            "title": "A Sparkling Secret",
+            "text": "Max took a big breath. He peeked his head inside. Wow! The cave was not spooky at all. It was small and cozy. Little shiny stones looked pretty on the walls. Max saw a pretty blue stone. He picked it up gently. It was a treasure! He explored a little more.",
+            "background_color": "#D9FDEA",
+            "visual_theme": "Inside Cave",
+            "icon": "gem",
+            "speaker_notes": "Max bravely enters the cave and finds a beautiful surprise."
+        },
+        {
+            "page": 5,
+            "title": "Proud Max",
+            "text": "Max came out of the cave. He held his blue shiny stone. A happy smile spread across his face. He felt very proud. He was brave, and he found a special secret place. The sun felt warm on his fur. Max knew he could do many brave things.",
+            "background_color": "#FDFDD9",
+            "visual_theme": "Sunny Jungle",
+            "icon": "sun",
+            "speaker_notes": "Max emerges from the cave, feeling happy and confident after his adventure."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Max Monkey as he finds a mysterious opening in the Adventure Jungle. Will his curiosity win over his small doubts? This story helps teach little ones about overcoming small fears and trusting their adventurous spirit. ✨ Share this story with a friend who loves adventure! #KidsStories #BedtimeStory",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Max Monkey's Brave Cave Hunt!",
+        "preview": "Join Max Monkey on a curious adventure to a hidden cave!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Brave Cave Hunt | Wonderwood Valley Stories for Kids",
+        "description": "Watch Max Monkey, the adventurous little monkey, discover a hidden cave in the Adventure Jungle! This fun story for children aged 3-6 years teaches about courage and confidence when exploring new places. Perfect for storytime!",
+        "keywords": [
+            "max monkey story",
+            "childrens adventure story",
+            "wonderwood valley",
+            "confidence for kids",
+            "kids cave exploration"
+        ]
+    },
+    "publishing": {
+        "hook": "What if a little shadow makes you wonder?",
+        "instagram_caption_short": "What if a little shadow makes you wonder? Join Max Monkey as he finds a mysterious opening in the Adventure Jungle. Will his curiosity win over his small doubts? This story helps teach little ones about overcoming small fears and trusting their adventurous spirit. ✨ Share this story with a friend who loves adventure!",
+        "instagram_caption_long": "What if a little shadow makes you wonder? Max Monkey loves adventures, but even he feels a little flutter when he finds a dark, hidden cave! Follow Max as he discovers a secret in the Adventure Jungle. This heartwarming tale is all about being brave, even when something new feels a little bit scary. Max shows us that sometimes, the best discoveries are just beyond our worries. Reading this story together can help your child feel confident to try new things and explore their world. ✨ Share this story with a friend who loves adventure!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceBoost",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What new place did your little one explore recently?",
+        "alt_text": "Max Monkey, a small energetic monkey with brown fur, stands curiously at the entrance of a dark, hidden cave in a green jungle.",
+        "call_to_action": "✨ Share this story with a friend who loves adventure!",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Max feel before going into the cave? How did he feel after?"
+    }
+}
