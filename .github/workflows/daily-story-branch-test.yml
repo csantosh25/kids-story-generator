@@ -1,0 +1,100 @@
+name: Daily Story Branch Test
+
+# Manual end-to-end test of `python run_daily.py` against the code on the
+# branch selected in "Run workflow" -- unlike "Daily Story Generator",
+# which always checks out and pushes to main.
+#
+# SIDE EFFECTS (real, not simulated):
+#   - Paid Gemini calls (story text) and a paid OpenAI image generation
+#     (cover), using the same secrets as the production workflow.
+#   - A REAL email is sent to EMAIL_TO with every generated story file
+#     attached (services/email_service.py, called by StoryPipeline.run()).
+#
+# What this workflow deliberately does NOT do:
+#   - No schedule; manual workflow_dispatch only.
+#   - No apply_retention.py, no git commit, no git push (read-only token,
+#     and checkout does not persist credentials). Generated files exist
+#     only on the ephemeral runner and in the uploaded artifact.
+#   - No raw run log in the artifact; use the Actions log instead.
+#
+# NOTE: a manual run uses this file as it exists on the SELECTED branch,
+# not main's copy.
+#   - No Instagram publishing: "Publish Story to Instagram" is triggered
+#     only by a workflow named exactly "Daily Story Generator" (on main),
+#     and this workflow has no Instagram/Cloudinary secrets and never runs
+#     publish_instagram.py.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-story-branch-test-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      # No `ref:` -- for workflow_dispatch this checks out the exact commit
+      # of the branch selected when the run was started.
+      - name: Checkout Selected Branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Show Tested Commit
+        run: |
+          echo "Branch: $GITHUB_REF_NAME"
+          git log -1 --format="Commit: %H%nSubject: %s"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Story Generator (sends a real email)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          PYTHONUNBUFFERED: "1"
+
+        # Output goes to the Actions log only (where GitHub masks secret
+        # values); it is deliberately NOT written to a file or uploaded, as
+        # artifact files are not masked.
+        run: |
+          python run_daily.py
+
+      # Runs even when generation fails. Collects only files this run
+      # created or changed under output/ and data/ (not the stories already
+      # committed on the branch). These are generated story assets and
+      # library metadata; no secrets are written to any of them.
+      - name: Collect Generated Files
+        if: always()
+        run: |
+          mkdir -p branch-test-artifacts
+          git ls-files -z --others --modified -- output data \
+            | while IFS= read -r -d '' file; do
+                if [ -f "$file" ]; then cp --parents "$file" branch-test-artifacts/; fi
+              done
+          find branch-test-artifacts -type f | sort
+
+      - name: Upload Generated Files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-story-branch-test-${{ github.run_id }}
+          path: branch-test-artifacts/
+          if-no-files-found: warn
+          retention-days: 7
