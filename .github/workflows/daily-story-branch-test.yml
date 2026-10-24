@@ -15,6 +15,10 @@ name: Daily Story Branch Test
 #   - No apply_retention.py, no git commit, no git push (read-only token,
 #     and checkout does not persist credentials). Generated files exist
 #     only on the ephemeral runner and in the uploaded artifact.
+#   - No raw run log in the artifact; use the Actions log instead.
+#
+# NOTE: a manual run uses this file as it exists on the SELECTED branch,
+# not main's copy.
 #   - No Instagram publishing: "Publish Story to Instagram" is triggered
 #     only by a workflow named exactly "Daily Story Generator" (on main),
 #     and this workflow has no Instagram/Cloudinary secrets and never runs
@@ -66,15 +70,16 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           PYTHONUNBUFFERED: "1"
 
+        # Output goes to the Actions log only (where GitHub masks secret
+        # values); it is deliberately NOT written to a file or uploaded, as
+        # artifact files are not masked.
         run: |
-          set -o pipefail
-          mkdir -p branch-test-logs
-          python run_daily.py 2>&1 | tee branch-test-logs/run_daily.log
+          python run_daily.py
 
       # Runs even when generation fails. Collects only files this run
       # created or changed under output/ and data/ (not the stories already
-      # committed on the branch), plus the run log. No secrets are written
-      # to any of these files.
+      # committed on the branch). These are generated story assets and
+      # library metadata; no secrets are written to any of them.
       - name: Collect Generated Files
         if: always()
         run: |
@@ -83,10 +88,9 @@ jobs:
             | while IFS= read -r -d '' file; do
                 if [ -f "$file" ]; then cp --parents "$file" branch-test-artifacts/; fi
               done
-          cp -r branch-test-logs branch-test-artifacts/ 2>/dev/null || true
           find branch-test-artifacts -type f | sort
 
-      - name: Upload Generated Files and Logs
+      - name: Upload Generated Files
         if: always()
         uses: actions/upload-artifact@v4
         with:

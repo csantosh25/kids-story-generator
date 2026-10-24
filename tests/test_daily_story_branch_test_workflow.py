@@ -60,7 +60,6 @@ class DailyStoryBranchTestWorkflowTests(unittest.TestCase):
         production = _steps(PRODUCTION_PATH)["Run Story Generator"]
 
         self.assertIn("python run_daily.py", run_step["run"])
-        self.assertIn("set -o pipefail", run_step["run"])
 
         for name in STORY_SECRETS:
             self.assertEqual(run_step["env"][name], production["env"][name])
@@ -87,16 +86,34 @@ class DailyStoryBranchTestWorkflowTests(unittest.TestCase):
         for name in ("INSTAGRAM", "CLOUDINARY"):
             self.assertNotIn(name, parsed)
 
-    def test_uploads_outputs_and_logs_even_on_failure(self):
+    def test_uploads_generated_files_even_on_failure(self):
         steps = _steps()
         collect = steps["Collect Generated Files"]
-        upload = steps["Upload Generated Files and Logs"]
+        upload = steps["Upload Generated Files"]
 
         self.assertEqual(collect["if"], "always()")
         self.assertEqual(upload["if"], "always()")
         self.assertTrue(upload["uses"].startswith("actions/upload-artifact@"))
         self.assertEqual(upload["with"]["path"], "branch-test-artifacts/")
-        self.assertIn("branch-test-logs", collect["run"])
+        self.assertIn("-- output data", collect["run"])
+
+    def test_raw_logs_are_not_written_or_uploaded(self):
+        # Artifact files are not secret-masked like the Actions log, so the
+        # run output must stay in the Actions log only.
+        steps = _steps()
+        commands = "\n".join(step.get("run", "") for step in steps.values())
+
+        self.assertEqual(
+            steps["Run Story Generator (sends a real email)"]["run"].strip(),
+            "python run_daily.py",
+        )
+
+        for forbidden in ("tee", ".log", "branch-test-logs", "> ", ">>"):
+            self.assertNotIn(forbidden, commands)
+
+        for step in steps.values():
+            path = str(step.get("with", {}).get("path", ""))
+            self.assertNotIn("log", path.lower())
 
     def test_no_secrets_outside_generator_step(self):
         for name, step in _steps().items():
