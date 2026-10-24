@@ -3,6 +3,10 @@ from openai import OpenAI, BadRequestError
 from config.settings import OPENAI_API_KEY
 
 
+# gpt-image-1 was shut down on the OpenAI API on 2026-10-23.
+IMAGE_MODEL = "gpt-image-2.5-flare"
+
+
 class OpenAIService:
 
     def __init__(self):
@@ -11,7 +15,7 @@ class OpenAIService:
     def generate_cover(self, prompt):
 
         result = self.client.images.generate(
-            model="gpt-image-1",
+            model=IMAGE_MODEL,
             prompt=prompt,
             size="1024x1536",
             quality="high"
@@ -26,7 +30,7 @@ class OpenAIService:
         daily cover-generation call path/behavior is never touched."""
 
         result = self.client.images.generate(
-            model="gpt-image-1",
+            model=IMAGE_MODEL,
             prompt=prompt,
             size=size,
             quality=quality,
