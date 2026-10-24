@@ -36,6 +36,12 @@
           "detail": "18130514657496970",
           "event": "publish-requested",
           "run": "40109394460.1"
+        },
+        {
+          "at": "2026-10-24T15:59:39.436882+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "40109394460.1"
         }
       ],
       "hosted_assets": [
@@ -58,7 +64,10 @@
       ],
       "last_attempt_at": "2026-10-24T15:58:55.498376+00:00",
       "last_error": null,
+      "media_id": "17966661192201644",
+      "permalink": "https://www.instagram.com/p/De4gqqmkeiX/",
       "publish_requested_at": "2026-10-24T15:59:32.492517+00:00",
+      "published_at": "2026-10-24T15:59:39.436867+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -67,9 +76,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Penny Penguin's Bright Morning",
-      "updated_at": "2026-10-24T15:59:32.492537+00:00"
+      "updated_at": "2026-10-24T15:59:39.436888+00:00"
     }
   }
 }
