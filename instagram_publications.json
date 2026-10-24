@@ -42,6 +42,12 @@
           "detail": "published",
           "event": "published",
           "run": "40109394460.1"
+        },
+        {
+          "at": "2026-10-24T15:59:44.384691+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "40109394460.1"
         }
       ],
       "hosted_assets": [
@@ -52,7 +58,7 @@
         "bedtime01fables/instagram-carousel/KS-000035/05",
         "bedtime01fables/instagram-carousel/KS-000035/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-10-24T15:59:44.384676+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18130514501496970",
@@ -78,7 +84,7 @@
       ],
       "status": "published",
       "title": "Penny Penguin's Bright Morning",
-      "updated_at": "2026-10-24T15:59:39.436888+00:00"
+      "updated_at": "2026-10-24T15:59:44.384697+00:00"
     }
   }
 }
