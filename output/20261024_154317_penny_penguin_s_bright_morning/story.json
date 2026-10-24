@@ -1,0 +1,113 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Bright Morning",
+        "subtitle": "A Saturday Start",
+        "theme": "Morning Routine",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "A good morning routine makes you feel happy and ready for the day."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet, with rosy cheeks and a cheerful, energetic stance. She is sitting up in her cozy bed inside her igloo, stretching her flippers towards the sunny window. A small glass of water is on a tiny table nearby. Soft cinematic lighting, pastel colors, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Penny's cozy igloo on Snowy Shores",
+        "visual_action": "Penny stretching in her bed as the sun rises",
+        "visual_object": "A glass of water",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A New Day Begins",
+            "text": "The sun shone brightly on Snowy Shores. Penny Penguin blinked her eyes open. She stretched her little flippers under her warm blanket. \"Good morning, world!\" she chirped softly. She wiggled her orange webbed feet. Penny was ready for a new Saturday. Healthy habits make every day fun! Her rosy cheeks looked cheerful.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "morning",
+            "icon": "sun",
+            "speaker_notes": "Introduce Penny waking up in her favorite place, Snowy Shores, and her cheerful personality."
+        },
+        {
+            "page": 2,
+            "title": "Penguin Stretches",
+            "text": "Penny hopped out of bed. She stood tall and reached her flippers to the sky. \"Stretch, stretch, stretch!\" she said. Then she bent down to touch her orange toes. Penny moved her head side to side. Stretching made her body feel awake and ready to play.",
+            "background_color": "#DDF2F1",
+            "visual_theme": "stretching",
+            "icon": "person_stretching",
+            "speaker_notes": "Show Penny doing simple stretches, highlighting the benefit of movement."
+        },
+        {
+            "page": 3,
+            "title": "Fresh Water Sips",
+            "text": "Penny went to her small kitchen. She poured a big glass of cool water. \"Sip, sip, sip!\" Penny drank it slowly. Water helps my body wake up. It makes me feel fresh inside. Penny always drank water first. It was a healthy habit.",
+            "background_color": "#C9E6F5",
+            "visual_theme": "kitchen",
+            "icon": "water_glass",
+            "speaker_notes": "Illustrate Penny drinking water, emphasizing its importance for waking up and feeling fresh."
+        },
+        {
+            "page": 4,
+            "title": "Snowy Air Jumps",
+            "text": "Next, Penny opened her door. She stepped outside her cozy igloo. The air was cool and clean. Penny took three deep breaths. \"Woohoo!\" she cried. She did five happy little jumps! Fresh air and moving her body made her feel strong.",
+            "background_color": "#B8E0D4",
+            "visual_theme": "outside igloo",
+            "icon": "snowflake",
+            "speaker_notes": "Depict Penny enjoying fresh air and a quick physical activity outdoors."
+        },
+        {
+            "page": 5,
+            "title": "Ready to Play",
+            "text": "Penny felt wonderful. Her black and white feathers felt bouncy. Her bright orange beak had a big smile. Her whole body was awake and happy. \"Healthy habits make every day fun!\" she sang. Penny was ready for a super Saturday of play and adventure.",
+            "background_color": "#FFE0B2",
+            "visual_theme": "cheerful day",
+            "icon": "star",
+            "speaker_notes": "Conclude with Penny feeling great and ready for her day, reinforcing the positive impact of her routine."
+        }
+    ],
+    "instagram": {
+        "caption": "What's the secret to Penny Penguin's happy mornings? 🐧✨ Join Penny as she shares her favorite healthy habits to start her day bright! This sweet story teaches little ones about morning routines for a healthy body and mind. Perfect for making mornings fun! Save this for a delightful read together. #Bedtime01Fables",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory"
+        ]
+    },
+    "email": {
+        "subject": "Penny Penguin's Bright Morning Routine! 🐧☀️",
+        "preview": "See how Penny Penguin starts her Saturday with healthy habits in this joyful new story!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Bright Morning | Healthy Habits for Kids | Wonderwood Valley Stories",
+        "description": "Join Penny Penguin in Wonderwood Valley for a cheerful story about healthy morning routines! Watch as Penny starts her Saturday with simple habits like stretching, drinking water, and enjoying fresh air to feel happy and ready for the day. Perfect for children aged 3-6, this engaging story teaches the importance of a healthy body and mind. Subscribe for more adventures with Penny and friends!",
+        "keywords": [
+            "healthy habits",
+            "morning routine for kids",
+            "children's stories"
+        ]
+    },
+    "publishing": {
+        "hook": "What's the secret to Penny Penguin's happy mornings?",
+        "instagram_caption_short": "What's the secret to Penny Penguin's happy mornings? 🐧✨ Join Penny as she shares her favorite healthy habits to start her day bright! This sweet story teaches little ones about morning routines for a healthy body and mind. Perfect for making mornings fun! Save this for a delightful read together. #Bedtime01Fables",
+        "instagram_caption_long": "What's the secret to Penny Penguin's happy mornings? 🐧✨ Every Saturday, Penny Penguin loves to start her day with her special healthy routine. From stretching her little flippers to taking big sips of water and enjoying fresh air, Penny shows us how easy it is to feel ready and happy for a new day! This warm and engaging story is perfect for children aged 3-6, teaching them about the importance of morning routines for a healthy body and a happy mind. Join Penny in Wonderwood Valley and make healthy habits fun! Save this story to inspire your little one's own bright mornings. #Bedtime01Fables",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsHealthyHabits",
+            "#MorningRoutine",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "Does your little one have a special morning routine? Share a fun habit they love! 👇",
+        "alt_text": "Cover image of Penny Penguin, a cheerful black and white penguin, stretching in her cozy bed inside her igloo as sunlight streams in. A glass of water sits on a bedside table.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What are three things you can do to start your day feeling happy and ready?"
+    }
+}

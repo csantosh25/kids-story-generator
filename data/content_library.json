@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000025",
-        "created_date": "2026-10-12",
-        "status": "completed",
-        "title": "Bella Bear Helps Squeaky Squirrel",
-        "theme": "Helping a Friend",
-        "character": {
-            "name": "Bella Bear",
-            "species": "Bear"
-        },
-        "folder": "output/20261012_062042_bella_bear_helps_squeaky_squirrel",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000026",
         "created_date": "2026-10-13",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261023_051237_max_monkey_s_brave_cave_hunt",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000035",
+        "created_date": "2026-10-24",
+        "status": "completed",
+        "title": "Penny Penguin's Bright Morning",
+        "theme": "Morning Routine",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261024_154317_penny_penguin_s_bright_morning",
         "instagram": {
             "posted": true,
             "post_url": ""
