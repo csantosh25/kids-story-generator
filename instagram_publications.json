@@ -18,13 +18,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "40109394460.1"
+        },
+        {
+          "at": "2026-10-24T15:59:00.690769+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "40109394460.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000035/01",
+        "bedtime01fables/instagram-carousel/KS-000035/02",
+        "bedtime01fables/instagram-carousel/KS-000035/03",
+        "bedtime01fables/instagram-carousel/KS-000035/04",
+        "bedtime01fables/instagram-carousel/KS-000035/05",
+        "bedtime01fables/instagram-carousel/KS-000035/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-10-24T15:58:55.498376+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Penny Penguin's Bright Morning"
+      "title": "Penny Penguin's Bright Morning",
+      "updated_at": "2026-10-24T15:59:00.690787+00:00"
     }
   }
 }
