@@ -30,6 +30,12 @@
           "detail": "18130514657496970",
           "event": "containers-ready",
           "run": "40109394460.1"
+        },
+        {
+          "at": "2026-10-24T15:59:32.492532+00:00",
+          "detail": "18130514657496970",
+          "event": "publish-requested",
+          "run": "40109394460.1"
         }
       ],
       "hosted_assets": [
@@ -52,6 +58,7 @@
       ],
       "last_attempt_at": "2026-10-24T15:58:55.498376+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-10-24T15:59:32.492517+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -60,9 +67,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Penny Penguin's Bright Morning",
-      "updated_at": "2026-10-24T15:59:30.485037+00:00"
+      "updated_at": "2026-10-24T15:59:32.492537+00:00"
     }
   }
 }
