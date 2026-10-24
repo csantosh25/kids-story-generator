@@ -1,5 +1,30 @@
 {
   "live_enabled_on": "2026-10-24",
   "schema_version": 1,
-  "stories": {}
+  "stories": {
+    "KS-000035": {
+      "attempt_count": 1,
+      "caption": "📖 Penny Penguin's Bright Morning\n\nWhat's the secret to Penny Penguin's happy mornings? 🐧✨ Join Penny as she shares her favorite healthy habits to start her day bright! This sweet story teaches little ones about morning routines for a healthy body and mind. Perfect for making mornings fun! Save this for a delightful read together.\n\n🌟 Lesson: A good morning routine makes you feel happy and ready for the day.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #PennyPenguin #KidsHealthyHabits #MorningRoutine #ChildrensBooksIndia #BedtimeStories #StoryTime #MoralStories",
+      "caption_fingerprint": "f3018ef120a50d5b1f0cc03a93c304bcb1ae8d641d048f9d3e84e67ad0b5ecc8",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-24T15:58:55.498376+00:00",
+      "claimed_by": "40109394460.1",
+      "content_id": "KS-000035",
+      "created_date": "2026-10-24",
+      "folder": "output/20261024_154317_penny_penguin_s_bright_morning",
+      "history": [
+        {
+          "at": "2026-10-24T15:58:55.990693+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "40109394460.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-24T15:58:55.498376+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Penny Penguin's Bright Morning"
+    }
+  }
 }
