@@ -1,5 +1,5 @@
 from typing import List
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class StoryInfo(BaseModel):
@@ -72,6 +72,13 @@ class YouTube(BaseModel):
     description: str
     keywords: List[str]
 
+
+DEFAULT_PARENT_QUESTION = (
+    "What was your favorite part of the story, and what would you have "
+    "done if you were there?"
+)
+
+
 class PublishingPack(BaseModel):
     # Defaulted for backward compatibility: story.json files generated
     # before this field existed (e.g. reused by the Reel generator) can
@@ -84,7 +91,17 @@ class PublishingPack(BaseModel):
     alt_text: str
     call_to_action: str
     best_posting_time: str
-    parent_question: str
+    # Defaulted for backward compatibility: Gemini occasionally omits this
+    # field (or returns it null/blank), which previously failed the whole
+    # StoryPackage. A model-provided question is always kept as-is.
+    parent_question: str = DEFAULT_PARENT_QUESTION
+
+    @field_validator("parent_question", mode="before")
+    @classmethod
+    def _default_blank_parent_question(cls, value):
+        if value is None or (isinstance(value, str) and not value.strip()):
+            return DEFAULT_PARENT_QUESTION
+        return value
 
 class StoryPackage(BaseModel):
     story_info: StoryInfo
