@@ -6,7 +6,7 @@
       "attempt_count": 1,
       "caption": "📖 Penny Penguin's Bright Morning\n\nWhat's the secret to Penny Penguin's happy mornings? 🐧✨ Join Penny as she shares her favorite healthy habits to start her day bright! This sweet story teaches little ones about morning routines for a healthy body and mind. Perfect for making mornings fun! Save this for a delightful read together.\n\n🌟 Lesson: A good morning routine makes you feel happy and ready for the day.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #PennyPenguin #KidsHealthyHabits #MorningRoutine #ChildrensBooksIndia #BedtimeStories #StoryTime #MoralStories",
       "caption_fingerprint": "f3018ef120a50d5b1f0cc03a93c304bcb1ae8d641d048f9d3e84e67ad0b5ecc8",
-      "carousel_container_id": null,
+      "carousel_container_id": "18130514657496970",
       "claimed_at": "2026-10-24T15:58:55.498376+00:00",
       "claimed_by": "40109394460.1",
       "content_id": "KS-000035",
@@ -24,6 +24,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "40109394460.1"
+        },
+        {
+          "at": "2026-10-24T15:59:30.485022+00:00",
+          "detail": "18130514657496970",
+          "event": "containers-ready",
+          "run": "40109394460.1"
         }
       ],
       "hosted_assets": [
@@ -36,7 +42,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18130514501496970",
+        "18130514519496970",
+        "18130514540496970",
+        "18130514561496970",
+        "18130514585496970",
+        "18130514633496970"
+      ],
       "last_attempt_at": "2026-10-24T15:58:55.498376+00:00",
       "last_error": null,
       "source_images": [
@@ -47,9 +60,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Penny Penguin's Bright Morning",
-      "updated_at": "2026-10-24T15:59:00.690787+00:00"
+      "updated_at": "2026-10-24T15:59:30.485037+00:00"
     }
   }
 }
