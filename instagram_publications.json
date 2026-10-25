@@ -114,6 +114,12 @@
           "detail": "18130605557496970",
           "event": "containers-ready",
           "run": "40164349996.1"
+        },
+        {
+          "at": "2026-10-25T05:08:26.321834+00:00",
+          "detail": "18130605557496970",
+          "event": "publish-requested",
+          "run": "40164349996.1"
         }
       ],
       "hosted_assets": [
@@ -136,6 +142,7 @@
       ],
       "last_attempt_at": "2026-10-25T05:07:23.323272+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-10-25T05:08:26.321821+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -144,9 +151,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Barnaby Bunny and the Winking Stars",
-      "updated_at": "2026-10-25T05:08:24.814066+00:00"
+      "updated_at": "2026-10-25T05:08:26.321839+00:00"
     }
   }
 }
