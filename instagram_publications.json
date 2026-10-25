@@ -120,6 +120,12 @@
           "detail": "18130605557496970",
           "event": "publish-requested",
           "run": "40164349996.1"
+        },
+        {
+          "at": "2026-10-25T05:08:32.494711+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "40164349996.1"
         }
       ],
       "hosted_assets": [
@@ -142,7 +148,10 @@
       ],
       "last_attempt_at": "2026-10-25T05:07:23.323272+00:00",
       "last_error": null,
+      "media_id": "18152469598499515",
+      "permalink": "https://www.instagram.com/p/De565NyjrJ3/",
       "publish_requested_at": "2026-10-25T05:08:26.321821+00:00",
+      "published_at": "2026-10-25T05:08:32.494697+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -151,9 +160,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Barnaby Bunny and the Winking Stars",
-      "updated_at": "2026-10-25T05:08:26.321839+00:00"
+      "updated_at": "2026-10-25T05:08:32.494718+00:00"
     }
   }
 }
