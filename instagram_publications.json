@@ -85,6 +85,30 @@
       "status": "published",
       "title": "Penny Penguin's Bright Morning",
       "updated_at": "2026-10-24T15:59:44.384697+00:00"
+    },
+    "KS-000036": {
+      "attempt_count": 1,
+      "caption": "📖 Barnaby Bunny and the Winking Stars\n\nDoes your little one wish upon a star before bed? Join Barnaby Bunny as he finds comfort under the twinkling night sky. This calming story helps kids relax and get ready for sweet dreams. A perfect way to end your Sunday evening together! Save this story for your next reading time.\n\n🌟 Lesson: Finding peace and comfort through imagination.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsBedtime #StarGazing #CalmKids #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "1f036ccab9d0ccab9a1db1c0b2b79d08bf610f0e52e7a809a3c4d018bfd157f6",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-25T05:07:23.323272+00:00",
+      "claimed_by": "40164349996.1",
+      "content_id": "KS-000036",
+      "created_date": "2026-10-25",
+      "folder": "output/20261025_050619_barnaby_bunny_and_the_winking_stars",
+      "history": [
+        {
+          "at": "2026-10-25T05:07:23.671811+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "40164349996.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-25T05:07:23.323272+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Barnaby Bunny and the Winking Stars"
     }
   }
 }
