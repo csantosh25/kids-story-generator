@@ -90,7 +90,7 @@
       "attempt_count": 1,
       "caption": "📖 Barnaby Bunny and the Winking Stars\n\nDoes your little one wish upon a star before bed? Join Barnaby Bunny as he finds comfort under the twinkling night sky. This calming story helps kids relax and get ready for sweet dreams. A perfect way to end your Sunday evening together! Save this story for your next reading time.\n\n🌟 Lesson: Finding peace and comfort through imagination.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsBedtime #StarGazing #CalmKids #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "1f036ccab9d0ccab9a1db1c0b2b79d08bf610f0e52e7a809a3c4d018bfd157f6",
-      "carousel_container_id": null,
+      "carousel_container_id": "18130605557496970",
       "claimed_at": "2026-10-25T05:07:23.323272+00:00",
       "claimed_by": "40164349996.1",
       "content_id": "KS-000036",
@@ -108,6 +108,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "40164349996.1"
+        },
+        {
+          "at": "2026-10-25T05:08:24.814050+00:00",
+          "detail": "18130605557496970",
+          "event": "containers-ready",
+          "run": "40164349996.1"
         }
       ],
       "hosted_assets": [
@@ -120,7 +126,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18130605344496970",
+        "18130605368496970",
+        "18130605470496970",
+        "18130605488496970",
+        "18130605512496970",
+        "18130605533496970"
+      ],
       "last_attempt_at": "2026-10-25T05:07:23.323272+00:00",
       "last_error": null,
       "source_images": [
@@ -131,9 +144,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Barnaby Bunny and the Winking Stars",
-      "updated_at": "2026-10-25T05:07:28.017652+00:00"
+      "updated_at": "2026-10-25T05:08:24.814066+00:00"
     }
   }
 }
