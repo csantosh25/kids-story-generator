@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Oliver Fox and the High Pebble
+Barnaby Bunny and the Winking Stars
 
 Subtitle:
-A story about helping friends
+A cozy story about finding calm under the night sky.
 
 Theme:
-Working Together
+Stars
 
 Moral:
-Helping friends and working together makes problems easier.
+Finding peace and comfort through imagination.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Oliver Fox
+Barnaby Bunny
 
 Species:
-Fox
+Rabbit
 
 Personality:
-Funny, Creative, Friendly, Brave
+Gentle, Sleepy, Kind, Imaginative
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-262
+251
 
 Generated:
-2026-10-13 07:00:19
+2026-10-25 05:06:38
 
 ---
 
