@@ -126,6 +126,12 @@
           "detail": "published",
           "event": "published",
           "run": "40164349996.1"
+        },
+        {
+          "at": "2026-10-25T05:08:36.883169+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "40164349996.1"
         }
       ],
       "hosted_assets": [
@@ -136,7 +142,7 @@
         "bedtime01fables/instagram-carousel/KS-000036/05",
         "bedtime01fables/instagram-carousel/KS-000036/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-10-25T05:08:36.883152+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18130605344496970",
@@ -162,7 +168,7 @@
       ],
       "status": "published",
       "title": "Barnaby Bunny and the Winking Stars",
-      "updated_at": "2026-10-25T05:08:32.494718+00:00"
+      "updated_at": "2026-10-25T05:08:36.883175+00:00"
     }
   }
 }
