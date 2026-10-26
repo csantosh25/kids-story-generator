@@ -204,6 +204,12 @@
           "detail": "18130787102496970",
           "event": "publish-requested",
           "run": "40272800205.1"
+        },
+        {
+          "at": "2026-10-26T05:11:58.171659+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "40272800205.1"
         }
       ],
       "hosted_assets": [
@@ -228,7 +234,10 @@
       ],
       "last_attempt_at": "2026-10-26T05:10:50.807964+00:00",
       "last_error": null,
+      "media_id": "18119850707091670",
+      "permalink": "https://www.instagram.com/p/De8gFbJFrtZ/",
       "publish_requested_at": "2026-10-26T05:11:52.874465+00:00",
+      "published_at": "2026-10-26T05:11:58.171645+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -238,9 +247,9 @@
         "slide_5.png",
         "slide_6.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Bella Bear and Squeaky's Thankful Nuts",
-      "updated_at": "2026-10-26T05:11:52.874490+00:00"
+      "updated_at": "2026-10-26T05:11:58.171666+00:00"
     }
   }
 }
