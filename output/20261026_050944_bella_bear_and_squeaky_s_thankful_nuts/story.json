@@ -1,0 +1,137 @@
+{
+    "story_info": {
+        "title": "Bella Bear and Squeaky's Thankful Nuts",
+        "subtitle": "A Story about Kindness",
+        "theme": "Saying Thank You",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping friends and saying thank you makes everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Bella Bear",
+            "species": "Bear",
+            "appearance": "Bella is a small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile. She has a little cream-colored tummy patch and short rounded ears.",
+            "personality": "Kind, Helpful, Gentle, Patient"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "Squeaky is a small, fluffy grey squirrel with a bushy tail and bright, quick eyes.",
+                "role": "cannot reach the nuts and needs Bella's help"
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "A small, round brown bear cub with soft honey-colored fur, warm dark eyes, and a gentle smile, a little cream-colored tummy patch and short rounded ears, gently shaking a tree branch. A small, fluffy grey squirrel with a bushy tail and bright, quick eyes, looks up happily from below, with nuts falling around. Sunny forest clearing, morning light. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "sunny forest clearing",
+        "visual_action": "Bella helps Squeaky get nuts from a tree",
+        "visual_object": "falling nuts",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sniffle in Sunny Forest",
+            "text": "Bella Bear walked in Sunny Forest. The morning sun was soft and warm. She hummed a happy tune. \"Kind hearts make happy days!\" she said. Then she heard a little sniffle. Bella looked around. There was her friend, Squeaky Squirrel. He sat under a big nut tree. Squeaky looked very sad.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Bella Bear walks happily in Sunny Forest on a sunny morning and finds her friend Squeaky looking sad under a nut tree."
+        },
+        {
+            "page": 2,
+            "title": "High Up Nuts",
+            "text": "Bella went closer to Squeaky. \"What is wrong, dear friend?\" she asked softly. Squeaky looked up at a high branch. \"The best nuts are so high!\" he squeaked. His little paws tried to reach. But they were too short. Squeaky felt a bit sad and hungry.",
+            "background_color": "#FDF2E6",
+            "visual_theme": "squirrel",
+            "icon": "acorn",
+            "speaker_notes": "Bella talks to Squeaky Squirrel, who points sadly at nuts high up in a tree, showing his small paws cannot reach them."
+        },
+        {
+            "page": 3,
+            "title": "Bella's Kind Idea",
+            "text": "Bella looked at the very high nuts. She saw Squeaky's sad, droopy face. \"Hmm,\" Bella thought. \"Kind hearts make happy days!\" She looked at a strong branch. It was not too high for her. Bella had an idea to help her friend.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "thinking",
+            "icon": "lightbulb",
+            "speaker_notes": "Bella Bear looks at the high nuts and Squeaky's sad face, then gets a kind idea to help by looking at a lower branch."
+        },
+        {
+            "page": 4,
+            "title": "Nuts Come Falling Down",
+            "text": "Bella stood on her tiptoes. She reached up with her paw. She gave the strong branch a gentle shake. *Thump, thump!* Many round, tasty nuts fell down. They landed softly on the grass. Squeaky's eyes grew wide. He jumped up and down with joy.",
+            "background_color": "#FDF2E6",
+            "visual_theme": "action",
+            "icon": "nuts",
+            "speaker_notes": "Bella Bear gently shakes a tree branch, and many nuts fall to the ground. Squeaky Squirrel looks surprised and happy."
+        },
+        {
+            "page": 5,
+            "title": "Thank You, Bella!",
+            "text": "Squeaky picked up the tasty nuts. He held one tight in his little paws. \"Thank you, Bella! Thank you so much!\" he chirped loudly. Bella smiled her big, gentle smile. \"You are most welcome, Squeaky!\" she said. Her kind heart felt very happy.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friends",
+            "icon": "heart",
+            "speaker_notes": "Squeaky Squirrel happily gathers nuts and thanks Bella Bear, who smiles gently, feeling good about helping her friend."
+        },
+        {
+            "page": 6,
+            "title": "Happy Hearts",
+            "text": "The sun shone even brighter now. Squeaky offered Bella a nut. \"For you!\" he said. Bella and Squeaky ate the yummy nuts together. Bella knew saying \"thank you\" made Squeaky's heart happy. And her kind heart felt happy too. Kind hearts make happy days!",
+            "background_color": "#FDF2E6",
+            "visual_theme": "sharing",
+            "icon": "sun",
+            "speaker_notes": "Bella Bear and Squeaky Squirrel share nuts under the brighter sun, both feeling happy and thankful for their friendship."
+        }
+    ],
+    "instagram": {
+        "caption": "Bella Bear saw her friend Squeaky Squirrel looking sad. He could not reach the yummy nuts! What did Bella do? Read about how Bella's kind heart made Squeaky's day so much brighter. A sweet story about helping friends and saying thank you! Share this lovely story with a friend today! #Bedtime01Fables #BellaBear",
+        "hashtags": [
+            "#KidsStories",
+            "#BedtimeStory"
+        ]
+    },
+    "email": {
+        "subject": "A Kind Surprise for Squeaky Squirrel!",
+        "preview": "Bella Bear shows us how a kind heart can make a happy day for everyone."
+    },
+    "youtube": {
+        "title": "Bella Bear and Squeaky's Thankful Nuts | A Story About Kindness",
+        "description": "Join Bella Bear in Wonderwood Valley as she helps her friend Squeaky Squirrel reach some yummy nuts! This heartwarming story teaches children about empathy, kindness, and the importance of saying \"thank you.\" A perfect read-aloud for ages 3-6.",
+        "keywords": [
+            "Bella Bear",
+            "Wonderwood Valley",
+            "children's story",
+            "kindness",
+            "empathy",
+            "thank you",
+            "picture book",
+            "read aloud",
+            "moral story",
+            "kids learning",
+            "preschool story"
+        ]
+    },
+    "publishing": {
+        "hook": "When a friend is sad, what can you do?",
+        "instagram_caption_short": "Bella Bear saw her friend Squeaky Squirrel looking sad. He could not reach the yummy nuts! What did Bella do? Read about how Bella's kind heart made Squeaky's day so much brighter. A sweet story about helping friends and saying thank you! Share this lovely story with a friend today!",
+        "instagram_caption_long": "Join Bella Bear in Wonderwood Valley's Sunny Forest! One beautiful morning, Bella saw her friend Squeaky Squirrel. He was feeling very sad because the best nuts were too high for him to reach. Bella, with her kind heart, knew exactly what to do to help her little friend.\n\nThis heartwarming story shows how a simple act of kindness can make a big difference. And when Squeaky says \"thank you,\" everyone feels happy! It's a gentle reminder for our little ones about empathy and the joy of showing appreciation.\n\nShare this story with your little one and spread the warmth!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BellaBear",
+            "#KidsKindness",
+            "#ThankfulHearts",
+            "#ChildrensBooks"
+        ],
+        "first_comment": "What is something kind your little one did today? Tell us below!",
+        "alt_text": "Bella Bear, a brown bear cub, helps Squeaky Squirrel, a grey squirrel, get nuts from a tree in a sunny forest.",
+        "call_to_action": "Share this lovely story with a friend today!",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What was Bella's catchphrase? How did saying thank you make Squeaky feel?"
+    }
+}

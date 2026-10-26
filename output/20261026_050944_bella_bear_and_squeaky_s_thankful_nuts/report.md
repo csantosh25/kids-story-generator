@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Luna Owl's Cloud Questions
+Bella Bear and Squeaky's Thankful Nuts
 
 Subtitle:
-A Sky Adventure
+A Story about Kindness
 
 Theme:
-Weather
+Saying Thank You
 
 Moral:
-Learning new things is exciting and fun.
+Helping friends and saying thank you makes everyone happy.
 
 Reading Time:
 2 minutes
@@ -25,26 +25,26 @@ Target Age:
 ## Character
 
 Name:
-Luna Owl
+Bella Bear
 
 Species:
-Owl
+Bear
 
 Personality:
-Wise, Curious, Calm, Encouraging
+Kind, Helpful, Gentle, Patient
 
 ---
 
 ## Statistics
 
 Slides:
-5
+6
 
 Total Words:
-176
+270
 
 Generated:
-2026-10-14 05:15:36
+2026-10-26 05:10:05
 
 ---
 
