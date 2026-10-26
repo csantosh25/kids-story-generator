@@ -186,13 +186,40 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "40272800205.1"
+        },
+        {
+          "at": "2026-10-26T05:10:55.878189+00:00",
+          "detail": "7 images",
+          "event": "uploaded",
+          "run": "40272800205.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000037/01",
+        "bedtime01fables/instagram-carousel/KS-000037/02",
+        "bedtime01fables/instagram-carousel/KS-000037/03",
+        "bedtime01fables/instagram-carousel/KS-000037/04",
+        "bedtime01fables/instagram-carousel/KS-000037/05",
+        "bedtime01fables/instagram-carousel/KS-000037/06",
+        "bedtime01fables/instagram-carousel/KS-000037/07"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 7,
       "item_container_ids": [],
       "last_attempt_at": "2026-10-26T05:10:50.807964+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png",
+        "slide_6.png"
+      ],
       "status": "claimed",
-      "title": "Bella Bear and Squeaky's Thankful Nuts"
+      "title": "Bella Bear and Squeaky's Thankful Nuts",
+      "updated_at": "2026-10-26T05:10:55.878204+00:00"
     }
   }
 }
