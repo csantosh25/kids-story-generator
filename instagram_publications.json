@@ -169,6 +169,30 @@
       "status": "published",
       "title": "Barnaby Bunny and the Winking Stars",
       "updated_at": "2026-10-25T05:08:36.883175+00:00"
+    },
+    "KS-000037": {
+      "attempt_count": 1,
+      "caption": "📖 Bella Bear and Squeaky's Thankful Nuts\n\nBella Bear saw her friend Squeaky Squirrel looking sad. He could not reach the yummy nuts! What did Bella do? Read about how Bella's kind heart made Squeaky's day so much brighter. A sweet story about helping friends and saying thank you! Share this lovely story with a friend today!\n\n🌟 Lesson: Helping friends and saying thank you makes everyone happy.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #BellaBear #KidsKindness #ThankfulHearts #ChildrensBooks #BedtimeStories #StoryTime #MoralStories",
+      "caption_fingerprint": "7814671f1c3b7aae821c72ced13aacbfdec21c1317c4f3731e21f8fe12f838fb",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-26T05:10:50.807964+00:00",
+      "claimed_by": "40272800205.1",
+      "content_id": "KS-000037",
+      "created_date": "2026-10-26",
+      "folder": "output/20261026_050944_bella_bear_and_squeaky_s_thankful_nuts",
+      "history": [
+        {
+          "at": "2026-10-26T05:10:51.139749+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "40272800205.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-26T05:10:50.807964+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Bella Bear and Squeaky's Thankful Nuts"
     }
   }
 }
