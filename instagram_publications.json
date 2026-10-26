@@ -174,7 +174,7 @@
       "attempt_count": 1,
       "caption": "📖 Bella Bear and Squeaky's Thankful Nuts\n\nBella Bear saw her friend Squeaky Squirrel looking sad. He could not reach the yummy nuts! What did Bella do? Read about how Bella's kind heart made Squeaky's day so much brighter. A sweet story about helping friends and saying thank you! Share this lovely story with a friend today!\n\n🌟 Lesson: Helping friends and saying thank you makes everyone happy.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #BellaBear #KidsKindness #ThankfulHearts #ChildrensBooks #BedtimeStories #StoryTime #MoralStories",
       "caption_fingerprint": "7814671f1c3b7aae821c72ced13aacbfdec21c1317c4f3731e21f8fe12f838fb",
-      "carousel_container_id": null,
+      "carousel_container_id": "18130787102496970",
       "claimed_at": "2026-10-26T05:10:50.807964+00:00",
       "claimed_by": "40272800205.1",
       "content_id": "KS-000037",
@@ -192,6 +192,12 @@
           "detail": "7 images",
           "event": "uploaded",
           "run": "40272800205.1"
+        },
+        {
+          "at": "2026-10-26T05:11:51.270348+00:00",
+          "detail": "18130787102496970",
+          "event": "containers-ready",
+          "run": "40272800205.1"
         }
       ],
       "hosted_assets": [
@@ -205,7 +211,15 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 7,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18130786928496970",
+        "18130786946496970",
+        "18130786970496970",
+        "18130787012496970",
+        "18130787039496970",
+        "18130787057496970",
+        "18130787078496970"
+      ],
       "last_attempt_at": "2026-10-26T05:10:50.807964+00:00",
       "last_error": null,
       "source_images": [
@@ -217,9 +231,9 @@
         "slide_5.png",
         "slide_6.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Bella Bear and Squeaky's Thankful Nuts",
-      "updated_at": "2026-10-26T05:10:55.878204+00:00"
+      "updated_at": "2026-10-26T05:11:51.270362+00:00"
     }
   }
 }
