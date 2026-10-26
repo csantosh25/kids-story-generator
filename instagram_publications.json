@@ -210,6 +210,12 @@
           "detail": "published",
           "event": "published",
           "run": "40272800205.1"
+        },
+        {
+          "at": "2026-10-26T05:12:03.983330+00:00",
+          "detail": "7 images",
+          "event": "hosted-assets-deleted",
+          "run": "40272800205.1"
         }
       ],
       "hosted_assets": [
@@ -221,7 +227,7 @@
         "bedtime01fables/instagram-carousel/KS-000037/06",
         "bedtime01fables/instagram-carousel/KS-000037/07"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-10-26T05:12:03.983314+00:00",
       "image_count": 7,
       "item_container_ids": [
         "18130786928496970",
@@ -249,7 +255,7 @@
       ],
       "status": "published",
       "title": "Bella Bear and Squeaky's Thankful Nuts",
-      "updated_at": "2026-10-26T05:11:58.171666+00:00"
+      "updated_at": "2026-10-26T05:12:03.983336+00:00"
     }
   }
 }
