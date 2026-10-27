@@ -285,6 +285,12 @@
           "detail": "18130951535496970",
           "event": "containers-ready",
           "run": "40455210699.1"
+        },
+        {
+          "at": "2026-10-27T05:26:19.415983+00:00",
+          "detail": "18130951535496970",
+          "event": "publish-requested",
+          "run": "40455210699.1"
         }
       ],
       "hosted_assets": [
@@ -307,6 +313,7 @@
       ],
       "last_attempt_at": "2026-10-27T05:25:45.690741+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-10-27T05:26:19.415968+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -315,9 +322,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Oliver Fox's Teamwork Fort",
-      "updated_at": "2026-10-27T05:26:17.417617+00:00"
+      "updated_at": "2026-10-27T05:26:19.415988+00:00"
     }
   }
 }
