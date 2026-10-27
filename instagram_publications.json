@@ -297,6 +297,12 @@
           "detail": "published",
           "event": "published",
           "run": "40455210699.1"
+        },
+        {
+          "at": "2026-10-27T05:26:31.504033+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "40455210699.1"
         }
       ],
       "hosted_assets": [
@@ -307,7 +313,7 @@
         "bedtime01fables/instagram-carousel/KS-000038/05",
         "bedtime01fables/instagram-carousel/KS-000038/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-10-27T05:26:31.504017+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18130951418496970",
@@ -333,7 +339,7 @@
       ],
       "status": "published",
       "title": "Oliver Fox's Teamwork Fort",
-      "updated_at": "2026-10-27T05:26:26.240664+00:00"
+      "updated_at": "2026-10-27T05:26:31.504039+00:00"
     }
   }
 }
