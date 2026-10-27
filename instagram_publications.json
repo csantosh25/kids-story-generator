@@ -291,6 +291,12 @@
           "detail": "18130951535496970",
           "event": "publish-requested",
           "run": "40455210699.1"
+        },
+        {
+          "at": "2026-10-27T05:26:26.240658+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "40455210699.1"
         }
       ],
       "hosted_assets": [
@@ -313,7 +319,10 @@
       ],
       "last_attempt_at": "2026-10-27T05:25:45.690741+00:00",
       "last_error": null,
+      "media_id": "18118014394811385",
+      "permalink": "https://www.instagram.com/p/De_Gli6kQvr/",
       "publish_requested_at": "2026-10-27T05:26:19.415968+00:00",
+      "published_at": "2026-10-27T05:26:26.240642+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -322,9 +331,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Oliver Fox's Teamwork Fort",
-      "updated_at": "2026-10-27T05:26:19.415988+00:00"
+      "updated_at": "2026-10-27T05:26:26.240664+00:00"
     }
   }
 }
