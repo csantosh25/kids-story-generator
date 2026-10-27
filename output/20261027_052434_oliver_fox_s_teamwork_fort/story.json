@@ -1,0 +1,130 @@
+{
+    "story_info": {
+        "title": "Oliver Fox's Teamwork Fort",
+        "subtitle": "Friends make big jobs easy!",
+        "theme": "Teamwork",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Friends help each other, and teamwork makes things better."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "a small grey squirrel with a fluffy tail and bright brown eyes.",
+                "role": "helps Oliver build a fort"
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, clever amber eyes, and a playful, confident grin. He is pulling one end of a large tree branch. Squeaky Squirrel, a small grey squirrel with a fluffy tail and bright brown eyes, is pushing the other end of the branch. They are in a sunny forest clearing with gentle light. Children's book illustration style. Vertical composition. Instagram friendly. Soft lighting. Pastel colours.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny forest clearing",
+        "visual_action": "Oliver Fox and Squeaky Squirrel working together to move a large branch",
+        "visual_object": "a large tree branch",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A New Idea!",
+            "text": "Oliver Fox skipped into Sunny Forest. The sun shone bright. He found some big branches. \"I will build a super fort!\" he thought. Oliver was very creative. He picked up a small branch. It was easy to move. He started to plan his fort. He knew it would be the best.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver Fox starts building a fort in Sunny Forest, full of excitement."
+        },
+        {
+            "page": 2,
+            "title": "Too Heavy!",
+            "text": "Soon, Oliver found a very big branch. It was perfect for the roof! He pushed and pulled very hard with all his might. But the branch would not move. It was too heavy for one fox. Oliver tried again. Still, the branch stayed put. He thought, \"This is a big challenge!\" Oliver did not give up.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver struggles to move a heavy branch by himself, facing a challenge."
+        },
+        {
+            "page": 3,
+            "title": "A Friendly Helper",
+            "text": "Just then, Squeaky Squirrel ran by. Squeaky had a fluffy tail and bright brown eyes. He saw Oliver trying hard. \"Hello, Oliver!\" said Squeaky. \"What are you building?\" Oliver smiled at his friend. \"A fort!\" he said. \"But this big branch is very heavy.\" Squeaky looked at the branch.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Squeaky Squirrel appears and sees Oliver struggling with the branch."
+        },
+        {
+            "page": 4,
+            "title": "Teamwork Time!",
+            "text": "\"Let's solve it together!\" said Oliver. \"Can you push that end?\" Squeaky nodded. \"Yes, I can help!\" Oliver pulled his end. Squeaky pushed his end. One, two, three, UP! The big branch lifted. They carefully moved it to the fort. Oliver and Squeaky cheered.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver and Squeaky work together, using teamwork to lift the heavy branch."
+        },
+        {
+            "page": 5,
+            "title": "Our Special Fort",
+            "text": "With Squeaky's help, the fort was soon finished. It was strong and cosy inside. Oliver and Squeaky sat together. \"Thank you, Squeaky!\" said Oliver. \"Teamwork makes big jobs easy.\" Squeaky giggled. \"Yes, friends help friends.\" They felt happy and proud. They built something great together.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver and Squeaky enjoy their finished fort, reflecting on their teamwork and friendship."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when Oliver Fox finds a branch too big to move? Oliver wants to build a big fort in Sunny Forest. But some branches are too heavy! Will he give up? This sweet story shows how friends can help each other. It teaches little ones that teamwork makes every challenge fun! 💛 Share this with a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsStories",
+            "#TeamworkForKids",
+            "#FriendshipAdventures"
+        ]
+    },
+    "email": {
+        "subject": "Oliver Fox and the Power of Friendship!",
+        "preview": "See how Oliver Fox and his friend build something wonderful together!"
+    },
+    "youtube": {
+        "title": "Oliver Fox's Teamwork Fort | A Wonderwood Valley Adventure for Kids",
+        "description": "Join Oliver Fox in Sunny Forest as he learns about teamwork and friendship! When Oliver finds a branch too heavy to move alone, a friend comes to help. A sweet story about working together and building strong bonds.",
+        "keywords": [
+            "Oliver Fox story",
+            "children's story",
+            "teamwork for kids",
+            "friendship story",
+            "Wonderwood Valley",
+            "kids adventure",
+            "preschool story",
+            "learning to share",
+            "moral story for kids",
+            "short story for children"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when Oliver Fox finds a branch too big to move?",
+        "instagram_caption_short": "What happens when Oliver Fox finds a branch too big to move? Oliver wants to build a big fort in Sunny Forest. But some branches are too heavy! Will he give up? This sweet story shows how friends can help each other. It teaches little ones that teamwork makes every challenge fun! 💛 Share this with a parent who would enjoy this with their little one.",
+        "instagram_caption_long": "What happens when Oliver Fox finds a branch too big to move? In the sunny Wonderwood Valley, Oliver Fox has a big idea! He wants to build the best fort ever. But when he finds a perfect, big branch, it's just too heavy for him alone. Can Oliver solve this big problem? Luckily, his friend Squeaky Squirrel hops by! See how Oliver and Squeaky learn that working together makes even the biggest tasks easy and fun. This delightful adventure celebrates the power of friendship and teamwork. Join Oliver and Squeaky on a charming adventure that highlights the joy of helping friends and how teamwork can achieve wonderful things. A perfect tale to share and inspire your child about the value of friendship. 💛 Share this with a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsStories",
+            "#TeamworkForKids",
+            "#FriendshipAdventures"
+        ],
+        "first_comment": "What's the biggest thing your little one loves to build with their friends? Tell us below!",
+        "alt_text": "Oliver Fox and Squeaky Squirrel working together to lift a big tree branch in a sunny forest.",
+        "call_to_action": "💛 Share this with a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Oliver and Squeaky help each other in the story?"
+    }
+}

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000028",
-        "created_date": "2026-10-16",
-        "status": "completed",
-        "title": "Max Monkey's Brave Stream Jump",
-        "theme": "Magic Forest",
-        "character": {
-            "name": "Max Monkey",
-            "species": "Monkey"
-        },
-        "folder": "output/20261016_045050_max_monkey_s_brave_stream_jump",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000029",
         "created_date": "2026-10-17",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Bear"
         },
         "folder": "output/20261026_050944_bella_bear_and_squeaky_s_thankful_nuts",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000038",
+        "created_date": "2026-10-27",
+        "status": "completed",
+        "title": "Oliver Fox's Teamwork Fort",
+        "theme": "Teamwork",
+        "character": {
+            "name": "Oliver Fox",
+            "species": "Fox"
+        },
+        "folder": "output/20261027_052434_oliver_fox_s_teamwork_fort",
         "instagram": {
             "posted": true,
             "post_url": ""
