@@ -273,13 +273,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "40455210699.1"
+        },
+        {
+          "at": "2026-10-27T05:25:51.387687+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "40455210699.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000038/01",
+        "bedtime01fables/instagram-carousel/KS-000038/02",
+        "bedtime01fables/instagram-carousel/KS-000038/03",
+        "bedtime01fables/instagram-carousel/KS-000038/04",
+        "bedtime01fables/instagram-carousel/KS-000038/05",
+        "bedtime01fables/instagram-carousel/KS-000038/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-10-27T05:25:45.690741+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Oliver Fox's Teamwork Fort"
+      "title": "Oliver Fox's Teamwork Fort",
+      "updated_at": "2026-10-27T05:25:51.387705+00:00"
     }
   }
 }
