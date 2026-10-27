@@ -261,7 +261,7 @@
       "attempt_count": 1,
       "caption": "📖 Oliver Fox's Teamwork Fort\n\nWhat happens when Oliver Fox finds a branch too big to move? Oliver wants to build a big fort in Sunny Forest. But some branches are too heavy! Will he give up? This sweet story shows how friends can help each other. It teaches little ones that teamwork makes every challenge fun! 💛 Share this with a parent who would enjoy this with their little one.\n\n🌟 Lesson: Friends help each other, and teamwork makes things better.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #OliverFox #KidsStories #TeamworkForKids #FriendshipAdventures #BedtimeStories #StoryTime #MoralStories",
       "caption_fingerprint": "98eb85c125e4b6ad6e5bc9d3c9a5499e09e0d0d8487b0814291b64a1aa99a8fe",
-      "carousel_container_id": null,
+      "carousel_container_id": "18130951535496970",
       "claimed_at": "2026-10-27T05:25:45.690741+00:00",
       "claimed_by": "40455210699.1",
       "content_id": "KS-000038",
@@ -279,6 +279,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "40455210699.1"
+        },
+        {
+          "at": "2026-10-27T05:26:17.417601+00:00",
+          "detail": "18130951535496970",
+          "event": "containers-ready",
+          "run": "40455210699.1"
         }
       ],
       "hosted_assets": [
@@ -291,7 +297,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18130951418496970",
+        "18130951439496970",
+        "18130951457496970",
+        "18130951478496970",
+        "18130951499496970",
+        "18130951517496970"
+      ],
       "last_attempt_at": "2026-10-27T05:25:45.690741+00:00",
       "last_error": null,
       "source_images": [
@@ -302,9 +315,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Oliver Fox's Teamwork Fort",
-      "updated_at": "2026-10-27T05:25:51.387705+00:00"
+      "updated_at": "2026-10-27T05:26:17.417617+00:00"
     }
   }
 }
