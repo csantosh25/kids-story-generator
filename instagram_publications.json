@@ -256,6 +256,30 @@
       "status": "published",
       "title": "Bella Bear and Squeaky's Thankful Nuts",
       "updated_at": "2026-10-26T05:12:03.983336+00:00"
+    },
+    "KS-000038": {
+      "attempt_count": 1,
+      "caption": "📖 Oliver Fox's Teamwork Fort\n\nWhat happens when Oliver Fox finds a branch too big to move? Oliver wants to build a big fort in Sunny Forest. But some branches are too heavy! Will he give up? This sweet story shows how friends can help each other. It teaches little ones that teamwork makes every challenge fun! 💛 Share this with a parent who would enjoy this with their little one.\n\n🌟 Lesson: Friends help each other, and teamwork makes things better.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #OliverFox #KidsStories #TeamworkForKids #FriendshipAdventures #BedtimeStories #StoryTime #MoralStories",
+      "caption_fingerprint": "98eb85c125e4b6ad6e5bc9d3c9a5499e09e0d0d8487b0814291b64a1aa99a8fe",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-27T05:25:45.690741+00:00",
+      "claimed_by": "40455210699.1",
+      "content_id": "KS-000038",
+      "created_date": "2026-10-27",
+      "folder": "output/20261027_052434_oliver_fox_s_teamwork_fort",
+      "history": [
+        {
+          "at": "2026-10-27T05:25:46.271880+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "40455210699.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-27T05:25:45.690741+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Oliver Fox's Teamwork Fort"
     }
   }
 }
