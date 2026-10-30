@@ -375,6 +375,12 @@
           "detail": "18131471855496970",
           "event": "publish-requested",
           "run": "41013073875.1"
+        },
+        {
+          "at": "2026-10-30T06:17:34.677380+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "41013073875.1"
         }
       ],
       "hosted_assets": [
@@ -397,7 +403,10 @@
       ],
       "last_attempt_at": "2026-10-30T06:16:26.659390+00:00",
       "last_error": null,
+      "media_id": "18154276141531076",
+      "permalink": "https://www.instagram.com/p/DfG6xS7lhHD/",
       "publish_requested_at": "2026-10-30T06:17:28.920658+00:00",
+      "published_at": "2026-10-30T06:17:34.677367+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -406,9 +415,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Max Monkey's Camping Confidence",
-      "updated_at": "2026-10-30T06:17:28.920678+00:00"
+      "updated_at": "2026-10-30T06:17:34.677386+00:00"
     }
   }
 }
