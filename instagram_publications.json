@@ -357,13 +357,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "41013073875.1"
+        },
+        {
+          "at": "2026-10-30T06:16:31.410151+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "41013073875.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000039/01",
+        "bedtime01fables/instagram-carousel/KS-000039/02",
+        "bedtime01fables/instagram-carousel/KS-000039/03",
+        "bedtime01fables/instagram-carousel/KS-000039/04",
+        "bedtime01fables/instagram-carousel/KS-000039/05",
+        "bedtime01fables/instagram-carousel/KS-000039/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-10-30T06:16:26.659390+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Max Monkey's Camping Confidence"
+      "title": "Max Monkey's Camping Confidence",
+      "updated_at": "2026-10-30T06:16:31.410167+00:00"
     }
   }
 }
