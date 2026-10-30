@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Penny's Playtime Water Break
+Max Monkey's Camping Confidence
 
 Subtitle:
-A Story about Staying Hydrated for Play
+A Try-Again Adventure
 
 Theme:
-Healthy Habits
+Camping
 
 Moral:
-Drinking water helps us stay healthy and energetic for play.
+Trying again helps us learn and feel brave.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Penny Penguin
+Max Monkey
 
 Species:
-Penguin
+Monkey
 
 Personality:
-Healthy, Sporty, Cheerful, Helpful
+Adventurous, Playful, Energetic, Curious
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-286
+200
 
 Generated:
-2026-10-17 04:53:22
+2026-10-30 06:15:40
 
 ---
 

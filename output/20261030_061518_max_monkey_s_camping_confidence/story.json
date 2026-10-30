@@ -1,0 +1,121 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Camping Confidence",
+        "subtitle": "A Try-Again Adventure",
+        "theme": "Camping",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Trying again helps us learn and feel brave."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration. A small, energetic monkey named Max Monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager, wide-open smile. He is happily setting up a small, colorful camping tent in a sunny Adventure Jungle clearing. The tent is half-assembled. A small, colorful camping tent is visible. Warm and cheerful mood.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny Adventure Jungle clearing",
+        "visual_action": "Max happily setting up a small tent",
+        "visual_object": "a small, colorful camping tent",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Ready to Camp!",
+            "text": "Max Monkey woke up with a big smile. \"Adventure is waiting!\" he cheered. Today was special. Max would go camping! He packed his little backpack carefully. A banana, a storybook, and a soft blanket went inside. He was ready for Adventure Jungle.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "Adventure Jungle morning",
+            "icon": "tent",
+            "speaker_notes": "Max is excited about his camping trip and packing his bag."
+        },
+        {
+            "page": 2,
+            "title": "A Spot in the Jungle",
+            "text": "Max swung through the trees. He found a perfect spot. It had soft green grass and pretty flowers. \"Time to set up my tent!\" he said. He pulled out the colorful fabric. Then he saw the long tent poles.",
+            "background_color": "#D9FDE9",
+            "visual_theme": "Adventure Jungle clearing",
+            "icon": "tree",
+            "speaker_notes": "Max arrives at his camping spot and gets ready to build his tent."
+        },
+        {
+            "page": 3,
+            "title": "A Tricky Tent",
+            "text": "Max tried to push the poles together. \"Hmm,\" he said. They did not want to connect. He tried again, pushing harder. Still, they would not click into place. Max felt a tiny bit stuck. He wanted to give up.",
+            "background_color": "#E9D9FD",
+            "visual_theme": "tent problem",
+            "icon": "puzzle",
+            "speaker_notes": "Max encounters a small problem while trying to assemble his tent poles."
+        },
+        {
+            "page": 4,
+            "title": "Trying Again",
+            "text": "Then Max remembered his friend Maya. \"Try again!\" she always said. Max looked closely at the poles. He saw a little arrow on one end. \"Ah!\" he whispered. He lined up the arrows. Click! The poles fit perfectly.",
+            "background_color": "#FDFDD9",
+            "visual_theme": "solution",
+            "icon": "lightbulb",
+            "speaker_notes": "Max remembers to try again, observes the poles, and finds the solution."
+        },
+        {
+            "page": 5,
+            "title": "Happy Camper Max",
+            "text": "Max quickly put up his bright tent. He felt so happy! He did not give up. He solved the puzzle. Max snuggled inside with his book. He felt safe and warm. He was proud of himself. Trying again made him feel brave!",
+            "background_color": "#D9FDFD",
+            "visual_theme": "tent setup",
+            "icon": "star",
+            "speaker_notes": "Max successfully builds his tent and feels proud and confident."
+        }
+    ],
+    "instagram": {
+        "caption": "Does your little one sometimes feel like giving up? Join Max Monkey as he learns the magic of trying again in his big camping adventure! ✨",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#CampingFun"
+        ]
+    },
+    "email": {
+        "subject": "New Adventure! Max Monkey's Camping Confidence!",
+        "preview": "Join Max Monkey as he learns to never give up on his fun camping trip!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Camping Confidence | Wonderwood Valley Adventure Story for Kids",
+        "description": "Get ready for a fun camping adventure with Max Monkey! In this exciting story from Wonderwood Valley, Max learns the importance of trying again when things get a little tricky. Perfect for children aged 4-7, this tale encourages confidence and problem-solving. Watch Max become a brave camper!",
+        "keywords": [
+            "Max Monkey",
+            "camping story",
+            "children's story",
+            "confidence for kids",
+            "Wonderwood Valley",
+            "kids adventure",
+            "try again story",
+            "preschool story"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when camping gets a little tricky?",
+        "instagram_caption_short": "What happens when camping gets a little tricky? Join Max Monkey on his big camping adventure as he learns the magic of trying again! This story teaches little ones that trying helps us learn and feel brave. 💛 Send this to a parent who would enjoy this with their little one.",
+        "instagram_caption_long": "What happens when camping gets a little tricky? 🤔 Join our adventurous Max Monkey on his exciting quest for a fun camping trip in Adventure Jungle! He's all packed and ready, but setting up his tent proves to be a small challenge. Max feels a bit stuck, but then he remembers a wise lesson about trying again. Watch as he finds a creative solution and builds his colorful tent all by himself! This heartwarming story encourages confidence and teaches children the joy of perseverance. A perfect read-aloud to show how trying again makes us feel brave and proud. 💛 Send this to a parent who would enjoy this with their little one.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#CampingFun"
+        ],
+        "first_comment": "Has your little one ever felt proud after trying something difficult? Share their moment below!",
+        "alt_text": "Max Monkey, a small brown monkey, happily setting up a colorful camping tent in a sunny jungle clearing.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What is something new you tried today, even if it was a little hard?"
+    }
+}
