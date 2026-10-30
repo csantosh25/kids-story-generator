@@ -340,6 +340,30 @@
       "status": "published",
       "title": "Oliver Fox's Teamwork Fort",
       "updated_at": "2026-10-27T05:26:31.504039+00:00"
+    },
+    "KS-000039": {
+      "attempt_count": 1,
+      "caption": "📖 Max Monkey's Camping Confidence\n\nWhat happens when camping gets a little tricky? Join Max Monkey on his big camping adventure as he learns the magic of trying again! This story teaches little ones that trying helps us learn and feel brave. 💛 Send this to a parent who would enjoy this with their little one.\n\n🌟 Lesson: Trying again helps us learn and feel brave.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #MaxMonkey #KidsAdventure #ConfidenceForKids #CampingFun #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "6473ad24a7426fa03f0d855d48458bf9b5510c1c5d776015cc9f0be0e198b14a",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-30T06:16:26.659390+00:00",
+      "claimed_by": "41013073875.1",
+      "content_id": "KS-000039",
+      "created_date": "2026-10-30",
+      "folder": "output/20261030_061518_max_monkey_s_camping_confidence",
+      "history": [
+        {
+          "at": "2026-10-30T06:16:27.012727+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "41013073875.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-30T06:16:26.659390+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Max Monkey's Camping Confidence"
     }
   }
 }
