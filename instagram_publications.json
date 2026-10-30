@@ -369,6 +369,12 @@
           "detail": "18131471855496970",
           "event": "containers-ready",
           "run": "41013073875.1"
+        },
+        {
+          "at": "2026-10-30T06:17:28.920673+00:00",
+          "detail": "18131471855496970",
+          "event": "publish-requested",
+          "run": "41013073875.1"
         }
       ],
       "hosted_assets": [
@@ -391,6 +397,7 @@
       ],
       "last_attempt_at": "2026-10-30T06:16:26.659390+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-10-30T06:17:28.920658+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -399,9 +406,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Max Monkey's Camping Confidence",
-      "updated_at": "2026-10-30T06:17:27.311427+00:00"
+      "updated_at": "2026-10-30T06:17:28.920678+00:00"
     }
   }
 }
