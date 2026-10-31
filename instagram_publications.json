@@ -465,6 +465,12 @@
           "detail": "published",
           "event": "published",
           "run": "41175371127.1"
+        },
+        {
+          "at": "2026-10-31T06:10:24.370347+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "41175371127.1"
         }
       ],
       "hosted_assets": [
@@ -475,7 +481,7 @@
         "bedtime01fables/instagram-carousel/KS-000040/05",
         "bedtime01fables/instagram-carousel/KS-000040/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-10-31T06:10:24.370332+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18131611601496970",
@@ -501,7 +507,7 @@
       ],
       "status": "published",
       "title": "Penny Penguin's Snowy Shores Stretches",
-      "updated_at": "2026-10-31T06:10:18.965511+00:00"
+      "updated_at": "2026-10-31T06:10:24.370352+00:00"
     }
   }
 }
