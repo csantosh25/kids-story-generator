@@ -459,6 +459,12 @@
           "detail": "18131611715496970",
           "event": "publish-requested",
           "run": "41175371127.1"
+        },
+        {
+          "at": "2026-10-31T06:10:18.965505+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "41175371127.1"
         }
       ],
       "hosted_assets": [
@@ -481,7 +487,10 @@
       ],
       "last_attempt_at": "2026-10-31T06:09:07.713373+00:00",
       "last_error": null,
+      "media_id": "18120021452279264",
+      "permalink": "https://www.instagram.com/p/DfJeu2djj8Q/",
       "publish_requested_at": "2026-10-31T06:10:12.693744+00:00",
+      "published_at": "2026-10-31T06:10:18.965492+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -490,9 +499,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Penny Penguin's Snowy Shores Stretches",
-      "updated_at": "2026-10-31T06:10:12.693762+00:00"
+      "updated_at": "2026-10-31T06:10:18.965511+00:00"
     }
   }
 }
