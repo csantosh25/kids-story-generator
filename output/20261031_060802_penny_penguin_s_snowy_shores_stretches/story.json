@@ -1,0 +1,119 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Snowy Shores Stretches",
+        "subtitle": "A morning of movement and fun!",
+        "theme": "Exercise",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Moving our bodies helps us feel strong and happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A cheerful Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet, rosy cheeks, in a sunny morning scene at Snowy Shores. She is stretching her flippers high, smiling brightly. Pixar-quality 3D, soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Snowy Shores in the morning",
+        "visual_action": "Penny Penguin stretching and smiling brightly",
+        "visual_object": "",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Saturday Morning",
+            "text": "Penny Penguin woke up. It was a bright Saturday morning. She smiled big. \"Healthy habits make every day fun!\" she said. Penny loved to move her body. She went to Snowy Shores. The cool air felt nice. Time for morning exercises!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sunny morning",
+            "icon": "sun",
+            "speaker_notes": "Introduce Penny and her excitement for exercise."
+        },
+        {
+            "page": 2,
+            "title": "Stretch and Wiggle",
+            "text": "First, Penny stretched her flippers high. Up, up, up! Then she touched her toes. Down, down, down! She wiggled her body. Left, right, left. It felt so good to move. Her feathers gently swayed. She felt awake and ready.",
+            "background_color": "#DDF2F8",
+            "visual_theme": "stretching by the sea",
+            "icon": "stretch",
+            "speaker_notes": "Show Penny doing simple, happy stretches."
+        },
+        {
+            "page": 3,
+            "title": "A Wobbly Hop",
+            "text": "Next, Penny tried to hop on one foot. Hop, hop, hop! This was a little tricky. She wobbled a bit. Oh dear! Her flippers went out to help. She giggled. Staying balanced was hard. But Penny did not give up.",
+            "background_color": "#F9EEDD",
+            "visual_theme": "penguin hopping",
+            "icon": "penguin",
+            "speaker_notes": "Present a small, gentle challenge for Penny."
+        },
+        {
+            "page": 4,
+            "title": "Finding Her Balance",
+            "text": "Penny took a deep breath. She tried again, very slowly. She kept her eyes steady. One foot up. Two flippers out. Yes! She stood still. Penny balanced! She felt very proud. Hopping was fun now. She even twirled around.",
+            "background_color": "#E5F4DD",
+            "visual_theme": "balancing penguin",
+            "icon": "balance",
+            "speaker_notes": "Show Penny overcoming the challenge with a creative solution."
+        },
+        {
+            "page": 5,
+            "title": "Happy and Strong",
+            "text": "Penny finished her exercises. She felt strong and happy. Her body felt ready for the day. Her mind felt clear and bright. \"Moving my body is the best!\" she chirped. Healthy habits truly make every day fun!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "joyful exercise",
+            "icon": "heart",
+            "speaker_notes": "Conclude with Penny feeling happy and strong after her exercise."
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin loves to start her Saturday with fun exercises! Watch her stretch, hop, and learn about healthy habits. It’s a joyful story about a healthy body and mind. Save this tale for your next active day!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsExercise",
+            "#HealthyHabitsForKids",
+            "#ChildrensStoriesIndia"
+        ]
+    },
+    "email": {
+        "subject": "Join Penny Penguin for a Fun Morning of Exercise!",
+        "preview": "Discover how Penny Penguin starts her day feeling strong and happy!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Snowy Shores Stretches - A Fun Kids Exercise Story",
+        "description": "Come along with Penny Penguin as she enjoys her morning exercises on Snowy Shores! This cheerful story teaches children about the joy of moving their bodies and the importance of healthy habits for a strong body and happy mind. Perfect for kids aged 4-7.",
+        "keywords": [
+            "Penny Penguin",
+            "children's story",
+            "exercise for kids",
+            "healthy habits",
+            "kids fitness",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Want to make mornings magical for your little one?",
+        "instagram_caption_short": "Penny Penguin loves to start her Saturday with fun exercises! Watch her stretch, hop, and learn about healthy habits. It’s a joyful story about a healthy body and mind. Save this tale for your next active day!",
+        "instagram_caption_long": "Every Saturday, Penny Penguin loves to welcome the morning with a burst of energy! Join her on Snowy Shores as she shows us how much fun exercise can be. From stretching her flippers high to learning to balance, Penny discovers that moving her body makes her feel strong and happy. This story is perfect for teaching little ones about the joy of healthy habits and how they can make every day fun. Follow Penny's adventure and get inspired to move!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsExercise",
+            "#HealthyHabitsForKids",
+            "#ChildrensStoriesIndia"
+        ],
+        "first_comment": "What is your little one's favourite way to move their body?",
+        "alt_text": "A cheerful Penny Penguin on Snowy Shores, stretching her flippers towards a bright morning sky.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What exercises does Penny Penguin do in the story? How do they make her feel?"
+    }
+}

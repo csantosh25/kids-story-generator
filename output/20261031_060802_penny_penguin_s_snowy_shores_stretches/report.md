@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Barnaby Bunny and the Gentle Wind
+Penny Penguin's Snowy Shores Stretches
 
 Subtitle:
-A calming story for sleepytime.
+A morning of movement and fun!
 
 Theme:
-Gentle Wind
+Exercise
 
 Moral:
-Finding calm through gentle breathing.
+Moving our bodies helps us feel strong and happy.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Barnaby Bunny
+Penny Penguin
 
 Species:
-Rabbit
+Penguin
 
 Personality:
-Gentle, Sleepy, Kind, Imaginative
+Healthy, Sporty, Cheerful, Helpful
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-211
+196
 
 Generated:
-2026-10-18 04:59:11
+2026-10-31 06:08:20
 
 ---
 
