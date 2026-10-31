@@ -424,6 +424,30 @@
       "status": "published",
       "title": "Max Monkey's Camping Confidence",
       "updated_at": "2026-10-30T06:17:39.177395+00:00"
+    },
+    "KS-000040": {
+      "attempt_count": 1,
+      "caption": "📖 Penny Penguin's Snowy Shores Stretches\n\nPenny Penguin loves to start her Saturday with fun exercises! Watch her stretch, hop, and learn about healthy habits. It’s a joyful story about a healthy body and mind. Save this tale for your next active day!\n\n🌟 Lesson: Moving our bodies helps us feel strong and happy.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #PennyPenguin #KidsExercise #HealthyHabitsForKids #ChildrensStoriesIndia #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "028a66bdec9a6aa6b8de3459e4ab7a8e079841e2966e90592ba3f7dca6004e2f",
+      "carousel_container_id": null,
+      "claimed_at": "2026-10-31T06:09:07.713373+00:00",
+      "claimed_by": "41175371127.1",
+      "content_id": "KS-000040",
+      "created_date": "2026-10-31",
+      "folder": "output/20261031_060802_penny_penguin_s_snowy_shores_stretches",
+      "history": [
+        {
+          "at": "2026-10-31T06:09:08.217637+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "41175371127.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-10-31T06:09:07.713373+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Penny Penguin's Snowy Shores Stretches"
     }
   }
 }
