@@ -429,7 +429,7 @@
       "attempt_count": 1,
       "caption": "📖 Penny Penguin's Snowy Shores Stretches\n\nPenny Penguin loves to start her Saturday with fun exercises! Watch her stretch, hop, and learn about healthy habits. It’s a joyful story about a healthy body and mind. Save this tale for your next active day!\n\n🌟 Lesson: Moving our bodies helps us feel strong and happy.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #PennyPenguin #KidsExercise #HealthyHabitsForKids #ChildrensStoriesIndia #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "028a66bdec9a6aa6b8de3459e4ab7a8e079841e2966e90592ba3f7dca6004e2f",
-      "carousel_container_id": null,
+      "carousel_container_id": "18131611715496970",
       "claimed_at": "2026-10-31T06:09:07.713373+00:00",
       "claimed_by": "41175371127.1",
       "content_id": "KS-000040",
@@ -447,6 +447,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "41175371127.1"
+        },
+        {
+          "at": "2026-10-31T06:10:10.690034+00:00",
+          "detail": "18131611715496970",
+          "event": "containers-ready",
+          "run": "41175371127.1"
         }
       ],
       "hosted_assets": [
@@ -459,7 +465,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18131611601496970",
+        "18131611622496970",
+        "18131611640496970",
+        "18131611658496970",
+        "18131611676496970",
+        "18131611694496970"
+      ],
       "last_attempt_at": "2026-10-31T06:09:07.713373+00:00",
       "last_error": null,
       "source_images": [
@@ -470,9 +483,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Penny Penguin's Snowy Shores Stretches",
-      "updated_at": "2026-10-31T06:09:13.838847+00:00"
+      "updated_at": "2026-10-31T06:10:10.690049+00:00"
     }
   }
 }
