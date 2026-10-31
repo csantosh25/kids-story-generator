@@ -453,6 +453,12 @@
           "detail": "18131611715496970",
           "event": "containers-ready",
           "run": "41175371127.1"
+        },
+        {
+          "at": "2026-10-31T06:10:12.693757+00:00",
+          "detail": "18131611715496970",
+          "event": "publish-requested",
+          "run": "41175371127.1"
         }
       ],
       "hosted_assets": [
@@ -475,6 +481,7 @@
       ],
       "last_attempt_at": "2026-10-31T06:09:07.713373+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-10-31T06:10:12.693744+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -483,9 +490,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Penny Penguin's Snowy Shores Stretches",
-      "updated_at": "2026-10-31T06:10:10.690049+00:00"
+      "updated_at": "2026-10-31T06:10:12.693762+00:00"
     }
   }
 }
