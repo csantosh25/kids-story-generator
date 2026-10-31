@@ -441,13 +441,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "41175371127.1"
+        },
+        {
+          "at": "2026-10-31T06:09:13.838832+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "41175371127.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000040/01",
+        "bedtime01fables/instagram-carousel/KS-000040/02",
+        "bedtime01fables/instagram-carousel/KS-000040/03",
+        "bedtime01fables/instagram-carousel/KS-000040/04",
+        "bedtime01fables/instagram-carousel/KS-000040/05",
+        "bedtime01fables/instagram-carousel/KS-000040/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-10-31T06:09:07.713373+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Penny Penguin's Snowy Shores Stretches"
+      "title": "Penny Penguin's Snowy Shores Stretches",
+      "updated_at": "2026-10-31T06:09:13.838847+00:00"
     }
   }
 }
