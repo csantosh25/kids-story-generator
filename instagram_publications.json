@@ -543,6 +543,12 @@
           "detail": "18131781809496970",
           "event": "publish-requested",
           "run": "41281647156.1"
+        },
+        {
+          "at": "2026-11-01T06:40:38.122271+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "41281647156.1"
         }
       ],
       "hosted_assets": [
@@ -565,7 +571,10 @@
       ],
       "last_attempt_at": "2026-11-01T06:38:58.876262+00:00",
       "last_error": null,
+      "media_id": "18101325815438877",
+      "permalink": "https://www.instagram.com/p/DfMG_6WlUUl/",
       "publish_requested_at": "2026-11-01T06:40:32.337443+00:00",
+      "published_at": "2026-11-01T06:40:38.122257+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -574,9 +583,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Barnaby's Soft Dream Adventure",
-      "updated_at": "2026-11-01T06:40:32.337464+00:00"
+      "updated_at": "2026-11-01T06:40:38.122276+00:00"
     }
   }
 }
