@@ -537,6 +537,12 @@
           "detail": "18131781809496970",
           "event": "containers-ready",
           "run": "41281647156.1"
+        },
+        {
+          "at": "2026-11-01T06:40:32.337460+00:00",
+          "detail": "18131781809496970",
+          "event": "publish-requested",
+          "run": "41281647156.1"
         }
       ],
       "hosted_assets": [
@@ -559,6 +565,7 @@
       ],
       "last_attempt_at": "2026-11-01T06:38:58.876262+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-11-01T06:40:32.337443+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -567,9 +574,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Barnaby's Soft Dream Adventure",
-      "updated_at": "2026-11-01T06:40:30.899386+00:00"
+      "updated_at": "2026-11-01T06:40:32.337464+00:00"
     }
   }
 }
