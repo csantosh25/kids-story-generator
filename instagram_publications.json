@@ -508,6 +508,30 @@
       "status": "published",
       "title": "Penny Penguin's Snowy Shores Stretches",
       "updated_at": "2026-10-31T06:10:24.370352+00:00"
+    },
+    "KS-000041": {
+      "attempt_count": 1,
+      "caption": "📖 Barnaby's Soft Dream Adventure\n\nDoes your little one find it hard to settle down for sleep? Join Barnaby Bunny as he learns a special trick to relax. He goes on a soft dream adventure, floating on a fluffy cloud! This calming story helps children find their happy place before bedtime. Save this story for your next reading time.\n\n🌟 Lesson: Gentle breathing helps us relax for sleep.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsBedtimeStories #RelaxationForKids #WonderwoodValley #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "1bf488bbf2bfa9fdee053f7c07a0e267224aba34508ba157b9c05d58400003e5",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-01T06:38:58.876262+00:00",
+      "claimed_by": "41281647156.1",
+      "content_id": "KS-000041",
+      "created_date": "2026-11-01",
+      "folder": "output/20261101_063757_barnaby_s_soft_dream_adventure",
+      "history": [
+        {
+          "at": "2026-11-01T06:38:59.206595+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "41281647156.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-01T06:38:58.876262+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Barnaby's Soft Dream Adventure"
     }
   }
 }
