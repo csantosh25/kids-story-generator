@@ -513,7 +513,7 @@
       "attempt_count": 1,
       "caption": "📖 Barnaby's Soft Dream Adventure\n\nDoes your little one find it hard to settle down for sleep? Join Barnaby Bunny as he learns a special trick to relax. He goes on a soft dream adventure, floating on a fluffy cloud! This calming story helps children find their happy place before bedtime. Save this story for your next reading time.\n\n🌟 Lesson: Gentle breathing helps us relax for sleep.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsBedtimeStories #RelaxationForKids #WonderwoodValley #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "1bf488bbf2bfa9fdee053f7c07a0e267224aba34508ba157b9c05d58400003e5",
-      "carousel_container_id": null,
+      "carousel_container_id": "18131781809496970",
       "claimed_at": "2026-11-01T06:38:58.876262+00:00",
       "claimed_by": "41281647156.1",
       "content_id": "KS-000041",
@@ -531,6 +531,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "41281647156.1"
+        },
+        {
+          "at": "2026-11-01T06:40:30.899368+00:00",
+          "detail": "18131781809496970",
+          "event": "containers-ready",
+          "run": "41281647156.1"
         }
       ],
       "hosted_assets": [
@@ -543,7 +549,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18131781560496970",
+        "18131781578496970",
+        "18131781596496970",
+        "18131781677496970",
+        "18131781695496970",
+        "18131781755496970"
+      ],
       "last_attempt_at": "2026-11-01T06:38:58.876262+00:00",
       "last_error": null,
       "source_images": [
@@ -554,9 +567,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Barnaby's Soft Dream Adventure",
-      "updated_at": "2026-11-01T06:39:04.354223+00:00"
+      "updated_at": "2026-11-01T06:40:30.899386+00:00"
     }
   }
 }
