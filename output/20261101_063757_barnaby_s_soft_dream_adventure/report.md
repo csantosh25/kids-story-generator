@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Bella Bear and Pip's Honest Tale
+Barnaby's Soft Dream Adventure
 
 Subtitle:
-Learning the Joy of Truth
+A Calming Bedtime Story
 
 Theme:
-Being Honest
+Dream Adventures
 
 Moral:
-It's always best to be honest, even when mistakes happen. Honesty brings peace and happiness.
+Gentle breathing helps us relax for sleep.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
 ## Character
 
 Name:
-Bella Bear
+Barnaby Bunny
 
 Species:
-Bear
+Rabbit
 
 Personality:
-Kind, Helpful, Gentle, Patient
+Gentle, Sleepy, Kind, Imaginative
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-172
+239
 
 Generated:
-2026-10-19 05:07:17
+2026-11-01 06:38:15
 
 ---
 

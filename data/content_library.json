@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000031",
-        "created_date": "2026-10-19",
-        "status": "completed",
-        "title": "Bella Bear and Pip's Honest Tale",
-        "theme": "Being Honest",
-        "character": {
-            "name": "Bella Bear",
-            "species": "Bear"
-        },
-        "folder": "output/20261019_050559_bella_bear_and_pip_s_honest_tale",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000032",
         "created_date": "2026-10-20",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Penguin"
         },
         "folder": "output/20261031_060802_penny_penguin_s_snowy_shores_stretches",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000041",
+        "created_date": "2026-11-01",
+        "status": "completed",
+        "title": "Barnaby's Soft Dream Adventure",
+        "theme": "Dream Adventures",
+        "character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit"
+        },
+        "folder": "output/20261101_063757_barnaby_s_soft_dream_adventure",
         "instagram": {
             "posted": true,
             "post_url": ""
