@@ -549,6 +549,12 @@
           "detail": "published",
           "event": "published",
           "run": "41281647156.1"
+        },
+        {
+          "at": "2026-11-01T06:40:42.666060+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "41281647156.1"
         }
       ],
       "hosted_assets": [
@@ -559,7 +565,7 @@
         "bedtime01fables/instagram-carousel/KS-000041/05",
         "bedtime01fables/instagram-carousel/KS-000041/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-01T06:40:42.666041+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18131781560496970",
@@ -585,7 +591,7 @@
       ],
       "status": "published",
       "title": "Barnaby's Soft Dream Adventure",
-      "updated_at": "2026-11-01T06:40:38.122276+00:00"
+      "updated_at": "2026-11-01T06:40:42.666064+00:00"
     }
   }
 }
