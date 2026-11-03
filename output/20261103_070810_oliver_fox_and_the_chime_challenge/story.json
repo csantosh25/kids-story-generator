@@ -1,0 +1,134 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Chime Challenge",
+        "subtitle": "A Story of Teamwork and Friendship",
+        "theme": "Working Together",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Friends help each other and work together."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "Squeaky is a small grey squirrel with a bushy tail and bright eyes.",
+                "role": "Helps Oliver reach a high branch, working as a team."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, perky triangular ears, clever amber eyes, and a playful, confident grin, standing steadily while Squeaky Squirrel, a small grey squirrel with a bushy tail and bright eyes, carefully balances on his shoulders, reaching up to hang colorful wind chimes on a high branch. Set in a sunny forest clearing. Warm and cheerful mood. Children's book illustration, vertical composition, Instagram friendly, soft lighting, pastel colors.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny forest clearing",
+        "visual_action": "Oliver Fox and Squeaky Squirrel hanging wind chimes",
+        "visual_object": "colorful wind chimes",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Chime Surprise",
+            "text": "Oliver Fox skipped into Sunny Forest. The sun peeked through the leaves. He had pretty wind chimes in his paw. Oliver wanted to hang them up high. A friend's surprise party was today! He saw a perfect tall branch. It was just right.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Introduce Oliver and his mission in Sunny Forest."
+        },
+        {
+            "page": 2,
+            "title": "Too High to Reach",
+            "text": "Oliver jumped up to reach. He stretched his paw. The branch was too far away. He tried again with a bigger jump. Still, it was too high. Oliver felt a little stuck. He really wanted to hang the chimes. He thought and thought.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Show Oliver facing a challenge, feeling a little frustrated."
+        },
+        {
+            "page": 3,
+            "title": "A Friend Appears",
+            "text": "Just then, Squeaky Squirrel scampered past. \"Hello, Oliver!\" she chirped. Oliver showed her the chimes. \"I need to hang these,\" he said. \"But the branch is too high!\" Squeaky looked at the branch. She looked at Oliver. She saw his clever eyes.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Introduce Squeaky and the shared problem."
+        },
+        {
+            "page": 4,
+            "title": "Let's Solve it Together!",
+            "text": "Oliver smiled his big, playful grin. \"Let's solve it together!\" he said. \"You are small and quick. I am tall and strong.\" Squeaky got a bright idea. \"I can stand on your shoulders!\" she said. \"Then I can reach!\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver uses his catchphrase, and they devise a plan."
+        },
+        {
+            "page": 5,
+            "title": "Teamwork Makes it Work",
+            "text": "Oliver stood very still. Squeaky climbed gently onto his shoulders. She held the chimes carefully. Up she went, reaching for the branch. *Ting-a-ling!* The chimes hung perfectly. Oliver and Squeaky cheered. They had worked together as a team!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Show them successfully working together and solving the problem."
+        },
+        {
+            "page": 6,
+            "title": "Happy Friends",
+            "text": "The chimes sparkled in the afternoon sun. Oliver and Squeaky felt very happy. Their friendship felt even stronger. They knew they could always help each other. Working together made everything fun and easy. It was a lovely day in Sunny Forest.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Conclude with a warm, reassuring ending about friendship and teamwork."
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox wants to surprise a friend, but his plan hits a little snag! Watch how he learns that two heads (and paws!) are better than one when it comes to friendship and fun. This sweet story teaches children the joy of working together.\n📚 Save this story for your next reading time and share the magic of teamwork!\n#Bedtime01Fables #OliverFox",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TeamworkMakesTheDreamWork",
+            "#ChildrensStories"
+        ]
+    },
+    "email": {
+        "subject": "New Story: Oliver Fox and the Chime Challenge!",
+        "preview": "Join Oliver Fox and Squeaky Squirrel as they learn the power of teamwork in Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Chime Challenge | A Story about Teamwork for Kids",
+        "description": "Come along with Oliver Fox in Wonderwood Valley! Oliver wants to hang beautiful wind chimes for a friend's party, but the branch is too high. See how he teams up with Squeaky Squirrel to solve the problem together. This fun story teaches children the importance of working together and building strong friendships. Perfect for ages 4-7!",
+        "keywords": [
+            "Oliver Fox story",
+            "teamwork for kids",
+            "friendship story",
+            "childrens stories India",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Oliver Fox has a big plan. But he can't do it alone!",
+        "instagram_caption_short": "Oliver Fox wants to surprise a friend, but his plan hits a little snag! Watch how he learns that two heads (and paws!) are better than one when it comes to friendship and fun. This sweet story teaches children the joy of working together.\n📚 Save this story for your next reading time and share the magic of teamwork!\n#Bedtime01Fables #OliverFox",
+        "instagram_caption_long": "Join Oliver Fox in Wonderwood Valley's Sunny Forest! Oliver has a special surprise: beautiful wind chimes for a friend's party. He finds the perfect high branch, but soon realizes it's too tricky to reach all by himself. That's when his friend, Squeaky Squirrel, comes along!\n\nThis heartwarming adventure shows Oliver and Squeaky learning that when you work together, even the biggest challenges become fun. It's a lovely lesson in building strong friendships and the power of teamwork. Perfect for children aged 3-6 years.\n\n📚 Save this story for your next reading time and share the magic of teamwork!\n#Bedtime01Fables #OliverFox",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#TeamworkMakesTheDreamWork",
+            "#ChildrensStories"
+        ],
+        "first_comment": "Have you ever helped a friend with something tricky? Tell us what you did together!",
+        "alt_text": "A cheerful 3D illustration of Oliver Fox and Squeaky Squirrel in a sunny forest. Oliver, a red fox, smiles while Squeaky, a grey squirrel, stands on his shoulders to hang colorful wind chimes on a high branch.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What did Oliver and Squeaky do to help each other?"
+    }
+}

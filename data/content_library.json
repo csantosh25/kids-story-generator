@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000032",
-        "created_date": "2026-10-20",
-        "status": "completed",
-        "title": "Oliver Fox and Pip Squirrel's Acorn Adventure",
-        "theme": "Trust",
-        "character": {
-            "name": "Oliver Fox",
-            "species": "Fox"
-        },
-        "folder": "output/20261020_050852_oliver_fox_and_pip_squirrel_s_acorn_adventure",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000033",
         "created_date": "2026-10-22",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Rabbit"
         },
         "folder": "output/20261101_063757_barnaby_s_soft_dream_adventure",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000042",
+        "created_date": "2026-11-03",
+        "status": "completed",
+        "title": "Oliver Fox and the Chime Challenge",
+        "theme": "Working Together",
+        "character": {
+            "name": "Oliver Fox",
+            "species": "Fox"
+        },
+        "folder": "output/20261103_070810_oliver_fox_and_the_chime_challenge",
         "instagram": {
             "posted": true,
             "post_url": ""
