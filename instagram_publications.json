@@ -597,7 +597,7 @@
       "attempt_count": 1,
       "caption": "📖 Oliver Fox and the Chime Challenge\n\nOliver Fox wants to surprise a friend, but his plan hits a little snag! Watch how he learns that two heads (and paws!) are better than one when it comes to friendship and fun. This sweet story teaches children the joy of working together. 📚 Save this story for your next reading time and share the magic of teamwork!\n\n🌟 Lesson: Friends help each other and work together.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #OliverFox #KidsFriendship #TeamworkMakesTheDreamWork #ChildrensStories #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "8f32015a236ef4894406bfbdc85151c8137cf7c9df543b2e471bd69544e69b89",
-      "carousel_container_id": null,
+      "carousel_container_id": "18132074243496970",
       "claimed_at": "2026-11-03T07:09:24.760202+00:00",
       "claimed_by": "41594376558.1",
       "content_id": "KS-000042",
@@ -615,6 +615,12 @@
           "detail": "7 images",
           "event": "uploaded",
           "run": "41594376558.1"
+        },
+        {
+          "at": "2026-11-03T07:10:32.785629+00:00",
+          "detail": "18132074243496970",
+          "event": "containers-ready",
+          "run": "41594376558.1"
         }
       ],
       "hosted_assets": [
@@ -628,7 +634,15 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 7,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18132074114496970",
+        "18132074132496970",
+        "18132074150496970",
+        "18132074171496970",
+        "18132074189496970",
+        "18132074207496970",
+        "18132074225496970"
+      ],
       "last_attempt_at": "2026-11-03T07:09:24.760202+00:00",
       "last_error": null,
       "source_images": [
@@ -640,9 +654,9 @@
         "slide_5.png",
         "slide_6.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Oliver Fox and the Chime Challenge",
-      "updated_at": "2026-11-03T07:09:31.955306+00:00"
+      "updated_at": "2026-11-03T07:10:32.785644+00:00"
     }
   }
 }
