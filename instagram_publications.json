@@ -609,13 +609,40 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "41594376558.1"
+        },
+        {
+          "at": "2026-11-03T07:09:31.955291+00:00",
+          "detail": "7 images",
+          "event": "uploaded",
+          "run": "41594376558.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000042/01",
+        "bedtime01fables/instagram-carousel/KS-000042/02",
+        "bedtime01fables/instagram-carousel/KS-000042/03",
+        "bedtime01fables/instagram-carousel/KS-000042/04",
+        "bedtime01fables/instagram-carousel/KS-000042/05",
+        "bedtime01fables/instagram-carousel/KS-000042/06",
+        "bedtime01fables/instagram-carousel/KS-000042/07"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 7,
       "item_container_ids": [],
       "last_attempt_at": "2026-11-03T07:09:24.760202+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png",
+        "slide_6.png"
+      ],
       "status": "claimed",
-      "title": "Oliver Fox and the Chime Challenge"
+      "title": "Oliver Fox and the Chime Challenge",
+      "updated_at": "2026-11-03T07:09:31.955306+00:00"
     }
   }
 }
