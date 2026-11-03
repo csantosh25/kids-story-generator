@@ -627,6 +627,12 @@
           "detail": "18132074243496970",
           "event": "publish-requested",
           "run": "41594376558.1"
+        },
+        {
+          "at": "2026-11-03T07:10:42.082927+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "41594376558.1"
         }
       ],
       "hosted_assets": [
@@ -651,7 +657,10 @@
       ],
       "last_attempt_at": "2026-11-03T07:09:24.760202+00:00",
       "last_error": null,
+      "media_id": "18130236952828848",
+      "permalink": "https://www.instagram.com/p/DfRUBmvm-mq/",
       "publish_requested_at": "2026-11-03T07:10:35.056778+00:00",
+      "published_at": "2026-11-03T07:10:42.082911+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -661,9 +670,9 @@
         "slide_5.png",
         "slide_6.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Oliver Fox and the Chime Challenge",
-      "updated_at": "2026-11-03T07:10:35.056796+00:00"
+      "updated_at": "2026-11-03T07:10:42.082932+00:00"
     }
   }
 }
