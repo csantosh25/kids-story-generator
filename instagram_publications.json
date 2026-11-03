@@ -633,6 +633,12 @@
           "detail": "published",
           "event": "published",
           "run": "41594376558.1"
+        },
+        {
+          "at": "2026-11-03T07:10:48.714103+00:00",
+          "detail": "7 images",
+          "event": "hosted-assets-deleted",
+          "run": "41594376558.1"
         }
       ],
       "hosted_assets": [
@@ -644,7 +650,7 @@
         "bedtime01fables/instagram-carousel/KS-000042/06",
         "bedtime01fables/instagram-carousel/KS-000042/07"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-03T07:10:48.714087+00:00",
       "image_count": 7,
       "item_container_ids": [
         "18132074114496970",
@@ -672,7 +678,7 @@
       ],
       "status": "published",
       "title": "Oliver Fox and the Chime Challenge",
-      "updated_at": "2026-11-03T07:10:42.082932+00:00"
+      "updated_at": "2026-11-03T07:10:48.714108+00:00"
     }
   }
 }
