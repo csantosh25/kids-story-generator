@@ -684,7 +684,7 @@
       "attempt_count": 1,
       "caption": "📖 Toby Turtle Helps Pip Bird\n\nWhat sound did Toby Turtle hear by the lake? Join Toby as he discovers a tiny friend in need! This gentle story teaches little ones about caring for nature and helping others. Your child will love Toby's calm adventure. 📚 Save this story for your next reading time.\n\n🌟 Lesson: Always love and protect nature.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #TobyTurtle #KidsNature #ProtectAnimals #StoryTimeFun #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "d72b1ed806e23a776b2e54977137f714fc7892618b69e858c281a31be486d73f",
-      "carousel_container_id": null,
+      "carousel_container_id": "18132332345496970",
       "claimed_at": "2026-11-05T07:12:26.134666+00:00",
       "claimed_by": "41985531545.1",
       "content_id": "KS-000043",
@@ -702,6 +702,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "41985531545.1"
+        },
+        {
+          "at": "2026-11-05T07:13:31.046105+00:00",
+          "detail": "18132332345496970",
+          "event": "containers-ready",
+          "run": "41985531545.1"
         }
       ],
       "hosted_assets": [
@@ -714,7 +720,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18132332234496970",
+        "18132332252496970",
+        "18132332270496970",
+        "18132332288496970",
+        "18132332306496970",
+        "18132332324496970"
+      ],
       "last_attempt_at": "2026-11-05T07:12:26.134666+00:00",
       "last_error": null,
       "source_images": [
@@ -725,9 +738,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Toby Turtle Helps Pip Bird",
-      "updated_at": "2026-11-05T07:12:31.790123+00:00"
+      "updated_at": "2026-11-05T07:13:31.046124+00:00"
     }
   }
 }
