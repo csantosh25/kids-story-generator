@@ -714,6 +714,12 @@
           "detail": "18132332345496970",
           "event": "publish-requested",
           "run": "41985531545.1"
+        },
+        {
+          "at": "2026-11-05T07:13:39.816126+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "41985531545.1"
         }
       ],
       "hosted_assets": [
@@ -736,7 +742,10 @@
       ],
       "last_attempt_at": "2026-11-05T07:12:26.134666+00:00",
       "last_error": null,
+      "media_id": "18639346990063656",
+      "permalink": "https://www.instagram.com/p/DfWd9HKkdeP/",
       "publish_requested_at": "2026-11-05T07:13:33.013819+00:00",
+      "published_at": "2026-11-05T07:13:39.816105+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -745,9 +754,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Toby Turtle Helps Pip Bird",
-      "updated_at": "2026-11-05T07:13:33.013841+00:00"
+      "updated_at": "2026-11-05T07:13:39.816132+00:00"
     }
   }
 }
