@@ -679,6 +679,30 @@
       "status": "published",
       "title": "Oliver Fox and the Chime Challenge",
       "updated_at": "2026-11-03T07:10:48.714108+00:00"
+    },
+    "KS-000043": {
+      "attempt_count": 1,
+      "caption": "📖 Toby Turtle Helps Pip Bird\n\nWhat sound did Toby Turtle hear by the lake? Join Toby as he discovers a tiny friend in need! This gentle story teaches little ones about caring for nature and helping others. Your child will love Toby's calm adventure. 📚 Save this story for your next reading time.\n\n🌟 Lesson: Always love and protect nature.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #TobyTurtle #KidsNature #ProtectAnimals #StoryTimeFun #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "d72b1ed806e23a776b2e54977137f714fc7892618b69e858c281a31be486d73f",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-05T07:12:26.134666+00:00",
+      "claimed_by": "41985531545.1",
+      "content_id": "KS-000043",
+      "created_date": "2026-11-05",
+      "folder": "output/20261105_071117_toby_turtle_helps_pip_bird",
+      "history": [
+        {
+          "at": "2026-11-05T07:12:26.721187+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "41985531545.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-05T07:12:26.134666+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Toby Turtle Helps Pip Bird"
     }
   }
 }
