@@ -720,6 +720,12 @@
           "detail": "published",
           "event": "published",
           "run": "41985531545.1"
+        },
+        {
+          "at": "2026-11-05T07:13:45.175032+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "41985531545.1"
         }
       ],
       "hosted_assets": [
@@ -730,7 +736,7 @@
         "bedtime01fables/instagram-carousel/KS-000043/05",
         "bedtime01fables/instagram-carousel/KS-000043/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-05T07:13:45.175013+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18132332234496970",
@@ -756,7 +762,7 @@
       ],
       "status": "published",
       "title": "Toby Turtle Helps Pip Bird",
-      "updated_at": "2026-11-05T07:13:39.816132+00:00"
+      "updated_at": "2026-11-05T07:13:45.175038+00:00"
     }
   }
 }
