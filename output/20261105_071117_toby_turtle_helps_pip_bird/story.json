@@ -1,0 +1,129 @@
+{
+    "story_info": {
+        "title": "Toby Turtle Helps Pip Bird",
+        "subtitle": "A Gentle Nature Adventure",
+        "theme": "Birds",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Always love and protect nature."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Bird",
+                "species": "Small Bird",
+                "appearance": "A tiny fluffy bird with soft brown feathers and a little yellow beak.",
+                "role": "Needs help getting back to its nest and staying safe."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers, carefully watching over a tiny fluffy bird with soft brown feathers and a little yellow beak. They are at the edge of Crystal Lake, with green reeds nearby. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly. Reserve the lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Edge of Crystal Lake, green reeds",
+        "visual_action": "Toby Turtle watching over a tiny bird",
+        "visual_object": "A small fluffy brown bird",
+        "mood": "Warm and caring"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Morning",
+            "text": "Toby Turtle loved Crystal Lake. The morning sun made the water sparkle. He watched dragonflies zip by. Many colourful birds sang happy songs from the green trees. Toby smiled. He loved listening to them. \"Slow and steady discovers wonders!\" he thought. He felt calm and happy.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "lake",
+            "icon": "fish",
+            "speaker_notes": "Introduce Toby at his favourite place, Crystal Lake, setting a peaceful morning scene with birdsong."
+        },
+        {
+            "page": 2,
+            "title": "A Tiny Sound",
+            "text": "Suddenly, Toby heard a soft, sad sound. \"Peep, peep,\" it went again. Toby looked very carefully. He saw a tiny brown bird on the ground, near a big tree. It was little Pip Bird! Pip Bird looked lost and scared. It was too small to fly back up.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "tree",
+            "icon": "bird",
+            "speaker_notes": "Introduce the challenge: Toby finds a lost baby bird (Pip Bird) on the ground."
+        },
+        {
+            "page": 3,
+            "title": "Needing Help",
+            "text": "Pip Bird flapped its tiny wings. It tried to jump, but it could not fly high. Its nest was way up, safe in a tall tree branch. Toby knew Pip Bird needed help to stay safe. He slowly, gently moved his big shell closer. Toby wanted to keep Pip Bird warm.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "nest",
+            "icon": "nest",
+            "speaker_notes": "Highlight Pip Bird's predicament and Toby's gentle, patient nature in approaching to help."
+        },
+        {
+            "page": 4,
+            "title": "A Safe Place",
+            "text": "Toby found a big, wide green leaf. He carefully nudged Pip Bird onto the soft leaf. Then he moved the leaf and Pip Bird under a safe, shady bush. Now Pip Bird was hidden and warm from the sun. Toby stayed nearby, watching. He hoped Pip Bird's mummy would come soon.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "bush",
+            "icon": "leaf",
+            "speaker_notes": "Show Toby's creative solution, using natural elements to create a safe spot for the bird."
+        },
+        {
+            "page": 5,
+            "title": "Happy Ending",
+            "text": "Soon, Mummy Bird flew down from the tree! She saw her baby, Pip Bird, safe under the bush. She chirped a loud, happy song. Toby felt very good inside. He was so happy to help a friend. He loved protecting nature. \"Slow and steady discovers wonders!\" he whispered softly.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sunrise",
+            "icon": "sun",
+            "speaker_notes": "Conclude with the happy reunion and Toby's positive emotional reflection on helping and protecting nature."
+        }
+    ],
+    "instagram": {
+        "caption": "What sound did Toby Turtle hear by the lake? One sunny morning, Toby was enjoying the peaceful Crystal Lake. But then, a soft \"Peep, peep\" caught his ear! He looked closely and found tiny Pip Bird on the ground, far from its nest. Pip Bird was too small to fly back up. Toby, with his kind heart and steady movements, knew just what to do to keep Pip Bird safe. This heartwarming tale teaches children about kindness, looking out for little creatures, and the joy of protecting our beautiful nature. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#ProtectAnimals",
+            "#StoryTimeFun"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Gentle Adventure: Helping a Tiny Bird!",
+        "preview": "Join Toby Turtle as he learns to love and protect nature in Wonderwood Valley."
+    },
+    "youtube": {
+        "title": "Toby Turtle Helps Pip Bird | A Wonderwood Valley Nature Story for Kids",
+        "description": "Discover a heartwarming story with Toby Turtle from Wonderwood Valley! In this gentle adventure, Toby finds a tiny bird in need of help and shows us how to love and protect nature. Perfect for children aged 4-7.",
+        "keywords": [
+            "Toby Turtle",
+            "Wonderwood Valley",
+            "childrens story",
+            "nature story",
+            "kids birds",
+            "protect nature",
+            "animal friends",
+            "bedtime story",
+            "moral story"
+        ]
+    },
+    "publishing": {
+        "hook": "What sound did Toby Turtle hear by the lake?",
+        "instagram_caption_short": "What sound did Toby Turtle hear by the lake? Join Toby as he discovers a tiny friend in need! This gentle story teaches little ones about caring for nature and helping others. Your child will love Toby's calm adventure. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "What sound did Toby Turtle hear by the lake? One sunny morning, Toby was enjoying the peaceful Crystal Lake. But then, a soft \"Peep, peep\" caught his ear! He looked closely and found tiny Pip Bird on the ground, far from its nest. Pip Bird was too small to fly back up. Toby, with his kind heart and steady movements, knew just what to do to keep Pip Bird safe. This heartwarming tale teaches children about kindness, looking out for little creatures, and the joy of protecting our beautiful nature. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#ProtectAnimals",
+            "#StoryTimeFun"
+        ],
+        "first_comment": "What is your child's favorite animal to spot in nature?",
+        "alt_text": "Toby Turtle, a young sea turtle with a teal-green shell, gently watches over a tiny brown baby bird under a green bush near a sparkling lake.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Toby Turtle show he cares for nature in this story?"
+    }
+}
