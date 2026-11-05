@@ -696,13 +696,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "41985531545.1"
+        },
+        {
+          "at": "2026-11-05T07:12:31.790101+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "41985531545.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000043/01",
+        "bedtime01fables/instagram-carousel/KS-000043/02",
+        "bedtime01fables/instagram-carousel/KS-000043/03",
+        "bedtime01fables/instagram-carousel/KS-000043/04",
+        "bedtime01fables/instagram-carousel/KS-000043/05",
+        "bedtime01fables/instagram-carousel/KS-000043/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-11-05T07:12:26.134666+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Toby Turtle Helps Pip Bird"
+      "title": "Toby Turtle Helps Pip Bird",
+      "updated_at": "2026-11-05T07:12:31.790123+00:00"
     }
   }
 }
