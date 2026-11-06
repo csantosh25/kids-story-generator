@@ -763,6 +763,30 @@
       "status": "published",
       "title": "Toby Turtle Helps Pip Bird",
       "updated_at": "2026-11-05T07:13:45.175038+00:00"
+    },
+    "KS-000044": {
+      "attempt_count": 1,
+      "caption": "📖 Max Monkey and the Secret Castle\n\nMax Monkey loves adventure! He heard tales of a secret castle hidden deep in the jungle. Join Max on his exciting quest and see how he uses his confidence to solve a little mystery! This story teaches children that being brave and trying your best can lead to wonderful discoveries. Save this story for your child's next adventure time.\n\n🌟 Lesson: Being brave and trying your best helps you find wonderful things.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #MaxMonkey #KidsAdventure #ConfidenceForKids #WonderwoodValley #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "c7db7ce92c29754756594ee1cfe6884337aea9cf51a37b5fbe0f39982c6904a3",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-06T07:13:24.285193+00:00",
+      "claimed_by": "42179394068.1",
+      "content_id": "KS-000044",
+      "created_date": "2026-11-06",
+      "folder": "output/20261106_071215_max_monkey_and_the_secret_castle",
+      "history": [
+        {
+          "at": "2026-11-06T07:13:24.909351+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "42179394068.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-06T07:13:24.285193+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Max Monkey and the Secret Castle"
     }
   }
 }
