@@ -768,7 +768,7 @@
       "attempt_count": 1,
       "caption": "📖 Max Monkey and the Secret Castle\n\nMax Monkey loves adventure! He heard tales of a secret castle hidden deep in the jungle. Join Max on his exciting quest and see how he uses his confidence to solve a little mystery! This story teaches children that being brave and trying your best can lead to wonderful discoveries. Save this story for your child's next adventure time.\n\n🌟 Lesson: Being brave and trying your best helps you find wonderful things.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #MaxMonkey #KidsAdventure #ConfidenceForKids #WonderwoodValley #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "c7db7ce92c29754756594ee1cfe6884337aea9cf51a37b5fbe0f39982c6904a3",
-      "carousel_container_id": null,
+      "carousel_container_id": "18132461687496970",
       "claimed_at": "2026-11-06T07:13:24.285193+00:00",
       "claimed_by": "42179394068.1",
       "content_id": "KS-000044",
@@ -786,6 +786,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "42179394068.1"
+        },
+        {
+          "at": "2026-11-06T07:14:29.817935+00:00",
+          "detail": "18132461687496970",
+          "event": "containers-ready",
+          "run": "42179394068.1"
         }
       ],
       "hosted_assets": [
@@ -798,7 +804,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18132461570496970",
+        "18132461588496970",
+        "18132461609496970",
+        "18132461627496970",
+        "18132461645496970",
+        "18132461663496970"
+      ],
       "last_attempt_at": "2026-11-06T07:13:24.285193+00:00",
       "last_error": null,
       "source_images": [
@@ -809,9 +822,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Max Monkey and the Secret Castle",
-      "updated_at": "2026-11-06T07:13:30.014329+00:00"
+      "updated_at": "2026-11-06T07:14:29.817953+00:00"
     }
   }
 }
