@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000034",
-        "created_date": "2026-10-23",
-        "status": "completed",
-        "title": "Max Monkey's Brave Cave Hunt",
-        "theme": "Hidden Cave",
-        "character": {
-            "name": "Max Monkey",
-            "species": "Monkey"
-        },
-        "folder": "output/20261023_051237_max_monkey_s_brave_cave_hunt",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000035",
         "created_date": "2026-10-24",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Sea Turtle"
         },
         "folder": "output/20261105_071117_toby_turtle_helps_pip_bird",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000044",
+        "created_date": "2026-11-06",
+        "status": "completed",
+        "title": "Max Monkey and the Secret Castle",
+        "theme": "Castle Mystery",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20261106_071215_max_monkey_and_the_secret_castle",
         "instagram": {
             "posted": true,
             "post_url": ""

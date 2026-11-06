@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Max Monkey's Brave Cave Hunt
+Max Monkey and the Secret Castle
 
 Subtitle:
-A curious monkey's big adventure!
+A Jungle Quest for Confidence
 
 Theme:
-Hidden Cave
+Castle Mystery
 
 Moral:
-Being brave helps you find wonderful things.
+Being brave and trying your best helps you find wonderful things.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-245
+277
 
 Generated:
-2026-10-23 05:13:53
+2026-11-06 07:12:36
 
 ---
 

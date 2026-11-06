@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Max Monkey and the Secret Castle",
+        "subtitle": "A Jungle Quest for Confidence",
+        "theme": "Castle Mystery",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Being brave and trying your best helps you find wonderful things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Max Monkey, a small energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager wide-open smile. Max is playfully peeking from behind very thick, ancient green vines in the Adventure Jungle. In the background, partly visible, is a small, mossy rock formation that looks like a tiny castle. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Adventure Jungle, near old vines",
+        "visual_action": "Max Monkey peeking playfully from behind thick green vines",
+        "visual_object": "a small, mossy rock formation shaped like a castle",
+        "mood": "curious and warm"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Great Idea!",
+            "text": "Max Monkey loved the Adventure Jungle. \"Adventure is waiting!\" he cheered. Today, he wanted to find something special. He heard tales of a small, secret castle. It was hidden deep inside the jungle. Max decided to look for it. His big eyes looked all around. He wiggled his tail with joy. This was going to be a fun quest!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "tree",
+            "speaker_notes": "Max is excited to start his adventure in the Adventure Jungle, looking for a secret castle."
+        },
+        {
+            "page": 2,
+            "title": "Finding a Clue",
+            "text": "Max swung from vine to vine. He looked under big leaves. He peeked behind tall trees. \"Where could the castle be?\" he thought. Then, he saw something. A wall of very thick, green vines. They covered a big rock. Could the castle be behind them? Max felt a little flutter in his belly. He wanted to know!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle vines",
+            "icon": "leaf",
+            "speaker_notes": "Max discovers a wall of thick vines that might be hiding the castle, feeling a mix of excitement and curiosity."
+        },
+        {
+            "page": 3,
+            "title": "A Little Push",
+            "text": "The vines looked very old. They were tangled like big green ropes. Max tried to push them. They were too strong. \"Oh, dear,\" Max said. He felt a little bit stuck. But then he remembered. Max is always brave! He looked closer. Maybe there was a tiny space he missed.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "dense jungle",
+            "icon": "vine",
+            "speaker_notes": "Max faces a challenge with the strong vines but remembers to be brave and look for another way."
+        },
+        {
+            "page": 4,
+            "title": "A Secret Way In",
+            "text": "Max saw a small opening! It was just big enough for him. He squeezed his body through the vines. It was dark for a moment. Then, sunlight shone in. Max blinked his big eyes. He was in a secret garden. And right in front of him, something special stood. It was very pretty!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "secret garden",
+            "icon": "flower",
+            "speaker_notes": "Max finds a small opening and bravely squeezes through, discovering a secret garden."
+        },
+        {
+            "page": 5,
+            "title": "The Castle Found!",
+            "text": "It was not a huge castle. It was a beautiful stone formation! It looked like a tiny, old castle, covered in soft green moss. Max smiled a big, happy smile. He had found the secret! He felt brave and smart. Max knew he could do anything. \"Adventure is always waiting!\" he said. He felt calm and happy inside.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "castle discovery",
+            "icon": "castle",
+            "speaker_notes": "Max discovers the 'castle', a beautiful rock formation, and feels proud and confident about his adventure."
+        }
+    ],
+    "instagram": {
+        "caption": "Max Monkey loved the Adventure Jungle! He heard tales of a secret castle hidden deep inside. With his curious eyes and brave heart, Max sets off on a quest. Will he find the hidden castle? Join Max on his exciting journey and see how he uses his confidence to solve a little mystery! This story teaches children that being brave and trying your best can lead to wonderful discoveries. #Bedtime01Fables #MaxMonkey",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#WonderwoodValley"
+        ]
+    },
+    "email": {
+        "subject": "New Story Alert! 🐒 Max Monkey's Secret Castle Adventure!",
+        "preview": "Join Max Monkey on an exciting quest to find a hidden castle in the Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Max Monkey and the Secret Castle | An Adventure Story for Kids",
+        "description": "Come along with Max Monkey as he explores the Adventure Jungle to find a legendary secret castle! This fun and engaging story for children aged 3-6 years teaches the importance of confidence and perseverance. Max shows us that being brave and trying your best can help you discover amazing things. Perfect for storytime and encouraging a love for adventure!",
+        "keywords": [
+            "Max Monkey",
+            "children's story",
+            "adventure story",
+            "confidence for kids",
+            "Wonderwood Valley",
+            "kindergarten story",
+            "preschool story",
+            "jungle adventure",
+            "castle mystery",
+            "kids learning"
+        ]
+    },
+    "publishing": {
+        "hook": "Can Max Monkey find the hidden jungle castle?",
+        "instagram_caption_short": "Max Monkey loves adventure! He heard tales of a secret castle hidden deep in the jungle. Join Max on his exciting quest and see how he uses his confidence to solve a little mystery! This story teaches children that being brave and trying your best can lead to wonderful discoveries. Save this story for your child's next adventure time. #Bedtime01Fables #MaxMonkey",
+        "instagram_caption_long": "Hello, Wonderwood Valley friends! Get ready for a thrilling Friday adventure with our lively Max Monkey! 🐒 Max loves exploring, and today he has a big mission: to find a secret castle hidden deep in the Adventure Jungle. The path might be tricky, and the vines are thick, but Max's adventurous spirit and big smile lead the way. This story is perfect for little ones aged 3-6, showing them that even when things seem hard, a little bit of confidence can help you discover something truly special. Watch Max bravely push through and find his hidden treasure! Save this story for your child's next adventure time. #Bedtime01Fables #MaxMonkey",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "What would your little one like to discover on a jungle adventure?",
+        "alt_text": "Max Monkey, a small brown monkey, peeks from behind thick green vines. In the background, a mossy rock looks like a tiny castle.",
+        "call_to_action": "Save this story for your child's next adventure time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What new thing did you try today that made you feel brave?"
+    }
+}
