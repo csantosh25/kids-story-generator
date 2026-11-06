@@ -804,6 +804,12 @@
           "detail": "published",
           "event": "published",
           "run": "42179394068.1"
+        },
+        {
+          "at": "2026-11-06T07:14:44.761030+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "42179394068.1"
         }
       ],
       "hosted_assets": [
@@ -814,7 +820,7 @@
         "bedtime01fables/instagram-carousel/KS-000044/05",
         "bedtime01fables/instagram-carousel/KS-000044/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-06T07:14:44.761008+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18132461570496970",
@@ -840,7 +846,7 @@
       ],
       "status": "published",
       "title": "Max Monkey and the Secret Castle",
-      "updated_at": "2026-11-06T07:14:39.511156+00:00"
+      "updated_at": "2026-11-06T07:14:44.761036+00:00"
     }
   }
 }
