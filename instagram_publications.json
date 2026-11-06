@@ -798,6 +798,12 @@
           "detail": "18132461687496970",
           "event": "publish-requested",
           "run": "42179394068.1"
+        },
+        {
+          "at": "2026-11-06T07:14:39.511151+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "42179394068.1"
         }
       ],
       "hosted_assets": [
@@ -820,7 +826,10 @@
       ],
       "last_attempt_at": "2026-11-06T07:13:24.285193+00:00",
       "last_error": null,
+      "media_id": "18118487401817688",
+      "permalink": "https://www.instagram.com/p/DfZC3JskRPi/",
       "publish_requested_at": "2026-11-06T07:14:32.363641+00:00",
+      "published_at": "2026-11-06T07:14:39.511134+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -829,9 +838,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Max Monkey and the Secret Castle",
-      "updated_at": "2026-11-06T07:14:32.363664+00:00"
+      "updated_at": "2026-11-06T07:14:39.511156+00:00"
     }
   }
 }
