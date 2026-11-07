@@ -876,6 +876,12 @@
           "detail": "18132591314496970",
           "event": "containers-ready",
           "run": "42346884829.1"
+        },
+        {
+          "at": "2026-11-07T06:26:54.373860+00:00",
+          "detail": "18132591314496970",
+          "event": "publish-requested",
+          "run": "42346884829.1"
         }
       ],
       "hosted_assets": [
@@ -898,6 +904,7 @@
       ],
       "last_attempt_at": "2026-11-07T06:25:20.278380+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-11-07T06:26:54.373846+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -906,9 +913,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Penny Penguin's Water Adventure",
-      "updated_at": "2026-11-07T06:26:51.981005+00:00"
+      "updated_at": "2026-11-07T06:26:54.373865+00:00"
     }
   }
 }
