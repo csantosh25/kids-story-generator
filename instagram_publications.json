@@ -847,6 +847,30 @@
       "status": "published",
       "title": "Max Monkey and the Secret Castle",
       "updated_at": "2026-11-06T07:14:44.761036+00:00"
+    },
+    "KS-000045": {
+      "attempt_count": 1,
+      "caption": "📖 Penny Penguin's Water Adventure\n\nPenny Penguin is playing hard on Snowy Shores! But even energetic little friends need a healthy habit to keep the fun going. Join Penny as she learns how a simple sip of water makes her feel happy and strong again! 💧 Save this story for your next reading time.\n\n🌟 Lesson: Drinking water helps you feel happy and strong.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #PennyPenguin #KidsHealth #WaterForKids #WonderwoodValley #BedtimeStories #StoryTime #MoralStories",
+      "caption_fingerprint": "f7b1ee5ce5e08eaea2f12545e54f57e83005612349847211322c5e857a49f48a",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-07T06:25:20.278380+00:00",
+      "claimed_by": "42346884829.1",
+      "content_id": "KS-000045",
+      "created_date": "2026-11-07",
+      "folder": "output/20261107_062406_penny_penguin_s_water_adventure",
+      "history": [
+        {
+          "at": "2026-11-07T06:25:20.973320+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "42346884829.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-07T06:25:20.278380+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Penny Penguin's Water Adventure"
     }
   }
 }
