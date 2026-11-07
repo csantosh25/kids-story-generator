@@ -864,13 +864,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "42346884829.1"
+        },
+        {
+          "at": "2026-11-07T06:25:27.431214+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "42346884829.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000045/01",
+        "bedtime01fables/instagram-carousel/KS-000045/02",
+        "bedtime01fables/instagram-carousel/KS-000045/03",
+        "bedtime01fables/instagram-carousel/KS-000045/04",
+        "bedtime01fables/instagram-carousel/KS-000045/05",
+        "bedtime01fables/instagram-carousel/KS-000045/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-11-07T06:25:20.278380+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Penny Penguin's Water Adventure"
+      "title": "Penny Penguin's Water Adventure",
+      "updated_at": "2026-11-07T06:25:27.431230+00:00"
     }
   }
 }
