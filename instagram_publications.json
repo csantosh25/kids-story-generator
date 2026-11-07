@@ -852,7 +852,7 @@
       "attempt_count": 1,
       "caption": "📖 Penny Penguin's Water Adventure\n\nPenny Penguin is playing hard on Snowy Shores! But even energetic little friends need a healthy habit to keep the fun going. Join Penny as she learns how a simple sip of water makes her feel happy and strong again! 💧 Save this story for your next reading time.\n\n🌟 Lesson: Drinking water helps you feel happy and strong.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#KidsStories #BedtimeStory #Bedtime01Fables #PennyPenguin #KidsHealth #WaterForKids #WonderwoodValley #BedtimeStories #StoryTime #MoralStories",
       "caption_fingerprint": "f7b1ee5ce5e08eaea2f12545e54f57e83005612349847211322c5e857a49f48a",
-      "carousel_container_id": null,
+      "carousel_container_id": "18132591314496970",
       "claimed_at": "2026-11-07T06:25:20.278380+00:00",
       "claimed_by": "42346884829.1",
       "content_id": "KS-000045",
@@ -870,6 +870,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "42346884829.1"
+        },
+        {
+          "at": "2026-11-07T06:26:51.980991+00:00",
+          "detail": "18132591314496970",
+          "event": "containers-ready",
+          "run": "42346884829.1"
         }
       ],
       "hosted_assets": [
@@ -882,7 +888,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18132591200496970",
+        "18132591218496970",
+        "18132591236496970",
+        "18132591254496970",
+        "18132591275496970",
+        "18132591293496970"
+      ],
       "last_attempt_at": "2026-11-07T06:25:20.278380+00:00",
       "last_error": null,
       "source_images": [
@@ -893,9 +906,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Penny Penguin's Water Adventure",
-      "updated_at": "2026-11-07T06:25:27.431230+00:00"
+      "updated_at": "2026-11-07T06:26:51.981005+00:00"
     }
   }
 }
