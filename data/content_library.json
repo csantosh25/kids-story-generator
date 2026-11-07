@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000035",
-        "created_date": "2026-10-24",
-        "status": "completed",
-        "title": "Penny Penguin's Bright Morning",
-        "theme": "Morning Routine",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20261024_154317_penny_penguin_s_bright_morning",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000036",
         "created_date": "2026-10-25",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261106_071215_max_monkey_and_the_secret_castle",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000045",
+        "created_date": "2026-11-07",
+        "status": "completed",
+        "title": "Penny Penguin's Water Adventure",
+        "theme": "Drinking Water",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261107_062406_penny_penguin_s_water_adventure",
         "instagram": {
             "posted": true,
             "post_url": ""
