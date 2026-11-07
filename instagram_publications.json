@@ -888,6 +888,12 @@
           "detail": "published",
           "event": "published",
           "run": "42346884829.1"
+        },
+        {
+          "at": "2026-11-07T06:27:06.492148+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "42346884829.1"
         }
       ],
       "hosted_assets": [
@@ -898,7 +904,7 @@
         "bedtime01fables/instagram-carousel/KS-000045/05",
         "bedtime01fables/instagram-carousel/KS-000045/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-07T06:27:06.492131+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18132591200496970",
@@ -924,7 +930,7 @@
       ],
       "status": "published",
       "title": "Penny Penguin's Water Adventure",
-      "updated_at": "2026-11-07T06:27:00.415446+00:00"
+      "updated_at": "2026-11-07T06:27:06.492154+00:00"
     }
   }
 }
