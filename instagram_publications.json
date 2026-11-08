@@ -931,6 +931,30 @@
       "status": "published",
       "title": "Penny Penguin's Water Adventure",
       "updated_at": "2026-11-07T06:27:06.492154+00:00"
+    },
+    "KS-000046": {
+      "attempt_count": 1,
+      "caption": "📖 Barnaby Bunny's Starry Calm\n\nJoin Barnaby Bunny as he learns a gentle way to relax under the twinkling stars. Perfect for a calming bedtime routine! ⭐ Save this story for your next reading time.\n\n🌟 Lesson: Taking slow breaths helps us feel calm and ready for sleep.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsStories #BedtimeStory #RelaxationForKids #KidsBedtime #StorytimeIndia #BedtimeStories #StoryTime #MoralStories",
+      "caption_fingerprint": "7115d392f68332f83c55b4e2b6c5a14f14ab37ddaac5f54899cc50cd31e03c4d",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-08T06:33:55.538353+00:00",
+      "claimed_by": "42455231517.1",
+      "content_id": "KS-000046",
+      "created_date": "2026-11-08",
+      "folder": "output/20261108_063245_barnaby_bunny_s_starry_calm",
+      "history": [
+        {
+          "at": "2026-11-08T06:33:56.256732+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "42455231517.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-08T06:33:55.538353+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Barnaby Bunny's Starry Calm"
     }
   }
 }
