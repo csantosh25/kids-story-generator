@@ -936,7 +936,7 @@
       "attempt_count": 1,
       "caption": "📖 Barnaby Bunny's Starry Calm\n\nJoin Barnaby Bunny as he learns a gentle way to relax under the twinkling stars. Perfect for a calming bedtime routine! ⭐ Save this story for your next reading time.\n\n🌟 Lesson: Taking slow breaths helps us feel calm and ready for sleep.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #BarnabyBunny #KidsStories #BedtimeStory #RelaxationForKids #KidsBedtime #StorytimeIndia #BedtimeStories #StoryTime #MoralStories",
       "caption_fingerprint": "7115d392f68332f83c55b4e2b6c5a14f14ab37ddaac5f54899cc50cd31e03c4d",
-      "carousel_container_id": null,
+      "carousel_container_id": "18132729548496970",
       "claimed_at": "2026-11-08T06:33:55.538353+00:00",
       "claimed_by": "42455231517.1",
       "content_id": "KS-000046",
@@ -954,6 +954,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "42455231517.1"
+        },
+        {
+          "at": "2026-11-08T06:34:53.797133+00:00",
+          "detail": "18132729548496970",
+          "event": "containers-ready",
+          "run": "42455231517.1"
         }
       ],
       "hosted_assets": [
@@ -966,7 +972,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18132729440496970",
+        "18132729458496970",
+        "18132729476496970",
+        "18132729494496970",
+        "18132729512496970",
+        "18132729530496970"
+      ],
       "last_attempt_at": "2026-11-08T06:33:55.538353+00:00",
       "last_error": null,
       "source_images": [
@@ -977,9 +990,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Barnaby Bunny's Starry Calm",
-      "updated_at": "2026-11-08T06:34:01.849704+00:00"
+      "updated_at": "2026-11-08T06:34:53.797148+00:00"
     }
   }
 }
