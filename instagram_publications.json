@@ -972,6 +972,12 @@
           "detail": "published",
           "event": "published",
           "run": "42455231517.1"
+        },
+        {
+          "at": "2026-11-08T06:35:07.078416+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "42455231517.1"
         }
       ],
       "hosted_assets": [
@@ -982,7 +988,7 @@
         "bedtime01fables/instagram-carousel/KS-000046/05",
         "bedtime01fables/instagram-carousel/KS-000046/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-08T06:35:07.078400+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18132729440496970",
@@ -1008,7 +1014,7 @@
       ],
       "status": "published",
       "title": "Barnaby Bunny's Starry Calm",
-      "updated_at": "2026-11-08T06:35:01.307932+00:00"
+      "updated_at": "2026-11-08T06:35:07.078421+00:00"
     }
   }
 }
