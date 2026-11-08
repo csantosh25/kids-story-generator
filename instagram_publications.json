@@ -960,6 +960,12 @@
           "detail": "18132729548496970",
           "event": "containers-ready",
           "run": "42455231517.1"
+        },
+        {
+          "at": "2026-11-08T06:34:56.069839+00:00",
+          "detail": "18132729548496970",
+          "event": "publish-requested",
+          "run": "42455231517.1"
         }
       ],
       "hosted_assets": [
@@ -982,6 +988,7 @@
       ],
       "last_attempt_at": "2026-11-08T06:33:55.538353+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-11-08T06:34:56.069824+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -990,9 +997,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Barnaby Bunny's Starry Calm",
-      "updated_at": "2026-11-08T06:34:53.797148+00:00"
+      "updated_at": "2026-11-08T06:34:56.069843+00:00"
     }
   }
 }
