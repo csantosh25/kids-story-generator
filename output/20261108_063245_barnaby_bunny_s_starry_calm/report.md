@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Barnaby Bunny and the Winking Stars
+Barnaby Bunny's Starry Calm
 
 Subtitle:
-A cozy story about finding calm under the night sky.
+Finding peace under the night sky.
 
 Theme:
 Stars
 
 Moral:
-Finding peace and comfort through imagination.
+Taking slow breaths helps us feel calm and ready for sleep.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-251
+203
 
 Generated:
-2026-10-25 05:06:38
+2026-11-08 06:33:04
 
 ---
 

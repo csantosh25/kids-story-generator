@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000036",
-        "created_date": "2026-10-25",
-        "status": "completed",
-        "title": "Barnaby Bunny and the Winking Stars",
-        "theme": "Stars",
-        "character": {
-            "name": "Barnaby Bunny",
-            "species": "Rabbit"
-        },
-        "folder": "output/20261025_050619_barnaby_bunny_and_the_winking_stars",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000037",
         "created_date": "2026-10-26",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Penguin"
         },
         "folder": "output/20261107_062406_penny_penguin_s_water_adventure",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000046",
+        "created_date": "2026-11-08",
+        "status": "completed",
+        "title": "Barnaby Bunny's Starry Calm",
+        "theme": "Stars",
+        "character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit"
+        },
+        "folder": "output/20261108_063245_barnaby_bunny_s_starry_calm",
         "instagram": {
             "posted": true,
             "post_url": ""

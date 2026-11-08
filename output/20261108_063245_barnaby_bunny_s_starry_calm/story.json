@@ -1,0 +1,123 @@
+{
+    "story_info": {
+        "title": "Barnaby Bunny's Starry Calm",
+        "subtitle": "Finding peace under the night sky.",
+        "theme": "Stars",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Taking slow breaths helps us feel calm and ready for sleep."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit",
+            "appearance": "Barnaby is a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look.",
+            "personality": "Gentle, Sleepy, Kind, Imaginative"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Barnaby Bunny sitting in Moonlight Meadow at night, looking up at the bright, calm stars. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Moonlight Meadow at night",
+        "visual_action": "Barnaby Bunny looks at stars",
+        "visual_object": "shining stars",
+        "mood": "calm and comforting"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Twinkling Night",
+            "text": "It was evening in Moonlight Meadow. Barnaby Bunny looked up. The sky was turning dark blue. Tiny, bright stars began to pop out. They twinkled high above him. Barnaby loved the stars. They looked like little shiny diamonds.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "night",
+            "icon": "moon",
+            "speaker_notes": "Barnaby sees the first stars appear in the evening sky."
+        },
+        {
+            "page": 2,
+            "title": "A Little Bit Wiggly",
+            "text": "Barnaby felt a little bit wiggly inside. He had played all day long. His paws felt like dancing. But soon it would be time for sleep. How could he feel calm now? He wanted to rest his sleepy eyes.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "stars",
+            "icon": "star",
+            "speaker_notes": "Barnaby feels restless after playing all day."
+        },
+        {
+            "page": 3,
+            "title": "Remembering Mama's Words",
+            "text": "Barnaby sat down on the soft grass. He remembered his Mama Bunny's words. 'When you feel wiggly, look at the stars,' she would say. 'Then take a big, slow breath.' Barnaby tried to do just that. He closed his eyes gently.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "grass",
+            "speaker_notes": "Barnaby remembers his mother's advice to calm down."
+        },
+        {
+            "page": 4,
+            "title": "Slow and Steady Breaths",
+            "text": "He took a deep breath in. He counted, 'One, two, three.' Then he let the air out slowly. He did it again. 'One, two, three.' The air felt cool. He imagined his wiggles leaving with each breath. Barnaby kept breathing slowly.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "breathing",
+            "icon": "leaf",
+            "speaker_notes": "Barnaby practices slow, deep breathing to relax."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Dreams Begin",
+            "text": "Soon, Barnaby felt much calmer. His paws did not want to dance anymore. His eyes felt sleepy. The stars seemed to sparkle just for him. He whispered, 'Sweet dreams begin with a smile!' He snuggled into his soft bed. Barnaby was ready for sleep.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sleepy",
+            "icon": "bed",
+            "speaker_notes": "Barnaby feels calm and ready for sleep, ending his day peacefully."
+        }
+    ],
+    "instagram": {
+        "caption": "It was evening in Moonlight Meadow. Barnaby Bunny looked up. The sky was turning dark blue. Tiny, bright stars began to pop out. They twinkled high above him. Barnaby loved the stars. They looked like little shiny diamonds.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsStories",
+            "#BedtimeStory",
+            "#RelaxationForKids"
+        ]
+    },
+    "email": {
+        "subject": "⭐ Barnaby Bunny Finds Calm Under the Stars!",
+        "preview": "Help your little one relax with Barnaby Bunny's newest bedtime adventure."
+    },
+    "youtube": {
+        "title": "Barnaby Bunny's Starry Calm | A Calming Bedtime Story for Kids",
+        "description": "Join Barnaby Bunny in Moonlight Meadow as he learns to relax before bedtime by watching the stars and taking slow, deep breaths. A gentle story to help your little one unwind and prepare for sweet dreams. Perfect for children aged 3-6.",
+        "keywords": [
+            "bedtime story",
+            "barnaby bunny",
+            "kids relaxation",
+            "calming story",
+            "stars for kids",
+            "preschool story",
+            "story for 3 year olds",
+            "story for 4 year olds",
+            "story for 5 year olds",
+            "wonderwood valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Does your little one struggle to unwind before bed?",
+        "instagram_caption_short": "Join Barnaby Bunny as he learns a gentle way to relax under the twinkling stars. Perfect for a calming bedtime routine! ⭐ Save this story for your next reading time.",
+        "instagram_caption_long": "As evening falls in Wonderwood Valley, Barnaby Bunny finds himself a little too wiggly for sleep after a day full of play. But he remembers his Mama Bunny's wise words! Follow Barnaby as he discovers how to calm his mind and body by watching the beautiful stars and taking slow, deep breaths. This sweet story is perfect for helping your child relax and prepare for sweet dreams. A gentle tale to add to your bedtime routine! ⭐ Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtime",
+            "#RelaxationForKids",
+            "#StorytimeIndia"
+        ],
+        "first_comment": "What helps your child calm down before bed?",
+        "alt_text": "Barnaby Bunny, a grey-and-white rabbit, sits in a meadow at night, looking up at bright, twinkling stars.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How does Barnaby relax when he feels wiggly?"
+    }
+}
