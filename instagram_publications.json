@@ -966,6 +966,12 @@
           "detail": "18132729548496970",
           "event": "publish-requested",
           "run": "42455231517.1"
+        },
+        {
+          "at": "2026-11-08T06:35:01.307926+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "42455231517.1"
         }
       ],
       "hosted_assets": [
@@ -988,7 +994,10 @@
       ],
       "last_attempt_at": "2026-11-08T06:33:55.538353+00:00",
       "last_error": null,
+      "media_id": "18092646452259502",
+      "permalink": "https://www.instagram.com/p/DfeH68llISW/",
       "publish_requested_at": "2026-11-08T06:34:56.069824+00:00",
+      "published_at": "2026-11-08T06:35:01.307911+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -997,9 +1006,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Barnaby Bunny's Starry Calm",
-      "updated_at": "2026-11-08T06:34:56.069843+00:00"
+      "updated_at": "2026-11-08T06:35:01.307932+00:00"
     }
   }
 }
