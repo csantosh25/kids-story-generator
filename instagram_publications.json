@@ -1050,6 +1050,12 @@
           "detail": "18133004813496970",
           "event": "publish-requested",
           "run": "42776810758.1"
+        },
+        {
+          "at": "2026-11-10T07:41:45.004112+00:00",
+          "detail": "published",
+          "event": "published",
+          "run": "42776810758.1"
         }
       ],
       "hosted_assets": [
@@ -1072,7 +1078,10 @@
       ],
       "last_attempt_at": "2026-11-10T07:40:01.317320+00:00",
       "last_error": null,
+      "media_id": "18120835231972672",
+      "permalink": "https://www.instagram.com/p/DfjZJBVG-yk/",
       "publish_requested_at": "2026-11-10T07:41:38.641132+00:00",
+      "published_at": "2026-11-10T07:41:45.004098+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -1081,9 +1090,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "publish_requested",
+      "status": "published",
       "title": "Oliver Fox and the Shy Squirrel",
-      "updated_at": "2026-11-10T07:41:38.641151+00:00"
+      "updated_at": "2026-11-10T07:41:45.004118+00:00"
     }
   }
 }
