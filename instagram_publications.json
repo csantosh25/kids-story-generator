@@ -1032,13 +1032,38 @@
           "detail": "attempt 1",
           "event": "claimed",
           "run": "42776810758.1"
+        },
+        {
+          "at": "2026-11-10T07:40:07.683560+00:00",
+          "detail": "6 images",
+          "event": "uploaded",
+          "run": "42776810758.1"
         }
       ],
+      "hosted_assets": [
+        "bedtime01fables/instagram-carousel/KS-000047/01",
+        "bedtime01fables/instagram-carousel/KS-000047/02",
+        "bedtime01fables/instagram-carousel/KS-000047/03",
+        "bedtime01fables/instagram-carousel/KS-000047/04",
+        "bedtime01fables/instagram-carousel/KS-000047/05",
+        "bedtime01fables/instagram-carousel/KS-000047/06"
+      ],
+      "hosted_assets_deleted_at": null,
+      "image_count": 6,
       "item_container_ids": [],
       "last_attempt_at": "2026-11-10T07:40:01.317320+00:00",
       "last_error": null,
+      "source_images": [
+        "cover_final.png",
+        "slide_1.png",
+        "slide_2.png",
+        "slide_3.png",
+        "slide_4.png",
+        "slide_5.png"
+      ],
       "status": "claimed",
-      "title": "Oliver Fox and the Shy Squirrel"
+      "title": "Oliver Fox and the Shy Squirrel",
+      "updated_at": "2026-11-10T07:40:07.683576+00:00"
     }
   }
 }
