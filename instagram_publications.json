@@ -1015,6 +1015,30 @@
       "status": "published",
       "title": "Barnaby Bunny's Starry Calm",
       "updated_at": "2026-11-08T06:35:07.078421+00:00"
+    },
+    "KS-000047": {
+      "attempt_count": 1,
+      "caption": "📖 Oliver Fox and the Shy Squirrel\n\nOliver Fox meets a new friend! How will he help? ✨ This sweet story teaches little ones the joy of making new friends and lending a helping paw. Perfect for building strong friendships! 📚 Save this story for your next reading time.\n\n🌟 Lesson: Helping others can lead to wonderful new friendships.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #OliverFox #KidsFriendship #WonderwoodValley #EarlyLearning #BedtimeStories #KidsStories #StoryTime #MoralStories",
+      "caption_fingerprint": "32f3baa709d2484a652ffaba6ab5f429a16b135183f27bdeb9771d815e69aedf",
+      "carousel_container_id": null,
+      "claimed_at": "2026-11-10T07:40:01.317320+00:00",
+      "claimed_by": "42776810758.1",
+      "content_id": "KS-000047",
+      "created_date": "2026-11-10",
+      "folder": "output/20261110_073848_oliver_fox_and_the_shy_squirrel",
+      "history": [
+        {
+          "at": "2026-11-10T07:40:01.904909+00:00",
+          "detail": "attempt 1",
+          "event": "claimed",
+          "run": "42776810758.1"
+        }
+      ],
+      "item_container_ids": [],
+      "last_attempt_at": "2026-11-10T07:40:01.317320+00:00",
+      "last_error": null,
+      "status": "claimed",
+      "title": "Oliver Fox and the Shy Squirrel"
     }
   }
 }
