@@ -1044,6 +1044,12 @@
           "detail": "18133004813496970",
           "event": "containers-ready",
           "run": "42776810758.1"
+        },
+        {
+          "at": "2026-11-10T07:41:38.641146+00:00",
+          "detail": "18133004813496970",
+          "event": "publish-requested",
+          "run": "42776810758.1"
         }
       ],
       "hosted_assets": [
@@ -1066,6 +1072,7 @@
       ],
       "last_attempt_at": "2026-11-10T07:40:01.317320+00:00",
       "last_error": null,
+      "publish_requested_at": "2026-11-10T07:41:38.641132+00:00",
       "source_images": [
         "cover_final.png",
         "slide_1.png",
@@ -1074,9 +1081,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "containers_ready",
+      "status": "publish_requested",
       "title": "Oliver Fox and the Shy Squirrel",
-      "updated_at": "2026-11-10T07:41:36.053590+00:00"
+      "updated_at": "2026-11-10T07:41:38.641151+00:00"
     }
   }
 }
