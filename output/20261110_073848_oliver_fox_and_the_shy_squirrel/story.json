@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Shy Squirrel",
+        "subtitle": "Making Friends in Wonderwood Valley",
+        "theme": "Making Friends",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Helping others can lead to wonderful new friendships."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small brown squirrel with a bushy tail and bright curious eyes.",
+                "role": "Feels shy and needs help finding nuts in a new place."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, with clever amber eyes and a playful, confident grin, standing happily next to Pip Squirrel, a small brown squirrel with a bushy tail and bright curious eyes. They are in a sunny forest clearing, near a hazelnut bush. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny forest clearing",
+        "visual_action": "Oliver Fox and Pip Squirrel find nuts together",
+        "visual_object": "A hazelnut bush with nuts",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Morning",
+            "text": "The sun shone bright in Sunny Forest. Oliver Fox walked with a happy hop. His bright orange fur looked extra shiny. He loved exploring new paths. Oliver wagged his fluffy white-tipped tail. He heard birds sing sweet songs. What a lovely morning it was for making friends!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver Fox explores Sunny Forest on a cheerful morning."
+        },
+        {
+            "page": 2,
+            "title": "A New Friend Appears",
+            "text": "Oliver spotted something small. It was a little brown squirrel. The squirrel sat under a big oak tree. He looked a bit shy. His bushy tail was not fluffy. He looked down at his paws. Oliver had not seen him before. \"Hello there!\" Oliver called out with a friendly wave.",
+            "background_color": "#D4E8F8",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver sees a shy squirrel, Pip, for the first time."
+        },
+        {
+            "page": 3,
+            "title": "Pip Needs Help",
+            "text": "The squirrel looked up. \"Hello,\" he said softly. \"My name is Pip. I am new here.\" Pip looked sad. \"I cannot find any nuts,\" he told Oliver. \"My tummy is rumbling a little. I miss my old home. I don't know where to look.\" Oliver felt a little sad for Pip.",
+            "background_color": "#FEEBC6",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Pip Squirrel explains his problem to Oliver."
+        },
+        {
+            "page": 4,
+            "title": "Let's Solve It Together!",
+            "text": "Oliver thought hard. His clever amber eyes sparkled. \"Don't worry, Pip!\" Oliver said with a confident grin. \"I know just the place for nuts. Let's solve it together!\" Oliver remembered a big hazelnut bush. It was a little hidden, but full of tasty treats. He knew the way well.",
+            "background_color": "#E0F5D0",
+            "visual_theme": "nature",
+            "icon": "leaf",
+            "speaker_notes": "Oliver uses his cleverness and remembers a solution for Pip."
+        },
+        {
+            "page": 5,
+            "title": "Happy New Friends",
+            "text": "Oliver led Pip to the hazelnut bush. Soon, Pip found many nuts! He nibbled one happily. \"Thank you, Oliver!\" Pip said with a big smile. Oliver felt warm and happy inside. He made a new friend today. Friendships make every day brighter and more fun! They waved goodbye.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "nature",
+            "icon": "leaf",
+            "speaker_notes": "Oliver and Pip become friends after finding nuts, ending with a warm feeling."
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox meets a new friend! How will he help? Join Oliver on a sunny adventure in Wonderwood Valley. ✨ This sweet story teaches little ones the joy of making new friends and lending a helping paw. Perfect for building strong friendships! 📚 Save this story for your next reading time. #Bedtime01Fables #OliverFox",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#WonderwoodValley",
+            "#EarlyLearning"
+        ]
+    },
+    "email": {
+        "subject": "New Story: Oliver Fox and the Shy Squirrel!",
+        "preview": "Join Oliver Fox as he meets a new friend and learns about helping others."
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Shy Squirrel | Children's Story About Making Friends",
+        "description": "Welcome to Wonderwood Valley! In this fun adventure, Oliver Fox meets a shy new squirrel named Pip. Pip is new to Sunny Forest and can't find any nuts. Can Oliver use his cleverness and friendly spirit to help Pip and make a new friend? Watch to find out! This heartwarming story is perfect for children aged 3-6 years, teaching them about friendship and kindness. Enjoy this educational and engaging tale from our award-winning series.",
+        "keywords": [
+            "Oliver Fox story",
+            "making friends story",
+            "childrens story",
+            "Wonderwood Valley",
+            "fox and squirrel",
+            "friendship lesson",
+            "preschool story",
+            "kids adventure"
+        ]
+    },
+    "publishing": {
+        "hook": "Oliver Fox meets a new friend! How will he help?",
+        "instagram_caption_short": "Oliver Fox meets a new friend! How will he help? ✨ This sweet story teaches little ones the joy of making new friends and lending a helping paw. Perfect for building strong friendships! 📚 Save this story for your next reading time. #Bedtime01Fables #OliverFox",
+        "instagram_caption_long": "Hello, Wonderwood Valley friends! 👋 Today, join our clever and friendly Oliver Fox on a delightful adventure in Sunny Forest. He meets a little squirrel named Pip who is new and feels a bit shy. Pip is sad because he can't find any nuts in his new home. Oliver, with his bright eyes and confident grin, knows just what to do! This heartwarming tale is all about the joy of making new friends and the simple act of helping someone in need. It's a wonderful way to teach your little ones about kindness and building strong, happy friendships. Read along and see how Oliver helps Pip and makes a special new friend. What a bright way to start the day! 📚 Save this story for your next reading time. #Bedtime01Fables #OliverFox",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#WonderwoodValley",
+            "#EarlyLearning"
+        ],
+        "first_comment": "Who is your little one's best animal friend?",
+        "alt_text": "Oliver Fox, a bright orange fox, smiles next to Pip, a small brown squirrel, in a sunny forest. They are standing near a green bush with nuts.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How did Oliver help Pip feel better?"
+    }
+}

@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Bella Bear and Squeaky's Thankful Nuts
+Oliver Fox and the Shy Squirrel
 
 Subtitle:
-A Story about Kindness
+Making Friends in Wonderwood Valley
 
 Theme:
-Saying Thank You
+Making Friends
 
 Moral:
-Helping friends and saying thank you makes everyone happy.
+Helping others can lead to wonderful new friendships.
 
 Reading Time:
 2 minutes
@@ -25,26 +25,26 @@ Target Age:
 ## Character
 
 Name:
-Bella Bear
+Oliver Fox
 
 Species:
-Bear
+Fox
 
 Personality:
-Kind, Helpful, Gentle, Patient
+Funny, Creative, Friendly, Brave
 
 ---
 
 ## Statistics
 
 Slides:
-6
+5
 
 Total Words:
-270
+245
 
 Generated:
-2026-10-26 05:10:05
+2026-11-10 07:39:09
 
 ---
 
