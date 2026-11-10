@@ -1020,7 +1020,7 @@
       "attempt_count": 1,
       "caption": "📖 Oliver Fox and the Shy Squirrel\n\nOliver Fox meets a new friend! How will he help? ✨ This sweet story teaches little ones the joy of making new friends and lending a helping paw. Perfect for building strong friendships! 📚 Save this story for your next reading time.\n\n🌟 Lesson: Helping others can lead to wonderful new friendships.\n\n👉 Swipe to read the whole story with your little one.\nFollow for more bedtime stories 🌙\n\n#Bedtime01Fables #OliverFox #KidsFriendship #WonderwoodValley #EarlyLearning #BedtimeStories #KidsStories #StoryTime #MoralStories",
       "caption_fingerprint": "32f3baa709d2484a652ffaba6ab5f429a16b135183f27bdeb9771d815e69aedf",
-      "carousel_container_id": null,
+      "carousel_container_id": "18133004813496970",
       "claimed_at": "2026-11-10T07:40:01.317320+00:00",
       "claimed_by": "42776810758.1",
       "content_id": "KS-000047",
@@ -1038,6 +1038,12 @@
           "detail": "6 images",
           "event": "uploaded",
           "run": "42776810758.1"
+        },
+        {
+          "at": "2026-11-10T07:41:36.053575+00:00",
+          "detail": "18133004813496970",
+          "event": "containers-ready",
+          "run": "42776810758.1"
         }
       ],
       "hosted_assets": [
@@ -1050,7 +1056,14 @@
       ],
       "hosted_assets_deleted_at": null,
       "image_count": 6,
-      "item_container_ids": [],
+      "item_container_ids": [
+        "18133004693496970",
+        "18133004711496970",
+        "18133004729496970",
+        "18133004747496970",
+        "18133004765496970",
+        "18133004786496970"
+      ],
       "last_attempt_at": "2026-11-10T07:40:01.317320+00:00",
       "last_error": null,
       "source_images": [
@@ -1061,9 +1074,9 @@
         "slide_4.png",
         "slide_5.png"
       ],
-      "status": "claimed",
+      "status": "containers_ready",
       "title": "Oliver Fox and the Shy Squirrel",
-      "updated_at": "2026-11-10T07:40:07.683576+00:00"
+      "updated_at": "2026-11-10T07:41:36.053590+00:00"
     }
   }
 }
