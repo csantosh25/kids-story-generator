@@ -1056,6 +1056,12 @@
           "detail": "published",
           "event": "published",
           "run": "42776810758.1"
+        },
+        {
+          "at": "2026-11-10T07:41:50.480270+00:00",
+          "detail": "6 images",
+          "event": "hosted-assets-deleted",
+          "run": "42776810758.1"
         }
       ],
       "hosted_assets": [
@@ -1066,7 +1072,7 @@
         "bedtime01fables/instagram-carousel/KS-000047/05",
         "bedtime01fables/instagram-carousel/KS-000047/06"
       ],
-      "hosted_assets_deleted_at": null,
+      "hosted_assets_deleted_at": "2026-11-10T07:41:50.480253+00:00",
       "image_count": 6,
       "item_container_ids": [
         "18133004693496970",
@@ -1092,7 +1098,7 @@
       ],
       "status": "published",
       "title": "Oliver Fox and the Shy Squirrel",
-      "updated_at": "2026-11-10T07:41:45.004118+00:00"
+      "updated_at": "2026-11-10T07:41:50.480276+00:00"
     }
   }
 }
