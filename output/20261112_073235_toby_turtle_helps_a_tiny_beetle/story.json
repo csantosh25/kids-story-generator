@@ -1,0 +1,117 @@
+{
+    "story_info": {
+        "title": "Toby Turtle Helps a Tiny Beetle",
+        "subtitle": "A kind helper in Sunny Forest",
+        "theme": "Forest Animals",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "It is good to care for nature and all its small friends."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D style, warm cinematic lighting, children's book illustration, vertical composition, Instagram friendly. A young sea turtle named Toby, with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers, showing a calm expression, gently helping a tiny green beetle on a large green leaf in a sunny forest clearing. Pastel colors. Avoid text or complex elements.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny forest clearing",
+        "visual_action": "Toby helps a tiny beetle on a leaf",
+        "visual_object": "a green leaf, a small beetle",
+        "mood": "warm and helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Walk in the Forest",
+            "text": "Toby Turtle walked in Sunny Forest. The sun was warm and bright. He heard birds sing sweet songs. Toby looked at all the green trees. \"Slow and steady discovers wonders!\" he said. He loved his morning walks.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Introduce Toby and the Sunny Forest setting. Show Toby enjoying nature."
+        },
+        {
+            "page": 2,
+            "title": "Pretty Forest Friends",
+            "text": "Toby saw pretty flowers. They were red, yellow, and blue. A tiny butterfly flew past his nose. It danced in the air. Toby smiled a big, happy smile. He loved seeing all the forest life.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "flowers",
+            "icon": "flower",
+            "speaker_notes": "Show Toby observing the colorful flowers and a butterfly. Emphasize his joy."
+        },
+        {
+            "page": 3,
+            "title": "A Little Friend Needs Help",
+            "text": "Then Toby saw something small. It was a little green beetle. The beetle was on its back! It wiggled its tiny legs. It tried hard to turn over. But it could not do it alone.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "beetle",
+            "icon": "beetle",
+            "speaker_notes": "Introduce the small challenge: a beetle in distress. Toby notices it."
+        },
+        {
+            "page": 4,
+            "title": "Toby's Gentle Idea",
+            "text": "Toby moved very slowly. He found a big green leaf. He gently slid the leaf near the beetle. \"You can do it, little friend,\" he said softly. The beetle crawled onto the leaf.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "leaf",
+            "icon": "leaf",
+            "speaker_notes": "Show Toby's gentle approach and creative solution using a leaf."
+        },
+        {
+            "page": 5,
+            "title": "A Happy Thank You",
+            "text": "Toby carefully lifted the leaf. He turned it over. Plop! The beetle was on its feet. It wiggled its antennae. Then it scurried away quickly. Toby felt very happy inside. He helped a tiny creature. It is good to care for nature.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "The resolution: the beetle is safe. Toby feels proud and happy. Reiterate the moral."
+        }
+    ],
+    "instagram": {
+        "caption": "Toby Turtle loves his morning walks in Sunny Forest. He enjoys seeing all the beautiful flowers and happy birds. But one day, he finds a tiny friend in trouble. A little beetle is stuck on its back! Will Toby use his gentle nature to help? This sweet story shows how even small actions can make a big difference. It teaches children to be kind to all creatures and protect our amazing nature. Share this with a parent who loves nature adventures! #Bedtime01Fables #TobyTurtle #KidsNature #ForestFriends #KindnessMatters",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Forest Adventure: Helping a Tiny Friend!",
+        "preview": "Join Toby Turtle in Sunny Forest as he helps a little beetle in need!"
+    },
+    "youtube": {
+        "title": "Toby Turtle Helps a Tiny Beetle | Wonderwood Valley Stories",
+        "description": "Come along with Toby Turtle on a lovely morning walk in Sunny Forest! What happens when he finds a tiny beetle that needs help? This heartwarming story teaches children the importance of kindness and protecting our wonderful nature. Perfect for kids aged 3-6!",
+        "keywords": [
+            "Toby Turtle",
+            "childrens story",
+            "nature story",
+            "kindness for kids",
+            "forest animals",
+            "preschool story",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "What little helper saves the day in Sunny Forest?",
+        "instagram_caption_short": "A little forest friend needs help! Join Toby Turtle on his morning walk. See how he saves the day with a kind heart. Our stories teach kindness and nature love. Save this story for your next reading time.",
+        "instagram_caption_long": "Toby Turtle loves his morning walks in Sunny Forest. He enjoys seeing all the beautiful flowers and happy birds. But one day, he finds a tiny friend in trouble. A little beetle is stuck on its back! Will Toby use his gentle nature to help? This sweet story shows how even small actions can make a big difference. It teaches children to be kind to all creatures and protect our amazing nature. Share this with a parent who loves nature adventures!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#KidsNature",
+            "#ForestFriends",
+            "#KindnessMatters"
+        ],
+        "first_comment": "What small thing did your child help today? Share with us!",
+        "alt_text": "Toby Turtle, a teal-green sea turtle, gently helps a tiny green beetle on a leaf in a sunny forest.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "Can you think of a small way we can help nature today?"
+    }
+}
