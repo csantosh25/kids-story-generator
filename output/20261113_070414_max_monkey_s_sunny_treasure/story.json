@@ -1,0 +1,117 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Sunny Treasure",
+        "subtitle": "A Quest for Confidence",
+        "theme": "Treasure Hunt",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Trying new things helps us feel confident and brave."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration of Max Monkey, a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and an eager, wide-open smile. He is happily climbing a very tall, green tree in a sunny Adventure Jungle, holding a small treasure map. Warm cinematic lighting, pastel colors, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "sunny Adventure Jungle",
+        "visual_action": "Max Monkey happily climbing a tall tree with a map",
+        "visual_object": "a small treasure map",
+        "mood": "adventurous and joyful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Map for Max",
+            "text": "Max Monkey woke up with a happy smile. 'Adventure is waiting!' he called out. Today was a special day. Max had a map! It showed a treasure in Adventure Jungle. He packed a yummy banana. He was ready to go.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "map",
+            "speaker_notes": "Max is excited for his day."
+        },
+        {
+            "page": 2,
+            "title": "Into the Jungle",
+            "text": "Max looked at his map. 'The treasure is near the big, tall tree!' he read. He swung through green vines. He jumped over soft bushes. The jungle was warm and bright. He saw a shiny yellow flower. Was this a clue?",
+            "background_color": "#D9FDEB",
+            "visual_theme": "jungle",
+            "icon": "flower",
+            "speaker_notes": "Max begins his adventure, looking for clues."
+        },
+        {
+            "page": 3,
+            "title": "A High Clue",
+            "text": "Yes, it was! The flower held a tiny scroll. 'Look high up, near the buzzing bees!' Max read. He looked up. A sweet smell came from the top of a tall tree. It was very high. Max felt a little bit unsure.",
+            "background_color": "#DBF0FF",
+            "visual_theme": "tall tree",
+            "icon": "bee",
+            "speaker_notes": "Max finds a clue, but the next step seems hard."
+        },
+        {
+            "page": 4,
+            "title": "Max is Brave!",
+            "text": "Max took a deep breath. 'I can do it!' he told himself. He began to climb, up and up. His strong hands held tight. His long tail helped him balance. Soon, he reached the top! A small, colorful box waited there.",
+            "background_color": "#FFFDD9",
+            "visual_theme": "climbing",
+            "icon": "tree",
+            "speaker_notes": "Max finds his courage and climbs the tall tree."
+        },
+        {
+            "page": 5,
+            "title": "A Sweet Discovery",
+            "text": "Max opened the box. Inside was a bright, shiny berry! He ate it with a big grin. It was the tastiest berry ever. Max felt so happy and proud. He was confident and brave. What a wonderful treasure hunt!",
+            "background_color": "#DDF0FF",
+            "visual_theme": "treetop",
+            "icon": "berry",
+            "speaker_notes": "Max finds his treasure and feels proud and happy."
+        }
+    ],
+    "instagram": {
+        "caption": "Max Monkey's Big Adventure!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey"
+        ]
+    },
+    "email": {
+        "subject": "Max Monkey's Sunny Treasure: A Story About Being Brave!",
+        "preview": "Join Max Monkey on a special treasure hunt in Adventure Jungle."
+    },
+    "youtube": {
+        "title": "Max Monkey's Sunny Treasure | A Story About Being Brave | Wonderwood Valley Kids Stories",
+        "description": "Join Max Monkey on an exciting treasure hunt in Adventure Jungle! He finds clues and faces a big challenge. Will Max be brave enough to reach his treasure? A warm story about confidence for children aged 3-6.",
+        "keywords": [
+            "Max Monkey",
+            "children's story",
+            "treasure hunt",
+            "confidence for kids",
+            "Wonderwood Valley",
+            "kids adventure",
+            "bedtime story"
+        ]
+    },
+    "publishing": {
+        "hook": "Does your little one need a boost of confidence?",
+        "instagram_caption_short": "Join Max Monkey on a thrilling treasure hunt today! He finds clues and faces a challenge that needs all his bravery. This story shows how trying new things helps us feel confident. 💛 Save this story for your next reading time.",
+        "instagram_caption_long": "Come along with Max Monkey as he starts his exciting treasure hunt in the sunny Adventure Jungle! Max finds a map that leads him to a tricky clue, high up in a tall tree. He feels a little unsure at first, but remembers how strong and brave he is. This sweet story encourages little ones to believe in themselves and try new things, just like Max. Watch as Max finds his courage and discovers a wonderful treasure. 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#BuildingConfidence",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What makes your little one feel brave?",
+        "alt_text": "Max Monkey, a small brown monkey, happily climbing a tall green tree in Adventure Jungle, holding a map. The scene is bright and sunny.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What is something brave Max did in the story?"
+    }
+}

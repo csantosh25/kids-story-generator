@@ -3,22 +3,22 @@
 ## Story Information
 
 Title:
-Max Monkey's Camping Confidence
+Max Monkey's Sunny Treasure
 
 Subtitle:
-A Try-Again Adventure
+A Quest for Confidence
 
 Theme:
-Camping
+Treasure Hunt
 
 Moral:
-Trying again helps us learn and feel brave.
+Trying new things helps us feel confident and brave.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-200
+203
 
 Generated:
-2026-10-30 06:15:40
+2026-11-13 07:04:38
 
 ---
 
