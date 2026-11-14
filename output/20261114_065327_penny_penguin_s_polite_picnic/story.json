@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Polite Picnic",
+        "subtitle": "Sharing with good manners",
+        "theme": "Good Manners",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Good manners make friends happy and every day fun!"
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small brown squirrel with a bushy tail, bright eyes, and tiny paws.",
+                "role": "A friend Penny helps with good manners and sharing."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration. Vertical composition. Warm cinematic lighting. Pastel colours. Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet, rosy cheeks, and a cheerful stance, is sitting in Blossom Meadow. She is sharing a berry tart from a picnic basket with Squeaky Squirrel, a small brown squirrel with a bushy tail, bright eyes, and tiny paws. The meadow has colourful flowers. The mood is warm and cheerful.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Blossom Meadow",
+        "visual_action": "Penny Penguin sharing a berry tart with Squeaky Squirrel at a picnic",
+        "visual_object": "a picnic basket with fruit and tarts",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Morning",
+            "text": "Penny Penguin woke up early. The sun shone bright over Snowy Shores. \"Healthy habits make every day fun!\" she chirped. She packed her basket. It had yummy berry tarts and fresh fruit. Penny wanted to have a picnic. She thought of Blossom Meadow.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "morning",
+            "icon": "sun",
+            "speaker_notes": "Introduce Penny and her morning routine, showing her healthy habits and plans for a picnic."
+        },
+        {
+            "page": 2,
+            "title": "A Sad Friend",
+            "text": "Penny walked cheerfully to Blossom Meadow. The colourful flowers swayed hello. She saw a little squirrel. It was Squeaky Squirrel. Squeaky looked very sad. His small basket was empty. He had dropped all his acorns on the path.",
+            "background_color": "#DDEEDD",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Penny meets Squeaky, who is upset because he lost his food. This sets up the small challenge."
+        },
+        {
+            "page": 3,
+            "title": "A Kind Offer",
+            "text": "\"Hello, Squeaky,\" Penny said with a kind smile. \"Are you alright?\" Squeaky looked up slowly. \"I dropped my breakfast,\" he mumbled. Penny felt a warm feeling. She remembered her healthy snacks. \"Would you like to share with me, please?\" she asked him.",
+            "background_color": "#FFF0E0",
+            "visual_theme": "friendship",
+            "icon": "heart",
+            "speaker_notes": "Penny shows empathy and uses polite language to offer help, introducing the learning goal of good manners."
+        },
+        {
+            "page": 4,
+            "title": "Sharing and Saying Thank You",
+            "text": "Squeaky's eyes got big. \"Really? Thank you, Penny!\" he said. Penny carefully opened her basket. She offered Squeaky a juicy berry. Squeaky took it gently. \"This is very kind of you,\" Squeaky said. Penny felt happy sharing her treats.",
+            "background_color": "#E0F2F7",
+            "visual_theme": "sharing",
+            "icon": "handshake",
+            "speaker_notes": "Squeaky accepts politely and thanks Penny, reinforcing the concept of manners and mutual respect."
+        },
+        {
+            "page": 5,
+            "title": "Happy Hearts",
+            "text": "They sat together in the meadow. They ate the tasty fruit and tarts. Squeaky learned to say \"please\" and \"thank you\" too. Good manners made their picnic super fun! Penny knew sharing and being polite made everyone feel good inside.",
+            "background_color": "#DDF0DD",
+            "visual_theme": "picnic",
+            "icon": "sunshine",
+            "speaker_notes": "The story ends with a happy picnic, highlighting the positive impact of good manners and how it makes everyone feel happy and calm."
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin's day in Wonderwood Valley. She finds a sad friend and learns how good manners make every day brighter. A sweet story about kindness and sharing! Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#GoodMannersForKids",
+            "#KidsLearning",
+            "#WonderwoodValley"
+        ]
+    },
+    "email": {
+        "subject": "💖 Penny Penguin Teaches Good Manners and Sharing!",
+        "preview": "Join Penny Penguin on a heartwarming picnic adventure in Wonderwood Valley."
+    },
+    "youtube": {
+        "title": "Penny Penguin's Polite Picnic | A Story About Good Manners | Wonderwood Valley Kids Stories",
+        "description": "Join Penny Penguin on a sunny adventure to Blossom Meadow! When she meets her friend Squeaky Squirrel feeling sad, Penny shows him the magic of good manners and sharing. A heartwarming tale that teaches children about kindness, politeness, and how a 'please' and 'thank you' can make everyone's day brighter. Perfect for ages 3-6!",
+        "keywords": [
+            "Penny Penguin",
+            "Good Manners",
+            "Kids Story",
+            "Sharing Story",
+            "Wonderwood Valley",
+            "Children's Books",
+            "Preschool Learning",
+            "Kindness Story"
+        ]
+    },
+    "publishing": {
+        "hook": "A tiny penguin shows how simple words can make a big difference!",
+        "instagram_caption_short": "Penny Penguin's day in Wonderwood Valley. She finds a sad friend and learns how good manners make every day brighter. A sweet story about kindness and sharing! Save this story for your next reading time.",
+        "instagram_caption_long": "Join Penny Penguin on a sunny Saturday in Wonderwood Valley! She's heading for a picnic at Blossom Meadow with yummy berry tarts and fresh fruit. But when she meets her friend Squeaky Squirrel feeling a bit sad, Penny shows him how important good manners and sharing can be. This heartwarming tale teaches little ones that a kind \"please\" and \"thank you\" can make everyone's day better and their hearts feel warm. Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#GoodMannersForKids",
+            "#KidsLearning",
+            "#WonderwoodValley"
+        ],
+        "first_comment": "What's your child's favorite way to show kindness?",
+        "alt_text": "Cover image for Penny Penguin's Polite Picnic showing Penny Penguin sharing food with Squeaky Squirrel at a picnic in Blossom Meadow.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we show good manners when we play with our friends?"
+    }
+}

@@ -3,22 +3,22 @@
 ## Story Information
 
 Title:
-Penny Penguin's Snowy Shores Stretches
+Penny Penguin's Polite Picnic
 
 Subtitle:
-A morning of movement and fun!
+Sharing with good manners
 
 Theme:
-Exercise
+Good Manners
 
 Moral:
-Moving our bodies helps us feel strong and happy.
+Good manners make friends happy and every day fun!
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-196
+202
 
 Generated:
-2026-10-31 06:08:20
+2026-11-14 06:53:49
 
 ---
 
