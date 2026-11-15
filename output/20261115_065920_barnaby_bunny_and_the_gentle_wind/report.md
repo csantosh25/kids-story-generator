@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Barnaby's Soft Dream Adventure
+Barnaby Bunny and the Gentle Wind
 
 Subtitle:
-A Calming Bedtime Story
+A calming story about finding peace.
 
 Theme:
-Dream Adventures
+Gentle Wind
 
 Moral:
-Gentle breathing helps us relax for sleep.
+Listening to soft sounds can help you relax and feel calm.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-239
+191
 
 Generated:
-2026-11-01 06:38:15
+2026-11-15 06:59:40
 
 ---
 

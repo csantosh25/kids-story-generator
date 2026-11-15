@@ -1,0 +1,117 @@
+{
+    "story_info": {
+        "title": "Barnaby Bunny and the Gentle Wind",
+        "subtitle": "A calming story about finding peace.",
+        "theme": "Gentle Wind",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Listening to soft sounds can help you relax and feel calm."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Barnaby Bunny",
+            "species": "Rabbit",
+            "appearance": "Barnaby is a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose. He has a plush, huggable, storybook-soft look.",
+            "personality": "Gentle, Sleepy, Kind, Imaginative"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Barnaby Bunny, a small, soft grey-and-white bunny with long floppy ears, round sleepy eyes, and a little pink nose, sitting in a glowing Moonlight Meadow at sunset. He is feeling a gentle breeze. Soft glowing flowers are around him. The mood is calm and warm. Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Moonlight Meadow at sunset",
+        "visual_action": "Barnaby Bunny feeling a gentle breeze",
+        "visual_object": "soft glowing flowers",
+        "mood": "calm and warm"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Gentle Evening",
+            "text": "Barnaby Bunny was in Moonlight Meadow. The sky turned soft pink and orange. A gentle wind began to blow. It felt cool and nice on his ears. \"Hello, gentle wind,\" Barnaby said softly. He loved the quiet evening air.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "sunset",
+            "speaker_notes": "Introduce Barnaby in his favorite place during a calm evening."
+        },
+        {
+            "page": 2,
+            "title": "Listening to the Wind",
+            "text": "Barnaby sat down on the soft grass. He closed his round, sleepy eyes. He listened to the wind play. It made a soft \"whoosh\" sound. The sound felt like a gentle hug. Barnaby took a slow, deep breath.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "wind",
+            "icon": "leaf",
+            "speaker_notes": "Show Barnaby engaging his senses to listen to the wind."
+        },
+        {
+            "page": 3,
+            "title": "A Gentle Rocking",
+            "text": "The gentle wind danced through the tall grass. It made the flower petals sway slowly. Barnaby imagined the wind rocking him. Rocking gently, side to side. He felt warm and very safe. His little body began to relax.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "flowers",
+            "icon": "sway",
+            "speaker_notes": "Barnaby uses his imagination to connect with the wind's movement."
+        },
+        {
+            "page": 4,
+            "title": "A Sleepy Lullaby",
+            "text": "The wind sang a soft, quiet tune. It felt like a sweet lullaby. Barnaby listened with a happy smile. His floppy ears twitched a little bit. He felt his tummy feel soft. His legs felt heavy and sleepy.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "music",
+            "icon": "notes",
+            "speaker_notes": "Describe how the wind's sound makes Barnaby feel more sleepy and comfortable."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Dreams",
+            "text": "Barnaby found a perfect comfy spot. He curled into a little ball. The gentle wind sang him to sleep. He felt very, very calm. Barnaby smiled his best sleepy smile. \"Sweet dreams begin with a smile!\" he thought.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sleep",
+            "icon": "z",
+            "speaker_notes": "Conclude with Barnaby feeling deeply calm and ready for sleep, using his catchphrase."
+        }
+    ],
+    "instagram": {
+        "caption": "How does Barnaby relax when the gentle wind whispers goodnight? 🌙 Join Barnaby Bunny in Moonlight Meadow as he learns to calm down for sleep. This comforting story teaches little ones how to relax their bodies and minds. Perfect for a peaceful bedtime routine! ✨ Save this story for your next reading time. #Bedtime01Fables #BarnabyBunny",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny"
+        ]
+    },
+    "email": {
+        "subject": "🌙 Read Barnaby Bunny's Calming Bedtime Adventure!",
+        "preview": "Discover how Barnaby Bunny uses a gentle wind to relax before sleep. A sweet story for peaceful bedtimes!"
+    },
+    "youtube": {
+        "title": "Barnaby Bunny and the Gentle Wind | Calming Bedtime Story for Kids",
+        "description": "Join Barnaby Bunny in Moonlight Meadow as he discovers how the soft whispers of a gentle wind can help him relax and prepare for sweet dreams. This calming story is perfect for helping children unwind before bed. Subscribe for more Wonderwood Valley adventures!",
+        "keywords": [
+            "bedtime story",
+            "children's story",
+            "Barnaby Bunny",
+            "relax before sleep",
+            "calming story",
+            "kids meditation",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "How does Barnaby relax when the wind whispers?",
+        "instagram_caption_short": "How does Barnaby relax when the gentle wind whispers goodnight? 🌙 Join Barnaby Bunny in Moonlight Meadow as he learns to calm down for sleep. This comforting story teaches little ones how to relax their bodies and minds. Perfect for a peaceful bedtime routine! ✨ Save this story for your next reading time.",
+        "instagram_caption_long": "Little Barnaby Bunny loves his special Moonlight Meadow. Tonight, as the sun sets, a soft, gentle wind blows. Barnaby listens closely. The wind whispers and sings a quiet tune. It helps him feel so calm and sleepy! This sweet bedtime story shows children how simple sounds, like a gentle breeze, can help them relax before sleep. It's a wonderful way to wind down and prepare for sweet dreams. Share this cozy story with your little one tonight. ✨ Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#BarnabyBunny",
+            "#KidsBedtimeStories",
+            "#RelaxationForKids",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What helps your little one feel calm before sleep? Share your tips below!",
+        "alt_text": "Barnaby Bunny sits in a glowing Moonlight Meadow at dusk, feeling a gentle breeze.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can we use soft sounds, like the wind, to help us relax?"
+    }
+}
