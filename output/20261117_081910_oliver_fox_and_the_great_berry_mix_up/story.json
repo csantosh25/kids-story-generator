@@ -1,0 +1,125 @@
+{
+    "story_info": {
+        "title": "Oliver Fox and the Great Berry Mix-Up",
+        "subtitle": "A story about friendship and forgiveness.",
+        "theme": "Forgiveness",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Friends forgive each other."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Squeaky Squirrel",
+                "species": "Squirrel",
+                "appearance": "A small, fluffy brown squirrel with a bushy tail and bright, quick eyes. He wears a tiny green scarf.",
+                "role": "Accidentally spills Oliver's berries and needs forgiveness."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D children's book illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, clever amber eyes and a playful, confident grin, looking happily at Squeaky Squirrel, a small, fluffy brown squirrel with a bushy tail and bright, quick eyes, wearing a tiny green scarf. They are in Blossom Meadow, a sunny place with colorful flowers. Oliver holds a basket of red berries. Squeaky looks a little apologetic but hopeful. Soft cinematic lighting, pastel colors, vertical composition.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Blossom Meadow with berry bushes",
+        "visual_action": "Oliver Fox and Squeaky Squirrel pick berries together",
+        "visual_object": "a basket of red berries",
+        "mood": "warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Day for Berries",
+            "text": "Oliver Fox skipped to Blossom Meadow. His bright orange-red fur shone in the sun. He carried a little basket. Today was perfect for picking juicy red berries! Oliver saw his friend, Squeaky Squirrel. Squeaky had a bushy tail and wore a tiny green scarf. “Hello, Squeaky!” called Oliver. “Want to pick berries with me?” Squeaky nodded with bright, quick eyes.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Oliver Fox is excited for a fun day in Blossom Meadow, inviting his friend Squeaky to join him."
+        },
+        {
+            "page": 2,
+            "title": "Oh No, The Spilled Berries!",
+            "text": "Oliver and Squeaky found a big bush. It was full of the sweetest berries. Oliver carefully picked them. He put them in his basket. Squeaky was busy too. He chased a pretty butterfly. Oh no! Squeaky bumped Oliver's basket. Plop! All the red berries tumbled out onto the grass.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "berry bush",
+            "icon": "berry",
+            "speaker_notes": "A small accident happens when Squeaky's excitement causes Oliver's berry basket to spill."
+        },
+        {
+            "page": 3,
+            "title": "Feeling Sad, Saying Sorry",
+            "text": "Oliver's clever amber eyes looked at the spilled berries. Some were squashed. He felt a little sad. Squeaky's quick eyes looked at the mess. “Oh no! I am very sorry, Oliver,” Squeaky said. His fluffy brown fur looked down. Squeaky felt really bad. Oliver took a deep breath.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "grass",
+            "icon": "sad face",
+            "speaker_notes": "Oliver feels sad about the spilled berries, and Squeaky expresses sincere regret, showing a moment of calm reflection."
+        },
+        {
+            "page": 4,
+            "title": "Let's Solve It Together!",
+            "text": "Oliver remembered Squeaky was his friend. Good friends make mistakes. But good friends also forgive. Oliver gave a playful, confident grin. “It's okay, Squeaky!” he said. “Let's solve it together!” Oliver bent down. He started picking up the good berries.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friendship",
+            "icon": "handshake",
+            "speaker_notes": "Oliver decides to forgive Squeaky, demonstrating the importance of friendship and cooperation."
+        },
+        {
+            "page": 5,
+            "title": "Happy Hearts, Full Baskets",
+            "text": "Squeaky helped too. They picked up every good berry. Their baskets were full again. Oliver felt happy. Forgiving Squeaky made his heart warm. They shared the delicious berries. Building strong friendships makes every day bright. Oliver smiled at his friend.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "sharing",
+            "icon": "heart",
+            "speaker_notes": "Oliver and Squeaky successfully clean up, share their berries, and strengthen their friendship through forgiveness."
+        }
+    ],
+    "instagram": {
+        "caption": "Oliver Fox and Squeaky Squirrel learn a big lesson about friendship! Sometimes, accidents happen. But what does it mean to be a true friend? This sweet story helps little ones understand the power of saying sorry and forgiving.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#Forgiveness",
+            "#ChildrensBooks"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Oliver Fox and the Great Berry Mix-Up 🍓",
+        "preview": "Join Oliver Fox and Squeaky Squirrel in a sweet story about saying sorry and forgiving friends."
+    },
+    "youtube": {
+        "title": "Oliver Fox and the Great Berry Mix-Up: A Story About Forgiveness | Wonderwood Valley",
+        "description": "Join Oliver Fox in Wonderwood Valley for a heartwarming adventure! When an accident spills all the berries, Oliver and Squeaky Squirrel learn how important it is to forgive friends. A gentle story about building strong friendships.",
+        "keywords": [
+            "children's story",
+            "forgiveness story",
+            "friendship lesson",
+            "Oliver Fox adventure",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Accidents happen, even to friends! What does Oliver Fox do next?",
+        "instagram_caption_short": "Accidents happen, even to friends! Oliver Fox and Squeaky Squirrel learn a big lesson about friendship today. This sweet story helps little ones understand the power of saying sorry and forgiving. 🦊💖\n\nSave this story for your next reading time!",
+        "instagram_caption_long": "In the sunny Blossom Meadow, Oliver Fox and Squeaky Squirrel are having a berry-picking adventure! But when a small accident causes Oliver's berries to spill, both friends face a challenge.\n\nThis heartwarming story teaches children about empathy, the importance of saying 'I'm sorry,' and the wonderful feeling of forgiving others. It shows how strong friendships are built on understanding and kindness, even when things go wrong.\n\nJoin Oliver and Squeaky as they discover that even after a little mix-up, true friends always find a way to make things right. It's a perfect tale to share with your little one about the gentle art of forgiveness. ✨\n\nSave this story for your next reading time and share the joy of friendship!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#KidsFriendship",
+            "#Forgiveness",
+            "#ChildrensBooks"
+        ],
+        "first_comment": "Has your little one ever had to say sorry, or forgive a friend? Tell us in the comments!",
+        "alt_text": "Oliver Fox and Squeaky Squirrel happily picking berries together in a sunny meadow, with a basket of red berries.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What did Oliver do when Squeaky made a mistake?"
+    }
+}
