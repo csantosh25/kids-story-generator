@@ -1,0 +1,122 @@
+{
+    "story_info": {
+        "title": "Luna Owl's Letter Adventure",
+        "subtitle": "Discovering New Words",
+        "theme": "Letters",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Curiosity helps us learn new things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Luna Owl",
+            "species": "Owl",
+            "appearance": "Luna is a small owl with soft lavender-grey feathers, big round golden eyes, and two tufted feathers above her head like little eyebrows. Her wings have a gentle speckled pattern.",
+            "personality": "Wise, Curious, Calm, Encouraging"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Luna Owl, a small owl with soft lavender-grey feathers, big round golden eyes, and two tufted feathers above her head like little eyebrows. Her wings have a gentle speckled pattern. She is sitting in the Old Oak Library, looking curiously at a large, blue book on a wooden shelf, with a small, sparkly feather next to it. Warm cinematic lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Old Oak Library, wooden shelf",
+        "visual_action": "Luna Owl looking curiously at a book",
+        "visual_object": "A large blue book, a tiny feather",
+        "mood": "Warm and curious"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Day at the Library",
+            "text": "Luna Owl loved the Old Oak Library. It was her favourite place. So many books lived there. Each book held a new story. Luna flew to a tall, wooden shelf. She saw a very big book. Its cover was bright blue. It looked very special.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "library",
+            "icon": "book",
+            "speaker_notes": ""
+        },
+        {
+            "page": 2,
+            "title": "Missing Letters",
+            "text": "Luna looked closely at the book. Oh dear! Some letters were gone. The title looked like “C_OU_S.” Luna blinked her big golden eyes. “Every question opens a new adventure!” she chirped softly. She wanted to know the book's name.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "mystery",
+            "icon": "magnifying glass",
+            "speaker_notes": ""
+        },
+        {
+            "page": 3,
+            "title": "A Little Clue",
+            "text": "Luna looked around the shelf. What could help her? She saw a tiny, sparkly feather. It lay right next to the book. On the feather, a little 'C' was drawn. “A 'C'!” Luna said. “What word starts with 'C'?”",
+            "background_color": "#FDE9D9",
+            "visual_theme": "discovery",
+            "icon": "feather",
+            "speaker_notes": ""
+        },
+        {
+            "page": 4,
+            "title": "Finding the Word",
+            "text": "Luna thought very hard. She remembered a book about clouds. Clouds float high in the sky. She looked again at the letters: “C_OU_S.” Then, she saw another feather! It had a little 'L' on it. “C-L-O-U-D-S!” she sounded out.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "learning",
+            "icon": "letters",
+            "speaker_notes": ""
+        },
+        {
+            "page": 5,
+            "title": "Happy Reading",
+            "text": "Luna felt very happy. Her curiosity helped her. The book was called “Clouds of Wonder.” She carefully read the first page. It was about soft, fluffy clouds. Luna felt calm and proud. Learning new letters was a wonderful adventure.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "joy",
+            "icon": "smiling face",
+            "speaker_notes": ""
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when library books lose their letters? Join Luna Owl in Wonderwood Valley's Old Oak Library as she uses her cleverness and curiosity to find the missing pieces! This sweet story teaches little ones about letters and how asking questions helps us learn. Will Luna find all the letters? Follow for a new adventure every day!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#LunaOwl",
+            "#KidsLearning",
+            "#LettersAndWords",
+            "#ChildrensBooksIndia"
+        ]
+    },
+    "email": {
+        "subject": "Luna Owl's New Letter Discovery in Wonderwood Valley!",
+        "preview": "Join Luna Owl as she solves a book mystery in the Old Oak Library and learns about letters!"
+    },
+    "youtube": {
+        "title": "Luna Owl's Letter Adventure | A Story for Kids about Curiosity and Letters",
+        "description": "Explore the Old Oak Library with Luna Owl in Wonderwood Valley! When Luna finds a book with missing letters, her curiosity leads her on a fun adventure to discover new words. Perfect for children aged 3-6, this story encourages learning and discovery.",
+        "keywords": [
+            "luna owl",
+            "children's story",
+            "wonderwood valley",
+            "learning letters",
+            "curiosity for kids",
+            "old oak library",
+            "kids books",
+            "educational story",
+            "preschool learning"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when library books lose their letters?",
+        "instagram_caption_short": "What happens when a book loses its letters? Join Luna Owl in Wonderwood Valley's Old Oak Library as she uses her cleverness and curiosity to find the missing pieces! This sweet story teaches little ones about letters and how asking questions helps us learn. Will Luna find all the letters? Follow for a new adventure every day!",
+        "instagram_caption_long": "Join Luna Owl on a delightful adventure in the heart of Wonderwood Valley's Old Oak Library! One sunny afternoon, Luna finds a beautiful blue book with a mystery: some of its letters are missing! With her big golden eyes and curious mind, Luna sets out to discover what the book's title truly is. This charming story is perfect for children aged 3-6, encouraging them to be curious and explore the wonderful world of letters. Watch as Luna pieces together clues, learning new words along the way. It’s a gentle reminder that every question opens a new adventure!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#LunaOwl",
+            "#KidsLearning",
+            "#LettersAndWords",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What letters do you like to find in books? Tell us below!",
+        "alt_text": "Luna Owl, a lavender-grey owl, sits in a cozy library, looking at a blue book with some letters missing from its title.",
+        "call_to_action": "Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What new words did you learn today?"
+    }
+}

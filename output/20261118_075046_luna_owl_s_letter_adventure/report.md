@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Toby Turtle Helps Pip Bird
+Luna Owl's Letter Adventure
 
 Subtitle:
-A Gentle Nature Adventure
+Discovering New Words
 
 Theme:
-Birds
+Letters
 
 Moral:
-Always love and protect nature.
+Curiosity helps us learn new things.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Toby Turtle
+Luna Owl
 
 Species:
-Sea Turtle
+Owl
 
 Personality:
-Patient, Thoughtful, Nature Lover, Calm
+Wise, Curious, Calm, Encouraging
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-245
+201
 
 Generated:
-2026-11-05 07:11:41
+2026-11-18 07:51:05
 
 ---
 
