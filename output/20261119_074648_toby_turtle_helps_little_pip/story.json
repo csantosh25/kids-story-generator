@@ -1,0 +1,126 @@
+{
+    "story_info": {
+        "title": "Toby Turtle Helps Little Pip",
+        "subtitle": "A Friendly Rescue by Crystal Lake",
+        "theme": "Birds",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "We can all help protect nature and its creatures."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Toby Turtle",
+            "species": "Sea Turtle",
+            "appearance": "Toby is a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers. He has a calm, unhurried expression.",
+            "personality": "Patient, Thoughtful, Nature Lover, Calm"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip",
+                "species": "Small blue bird",
+                "appearance": "A small blue bird with a yellow chest and tiny orange feet.",
+                "role": "A baby bird who fell from its nest and needs help to get back."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Toby Turtle, a young sea turtle with a rounded teal-green shell patterned in soft swirls, gentle brown eyes, and smooth blue-green flippers, on the ground near a tree, looking at a small blue bird with a yellow chest and tiny orange feet. The sun is shining in a warm forest clearing. Soft lighting, pastel colours, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "a sunny forest clearing",
+        "visual_action": "Toby Turtle looking at a small blue bird on the ground",
+        "visual_object": "a small blue bird",
+        "mood": "warm and helpful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Toby's Morning Walk",
+            "text": "Toby Turtle loves Crystal Lake. He swims very slowly. The sun is warm and bright. Toby hears a small sound. It is a tiny \"peep, peep.\" Toby stops and looks. \"Slow and steady discovers wonders!\" he thinks. He wants to know what it is.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "lake",
+            "icon": "fish",
+            "speaker_notes": "Toby is calm and observes his surroundings by Crystal Lake."
+        },
+        {
+            "page": 2,
+            "title": "A Small Friend",
+            "text": "Toby looks near a very big tree. He sees a small blue bird. Its chest is yellow. Its tiny feet are orange. The bird is on the ground. It looks sad. Its nest is far up high. \"Oh, little friend,\" Toby says softly. \"Are you lost?\"",
+            "background_color": "#D4EDDA",
+            "visual_theme": "tree",
+            "icon": "bird",
+            "speaker_notes": "Toby finds Pip and understands its problem."
+        },
+        {
+            "page": 3,
+            "title": "Toby Thinks Hard",
+            "text": "Toby knows the bird needs help. He cannot fly up high. He cannot jump very far. He thinks very hard. \"How can I help Pip?\" he asks himself. He wants Pip to be safe. He looks up at the tree again.",
+            "background_color": "#F8E0F2",
+            "visual_theme": "forest",
+            "icon": "leaf",
+            "speaker_notes": "Toby faces a challenge and thinks creatively about how to help."
+        },
+        {
+            "page": 4,
+            "title": "A Clever Idea",
+            "text": "Toby sees a long branch. The branch hangs down low. It is close to the ground. It is also close to the nest. Toby gets a careful idea. He gently nudges Pip with his shell. \"Let's go this way,\" he says.",
+            "background_color": "#FFF9E4",
+            "visual_theme": "branch",
+            "icon": "feather",
+            "speaker_notes": "Toby finds a practical solution using natural elements around him."
+        },
+        {
+            "page": 5,
+            "title": "Happy Home",
+            "text": "Pip hops onto the low branch. It walks up, up, up! Soon, Pip is back in its soft nest. Mama bird comes and gives Pip a soft peck. Toby smiles. He helped a little bird. Protecting nature makes him happy.",
+            "background_color": "#D9F3F9",
+            "visual_theme": "nest",
+            "icon": "egg",
+            "speaker_notes": "The problem is solved, and Toby feels happy and proud about helping nature."
+        }
+    ],
+    "instagram": {
+        "caption": "What tiny friend needs Toby Turtle's help today?",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#BirdStory",
+            "#ChildrensBooksIndia"
+        ]
+    },
+    "email": {
+        "subject": "Toby Turtle's Kind Adventure: Helping a Little Bird",
+        "preview": "Join Toby Turtle as he helps a tiny bird find its way home in Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Toby Turtle Helps Little Pip: A Story About Caring for Nature",
+        "description": "Come along with Toby Turtle by Crystal Lake! He hears a tiny peep and finds a little blue bird who needs help getting back to its nest. This sweet story teaches children about kindness and protecting our animal friends. Perfect for kids aged 3-6!",
+        "keywords": [
+            "Toby Turtle",
+            "children's story",
+            "nature story",
+            "helping animals",
+            "kids books",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "What tiny friend needs Toby Turtle's help today?",
+        "instagram_caption_short": "What tiny friend needs Toby Turtle's help today? Join Toby as he explores Crystal Lake and finds a little bird in a big pickle! This sweet story teaches children about caring for nature. 💛 Share this story with a friend who loves gentle adventures!",
+        "instagram_caption_long": "What tiny friend needs Toby Turtle's help today? 🐢💙 Join our patient friend Toby as he takes a slow and steady walk by Crystal Lake. He hears a tiny peep and finds a little blue bird, Pip, who has fallen from its nest! How will Toby, who can't fly, help Pip get back home? This heartwarming story teaches children how even small actions can make a big difference in caring for nature and its creatures. It's a perfect read for your little one to learn about kindness and helping others. 💛 Share this story with a friend who loves gentle adventures!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#TobyTurtle",
+            "#NatureKids",
+            "#BirdStory",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What is your little one's favourite bird? Let us know below!",
+        "alt_text": "Toby Turtle, a green sea turtle, gently nudges a small blue bird on a low branch near a tree in a sunny forest.",
+        "call_to_action": "Share this story with a friend who loves gentle adventures!",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What is one thing we can do to help animals in our garden or park?"
+    }
+}

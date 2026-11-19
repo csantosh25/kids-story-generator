@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Max Monkey and the Secret Castle
+Toby Turtle Helps Little Pip
 
 Subtitle:
-A Jungle Quest for Confidence
+A Friendly Rescue by Crystal Lake
 
 Theme:
-Castle Mystery
+Birds
 
 Moral:
-Being brave and trying your best helps you find wonderful things.
+We can all help protect nature and its creatures.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Max Monkey
+Toby Turtle
 
 Species:
-Monkey
+Sea Turtle
 
 Personality:
-Adventurous, Playful, Energetic, Curious
+Patient, Thoughtful, Nature Lover, Calm
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-277
+212
 
 Generated:
-2026-11-06 07:12:36
+2026-11-19 07:47:13
 
 ---
 
