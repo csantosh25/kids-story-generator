@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Penny Penguin's Water Adventure
+Max Monkey's Shiny Secret Path
 
 Subtitle:
-Staying Healthy and Hydrated
+A brave journey into the jungle!
 
 Theme:
-Drinking Water
+Magic Forest
 
 Moral:
-Drinking water helps you feel happy and strong.
+Trying new things helps us feel confident and brave.
 
 Reading Time:
 2 minutes
 
 Target Age:
-4-7
+3-6
 
 ---
 
 ## Character
 
 Name:
-Penny Penguin
+Max Monkey
 
 Species:
-Penguin
+Monkey
 
 Personality:
-Healthy, Sporty, Cheerful, Helpful
+Adventurous, Playful, Energetic, Curious
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-207
+209
 
 Generated:
-2026-11-07 06:24:25
+2026-11-20 07:39:34
 
 ---
 

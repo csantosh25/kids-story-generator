@@ -1,0 +1,118 @@
+{
+    "story_info": {
+        "title": "Max Monkey's Shiny Secret Path",
+        "subtitle": "A brave journey into the jungle!",
+        "theme": "Magic Forest",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Trying new things helps us feel confident and brave."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "Max Monkey, a small energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager wide-open smile, looks with interest at a glowing, gentle waterfall in a hidden spot in a lush Adventure Jungle. Soft light filters through green leaves. Pixar-quality 3D, warm cinematic lighting, pastel colors, children's book illustration, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A hidden spot in Adventure Jungle",
+        "visual_action": "Max Monkey looking at a glowing waterfall",
+        "visual_object": "a gently glowing waterfall",
+        "mood": "warm and curious"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Max Hears a Sound",
+            "text": "Max Monkey woke up early. The warm sun peeked through green leaves. \"Adventure is waiting!\" Max chirped happily. He heard a soft, pretty sound. Tinkle, tinkle, it went. It came from deep in the Adventure Jungle. Max looked with interest. He wanted to find it.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle morning",
+            "icon": "leaves",
+            "speaker_notes": "Max wakes up and hears a mysterious sound, setting off his adventure."
+        },
+        {
+            "page": 2,
+            "title": "A Tricky Path",
+            "text": "Max followed the pretty sound. It led him to a new path. The path looked a little dark. Some tall vines hung low. \"This path looks tricky,\" Max thought. He felt a tiny bit unsure. Should he go on?",
+            "background_color": "#E0F7FA",
+            "visual_theme": "jungle path",
+            "icon": "vine",
+            "speaker_notes": "Max faces a small challenge – a tricky path, and feels a moment of hesitation."
+        },
+        {
+            "page": 3,
+            "title": "Max Tries His Best",
+            "text": "Max remembered his brave heart. He took a deep breath. \"I can try!\" he said out loud. He gripped a strong vine tightly. He swung his small body. Whoosh! He moved past the low hanging vines. He landed softly on the other side.",
+            "background_color": "#FFF3E0",
+            "visual_theme": "jungle adventure",
+            "icon": "monkey",
+            "speaker_notes": "Max decides to be brave and uses a creative solution to overcome the obstacle."
+        },
+        {
+            "page": 4,
+            "title": "A Secret Place",
+            "text": "Max kept going forward. The tinkle, tinkle sound grew louder now. He found a hidden spot! A waterfall flowed gently. Its water glowed with soft colours. It made the pretty tinkle sound. \"Wow!\" Max smiled wide. It was so beautiful.",
+            "background_color": "#F0F4C3",
+            "visual_theme": "glowing waterfall",
+            "icon": "rainbow",
+            "speaker_notes": "Max discovers the source of the sound – a beautiful, glowing waterfall."
+        },
+        {
+            "page": 5,
+            "title": "Max Feels Brave",
+            "text": "Max felt very happy. He felt brave for trying something new. He knew new paths could be fun. He sat and watched the glowing water. Then, he happily swung back home. \"Being brave is good!\" he thought. He felt calm and pleased.",
+            "background_color": "#DCE775",
+            "visual_theme": "jungle calm",
+            "icon": "flower",
+            "speaker_notes": "Max reflects on his bravery and feels happy and confident about his adventure."
+        }
+    ],
+    "instagram": {
+        "caption": "Join Max Monkey on a bright morning adventure in Wonderwood Valley! Max wakes up with his favorite phrase, \"Adventure is waiting!\" He soon hears a gentle, tinkling sound calling him deeper into the Adventure Jungle. But the path ahead looks tricky and a little dark. Will Max find his courage to go on? This joyful story is perfect for children aged 3-6, encouraging them to feel confident and try new things, even when they feel a little unsure. Share Max's exciting quest and watch your little one learn about bravery and discovery!",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceBoost",
+            "#ChildrensBooksIndia"
+        ]
+    },
+    "email": {
+        "subject": "Max Monkey's Brave Jungle Quest! ✨",
+        "preview": "Join Max as he discovers a secret path and learns about courage!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Shiny Secret Path | A Story About Being Brave",
+        "description": "Come along with Max Monkey on an exciting quest into the Adventure Jungle! Max hears a mysterious sound and follows it, but the path ahead looks tricky. Will he find his courage and discover the secret at the end? This fun story teaches children aged 3-6 about confidence and trying new things. Perfect for storytime!",
+        "keywords": [
+            "Max Monkey story",
+            "children's adventure",
+            "confidence for kids",
+            "bravery story",
+            "Wonderwood Valley"
+        ]
+    },
+    "publishing": {
+        "hook": "Ready for a jungle quest? See how Max finds a secret!",
+        "instagram_caption_short": "Ready for an adventure? Max Monkey hears a mysterious sound deep in the Adventure Jungle! Follow along as he discovers a secret path and learns the joy of trying new things. This story will inspire your little one to be confident and brave! #Bedtime01Fables",
+        "instagram_caption_long": "Join Max Monkey on a bright morning adventure in Wonderwood Valley! Max wakes up with his favorite phrase, \"Adventure is waiting!\" He soon hears a gentle, tinkling sound calling him deeper into the Adventure Jungle. But the path ahead looks tricky and a little dark. Will Max find his courage to go on? This joyful story is perfect for children aged 3-6, encouraging them to feel confident and try new things, even when they feel a little unsure. Share Max's exciting quest and watch your little one learn about bravery and discovery!\n#Bedtime01Fables #MaxMonkey",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceBoost",
+            "#ChildrensBooksIndia"
+        ],
+        "first_comment": "What's the bravest thing your little one has tried recently?",
+        "alt_text": "Max Monkey with soft brown fur and a big smile, looking towards a path in a lush green jungle, with sunlight filtering through the leaves.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What did Max do when the path looked tricky? What brave thing did he do?"
+    }
+}

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000045",
-        "created_date": "2026-11-07",
-        "status": "completed",
-        "title": "Penny Penguin's Water Adventure",
-        "theme": "Drinking Water",
-        "character": {
-            "name": "Penny Penguin",
-            "species": "Penguin"
-        },
-        "folder": "output/20261107_062406_penny_penguin_s_water_adventure",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000046",
         "created_date": "2026-11-08",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Sea Turtle"
         },
         "folder": "output/20261119_074648_toby_turtle_helps_little_pip",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000055",
+        "created_date": "2026-11-20",
+        "status": "completed",
+        "title": "Max Monkey's Shiny Secret Path",
+        "theme": "Magic Forest",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20261120_073913_max_monkey_s_shiny_secret_path",
         "instagram": {
             "posted": true,
             "post_url": ""
