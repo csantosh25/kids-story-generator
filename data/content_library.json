@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000046",
-        "created_date": "2026-11-08",
-        "status": "completed",
-        "title": "Barnaby Bunny's Starry Calm",
-        "theme": "Stars",
-        "character": {
-            "name": "Barnaby Bunny",
-            "species": "Rabbit"
-        },
-        "folder": "output/20261108_063245_barnaby_bunny_s_starry_calm",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000047",
         "created_date": "2026-11-10",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261120_073913_max_monkey_s_shiny_secret_path",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000056",
+        "created_date": "2026-11-21",
+        "status": "completed",
+        "title": "Penny Penguin Shares Sweet Berries",
+        "theme": "Good Manners",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261121_073525_penny_penguin_shares_sweet_berries",
         "instagram": {
             "posted": true,
             "post_url": ""

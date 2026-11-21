@@ -1,0 +1,128 @@
+{
+    "story_info": {
+        "title": "Penny Penguin Shares Sweet Berries",
+        "subtitle": "Learning Good Manners with Penny",
+        "theme": "Good Manners",
+        "target_age": "4-7",
+        "reading_time": "2 minutes",
+        "moral": "Good manners like 'please' and 'thank you' make everyone happy."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": [
+            {
+                "name": "Rina Rabbit",
+                "species": "Rabbit",
+                "appearance": "A small white rabbit with soft fluffy fur, a fluffy tail, and a twitching pink nose.",
+                "role": "Learns about good manners from Penny Penguin."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet, rosy cheeks, and a cheerful, energetic stance. She is smiling and gently sharing a small basket of red and blue berries with Rina Rabbit, a small white rabbit with soft fluffy fur, a fluffy tail, and a twitching pink nose. They are in a sunny Blossom Meadow with colorful flowers and green grass. Warm cinematic lighting, pastel colors, children's book illustration style, vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Sunny Blossom Meadow",
+        "visual_action": "Penny Penguin sharing berries with Rina Rabbit",
+        "visual_object": "A small basket of red and blue berries",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Saturday Snack",
+            "text": "Penny Penguin loved Saturdays. She loved going to Blossom Meadow. \"Healthy habits make every day fun!\" she sang. Today, she wanted to pick sweet, juicy berries. They would make a yummy, healthy snack. Penny got her little basket ready. She put on her sunny hat. Off she went, waddling happily.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "flower",
+            "speaker_notes": "Penny is excited for her berry picking adventure in the meadow."
+        },
+        {
+            "page": 2,
+            "title": "Berries in Blossom Meadow",
+            "text": "The sun was shining bright. Bumblebees buzzed near colourful flowers. Penny reached Blossom Meadow. She saw so many red and blue berries. They looked plump and ready to eat. Penny carefully picked a few. She put them gently into her basket. She hummed a happy tune.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "berry",
+            "speaker_notes": "Penny enjoys the beautiful meadow while picking berries."
+        },
+        {
+            "page": 3,
+            "title": "Rina Rabbit Rushes In",
+            "text": "Suddenly, a little blur of white zoomed past. It was Rina Rabbit! Rina wanted berries too. \"Berries!\" Rina hopped quickly. She tried to grab a big handful from Penny’s basket. \"Wait, Rina!\" Penny said softly. \"It is good to ask first.\" Rina stopped. She looked at Penny with wide eyes.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "meadow",
+            "icon": "rabbit",
+            "speaker_notes": "Rina Rabbit appears and tries to take berries without asking."
+        },
+        {
+            "page": 4,
+            "title": "Learning to Say 'Please'",
+            "text": "Penny smiled. \"To be polite, we say 'Please',\" she said gently. Rina twitched her pink nose. \"Please, Penny?\" she asked. Penny shared some bright red berries from her basket. \"Thank you, Penny!\" Rina hopped with joy. Good manners felt warm like sunshine. They both felt happy.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "kindness",
+            "icon": "happy face",
+            "speaker_notes": "Penny teaches Rina to use 'please' and 'thank you', sharing berries."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Berries, Sweet Friends",
+            "text": "Penny and Rina ate their berries. They tasted so sweet and fresh. Sharing made the snack even better. Rina learned a kind new way to ask and thank. Penny felt happy that Rina learned. \"Healthy habits make every day fun!\" Penny chirped. Good manners always help us make friends and feel good.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "friendship",
+            "icon": "two hands sharing",
+            "speaker_notes": "Penny and Rina enjoy their shared snack, reinforcing the lesson of good manners."
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin shows how a little 'please' and 'thank you' can make a big difference! Join Penny as she teaches Rina Rabbit about good manners and sharing sweet berries. It's a joyful lesson in kindness for your little ones. ✨",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#GoodManners",
+            "#KidsLearning",
+            "#SharingIsCaring"
+        ]
+    },
+    "email": {
+        "subject": "🍓 Penny Penguin's Sweet Lesson in Manners!",
+        "preview": "Join Penny as she shares berries and teaches Rina Rabbit about saying 'please' and 'thank you'!"
+    },
+    "youtube": {
+        "title": "Penny Penguin Shares Sweet Berries: A Story About Good Manners | Wonderwood Valley",
+        "description": "Join Penny Penguin on a delightful Saturday adventure in Blossom Meadow! Watch as Penny teaches her friend Rina Rabbit the importance of good manners, like saying 'please' and 'thank you', when sharing delicious berries. A sweet story about kindness and friendship for children aged 4-7.",
+        "keywords": [
+            "children's story",
+            "good manners",
+            "please and thank you",
+            "sharing story",
+            "preschool learning",
+            "wonderwood valley",
+            "penny penguin",
+            "kids entertainment"
+        ]
+    },
+    "publishing": {
+        "hook": "Want to know how a little 'please' makes a big difference?",
+        "instagram_caption_short": "Penny Penguin is off to Blossom Meadow for a healthy snack! But when Rina Rabbit gets a little too eager, Penny gently teaches her the magic of 'please' and 'thank you'. A sweet story about good manners for your little ones. 📚 Save this story for your next reading time.",
+        "instagram_caption_long": "Join Penny Penguin on a sunny Saturday adventure in Blossom Meadow! Penny loves picking juicy berries for a healthy snack. But when an excited Rina Rabbit tries to grab them without asking, Penny has a gentle lesson to share. Discover how a simple 'please' and 'thank you' can make sharing even sweeter and friends even happier. This story teaches little ones the joy and importance of good manners in a warm, relatable way. It's a perfect read-aloud for teaching kindness and polite habits! 📚 Save this story for your next reading time.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#GoodManners",
+            "#KidsLearning",
+            "#SharingIsCaring"
+        ],
+        "first_comment": "What good manners does your child love to show?",
+        "alt_text": "Penny Penguin, a cheerful black and white penguin, smiles while sharing a basket of red berries with a small white rabbit in a sunny meadow filled with flowers.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What are some ways we can show good manners every day?"
+    }
+}

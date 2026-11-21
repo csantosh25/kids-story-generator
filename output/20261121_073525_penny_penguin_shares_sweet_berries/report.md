@@ -3,35 +3,35 @@
 ## Story Information
 
 Title:
-Barnaby Bunny's Starry Calm
+Penny Penguin Shares Sweet Berries
 
 Subtitle:
-Finding peace under the night sky.
+Learning Good Manners with Penny
 
 Theme:
-Stars
+Good Manners
 
 Moral:
-Taking slow breaths helps us feel calm and ready for sleep.
+Good manners like 'please' and 'thank you' make everyone happy.
 
 Reading Time:
 2 minutes
 
 Target Age:
-3-6
+4-7
 
 ---
 
 ## Character
 
 Name:
-Barnaby Bunny
+Penny Penguin
 
 Species:
-Rabbit
+Penguin
 
 Personality:
-Gentle, Sleepy, Kind, Imaginative
+Healthy, Sporty, Cheerful, Helpful
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-203
+244
 
 Generated:
-2026-11-08 06:33:04
+2026-11-21 07:35:47
 
 ---
 
