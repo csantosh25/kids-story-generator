@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Oliver Fox and the Shy Squirrel
+Oliver and Pip's Berry Quest
 
 Subtitle:
-Making Friends in Wonderwood Valley
+Friends work together to reach sweet treats!
 
 Theme:
-Making Friends
+Working Together
 
 Moral:
-Helping others can lead to wonderful new friendships.
+Friends help each other solve problems.
 
 Reading Time:
 2 minutes
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-245
+260
 
 Generated:
-2026-11-10 07:39:09
+2026-11-24 10:16:50
 
 ---
 

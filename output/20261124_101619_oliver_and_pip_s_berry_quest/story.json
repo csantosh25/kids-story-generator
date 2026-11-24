@@ -1,0 +1,127 @@
+{
+    "story_info": {
+        "title": "Oliver and Pip's Berry Quest",
+        "subtitle": "Friends work together to reach sweet treats!",
+        "theme": "Working Together",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Friends help each other solve problems."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Oliver Fox",
+            "species": "Fox",
+            "appearance": "Oliver is a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears. He has clever amber eyes and a playful, confident grin.",
+            "personality": "Funny, Creative, Friendly, Brave"
+        },
+        "supporting_characters": [
+            {
+                "name": "Pip",
+                "species": "Bird",
+                "appearance": "A small blue bird with a yellow chest and tiny orange feet.",
+                "role": "Cannot reach her favourite berries and needs help."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Pixar-quality 3D illustration of Oliver Fox, a slim young fox with bright orange-red fur, a fluffy white-tipped tail, and perky triangular ears, with clever amber eyes and a playful, confident grin. He is gently holding a long stick up towards a tall berry bush. His friend Pip, a small blue bird with a yellow chest and tiny orange feet, is perched on the stick, reaching for red berries. The scene is in a sunny forest clearing with soft lighting and pastel colours. Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "A sunny forest clearing",
+        "visual_action": "Oliver Fox helps Pip the bird reach high berries",
+        "visual_object": "A tall berry bush with red berries",
+        "mood": "Warm and cheerful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Oliver and Pip's Berry Quest",
+            "text": "It was a bright Tuesday morning in Sunny Forest. Oliver Fox had his clever amber eyes open for fun. He saw his friend Pip the bird. Pip was a small blue bird with a yellow chest and tiny orange feet. Pip was flapping her wings near a tall berry bush. She looked sad.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "forest",
+            "icon": "tree",
+            "speaker_notes": "Oliver Fox is in Sunny Forest, sees his friend Pip looking sad near a berry bush."
+        },
+        {
+            "page": 2,
+            "title": "A Tricky Problem",
+            "text": "Oliver went to Pip. 'Hello, Pip! Why do you look so worried?' he asked. Pip chirped, 'Oh, Oliver! My favourite red berries are too high! I cannot reach them.' Oliver looked at the tall bush. He saw how far up the juicy berries were. 'That is a tricky problem,' he said, thinking hard.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "berries",
+            "icon": "berry",
+            "speaker_notes": "Oliver asks Pip why she is sad. Pip explains she cannot reach the high berries. Oliver considers the problem."
+        },
+        {
+            "page": 3,
+            "title": "Oliver's Big Idea",
+            "text": "Oliver put his paw on his chin. 'Let's solve it together!' he said with a smile. He looked around. Oliver saw a long, sturdy branch lying on the ground. 'Pip, maybe this branch can help us!' he chirped. Pip looked at the branch. She did not know what to do. But Oliver had a plan.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "solution",
+            "icon": "lightbulb",
+            "speaker_notes": "Oliver uses his catchphrase 'Let's solve it together!' and finds a long branch as part of his plan."
+        },
+        {
+            "page": 4,
+            "title": "Working as Friends",
+            "text": "Oliver carefully picked up the long branch. It was just right. He held it up to the berry bush. The branch reached almost to the top! 'Now, Pip, fly onto the end of the branch,' Oliver said gently. Pip was a little scared, but she trusted Oliver. She flew and landed softly on the branch.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "teamwork",
+            "icon": "handshake",
+            "speaker_notes": "Oliver holds the branch for Pip. Pip, trusting Oliver, lands on the branch to reach the berries."
+        },
+        {
+            "page": 5,
+            "title": "Sweet Berries for Everyone",
+            "text": "From the branch, Pip could easily reach the red berries! She picked a few with her tiny beak. 'Thank you, Oliver!' she chirped happily. Oliver smiled. They shared the sweet berries. Working together made them both feel very happy. Friends help each other, always!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "happiness",
+            "icon": "star",
+            "speaker_notes": "Pip gets the berries, thanks Oliver. They share the berries, feeling happy about working together and friendship."
+        }
+    ],
+    "instagram": {
+        "caption": "What happens when the best berries are just out of reach? Join Oliver Fox and his friend Pip in Sunny Forest for a sweet adventure where they learn the joy of working together! This heartwarming story teaches little ones about friendship and helping each other. 🦊 Follow @bedtime01fables for new Wonderwood Valley adventures every day.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#FriendshipGoals",
+            "#KidsLearning",
+            "#Teamwork"
+        ]
+    },
+    "email": {
+        "subject": "Oliver Fox and Pip: A Story About Helping Friends!",
+        "preview": "Discover how Oliver Fox and Pip the bird solve a 'berry' big problem together in Wonderwood Valley!"
+    },
+    "youtube": {
+        "title": "Oliver and Pip's Berry Quest: A Wonderwood Valley Story About Friendship",
+        "description": "Join Oliver Fox and his friend Pip on a fun adventure in Sunny Forest! The best berries are too high for Pip to reach. Can Oliver help? This story teaches children aged 3-6 about working together and the joy of friendship. Perfect for a warm story time!",
+        "keywords": [
+            "Oliver Fox story",
+            "children's story",
+            "friendship lesson",
+            "working together",
+            "Wonderwood Valley",
+            "kids adventure",
+            "picture book"
+        ]
+    },
+    "publishing": {
+        "hook": "What happens when the best berries are just out of reach?",
+        "instagram_caption_short": "What happens when the best berries are just out of reach? Join Oliver Fox and his friend Pip in Sunny Forest for a sweet adventure where they learn the joy of working together. This heartwarming story teaches little ones about friendship. 🦊 Follow @bedtime01fables for new Wonderwood Valley adventures every day.",
+        "instagram_caption_long": "What happens when the best berries are just out of reach? One sunny morning in Wonderwood Valley, Oliver Fox finds his friend Pip the bird looking sad. Pip's favourite red berries are too high! Oliver, with his clever mind and friendly heart, quickly says, 'Let's solve it together!' Watch as Oliver comes up with a creative plan involving a long branch, showing Pip that helping friends can be fun. This heartwarming tale is perfect for children aged 3-6, teaching them the importance of friendship and the power of working together to overcome small challenges. It's a sweet reminder that friends always help each other! 🦊 Follow @bedtime01fables for new Wonderwood Valley adventures every day.",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#OliverFox",
+            "#FriendshipGoals",
+            "#KidsLearning",
+            "#Teamwork"
+        ],
+        "first_comment": "What is your child's favorite fruit to share with friends?",
+        "alt_text": "Oliver Fox and Pip the bird reaching for red berries on a tall bush in a sunny forest.",
+        "call_to_action": "🦊 Follow @bedtime01fables for new Wonderwood Valley adventures every day.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "How can you help your friends when they need it?"
+    }
+}
