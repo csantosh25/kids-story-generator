@@ -1,0 +1,124 @@
+{
+    "story_info": {
+        "title": "Max's Sparkle Tree Hunt",
+        "subtitle": "A brave jungle adventure",
+        "theme": "Treasure Hunt",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Being brave helps you find wonderful things."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Max Monkey",
+            "species": "Monkey",
+            "appearance": "Max is a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail. He has an eager, wide-open smile.",
+            "personality": "Adventurous, Playful, Energetic, Curious"
+        },
+        "supporting_characters": []
+    },
+    "cover": {
+        "prompt": "A Pixar-quality 3D illustration of Max Monkey, a small, energetic monkey with soft brown fur, a lighter tan face and belly, big curious eyes, and a long curling tail, with an eager, wide-open smile. He stands on a lush path in Adventure Jungle, looking up with curiosity towards a very tall tree in the distance. The tree subtly shimmers with tiny, gentle lights, hinting at a sparkle. Warm cinematic lighting, pastel colors, children's book illustration, vertical composition, Instagram friendly. Reserve the lower third for title placement.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "Adventure Jungle path",
+        "visual_action": "Max Monkey looking up at a very tall tree",
+        "visual_object": "A glowing, sparkling tree",
+        "mood": "Curious and hopeful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "Max Hears a Secret",
+            "text": "Max Monkey heard a secret. \"There's a Sparkle Tree,\" he heard. \"Deep in Adventure Jungle!\" Max's eyes grew big. He loved adventures. \"Adventure is waiting!\" he chirped. He wanted to find this special tree right now. It sounded like a hidden treasure!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "vine",
+            "speaker_notes": "Introduce Max and the idea of a secret Sparkle Tree. Show his excitement."
+        },
+        {
+            "page": 2,
+            "title": "Max Looks for Clues",
+            "text": "Max began his hunt. He swung from a sturdy vine. Zoom! He scampered up tall trees. He peeked behind big green leaves. \"Where are you, Sparkle Tree?\" he called softly. The jungle was big and busy. Finding a secret was not easy.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "leaf",
+            "speaker_notes": "Show Max actively searching and exploring the jungle."
+        },
+        {
+            "page": 3,
+            "title": "A Big, Tall Rock",
+            "text": "Soon, Max saw a very tall rock. It stood high above everything. \"Oh, dear!\" he thought. \"The path goes up there!\" He felt a little unsure. It looked like a big climb. He took a deep breath. He knew he could be brave.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "mountain",
+            "icon": "rock",
+            "speaker_notes": "Introduce the challenge and Max's moment of doubt, followed by his resolve to be brave."
+        },
+        {
+            "page": 4,
+            "title": "Max is Brave",
+            "text": "Max grabbed a strong root. He pulled himself up. Step by step, he went higher. He held on with his strong hands. He kept going, up and up. He felt so very brave! He looked up one last time. Almost there!",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "root",
+            "speaker_notes": "Show Max overcoming the challenge with effort and courage."
+        },
+        {
+            "page": 5,
+            "title": "The Beautiful Sparkle Tree",
+            "text": "Max reached the top! And there it was! A beautiful tree. Its leaves shimmered with tiny, gentle lights. It was the Sparkle Tree! Max’s heart was full of joy. He felt proud he found it. He was brave, and he made it! He knew he could do anything.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "jungle",
+            "icon": "sparkle",
+            "speaker_notes": "The happy ending where Max finds his treasure and feels a sense of accomplishment and confidence."
+        }
+    ],
+    "instagram": {
+        "caption": "What secret awaits Max in the jungle? ✨ Join Max Monkey on an exciting quest to find the mysterious Sparkle Tree! In this wonderful story from Wonderwood Valley, Max shows us that even big challenges can be overcome with a little bravery. He takes a deep breath, climbs a tall rock, and discovers something truly beautiful. This tale is perfect for helping children aged 3-6 years learn about the joy of being confident and trying their best. It’s a gentle reminder that every small step forward builds big courage! Read along and share Max's journey of discovery and self-belief. 💛 Send this to a parent who would enjoy this with their little one. #Bedtime01Fables #MaxMonkey #KidsAdventure #ConfidenceForKids #StoryTimeFun",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#StoryTimeFun"
+        ]
+    },
+    "email": {
+        "subject": "Join Max Monkey on a Sparkle Tree Adventure! ✨",
+        "preview": "Max learns to be brave and find a special treasure. Read our new story!"
+    },
+    "youtube": {
+        "title": "Max Monkey's Sparkle Tree Hunt: A Brave Adventure for Kids | Wonderwood Valley Stories",
+        "description": "Join Max Monkey on an exciting quest to find the mysterious Sparkle Tree deep in Adventure Jungle! This heartwarming story for children aged 3-6 years teaches the importance of confidence and trying your best. Watch as Max overcomes a tricky challenge and discovers a beautiful secret. Perfect for inspiring little ones to be brave! Tune in for more Wonderwood Valley adventures.",
+        "keywords": [
+            "Max Monkey",
+            "kids story",
+            "adventure for kids",
+            "confidence",
+            "brave story",
+            "children's book",
+            "Wonderwood Valley",
+            "Sparkle Tree",
+            "treasure hunt",
+            "jungle story",
+            "read aloud"
+        ]
+    },
+    "publishing": {
+        "hook": "What secret awaits Max in the jungle?",
+        "instagram_caption_short": "What secret awaits Max in the jungle? Join Max Monkey as he sets off on a sparkling adventure! This story is all about being brave and trying new things, even when they seem a little tricky. Read along to see how Max finds his special treasure. Perfect for inspiring confidence in your little explorer! 💛 Send this to a parent who would enjoy this with their little one.",
+        "instagram_caption_long": "What secret awaits Max in the jungle? ✨ Join Max Monkey on an exciting quest to find the mysterious Sparkle Tree! In this wonderful story from Wonderwood Valley, Max shows us that even big challenges can be overcome with a little bravery. He takes a deep breath, climbs a tall rock, and discovers something truly beautiful. This tale is perfect for helping children aged 3-6 years learn about the joy of being confident and trying their best. It’s a gentle reminder that every small step forward builds big courage! Read along and share Max's journey of discovery and self-belief. 💛 Send this to a parent who would enjoy this with their little one. #Bedtime01Fables #MaxMonkey #KidsAdventure #ConfidenceForKids #StoryTimeFun #ChildrensBooks #Parenting",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#MaxMonkey",
+            "#KidsAdventure",
+            "#ConfidenceForKids",
+            "#StoryTimeFun"
+        ],
+        "first_comment": "What wonderful thing did your little one feel brave doing today? Share with us!",
+        "alt_text": "Max Monkey, a small brown monkey, looks curiously at a sparkling tree in a lush jungle.",
+        "call_to_action": "💛 Send this to a parent who would enjoy this with their little one.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What is one brave thing you did today, just like Max?"
+    }
+}

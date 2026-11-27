@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Toby Turtle Helps a Tiny Beetle
+Max's Sparkle Tree Hunt
 
 Subtitle:
-A kind helper in Sunny Forest
+A brave jungle adventure
 
 Theme:
-Forest Animals
+Treasure Hunt
 
 Moral:
-It is good to care for nature and all its small friends.
+Being brave helps you find wonderful things.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Toby Turtle
+Max Monkey
 
 Species:
-Sea Turtle
+Monkey
 
 Personality:
-Patient, Thoughtful, Nature Lover, Calm
+Adventurous, Playful, Energetic, Curious
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-182
+216
 
 Generated:
-2026-11-12 07:32:57
+2026-11-27 08:56:50
 
 ---
 

@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000048",
-        "created_date": "2026-11-12",
-        "status": "completed",
-        "title": "Toby Turtle Helps a Tiny Beetle",
-        "theme": "Forest Animals",
-        "character": {
-            "name": "Toby Turtle",
-            "species": "Sea Turtle"
-        },
-        "folder": "output/20261112_073235_toby_turtle_helps_a_tiny_beetle",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000049",
         "created_date": "2026-11-13",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Fox"
         },
         "folder": "output/20261124_101619_oliver_and_pip_s_berry_quest",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000058",
+        "created_date": "2026-11-27",
+        "status": "completed",
+        "title": "Max's Sparkle Tree Hunt",
+        "theme": "Treasure Hunt",
+        "character": {
+            "name": "Max Monkey",
+            "species": "Monkey"
+        },
+        "folder": "output/20261127_085625_max_s_sparkle_tree_hunt",
         "instagram": {
             "posted": true,
             "post_url": ""
