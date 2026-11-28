@@ -3,16 +3,16 @@
 ## Story Information
 
 Title:
-Max Monkey's Sunny Treasure
+Penny Penguin's Veggie Faces
 
 Subtitle:
-A Quest for Confidence
+Making vegetables fun to eat!
 
 Theme:
-Treasure Hunt
+Eating Vegetables
 
 Moral:
-Trying new things helps us feel confident and brave.
+Eating healthy vegetables can be fun and makes us strong.
 
 Reading Time:
 2 minutes
@@ -25,13 +25,13 @@ Target Age:
 ## Character
 
 Name:
-Max Monkey
+Penny Penguin
 
 Species:
-Monkey
+Penguin
 
 Personality:
-Adventurous, Playful, Energetic, Curious
+Healthy, Sporty, Cheerful, Helpful
 
 ---
 
@@ -41,10 +41,10 @@ Slides:
 5
 
 Total Words:
-203
+238
 
 Generated:
-2026-11-13 07:04:38
+2026-11-28 08:17:53
 
 ---
 

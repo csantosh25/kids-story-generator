@@ -1,33 +1,5 @@
 [
     {
-        "content_id": "KS-000049",
-        "created_date": "2026-11-13",
-        "status": "completed",
-        "title": "Max Monkey's Sunny Treasure",
-        "theme": "Treasure Hunt",
-        "character": {
-            "name": "Max Monkey",
-            "species": "Monkey"
-        },
-        "folder": "output/20261113_070414_max_monkey_s_sunny_treasure",
-        "instagram": {
-            "posted": true,
-            "post_url": ""
-        },
-        "pinterest": {
-            "posted": false,
-            "pin_url": ""
-        },
-        "reel": {
-            "generated": false,
-            "video": ""
-        },
-        "youtube": {
-            "posted": false,
-            "url": ""
-        }
-    },
-    {
         "content_id": "KS-000050",
         "created_date": "2026-11-14",
         "status": "completed",
@@ -262,6 +234,34 @@
             "species": "Monkey"
         },
         "folder": "output/20261127_085625_max_s_sparkle_tree_hunt",
+        "instagram": {
+            "posted": true,
+            "post_url": ""
+        },
+        "pinterest": {
+            "posted": false,
+            "pin_url": ""
+        },
+        "reel": {
+            "generated": false,
+            "video": ""
+        },
+        "youtube": {
+            "posted": false,
+            "url": ""
+        }
+    },
+    {
+        "content_id": "KS-000059",
+        "created_date": "2026-11-28",
+        "status": "completed",
+        "title": "Penny Penguin's Veggie Faces",
+        "theme": "Eating Vegetables",
+        "character": {
+            "name": "Penny Penguin",
+            "species": "Penguin"
+        },
+        "folder": "output/20261128_081732_penny_penguin_s_veggie_faces",
         "instagram": {
             "posted": true,
             "post_url": ""

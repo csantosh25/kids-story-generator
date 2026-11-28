@@ -1,0 +1,129 @@
+{
+    "story_info": {
+        "title": "Penny Penguin's Veggie Faces",
+        "subtitle": "Making vegetables fun to eat!",
+        "theme": "Eating Vegetables",
+        "target_age": "3-6",
+        "reading_time": "2 minutes",
+        "moral": "Eating healthy vegetables can be fun and makes us strong."
+    },
+    "character_sheet": {
+        "main_character": {
+            "name": "Penny Penguin",
+            "species": "Penguin",
+            "appearance": "Penny is a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet. She has rosy cheeks and a cheerful, energetic stance.",
+            "personality": "Healthy, Sporty, Cheerful, Helpful"
+        },
+        "supporting_characters": [
+            {
+                "name": "Rosie Rabbit",
+                "species": "Rabbit",
+                "appearance": "A small fluffy white rabbit with long pink ears and a tiny twitching nose.",
+                "role": "Finds vegetables a bit tricky to eat and needs Penny's help."
+            }
+        ]
+    },
+    "cover": {
+        "prompt": "Penny Penguin, a small round penguin with glossy black-and-white feathers, a bright orange beak, and orange webbed feet, with rosy cheeks and a cheerful, energetic stance, and Rosie Rabbit, a small fluffy white rabbit with long pink ears and a tiny twitching nose, are happily making faces out of colorful vegetables on a picnic blanket in Blossom Meadow. Pixar-quality 3D, Soft lighting, Pastel colours, Children's book illustration, Vertical composition, Instagram friendly.",
+        "negative_prompt": "text, watermark, blurry, logo",
+        "style": "Pixar 3D",
+        "title_position": "bottom",
+        "setting": "sunny Blossom Meadow picnic",
+        "visual_action": "Penny and Rosie making funny faces with vegetables",
+        "visual_object": "colorful vegetables, picnic basket",
+        "mood": "cheerful and playful"
+    },
+    "slides": [
+        {
+            "page": 1,
+            "title": "A Sunny Picnic",
+            "text": "Penny Penguin was at Blossom Meadow. The sun was warm and bright. She had a big basket. It was full of healthy snacks. Penny smiled a big smile. \"Time for a yummy picnic!\" she said happily. She saw Rosie Rabbit nearby. Rosie looked a little sad. She sat under a flower.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "picnic",
+            "icon": "carrot",
+            "speaker_notes": ""
+        },
+        {
+            "page": 2,
+            "title": "Rosie's Veggie Worries",
+            "text": "\"Hello, Rosie!\" Penny called out. \"Come join my picnic!\" Rosie hopped closer slowly. Penny opened her basket. Inside were bright red tomatoes. There were green peas too. And long, crunchy carrots. \"Yum, veggies!\" said Penny. Rosie sighed a tiny sigh. \"I don't like some veggies,\" she said.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "picnic",
+            "icon": "carrot",
+            "speaker_notes": ""
+        },
+        {
+            "page": 3,
+            "title": "A Clever Idea!",
+            "text": "Penny had a clever idea. \"Let's make it fun!\" she chirped. \"We can make happy faces. We use our yummy vegetables!\" Rosie looked up. Her long ears twitched a little. \"Happy faces with food?\" she asked softly. \"Yes!\" Penny cheered. \"It's a fun game to play!\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "picnic",
+            "icon": "carrot",
+            "speaker_notes": ""
+        },
+        {
+            "page": 4,
+            "title": "Making Veggie Faces",
+            "text": "Penny showed Rosie how. She put two pea eyes. A carrot nose. A tomato slice smile. \"See? A happy veggie face!\" Rosie giggled. She picked up a small carrot. She made a funny mouth on her plate. Then she nibbled the carrot. \"It's yummy!\" Rosie said. \"And fun!\"",
+            "background_color": "#FDE9D9",
+            "visual_theme": "picnic",
+            "icon": "carrot",
+            "speaker_notes": ""
+        },
+        {
+            "page": 5,
+            "title": "Strong and Happy",
+            "text": "Rosie ate all her vegetables. She felt strong and full. Her tummy was happy too. \"Healthy habits make every day fun!\" Penny said. Rosie nodded her head. \"Yes, they do!\" she agreed with a smile. They finished their healthy picnic. Both friends felt happy and strong.",
+            "background_color": "#FDE9D9",
+            "visual_theme": "picnic",
+            "icon": "carrot",
+            "speaker_notes": ""
+        }
+    ],
+    "instagram": {
+        "caption": "Penny Penguin and Rosie Rabbit are on a picnic adventure! Rosie isn't so sure about her veggies, but Penny has a super fun idea. See how they turn healthy eating into a playful game. Your child will love this story about making healthy habits happy! 🥕 #Bedtime01Fables",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsLearning",
+            "#HealthyEating",
+            "#PreschoolActivities"
+        ]
+    },
+    "email": {
+        "subject": "New Story! Penny Penguin's Fun Veggie Faces! 🥕",
+        "preview": "Join Penny Penguin and Rosie Rabbit as they make eating vegetables a happy game!"
+    },
+    "youtube": {
+        "title": "Penny Penguin's Veggie Faces | Healthy Habits for Kids",
+        "description": "In this heartwarming story, Penny Penguin shows her friend Rosie Rabbit how to make eating vegetables fun! Join them on a cheerful picnic in Wonderwood Valley. This story teaches children about healthy eating in a playful way. Perfect for kids aged 3-6! #Bedtime01Fables #PennyPenguin",
+        "keywords": [
+            "Penny Penguin story",
+            "healthy eating for kids",
+            "vegetables for children",
+            "kids healthy habits",
+            "preschool stories",
+            "Wonderwood Valley",
+            "children's story",
+            "fun with food",
+            "Rosie Rabbit"
+        ]
+    },
+    "publishing": {
+        "hook": "Ever wish veggies were more fun for your little one?",
+        "instagram_caption_short": "Penny Penguin and Rosie Rabbit are on a picnic adventure! Rosie isn't so sure about her veggies, but Penny has a super fun idea. See how they turn healthy eating into a playful game. Your child will love this story about making healthy habits happy! 🥕 #Bedtime01Fables",
+        "instagram_caption_long": "Join Penny Penguin and her friend Rosie Rabbit for a cheerful picnic in Blossom Meadow! Rosie feels a little shy about eating her vegetables. But Penny, with her bright smile and clever ideas, shows Rosie a new, playful way to enjoy her healthy snacks. This heartwarming story teaches children that eating vegetables can be a fun adventure! It helps build a healthy body and mind, making every day feel wonderful. Read along and see how Penny makes mealtime a happy game for Rosie. Your little one might just want to try making veggie faces too! #Bedtime01Fables",
+        "hashtags": [
+            "#Bedtime01Fables",
+            "#PennyPenguin",
+            "#KidsLearning",
+            "#HealthyEating",
+            "#PreschoolActivities"
+        ],
+        "first_comment": "What's your child's favorite way to make healthy food fun? Share your ideas below!",
+        "alt_text": "Penny Penguin and Rosie Rabbit sitting on a picnic blanket in a sunny meadow, arranging colorful vegetables into funny faces on their plates.",
+        "call_to_action": "📚 Save this story for your next reading time.",
+        "best_posting_time": "7:00–9:00 PM IST — our established Instagram posting window.",
+        "parent_question": "What yummy vegetables would you put on your happy face?"
+    }
+}
